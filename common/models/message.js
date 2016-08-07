@@ -7,7 +7,7 @@ module.exports = function(Message)
 
    Message.afterRemote('create', function (ctx, message, next)
    { 
-      Long ms;
+      var ms;
       console.log('> testing afterRemote function');
       console.log('time : '+message.time);
       console.log('device: '+message.device);

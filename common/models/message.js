@@ -15,18 +15,18 @@ module.exports = function(Message)
       console.log('time : '+message.time);
       console.log('device: '+message.device);
       console.log('data : '+message.data);
-      ms = Long.valueOf(message.time);
-      console.log('ms : '+ms)
-      ti = new Timestamp(ms);
-      console.log('ti : '+ti)
-      dataora = new Date(ti);
+      //ms = Long.valueOf(message.time);
+      //console.log('ms : '+ms)
+      //ti = new Timestamp(ms);
+      //console.log('ti : '+ti)
+      //dataora = new Date(ti);
 
 
-      console.log('dataora : '+dataora);
+      //console.log('dataora : '+dataora);
       //client.post('statuses/update', {status: "Maria2"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       //console.log(response);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' Msg Alarm from code ' + message.device + '-' +  message.name + ' data ' + message.data}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + message.time + ' Msg Alarm from code ' + message.device + '-' +  message.name + ' data ' + message.data}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       console.log(response);
  

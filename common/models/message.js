@@ -11,9 +11,9 @@ module.exports = function(Message)
       console.log('time : '+message.time); 
       console.log('device: '+message.device);
       console.log('data : '+message.data);
-
-      Timestamp ts = message.data;
-      dataora = new Date(ts);
+      Long miliseconds = Long.valueOf(message.time);
+      Timestamp ti = new Timestamp(miliseconds);
+      dataora = new Date(ti);
 
 
       console.log('dataora : '+dataora);

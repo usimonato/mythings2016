@@ -9,13 +9,13 @@ module.exports = function(Message)
    { 
       console.log('> testing afterRemote function'); 
       console.log('time : '+message.time); 
-      console.log('device id : '+message.device);
+      console.log('device: '+message.device);
       console.log('data : '+message.data);
 
       //client.post('statuses/update', {status: "Maria2"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       //console.log(response);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text':'Time:' + message.time + ' Msg Alarm from ' + message.device}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + message.time + ' Msg Alarm from ' + message.device + 'data' + +message.data}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       console.log(response);
 

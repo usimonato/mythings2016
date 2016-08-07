@@ -8,12 +8,15 @@ module.exports = function(Message)
    Message.afterRemote('create', function (ctx, message, next)
    { 
       var ms;
+      var ti;
+      var dataora;
+      
       console.log('> testing afterRemote function');
       console.log('time : '+message.time);
       console.log('device: '+message.device);
       console.log('data : '+message.data);
       ms = Long.valueOf(message.time);
-      Timestamp ti = new Timestamp(ms);
+      ti = new Timestamp(ms);
       dataora = new Date(ti);
 
 

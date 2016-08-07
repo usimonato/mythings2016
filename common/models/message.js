@@ -13,8 +13,8 @@ module.exports = function(Message)
       console.log('data : '+message.data);
 
 
-      var theDate = new Date(timeStamp_value * 1000);
-      dataora = theDate.toGMTString();
+      dataora = new Date(message.data);
+
 
       console.log('dataora : '+dataora);
       //client.post('statuses/update', {status: "Maria2"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)

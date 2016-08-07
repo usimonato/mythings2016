@@ -7,8 +7,21 @@
     "validateUpsert": true
   },
   "properties": {
-    "propertyName86": {
-      "type": "string"
+    "name": {
+      "type": "string",
+      "id": false
+    },
+    "time": {
+      "type": "string",
+      "id": false
+    },
+    "data": {
+      "type": "string",
+      "id": false
+    },
+    "device": {
+      "type": "string",
+      "id": true
     }
   },
   "validations": [],

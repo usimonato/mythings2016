@@ -34,8 +34,8 @@ module.exports = function(Message)
       // Tweet body.
       //console.log(response);
       //data_ora= convertTimestamp(message.time);
-      console.log('data : ' + data_ora);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text':'Time:' + data_ora + ' Msg Alarm from ' + message.device}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
+      console.log('data_ora : '+data_ora);
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text':'Time:' +message.data + ' Msg Alarm from ' + message.device}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       console.log(response);
 

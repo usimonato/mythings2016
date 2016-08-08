@@ -15,7 +15,10 @@ module.exports = function(Message)
       console.log('time : '+message.time);
       console.log('device: '+message.device);
       console.log('data : '+message.data);
-      
+      console.log('name: '+message.name);
+      console.log('rssi : '+message.rssi);
+      console.log('snr : '+message.snr);
+      console.log('station : '+message.station);
 
       var dt = new Date();
       //var formatted = dt.toFormat("YYYYMMDDHH24MISS");
@@ -31,7 +34,7 @@ module.exports = function(Message)
       //client.post('statuses/update', {status: "Maria2"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       //console.log(response);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dt + ' Msg Alarm from code ' + message.device + '-' +  message.name + ' data ' + message.data}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dt + ' Alarm from code ' + message.name + '-' +  message.device + ' data ' + message.data ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       console.log(response);
 

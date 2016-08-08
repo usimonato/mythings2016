@@ -34,7 +34,7 @@ module.exports = function(Message)
       //client.post('statuses/update', {status: "Maria2"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       //console.log(response);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dt + ' Alarm from code ' + message.name + '-' +  message.device + ' data ' + message.data ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dt + ' Alarm from code ' + message.name + '-' +  message.device + ' data ' + message.data + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       console.log(response);
 

@@ -32,14 +32,14 @@
     "station": {
       "type": "string"
     },
-    "lat": {
-      "type": "geopoint"
+    "alt": {
+      "type": "number"
     },
     "log": {
-      "type": "geopoint"
+      "type": "number"
     },
-    "alt": {
-      "type": "geopoint"
+    "lat": {
+      "type": "number"
     }
   },
   "validations": [],

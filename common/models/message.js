@@ -1,5 +1,6 @@
 var Twitter = require('twitter');
 require('date-utils');
+var moment = require('moment-timezone');
 module.exports = function(Message)
 { //Use the environment variables in production
   var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consumer_secret: process.env.TWITTER_CONSUMER_SECRET, access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY, access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET, });
@@ -8,8 +9,7 @@ module.exports = function(Message)
    Message.afterRemote('create', function (ctx, message, next)
    { 
       var ms;
-      var ti;
-      var dataora;
+
 
       console.log('> testing afterRemote function');
       console.log('time : '+message.time);
@@ -20,9 +20,10 @@ module.exports = function(Message)
       console.log('snr : '+message.snr);
       console.log('station : '+message.station);
 
-      var dt = new Date();
+      var dataora = new Date();
+      moment(dataora).tz('Europe/Berlin').format(format);
       //var formatted = dt.toFormat("YYYYMMDDHH24MISS");
-      console.log(dt);
+      console.log(dataora);
       //ms = Long.valueOf(message.time);
       //console.log('ms : '+ms)
       //ti = new Timestamp(ms);
@@ -34,7 +35,7 @@ module.exports = function(Message)
       //client.post('statuses/update', {status: "Maria2"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       //console.log(response);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dt + ' Alarm from code ' + message.name + '-' +  message.device + ' data ' + message.data + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' Alarm from code ' + message.name + '-' +  message.device + ' data ' + message.data + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       console.log(response);
 

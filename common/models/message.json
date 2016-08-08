@@ -33,13 +33,13 @@
       "type": "string"
     },
     "lat": {
-      "type": "number"
+      "type": "geopoint"
     },
     "log": {
-      "type": "number"
+      "type": "geopoint"
     },
     "alt": {
-      "type": "number"
+      "type": "geopoint"
     }
   },
   "validations": [],

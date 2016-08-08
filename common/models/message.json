@@ -11,17 +11,26 @@
       "type": "string",
       "id": false
     },
-    "time": {
-      "type": "string",
-      "id": false
-    },
     "data": {
       "type": "string",
       "id": false
     },
-    "device": {
+    "time": {
       "type": "string",
       "id": true
+    },
+    "device": {
+      "type": "string",
+      "id": false
+    },
+    "snr": {
+      "type": "string"
+    },
+    "rssi": {
+      "type": "string"
+    },
+    "station": {
+      "type": "string"
     }
   },
   "validations": [],

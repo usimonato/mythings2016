@@ -19,7 +19,9 @@ module.exports = function(Message)
       console.log('rssi : '+message.rssi);
       console.log('snr : '+message.snr);
       console.log('station : '+message.station);
-
+      console.log('lat : '+message.lat);
+      console.log('log : '+message.log);
+      console.log('alt : '+message.alt);
       var dataora = new Date();
      // moment(dataora).tz('Europe/Berlin').format(format);
       //var formatted = dt.toFormat("YYYYMMDDHH24MISS");

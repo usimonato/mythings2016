@@ -31,6 +31,15 @@
     },
     "station": {
       "type": "string"
+    },
+    "lat": {
+      "type": "number"
+    },
+    "log": {
+      "type": "number"
+    },
+    "alt": {
+      "type": "number"
     }
   },
   "validations": [],

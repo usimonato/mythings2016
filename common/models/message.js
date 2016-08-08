@@ -15,6 +15,11 @@ module.exports = function(Message)
       console.log('time : '+message.time);
       console.log('device: '+message.device);
       console.log('data : '+message.data);
+      
+
+      var dt = new Date();
+      //var formatted = dt.toFormat("YYYYMMDDHH24MISS");
+      console.log(dt);
       //ms = Long.valueOf(message.time);
       //console.log('ms : '+ms)
       //ti = new Timestamp(ms);

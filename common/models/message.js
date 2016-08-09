@@ -22,6 +22,10 @@ module.exports = function(Message)
       console.log('lat : '+message.lat);
       console.log('log : '+message.log);
       console.log('alt : '+message.alt);
+            
+      Float f = Float.intBitsToFloat(message.lat);
+      console.log('lat float: '+f);
+
       var dataora = new Date();
      // moment(dataora).tz('Europe/Berlin').format(format);
       //var formatted = dt.toFormat("YYYYMMDDHH24MISS");

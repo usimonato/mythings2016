@@ -9,7 +9,7 @@ module.exports = function(Message)
    Message.afterRemote('create', function (ctx, message, next)
    { 
       var ms;
-
+      var f;
 
       console.log('> testing afterRemote function');
       console.log('time : '+message.time);

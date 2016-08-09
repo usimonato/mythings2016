@@ -2,6 +2,17 @@ var Twitter = require('twitter');
 var fromBits = require( 'math-float32-from-bits' );
 var math = require('mathjs');
 require('date-utils');
+var NodeGeocoder = require('node-geocoder');
+
+var options = {
+  provider: 'google',
+  // Optional depending on the providers
+  httpAdapter: 'https', // Default 
+  apiKey: 'AIzaSyDMYtkCOaCIUcES2QDNDYIMUOjfldouwtc', // YOUR_API_KEY for Geocoding Google Premier
+  formatter: null         // 'gpx', 'string', ...
+};
+
+var geocoder = NodeGeocoder(options);
 
 //var moment = require('moment-timezone');
 function Bytes2Float32(bytes) {
@@ -9,7 +20,7 @@ function Bytes2Float32(bytes) {
     var exponent = ((bytes >> 23) & 0xFF) - 127;
     var significand = (bytes & ~(-1 << 23));
 
-    if (exponent == 128) 
+    if (exponent == 128)
         return sign * ((significand) ? Number.NaN : Number.POSITIVE_INFINITY);
 
     if (exponent == -127) {
@@ -55,7 +66,9 @@ module.exports = function(Message)
       // Tweet body.
       //console.log(response);
       //client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  +message.lat + ' lng:' +  message.log +  ' alt:' +  message.alt +   ' Evento da ' + message.name + ' -' + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
-      
+      // Using callback
+      geocoder.reverse({lat:message.lat, lon:message.log}, function(err, res) {console.log(res);});
+
       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento da code: ' + message.name + ' - ' + ' lat:' +  +message.lat + ', lng:' +  message.log +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);
 

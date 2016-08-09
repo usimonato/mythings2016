@@ -1,7 +1,26 @@
 var Twitter = require('twitter');
 var fromBits = require( 'math-float32-from-bits' );
+var math = require('mathjs');
 require('date-utils');
+
 //var moment = require('moment-timezone');
+function Bytes2Float32(bytes) {
+    var sign = (bytes & 0x80000000) ? -1 : 1;
+    var exponent = ((bytes >> 23) & 0xFF) - 127;
+    var significand = (bytes & ~(-1 << 23));
+
+    if (exponent == 128) 
+        return sign * ((significand) ? Number.NaN : Number.POSITIVE_INFINITY);
+
+    if (exponent == -127) {
+        if (significand == 0) return sign * 0.0;
+        exponent = -126;
+        significand /= (1 << 22);
+    } else significand = (significand | (1 << 23)) / (1 << 23);
+
+    return sign * significand * Math.pow(2, exponent);
+}
+
 module.exports = function(Message)
 { //Use the environment variables in production
   var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consumer_secret: process.env.TWITTER_CONSUMER_SECRET, access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY, access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET, });
@@ -26,7 +45,7 @@ module.exports = function(Message)
       console.log('alt : '+message.alt);
       //f = Float.intBitsToFloat(message.lat);
       bstr = '11111111011011000011101000110011';
-      lat_convert = fromBits( bstr );
+      lat_convert = Bytes2Float32(message.lat);
       console.log('lat convert: '+lat_convert);
 
       var dataora = new Date();

@@ -31,7 +31,7 @@ module.exports = function(Message)
       var ms;
       var lat_convert;
       var lng_convert;
-
+      
       console.log('> testing afterRemote function');
       console.log('time : '+message.time);
       console.log('device: '+message.device);
@@ -43,11 +43,10 @@ module.exports = function(Message)
       console.log('lat : '+message.lat);
       console.log('log : '+message.log);
       console.log('alt : '+message.alt);
-
-      lat_convert = Bytes2Float32(message.lat);
+      lat_convert = Bytes2Float32(0x4236cfb6);
       console.log('lat convert: '+lat_convert);
-      lng_convert = Bytes2Float32(message.log);
-      console.log('lat convert: '+lng_convert);
+      lng_convert = Bytes2Float32(0x413909c8);
+      console.log('lng convert: '+lng_convert);
       var dataora = new Date();
      // moment(dataora).tz('Europe/Berlin').format(format);
       //var formatted = dt.toFormat("YYYYMMDDHH24MISS");
@@ -55,7 +54,7 @@ module.exports = function(Message)
       //client.post('statuses/update', {status: "Test1"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       //console.log(response);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  lat_convert + ' lng:' +  lng_convert +  ' alt:' +  message.alt +   ' Evento da ' + message.name + '-' +  message.device + ' data ' + message.data + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  lat_convert + ' lng:' +  lng_convert +  ' alt:' +  message.alt +   ' Evento da ' + message.name + '-' + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       console.log(response);
 

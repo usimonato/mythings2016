@@ -25,7 +25,7 @@ module.exports = function(Message)
       console.log('alt : '+message.alt);
             
       //f = Float.intBitsToFloat(message.lat);
-      f = fromBits( message.lat );
+      f = fromBits(0x41390ac1);
       console.log('lat convert: '+f);
 
       var dataora = new Date();

@@ -10,7 +10,7 @@ module.exports = function(Message)
    Message.afterRemote('create', function (ctx, message, next)
    { 
       var ms;
-      var f;
+      var lat_convert;
       var bstr;
 
       console.log('> testing afterRemote function');
@@ -26,8 +26,8 @@ module.exports = function(Message)
       console.log('alt : '+message.alt);
       //f = Float.intBitsToFloat(message.lat);
       bstr = '11111111011011000011101000110011';
-      f = fromBits( bstr );
-      console.log('lat convert: '+f);
+      lat_convert = fromBits( bstr );
+      console.log('lat convert: '+lat_convert);
 
       var dataora = new Date();
      // moment(dataora).tz('Europe/Berlin').format(format);
@@ -44,7 +44,7 @@ module.exports = function(Message)
       //client.post('statuses/update', {status: "Maria2"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       //console.log(response);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  message.lat + ' log:' +  message.log +  ' alt:' +  message.alt +   ' Evento da ' + message.name + '-' +  message.device + ' data ' + message.data + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  lat_convert + ' log:' +  message.log +  ' alt:' +  message.alt +   ' Evento da ' + message.name + '-' +  message.device + ' data ' + message.data + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       console.log(response);
 

@@ -1,4 +1,5 @@
 var Twitter = require('twitter');
+var fromBits = require( 'math-float32-from-bits' );
 require('date-utils');
 //var moment = require('moment-timezone');
 module.exports = function(Message)
@@ -24,7 +25,8 @@ module.exports = function(Message)
       console.log('alt : '+message.alt);
             
       //f = Float.intBitsToFloat(message.lat);
-      //console.log('lat floating: '+f);
+      f = fromBits( message.lat );
+      console.log('lat convert: '+f);
 
       var dataora = new Date();
      // moment(dataora).tz('Europe/Berlin').format(format);

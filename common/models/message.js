@@ -11,6 +11,7 @@ module.exports = function(Message)
    { 
       var ms;
       var f;
+      var bstr;
 
       console.log('> testing afterRemote function');
       console.log('time : '+message.time);
@@ -24,7 +25,8 @@ module.exports = function(Message)
       console.log('log : '+message.log);
       console.log('alt : '+message.alt);
       //f = Float.intBitsToFloat(message.lat);
-      f = fromBits('01000001001110010000101011000001');
+      bstr = '11111111011011000011101000110011';
+      f = fromBits( bstr );
       console.log('lat convert: '+f);
 
       var dataora = new Date();

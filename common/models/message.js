@@ -24,13 +24,13 @@ function Bytes2Float32(bytes) {
 module.exports = function(Message)
 { //Use the environment variables in production
   var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consumer_secret: process.env.TWITTER_CONSUMER_SECRET, access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY, access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET, });
-//Available methods : // client.get(path, params, callback); // client.post(path, params, callback); // client.stream(path, params, callback);
+//Available methods : // client.get(path, params, callback); // client.post(ngath, params, callback); // client.stream(path, params, callback);
 
    Message.afterRemote('create', function (ctx, message, next)
-   { 
+   {
       var ms;
       var lat_convert;
-      var bstr;
+      var lng_convert;
 
       console.log('> testing afterRemote function');
       console.log('time : '+message.time);
@@ -43,27 +43,19 @@ module.exports = function(Message)
       console.log('lat : '+message.lat);
       console.log('log : '+message.log);
       console.log('alt : '+message.alt);
-      //f = Float.intBitsToFloat(message.lat);
-      bstr = '11111111011011000011101000110011';
+
       lat_convert = Bytes2Float32(message.lat);
       console.log('lat convert: '+lat_convert);
-
+      lng_convert = Bytes2Float32(message.log);
+      console.log('lat convert: '+lng_convert);
       var dataora = new Date();
      // moment(dataora).tz('Europe/Berlin').format(format);
       //var formatted = dt.toFormat("YYYYMMDDHH24MISS");
-      console.log(dataora);
-      //ms = Long.valueOf(message.time);
-      //console.log('ms : '+ms)
-      //ti = new Timestamp(ms);
-      //console.log('ti : '+ti)
-      //dataora = new Date(ti);
-
-
-      //console.log('dataora : '+dataora);
-      //client.post('statuses/update', {status: "Maria2"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
+      console.log('dataora : '+dataora);
+      //client.post('statuses/update', {status: "Test1"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       //console.log(response);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  lat_convert + ' log:' +  message.log +  ' alt:' +  message.alt +   ' Evento da ' + message.name + '-' +  message.device + ' data ' + message.data + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  lat_convert + ' lng:' +  lng_convert +  ' alt:' +  message.alt +   ' Evento da ' + message.name + '-' +  message.device + ' data ' + message.data + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       console.log(response);
 

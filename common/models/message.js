@@ -23,8 +23,8 @@ module.exports = function(Message)
       console.log('log : '+message.log);
       console.log('alt : '+message.alt);
             
-      f = Float.intBitsToFloat(message.lat);
-      console.log('lat floating: '+f);
+      //f = Float.intBitsToFloat(message.lat);
+      //console.log('lat floating: '+f);
 
       var dataora = new Date();
      // moment(dataora).tz('Europe/Berlin').format(format);

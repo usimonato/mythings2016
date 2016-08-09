@@ -31,7 +31,7 @@ module.exports = function(Message)
       var ms;
       var lat_convert;
       var lng_convert;
-      
+
       console.log('> testing afterRemote function');
       console.log('time : '+message.time);
       console.log('device: '+message.device);
@@ -54,7 +54,7 @@ module.exports = function(Message)
       //client.post('statuses/update', {status: "Test1"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       //console.log(response);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  lat_convert + ' lng:' +  lng_convert +  ' alt:' +  message.alt +   ' Evento da ' + message.name + '-' + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  +message.lat + ' lng:' +  message.log +  ' alt:' +  message.alt +   ' Evento da ' + message.name + '-' + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       console.log(response);
 

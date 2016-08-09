@@ -23,7 +23,7 @@ module.exports = function(Message)
       console.log('log : '+message.log);
       console.log('alt : '+message.alt);
             
-      Float f = Float.intBitsToFloat(message.lat);
+      f = Float.intBitsToFloat(message.lat);
       console.log('lat float: '+f);
 
       var dataora = new Date();

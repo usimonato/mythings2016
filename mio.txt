@@ -1,195 +1,3 @@
-2016-08-10T06:10:05.013074+00:00 app[web.1]:                                                                                                           ^
-2016-08-10T06:10:05.013086+00:00 app[web.1]: 
-2016-08-10T06:10:05.013099+00:00 app[web.1]:     at exports.runInThisContext (vm.js:53:16)
-2016-08-10T06:10:05.013100+00:00 app[web.1]:     at Module._compile (module.js:387:25)
-2016-08-10T06:10:05.013098+00:00 app[web.1]: SyntaxError: missing ) after argument list
-2016-08-10T06:10:05.013103+00:00 app[web.1]:     at Module.require (module.js:367:17)
-2016-08-10T06:10:05.013101+00:00 app[web.1]:     at Module.load (module.js:357:32)
-2016-08-10T06:10:05.013104+00:00 app[web.1]:     at /app/node_modules/loopback-boot/lib/executor.js:245:20
-2016-08-10T06:10:05.013101+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:422:10)
-2016-08-10T06:10:05.013103+00:00 app[web.1]:     at require (internal/module.js:20:19)
-2016-08-10T06:10:05.013105+00:00 app[web.1]:     at Array.forEach (native)
-2016-08-10T06:10:05.013116+00:00 app[web.1]:     at defineModels (/app/node_modules/loopback-boot/lib/executor.js:226:23)
-2016-08-10T06:10:05.013102+00:00 app[web.1]:     at Function.Module._load (module.js:314:12)
-2016-08-10T06:10:05.032535+00:00 app[web.1]: 
-2016-08-10T06:10:05.044193+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
-2016-08-10T06:10:05.043771+00:00 app[web.1]: npm ERR! Linux 3.13.0-85-generic
-2016-08-10T06:10:05.044419+00:00 app[web.1]: npm ERR! node v5.11.1
-2016-08-10T06:10:05.045331+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
-2016-08-10T06:10:05.044849+00:00 app[web.1]: npm ERR! npm  v3.8.6
-2016-08-10T06:10:05.045828+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
-2016-08-10T06:10:05.045160+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2016-08-10T06:10:05.045661+00:00 app[web.1]: npm ERR! 
-2016-08-10T06:10:05.046161+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
-2016-08-10T06:10:05.045998+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
-2016-08-10T06:10:05.045488+00:00 app[web.1]: npm ERR! Exit status 1
-2016-08-10T06:10:05.046646+00:00 app[web.1]: npm ERR!     node .
-2016-08-10T06:10:05.046477+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2016-08-10T06:10:05.046814+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
-2016-08-10T06:10:05.046318+00:00 app[web.1]: npm ERR! not with npm itself.
-2016-08-10T06:10:05.046979+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
-2016-08-10T06:10:05.047292+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
-2016-08-10T06:10:05.047140+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
-2016-08-10T06:10:05.047453+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2016-08-10T06:10:05.051207+00:00 app[web.1]: 
-2016-08-10T06:10:05.051449+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
-2016-08-10T06:10:05.051589+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2016-08-10T06:10:05.147903+00:00 heroku[web.1]: Process exited with status 1
-2016-08-10T06:10:05.150720+00:00 heroku[web.1]: State changed from starting to crashed
-2016-08-10T06:14:33.399598+00:00 heroku[api]: Deploy 88b0084 by u.simonato@libero.it
-2016-08-10T06:14:33.399724+00:00 heroku[api]: Release v88 created by u.simonato@libero.it
-2016-08-10T06:14:33.630482+00:00 heroku[slug-compiler]: Slug compilation started
-2016-08-10T06:14:33.630488+00:00 heroku[slug-compiler]: Slug compilation finished
-2016-08-10T06:14:33.557035+00:00 heroku[web.1]: State changed from crashed to starting
-2016-08-10T06:14:37.568960+00:00 heroku[web.1]: Starting process with command `npm start`
-2016-08-10T06:14:40.573315+00:00 app[web.1]: 
-2016-08-10T06:14:40.573333+00:00 app[web.1]: > mythings2016@1.0.0 start /app
-2016-08-10T06:14:40.573334+00:00 app[web.1]: > node .
-2016-08-10T06:14:40.573335+00:00 app[web.1]: 
-2016-08-10T06:14:41.328233+00:00 app[web.1]: /app/common/models/message.js:64
-2016-08-10T06:14:41.328252+00:00 app[web.1]:       getLocationData(function(locationData) {console.log(locationData); address = locationData;};
-2016-08-10T06:14:41.328253+00:00 app[web.1]:                                                                                                 ^
-2016-08-10T06:14:41.328254+00:00 app[web.1]: 
-2016-08-10T06:14:41.328254+00:00 app[web.1]: SyntaxError: missing ) after argument list
-2016-08-10T06:14:41.328255+00:00 app[web.1]:     at exports.runInThisContext (vm.js:53:16)
-2016-08-10T06:14:41.328256+00:00 app[web.1]:     at Module._compile (module.js:387:25)
-2016-08-10T06:14:41.328257+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:422:10)
-2016-08-10T06:14:41.328258+00:00 app[web.1]:     at Module.load (module.js:357:32)
-2016-08-10T06:14:41.328258+00:00 app[web.1]:     at Function.Module._load (module.js:314:12)
-2016-08-10T06:14:41.328259+00:00 app[web.1]:     at Module.require (module.js:367:17)
-2016-08-10T06:14:41.328259+00:00 app[web.1]:     at require (internal/module.js:20:19)
-2016-08-10T06:14:41.328260+00:00 app[web.1]:     at /app/node_modules/loopback-boot/lib/executor.js:245:20
-2016-08-10T06:14:41.328261+00:00 app[web.1]:     at Array.forEach (native)
-2016-08-10T06:14:41.328262+00:00 app[web.1]:     at defineModels (/app/node_modules/loopback-boot/lib/executor.js:226:23)
-2016-08-10T06:14:41.338611+00:00 app[web.1]: 
-2016-08-10T06:14:41.346094+00:00 app[web.1]: npm ERR! Linux 3.13.0-91-generic
-2016-08-10T06:14:41.346406+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
-2016-08-10T06:14:41.346575+00:00 app[web.1]: npm ERR! node v5.11.1
-2016-08-10T06:14:41.346945+00:00 app[web.1]: npm ERR! npm  v3.8.6
-2016-08-10T06:14:41.347384+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
-2016-08-10T06:14:41.347182+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2016-08-10T06:14:41.347575+00:00 app[web.1]: npm ERR! Exit status 1
-2016-08-10T06:14:41.347713+00:00 app[web.1]: npm ERR! 
-2016-08-10T06:14:41.348349+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
-2016-08-10T06:14:41.348350+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
-2016-08-10T06:14:41.348353+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
-2016-08-10T06:14:41.348353+00:00 app[web.1]: npm ERR! not with npm itself.
-2016-08-10T06:14:41.348421+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2016-08-10T06:14:41.348534+00:00 app[web.1]: npm ERR!     node .
-2016-08-10T06:14:41.348709+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
-2016-08-10T06:14:41.348882+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
-2016-08-10T06:14:41.349081+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
-2016-08-10T06:14:41.349224+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
-2016-08-10T06:14:41.349332+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2016-08-10T06:14:41.353848+00:00 app[web.1]: 
-2016-08-10T06:14:41.354040+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
-2016-08-10T06:14:41.354131+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2016-08-10T06:14:41.414071+00:00 heroku[web.1]: Process exited with status 1
-2016-08-10T06:14:41.441170+00:00 heroku[web.1]: State changed from starting to crashed
-2016-08-10T06:16:59.685634+00:00 heroku[slug-compiler]: Slug compilation started
-2016-08-10T06:16:59.685639+00:00 heroku[slug-compiler]: Slug compilation finished
-2016-08-10T06:16:59.722205+00:00 heroku[web.1]: State changed from crashed to starting
-2016-08-10T06:16:59.518911+00:00 heroku[api]: Deploy 1b028d3 by u.simonato@libero.it
-2016-08-10T06:16:59.518976+00:00 heroku[api]: Release v89 created by u.simonato@libero.it
-2016-08-10T06:17:02.454879+00:00 heroku[web.1]: Starting process with command `npm start`
-2016-08-10T06:17:04.578057+00:00 app[web.1]: 
-2016-08-10T06:17:04.578093+00:00 app[web.1]: > mythings2016@1.0.0 start /app
-2016-08-10T06:17:04.578094+00:00 app[web.1]: > node .
-2016-08-10T06:17:04.578094+00:00 app[web.1]: 
-2016-08-10T06:17:06.255064+00:00 app[web.1]: Web server listening at: http://0.0.0.0:12397
-2016-08-10T06:17:06.255723+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:12397/explorer
-2016-08-10T06:17:06.907510+00:00 heroku[web.1]: State changed from starting to up
-Terminare il processo batch (S/N)? 
-2016-08-10T06:10:05.044419+00:00 app[web.1]: npm ERR! node v5.11.1
-2016-08-10T06:10:05.045331+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
-2016-08-10T06:10:05.044849+00:00 app[web.1]: npm ERR! npm  v3.8.6
-2016-08-10T06:10:05.045828+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
-2016-08-10T06:10:05.045160+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2016-08-10T06:10:05.045661+00:00 app[web.1]: npm ERR! 
-2016-08-10T06:10:05.046161+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
-2016-08-10T06:10:05.045998+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
-2016-08-10T06:10:05.045488+00:00 app[web.1]: npm ERR! Exit status 1
-2016-08-10T06:10:05.046646+00:00 app[web.1]: npm ERR!     node .
-2016-08-10T06:10:05.046477+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2016-08-10T06:10:05.046814+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
-2016-08-10T06:10:05.046318+00:00 app[web.1]: npm ERR! not with npm itself.
-2016-08-10T06:10:05.046979+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
-2016-08-10T06:10:05.047292+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
-2016-08-10T06:10:05.047140+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
-2016-08-10T06:10:05.047453+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2016-08-10T06:10:05.051207+00:00 app[web.1]: 
-2016-08-10T06:10:05.051449+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
-2016-08-10T06:10:05.051589+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2016-08-10T06:10:05.147903+00:00 heroku[web.1]: Process exited with status 1
-2016-08-10T06:10:05.150720+00:00 heroku[web.1]: State changed from starting to crashed
-2016-08-10T06:14:33.399598+00:00 heroku[api]: Deploy 88b0084 by u.simonato@libero.it
-2016-08-10T06:14:33.399724+00:00 heroku[api]: Release v88 created by u.simonato@libero.it
-2016-08-10T06:14:33.630482+00:00 heroku[slug-compiler]: Slug compilation started
-2016-08-10T06:14:33.630488+00:00 heroku[slug-compiler]: Slug compilation finished
-2016-08-10T06:14:33.557035+00:00 heroku[web.1]: State changed from crashed to starting
-2016-08-10T06:14:37.568960+00:00 heroku[web.1]: Starting process with command `npm start`
-2016-08-10T06:14:40.573315+00:00 app[web.1]: 
-2016-08-10T06:14:40.573333+00:00 app[web.1]: > mythings2016@1.0.0 start /app
-2016-08-10T06:14:40.573334+00:00 app[web.1]: > node .
-2016-08-10T06:14:40.573335+00:00 app[web.1]: 
-2016-08-10T06:14:41.328233+00:00 app[web.1]: /app/common/models/message.js:64
-2016-08-10T06:14:41.328252+00:00 app[web.1]:       getLocationData(function(locationData) {console.log(locationData); address = locationData;};
-2016-08-10T06:14:41.328253+00:00 app[web.1]:                                                                                                 ^
-2016-08-10T06:14:41.328254+00:00 app[web.1]: 
-2016-08-10T06:14:41.328254+00:00 app[web.1]: SyntaxError: missing ) after argument list
-2016-08-10T06:14:41.328255+00:00 app[web.1]:     at exports.runInThisContext (vm.js:53:16)
-2016-08-10T06:14:41.328256+00:00 app[web.1]:     at Module._compile (module.js:387:25)
-2016-08-10T06:14:41.328257+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:422:10)
-2016-08-10T06:14:41.328258+00:00 app[web.1]:     at Module.load (module.js:357:32)
-2016-08-10T06:14:41.328258+00:00 app[web.1]:     at Function.Module._load (module.js:314:12)
-2016-08-10T06:14:41.328259+00:00 app[web.1]:     at Module.require (module.js:367:17)
-2016-08-10T06:14:41.328259+00:00 app[web.1]:     at require (internal/module.js:20:19)
-2016-08-10T06:14:41.328260+00:00 app[web.1]:     at /app/node_modules/loopback-boot/lib/executor.js:245:20
-2016-08-10T06:14:41.328261+00:00 app[web.1]:     at Array.forEach (native)
-2016-08-10T06:14:41.328262+00:00 app[web.1]:     at defineModels (/app/node_modules/loopback-boot/lib/executor.js:226:23)
-2016-08-10T06:14:41.338611+00:00 app[web.1]: 
-2016-08-10T06:14:41.346094+00:00 app[web.1]: npm ERR! Linux 3.13.0-91-generic
-2016-08-10T06:14:41.346406+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
-2016-08-10T06:14:41.346575+00:00 app[web.1]: npm ERR! node v5.11.1
-2016-08-10T06:14:41.346945+00:00 app[web.1]: npm ERR! npm  v3.8.6
-2016-08-10T06:14:41.347384+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
-2016-08-10T06:14:41.347182+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2016-08-10T06:14:41.347575+00:00 app[web.1]: npm ERR! Exit status 1
-2016-08-10T06:14:41.347713+00:00 app[web.1]: npm ERR! 
-2016-08-10T06:14:41.348349+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
-2016-08-10T06:14:41.348350+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
-2016-08-10T06:14:41.348353+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
-2016-08-10T06:14:41.348353+00:00 app[web.1]: npm ERR! not with npm itself.
-2016-08-10T06:14:41.348421+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2016-08-10T06:14:41.348534+00:00 app[web.1]: npm ERR!     node .
-2016-08-10T06:14:41.348709+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
-2016-08-10T06:14:41.348882+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
-2016-08-10T06:14:41.349081+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
-2016-08-10T06:14:41.349224+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
-2016-08-10T06:14:41.349332+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2016-08-10T06:14:41.353848+00:00 app[web.1]: 
-2016-08-10T06:14:41.354040+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
-2016-08-10T06:14:41.354131+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2016-08-10T06:14:41.414071+00:00 heroku[web.1]: Process exited with status 1
-2016-08-10T06:14:41.441170+00:00 heroku[web.1]: State changed from starting to crashed
-2016-08-10T06:16:59.685634+00:00 heroku[slug-compiler]: Slug compilation started
-2016-08-10T06:16:59.685639+00:00 heroku[slug-compiler]: Slug compilation finished
-2016-08-10T06:16:59.722205+00:00 heroku[web.1]: State changed from crashed to starting
-2016-08-10T06:16:59.518911+00:00 heroku[api]: Deploy 1b028d3 by u.simonato@libero.it
-2016-08-10T06:16:59.518976+00:00 heroku[api]: Release v89 created by u.simonato@libero.it
-2016-08-10T06:17:02.454879+00:00 heroku[web.1]: Starting process with command `npm start`
-2016-08-10T06:17:04.578057+00:00 app[web.1]: 
-2016-08-10T06:17:04.578093+00:00 app[web.1]: > mythings2016@1.0.0 start /app
-2016-08-10T06:17:04.578094+00:00 app[web.1]: > node .
-2016-08-10T06:17:04.578094+00:00 app[web.1]: 
-2016-08-10T06:17:06.255064+00:00 app[web.1]: Web server listening at: http://0.0.0.0:12397
-2016-08-10T06:17:06.255723+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:12397/explorer
-2016-08-10T06:17:06.907510+00:00 heroku[web.1]: State changed from starting to up
-2016-08-10T06:21:05.120646+00:00 heroku[api]: Deploy 2ca323b by u.simonato@libero.it
-2016-08-10T06:21:05.333642+00:00 heroku[slug-compiler]: Slug compilation started
-2016-08-10T06:21:05.333647+00:00 heroku[slug-compiler]: Slug compilation finished
-2016-08-10T06:21:05.120738+00:00 heroku[api]: Release v90 created by u.simonato@libero.it
-2016-08-10T06:21:05.346964+00:00 heroku[web.1]: Restarting
 2016-08-10T06:21:05.350430+00:00 heroku[web.1]: State changed from up to starting
 2016-08-10T06:21:08.030956+00:00 heroku[web.1]: Starting process with command `npm start`
 2016-08-10T06:21:09.263784+00:00 heroku[web.1]: Stopping all processes with SIGTERM
@@ -216,12 +24,12 @@ Terminare il processo batch (S/N)?
 2016-08-10T06:22:22.398103+00:00 app[web.1]: [ { formattedAddress: 'Via Don A. Battistella, 57, 36042 Breganze VI, Italy',
 2016-08-10T06:22:22.398117+00:00 app[web.1]:     latitude: 45.70283,
 2016-08-10T06:22:22.398118+00:00 app[web.1]:     longitude: 11.56484,
+2016-08-10T06:22:22.398121+00:00 app[web.1]:        confidence: 1,
 2016-08-10T06:22:22.398118+00:00 app[web.1]:     extra: 
 2016-08-10T06:22:22.398120+00:00 app[web.1]:      { googlePlaceId: 'ChIJlX1vfVTJeEcRJQ7R00PY6a0',
-2016-08-10T06:22:22.398121+00:00 app[web.1]:        confidence: 1,
-2016-08-10T06:22:22.398121+00:00 app[web.1]:        premise: null,
 2016-08-10T06:22:22.398122+00:00 app[web.1]:        subpremise: null,
 2016-08-10T06:22:22.398122+00:00 app[web.1]:        neighborhood: null,
+2016-08-10T06:22:22.398121+00:00 app[web.1]:        premise: null,
 2016-08-10T06:22:22.398123+00:00 app[web.1]:        establishment: null },
 2016-08-10T06:22:22.398124+00:00 app[web.1]:     administrativeLevels: 
 2016-08-10T06:22:22.398124+00:00 app[web.1]:      { level3long: 'Breganze',
@@ -275,6 +83,94 @@ Terminare il processo batch (S/N)?
 2016-08-10T06:22:28.817788+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=614651b4-1fcb-471a-8cb7-c9eb51109d8a fwd="185.110.97.11" dyno=web.1 connect=1ms service=16ms status=500 bytes=465
 2016-08-10T06:23:22.514167+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=461c1850-51e7-4a1e-81f7-5b1b6fe8701f fwd="185.110.97.11" dyno=web.1 connect=2ms service=12ms status=500 bytes=470
 2016-08-10T06:23:29.163606+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=b0181b09-799d-4e45-8fbd-cd452d6b9f32 fwd="185.110.97.11" dyno=web.1 connect=1ms service=7ms status=500 bytes=470
+2016-08-10T06:28:28.739225+00:00 heroku[api]: Deploy bb7cc05 by u.simonato@libero.it
+2016-08-10T06:28:28.739324+00:00 heroku[api]: Release v91 created by u.simonato@libero.it
+2016-08-10T06:28:28.902533+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-10T06:28:28.902539+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-10T06:28:29.064044+00:00 heroku[web.1]: Restarting
+2016-08-10T06:28:29.064824+00:00 heroku[web.1]: State changed from up to starting
+2016-08-10T06:28:31.557565+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-10T06:28:31.749687+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-10T06:28:32.435074+00:00 heroku[web.1]: Process exited with status 143
+2016-08-10T06:28:33.767369+00:00 app[web.1]: 
+2016-08-10T06:28:33.767384+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-10T06:28:33.767385+00:00 app[web.1]: > node .
+2016-08-10T06:28:33.767386+00:00 app[web.1]: 
+2016-08-10T06:28:35.252571+00:00 app[web.1]: Web server listening at: http://0.0.0.0:6827
+2016-08-10T06:28:35.253192+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:6827/explorer
+2016-08-10T06:28:35.766573+00:00 heroku[web.1]: State changed from starting to up
+2016-08-10T06:29:46.333523+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=0425b412-3efc-4099-b40c-2ea7f60cbb49 fwd="185.110.97.11" dyno=web.1 connect=0ms service=109ms status=500 bytes=465
+2016-08-10T06:29:46.262485+00:00 app[web.1]: > testing afterRemote function
+2016-08-10T06:29:46.262592+00:00 app[web.1]: time : 1470810583
+2016-08-10T06:29:46.262680+00:00 app[web.1]: device: C3B15
+2016-08-10T06:29:46.262757+00:00 app[web.1]: data : 000000624139099b4236cfb9
+2016-08-10T06:29:46.262823+00:00 app[web.1]: name: IOT_01
+2016-08-10T06:29:46.262913+00:00 app[web.1]: rssi : -139.00
+2016-08-10T06:29:46.263028+00:00 app[web.1]: snr : 8.89
+2016-08-10T06:29:46.263100+00:00 app[web.1]: station : 2848
+2016-08-10T06:29:46.263190+00:00 app[web.1]: lat : 45.702854
+2016-08-10T06:29:46.263270+00:00 app[web.1]: log : 11.564845
+2016-08-10T06:29:46.263347+00:00 app[web.1]: alt : 98
+2016-08-10T06:29:46.498869+00:00 app[web.1]: [ { formattedAddress: 'Via Don A. Battistella, 57, 36042 Breganze VI, Italy',
+2016-08-10T06:29:46.498872+00:00 app[web.1]:     latitude: 45.70283,
+2016-08-10T06:29:46.498873+00:00 app[web.1]:     longitude: 11.56484,
+2016-08-10T06:29:46.498873+00:00 app[web.1]:     extra: 
+2016-08-10T06:29:46.498874+00:00 app[web.1]:      { googlePlaceId: 'ChIJlX1vfVTJeEcRJQ7R00PY6a0',
+2016-08-10T06:29:46.498875+00:00 app[web.1]:        confidence: 1,
+2016-08-10T06:29:46.498875+00:00 app[web.1]:        premise: null,
+2016-08-10T06:29:46.498876+00:00 app[web.1]:        subpremise: null,
+2016-08-10T06:29:46.498876+00:00 app[web.1]:        neighborhood: null,
+2016-08-10T06:29:46.498876+00:00 app[web.1]:        establishment: null },
+2016-08-10T06:29:46.498877+00:00 app[web.1]:     administrativeLevels: 
+2016-08-10T06:29:46.498878+00:00 app[web.1]:      { level3long: 'Breganze',
+2016-08-10T06:29:46.498878+00:00 app[web.1]:        level3short: 'Breganze',
+2016-08-10T06:29:46.498879+00:00 app[web.1]:        level2long: 'Provincia di Vicenza',
+2016-08-10T06:29:46.498879+00:00 app[web.1]:        level2short: 'VI',
+2016-08-10T06:29:46.498880+00:00 app[web.1]:        level1long: 'Veneto',
+2016-08-10T06:29:46.498880+00:00 app[web.1]:        level1short: 'Veneto' },
+2016-08-10T06:29:46.498881+00:00 app[web.1]:     streetNumber: '57',
+2016-08-10T06:29:46.498881+00:00 app[web.1]:     streetName: 'Via Don A. Battistella',
+2016-08-10T06:29:46.498882+00:00 app[web.1]:     city: 'Breganze',
+2016-08-10T06:29:46.498882+00:00 app[web.1]:     country: 'Italy',
+2016-08-10T06:29:46.498886+00:00 app[web.1]:     countryCode: 'IT',
+2016-08-10T06:29:46.498887+00:00 app[web.1]:     zipcode: '36042',
+2016-08-10T06:29:46.498887+00:00 app[web.1]:     provider: 'google' } ]
+2016-08-10T06:29:59.433642+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=ea2cf02c-949c-4031-a761-821b33aea845 fwd="185.110.97.11" dyno=web.1 connect=0ms service=13ms status=500 bytes=465
+2016-08-10T06:29:59.427640+00:00 app[web.1]: > testing afterRemote function
+2016-08-10T06:29:59.427657+00:00 app[web.1]: time : 1470810598
+2016-08-10T06:29:59.427687+00:00 app[web.1]: device: C3B15
+2016-08-10T06:29:59.427719+00:00 app[web.1]: data : 00000062413909c54236cfb8
+2016-08-10T06:29:59.427754+00:00 app[web.1]: name: IOT_01
+2016-08-10T06:29:59.427789+00:00 app[web.1]: rssi : -138.00
+2016-08-10T06:29:59.427829+00:00 app[web.1]: snr : 9.75
+2016-08-10T06:29:59.427859+00:00 app[web.1]: station : 2848
+2016-08-10T06:29:59.427900+00:00 app[web.1]: lat : 45.70285
+2016-08-10T06:29:59.427943+00:00 app[web.1]: log : 11.564885
+2016-08-10T06:29:59.427975+00:00 app[web.1]: alt : 98
+2016-08-10T06:29:59.622678+00:00 app[web.1]: [ { formattedAddress: 'Via Don A. Battistella, 57, 36042 Breganze VI, Italy',
+2016-08-10T06:29:59.622682+00:00 app[web.1]:     latitude: 45.70283,
+2016-08-10T06:29:59.622682+00:00 app[web.1]:     longitude: 11.56484,
+2016-08-10T06:29:59.622686+00:00 app[web.1]:     extra: 
+2016-08-10T06:29:59.622687+00:00 app[web.1]:      { googlePlaceId: 'ChIJlX1vfVTJeEcRJQ7R00PY6a0',
+2016-08-10T06:29:59.622688+00:00 app[web.1]:        confidence: 1,
+2016-08-10T06:29:59.622688+00:00 app[web.1]:        premise: null,
+2016-08-10T06:29:59.622689+00:00 app[web.1]:        subpremise: null,
+2016-08-10T06:29:59.622689+00:00 app[web.1]:        neighborhood: null,
+2016-08-10T06:29:59.622690+00:00 app[web.1]:        establishment: null },
+2016-08-10T06:29:59.622691+00:00 app[web.1]:     administrativeLevels: 
+2016-08-10T06:29:59.622691+00:00 app[web.1]:      { level3long: 'Breganze',
+2016-08-10T06:29:59.622692+00:00 app[web.1]:        level3short: 'Breganze',
+2016-08-10T06:29:59.622693+00:00 app[web.1]:        level2long: 'Provincia di Vicenza',
+2016-08-10T06:29:59.622694+00:00 app[web.1]:        level2short: 'VI',
+2016-08-10T06:29:59.622694+00:00 app[web.1]:        level1long: 'Veneto',
+2016-08-10T06:29:59.622695+00:00 app[web.1]:        level1short: 'Veneto' },
+2016-08-10T06:29:59.622695+00:00 app[web.1]:     streetNumber: '57',
+2016-08-10T06:29:59.622696+00:00 app[web.1]:     streetName: 'Via Don A. Battistella',
+2016-08-10T06:29:59.622697+00:00 app[web.1]:     city: 'Breganze',
+2016-08-10T06:29:59.622697+00:00 app[web.1]:     country: 'Italy',
+2016-08-10T06:29:59.622698+00:00 app[web.1]:     countryCode: 'IT',
+2016-08-10T06:29:59.622698+00:00 app[web.1]:     zipcode: '36042',
+2016-08-10T06:29:59.622699+00:00 app[web.1]:     provider: 'google' } ]
+2016-08-10T06:30:46.641096+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=9089c5dc-e3a3-46d9-88ce-ca1ff121e3d3 fwd="185.110.97.11" dyno=web.1 connect=0ms service=7ms status=500 bytes=470
+2016-08-10T06:30:59.792074+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=b769e3c0-c190-45c4-9079-e76d06b98b84 fwd="185.110.97.11" dyno=web.1 connect=0ms service=13ms status=500 bytes=470
 Terminare il processo batch (S/N)? 
-
-C:\FW\mythings2016>

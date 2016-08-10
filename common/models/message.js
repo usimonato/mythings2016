@@ -35,8 +35,11 @@ function Bytes2Float32(bytes) {
 }
 
 function getLocationData(callback) {
+   console.log('passo 1 : ');
    geocoder.reverse({lat:lat_convert, lon:lng_convert}, function(err, res) {console.log(res);});
+   console.log('passo 2 : ');
    callback(res[0].formatted_address);
+   console.log('passo 2A : ');
 }
 
 module.exports = function(Message)
@@ -61,12 +64,13 @@ module.exports = function(Message)
       console.log('alt : '+message.alt);
       lat_convert = message.lat;
       lng_convert = message.log;
-      getLocationData(function(locationData) {console.log('test :' + locationData); address = locationData;});
       console.log('passo 0 : ');
+      getLocationData(function(locationData) {console.log(locationData); address = locationData;});
+      console.log('passo 3 : ');
       var dataora = new Date();
       console.log('dataora : '+dataora);
-      console.log('passo 1 : ');
-      console.log('passo 2 : ');
+      console.log('passo 4 : ');
+      console.log('passo 5 : ');
       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento da code: ' + message.name + ' - ' + ' - lat:' +  +message.lat + ', lng:' +  message.log +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);
 

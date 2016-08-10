@@ -19,6 +19,7 @@ var geocoder = NodeGeocoder(options);
 var lat_convert;
 var lng_convert;
 var address;
+var Wait_address;
 
 
     // IMPORTANT: Save the old System.out!
@@ -73,6 +74,7 @@ module.exports = function(Message)
       lat_convert = message.lat;
       lng_convert = message.log;
       console.log('passo 0 : ');
+      Wait_address = true;
       geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
       {
            /*var baos = new Array(1024);
@@ -92,12 +94,16 @@ module.exports = function(Message)
            address = res[0].formatted_address;
            console.log(res);
            console.log('passo 1C');
-
+           Wait_address = false;
       }
       ).catch(function(err) {console.log(err);});
-      sleep(1000);
-
-      console.log('passo 3 : ');
+      var i = 0;
+      while ((i < 10) && (Wait_address == false) )
+      {
+            sleep(1000);
+            i++;
+      }
+      console.log('attesi sec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);
       console.log('passo 4 : ');

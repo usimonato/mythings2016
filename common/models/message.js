@@ -84,11 +84,15 @@ module.exports = function(Message)
            System.setOut(old);
            // Show what happened
            System.out.println("Here: " + baos);*/
+           console.log('passo 1A : ');
            var i;
-           for (i = 0; i < res[0].results.length; i++) {
+           for (i = 0; i < res[0].results.length; i++)
+           {
             address[i] = res[0].results[i].formatted_address;
            }
+           console.log('passo 1B : ');
            console.log(address);
+           console.log('passo 1C : ');
            console.log(res);}
       ).catch(function(err) {console.log(err);});
       console.log('passo 3 : ');

@@ -67,8 +67,10 @@ module.exports = function(Message)
       //console.log(response);
       //client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  +message.lat + ' lng:' +  message.log +  ' alt:' +  message.alt +   ' Evento da ' + message.name + ' -' + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Using callback
-      var aaddress = document.getElementById("Address");
+      var address = document.getElementById("Address");
+      console.log('passo 1 : ');
       geocoder.reverse({lat:message.lat, lon:message.log}, function(err, res) {console.log(res); (document.getElementById('Address').value = res[0].formatted_address);});
+      console.log('passo 2 : ');
       console.log(res[0].formatted_address);
       console.log('dataora : '+dataora);
       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento da code: ' + message.name + ' - ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.log +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.

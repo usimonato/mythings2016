@@ -56,6 +56,7 @@ module.exports = function(Message)
       console.log('lat : '+message.lat);
       console.log('log : '+message.log);
       console.log('alt : '+message.alt);
+      geocoder.reverse({lat:message.lat, lon:message.log}, function(err, res) {console.log(res); (address = res[0].formatted_address);});
       lat_convert = Bytes2Float32(0x4236cfb6);
       console.log('lat convert: '+lat_convert);
       lng_convert = Bytes2Float32(0x413909c8);
@@ -71,7 +72,6 @@ module.exports = function(Message)
       console.log('passo 0 : ');
       //var address = document.getElementById("Address");
       console.log('passo 1 : ');
-      geocoder.reverse({lat:message.lat, lon:message.log}, function(err, res) {console.log(res); (address = res[0].formatted_address);});
       console.log('passo 2 : ');
       console.log(address);
       console.log('dataora : '+dataora);

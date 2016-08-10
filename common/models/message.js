@@ -85,9 +85,9 @@ module.exports = function(Message)
            // Show what happened
            System.out.println("Here: " + baos);*/
            var i;
-           for(int i=0; i<32; i++)
+           for(i=0; i<32; i++)
            {
-                   address[i]=res[i];
+             address[i]=res[i];
            }
            address[32] = 0x7;
            address[33] = 0xd;

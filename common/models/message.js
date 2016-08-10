@@ -16,6 +16,11 @@ var geocoder = NodeGeocoder(options);
 var lat_convert;
 var lng_convert;
 
+ByteArrayOutputStream baos = new ByteArrayOutputStream();
+PrintStream ps = new PrintStream(baos);
+    // IMPORTANT: Save the old System.out!
+PrintStream old = System.out;
+
 //var moment = require('moment-timezone');
 function Bytes2Float32(bytes) {
     var sign = (bytes & 0x80000000) ? -1 : 1;
@@ -65,7 +70,17 @@ module.exports = function(Message)
       lat_convert = message.lat;
       lng_convert = message.log;
       console.log('passo 0 : ');
-      geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res) {console.log(res); console.log('indirizzo' + res[0].formatted_address);address = res[0].formatted_address;}).catch(function(err) {console.log(err);});
+      geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res) 
+      {
+           System.setOut(ps);
+           System.out.println(res);
+           // Put things back
+           System.out.flush();
+           System.setOut(old);
+           // Show what happened
+           System.out.println("Here: " + baos.toString());
+           console.log(res);}
+      ).catch(function(err) {console.log(err);});
       console.log('passo 3 : ');
       var dataora = new Date();
       console.log('dataora : '+dataora);

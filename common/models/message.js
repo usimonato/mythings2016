@@ -99,7 +99,7 @@ module.exports = function(Message)
 
       }
       ).catch(function(err) {console.log(err);});
-      sleep.(1000);
+      sleep(1000);
 
       console.log('passo 3 : ');
       var dataora = new Date();

@@ -84,6 +84,7 @@ module.exports = function(Message)
            System.setOut(old);
            // Show what happened
            System.out.println("Here: " + baos);*/
+           var i;
            for(int i=0; i<32; i++)
            {
                    address[i]=res[i];

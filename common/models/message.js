@@ -94,8 +94,10 @@ module.exports = function(Message)
            {
             address[i] = res[0].results[i].formatted_address;
            }
-           console.log(res);}
+           console.log(res);
            console.log('passo 1B : ');
+           
+      }
       ).catch(function(err) {console.log(err);});
       sleep.sleep(2);
 

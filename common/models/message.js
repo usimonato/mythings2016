@@ -16,10 +16,9 @@ var geocoder = NodeGeocoder(options);
 var lat_convert;
 var lng_convert;
 
-ByteArrayOutputStream baos = new ByteArrayOutputStream();
-PrintStream ps = new PrintStream(baos);
+
     // IMPORTANT: Save the old System.out!
-PrintStream old = System.out;
+
 
 //var moment = require('moment-timezone');
 function Bytes2Float32(bytes) {
@@ -70,8 +69,11 @@ module.exports = function(Message)
       lat_convert = message.lat;
       lng_convert = message.log;
       console.log('passo 0 : ');
-      geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res) 
+      geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
       {
+           ByteArrayOutputStream baos = new ByteArrayOutputStream();
+           PrintStream ps = new PrintStream(baos);
+           PrintStream old = System.out;
            System.setOut(ps);
            System.out.println(res);
            // Put things back

@@ -98,7 +98,7 @@ module.exports = function(Message)
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;
-      while ((i < 10) && (Wait_address == false) )
+      while ((i < 10) && (Wait_address == true) )
       {
             sleep(1000);
             i++;

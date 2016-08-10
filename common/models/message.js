@@ -18,7 +18,7 @@ var options = {
 var geocoder = NodeGeocoder(options);
 var lat_convert;
 var lng_convert;
-var address = new Array(64);
+var address;
 
 
     // IMPORTANT: Save the old System.out!
@@ -90,10 +90,7 @@ module.exports = function(Message)
            //console.log('passo 1C : ');
            console.log('passo 1A : ');
            var i;
-           for (i = 0; i < res[0].results.length; i++)
-           {
-            address[i] = res[0].results[i].formatted_address;
-           }
+           adress = results[0].formatted_address;
            console.log(res);
            console.log('passo 1B : ');
 

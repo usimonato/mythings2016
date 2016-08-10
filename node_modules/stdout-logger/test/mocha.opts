@@ -1,0 +1,4 @@
+--reporter list
+--recursive
+--ui bdd
+--growl

@@ -2,7 +2,7 @@ var Twitter = require('twitter');
 var fromBits = require( 'math-float32-from-bits' );
 var math = require('mathjs');
 var stdout = require('stdout-stream');
-var sleep = require('sleep');
+var sleep = require('thread-sleep');
 
 require('date-utils');
 var NodeGeocoder = require('node-geocoder');
@@ -96,10 +96,10 @@ module.exports = function(Message)
            }
            console.log(res);
            console.log('passo 1B : ');
-           
+
       }
       ).catch(function(err) {console.log(err);});
-      sleep.sleep(2);
+      sleep.(1000);
 
       console.log('passo 3 : ');
       var dataora = new Date();

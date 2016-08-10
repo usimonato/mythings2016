@@ -73,7 +73,7 @@ module.exports = function(Message)
       console.log('passo 1 : ');
       geocoder.reverse({lat:message.lat, lon:message.log}, function(err, res) {console.log(res); (address = res[0].formatted_address);});
       console.log('passo 2 : ');
-      console.log(res[0].formatted_address);
+      console.log(address);
       console.log('dataora : '+dataora);
       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento da code: ' + message.name + ' - ' + ' - lat:' +  +message.lat + ', lng:' +  message.log +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);

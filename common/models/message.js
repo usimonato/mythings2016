@@ -91,10 +91,10 @@ module.exports = function(Message)
           // console.log(address);
            //console.log('passo 1C : ');
            console.log('passo 1A : ');
-           address = res[0].formatted_address;
-           console.log(res);
-           console.log('passo 1C');
+           address = res[0].formattedAddress;
            Wait_address = false;
+           console.log(res);
+           console.log('passo 1C'+ address);
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;

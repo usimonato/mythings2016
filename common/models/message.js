@@ -65,7 +65,8 @@ module.exports = function(Message)
       lat_convert = message.lat;
       lng_convert = message.log;
       console.log('passo 0 : ');
-      getLocationData(function(locationData) {console.log(locationData); address = locationData;});
+      //getLocationData(function(locationData) {console.log(locationData); address = locationData;});
+      geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res) {console.log(res);}).catch(function(err) {console.log(err);});
       console.log('passo 3 : ');
       var dataora = new Date();
       console.log('dataora : '+dataora);

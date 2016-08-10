@@ -1,93 +1,3 @@
-2016-08-10T06:21:05.350430+00:00 heroku[web.1]: State changed from up to starting
-2016-08-10T06:21:08.030956+00:00 heroku[web.1]: Starting process with command `npm start`
-2016-08-10T06:21:09.263784+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2016-08-10T06:21:09.982902+00:00 app[web.1]: 
-2016-08-10T06:21:09.982930+00:00 app[web.1]: > mythings2016@1.0.0 start /app
-2016-08-10T06:21:09.982931+00:00 app[web.1]: > node .
-2016-08-10T06:21:09.982931+00:00 app[web.1]: 
-2016-08-10T06:21:10.426418+00:00 heroku[web.1]: Process exited with status 143
-2016-08-10T06:21:11.223768+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:25553/explorer
-2016-08-10T06:21:11.223106+00:00 app[web.1]: Web server listening at: http://0.0.0.0:25553
-2016-08-10T06:21:11.611490+00:00 heroku[web.1]: State changed from starting to up
-2016-08-10T06:22:22.148447+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=1951aab7-937a-4560-bb16-9f169be591b3 fwd="185.110.97.11" dyno=web.1 connect=1ms service=99ms status=500 bytes=465
-2016-08-10T06:22:22.116280+00:00 app[web.1]: > testing afterRemote function
-2016-08-10T06:22:22.116340+00:00 app[web.1]: time : 1470810141
-2016-08-10T06:22:22.116408+00:00 app[web.1]: device: C3B15
-2016-08-10T06:22:22.116483+00:00 app[web.1]: data : 00000061413909dd4236cfb5
-2016-08-10T06:22:22.116533+00:00 app[web.1]: name: IOT_01
-2016-08-10T06:22:22.116597+00:00 app[web.1]: rssi : -138.00
-2016-08-10T06:22:22.116674+00:00 app[web.1]: snr : 9.48
-2016-08-10T06:22:22.116731+00:00 app[web.1]: station : 2848
-2016-08-10T06:22:22.116796+00:00 app[web.1]: lat : 45.70284
-2016-08-10T06:22:22.116863+00:00 app[web.1]: log : 11.564908
-2016-08-10T06:22:22.116923+00:00 app[web.1]: alt : 97
-2016-08-10T06:22:22.398103+00:00 app[web.1]: [ { formattedAddress: 'Via Don A. Battistella, 57, 36042 Breganze VI, Italy',
-2016-08-10T06:22:22.398117+00:00 app[web.1]:     latitude: 45.70283,
-2016-08-10T06:22:22.398118+00:00 app[web.1]:     longitude: 11.56484,
-2016-08-10T06:22:22.398121+00:00 app[web.1]:        confidence: 1,
-2016-08-10T06:22:22.398118+00:00 app[web.1]:     extra: 
-2016-08-10T06:22:22.398120+00:00 app[web.1]:      { googlePlaceId: 'ChIJlX1vfVTJeEcRJQ7R00PY6a0',
-2016-08-10T06:22:22.398122+00:00 app[web.1]:        subpremise: null,
-2016-08-10T06:22:22.398122+00:00 app[web.1]:        neighborhood: null,
-2016-08-10T06:22:22.398121+00:00 app[web.1]:        premise: null,
-2016-08-10T06:22:22.398123+00:00 app[web.1]:        establishment: null },
-2016-08-10T06:22:22.398124+00:00 app[web.1]:     administrativeLevels: 
-2016-08-10T06:22:22.398124+00:00 app[web.1]:      { level3long: 'Breganze',
-2016-08-10T06:22:22.398125+00:00 app[web.1]:        level3short: 'Breganze',
-2016-08-10T06:22:22.398125+00:00 app[web.1]:        level2long: 'Provincia di Vicenza',
-2016-08-10T06:22:22.398126+00:00 app[web.1]:        level2short: 'VI',
-2016-08-10T06:22:22.398126+00:00 app[web.1]:        level1long: 'Veneto',
-2016-08-10T06:22:22.398127+00:00 app[web.1]:        level1short: 'Veneto' },
-2016-08-10T06:22:22.398128+00:00 app[web.1]:     streetNumber: '57',
-2016-08-10T06:22:22.398128+00:00 app[web.1]:     streetName: 'Via Don A. Battistella',
-2016-08-10T06:22:22.398129+00:00 app[web.1]:     city: 'Breganze',
-2016-08-10T06:22:22.398129+00:00 app[web.1]:     country: 'Italy',
-2016-08-10T06:22:22.398130+00:00 app[web.1]:     countryCode: 'IT',
-2016-08-10T06:22:22.398130+00:00 app[web.1]:     zipcode: '36042',
-2016-08-10T06:22:22.398131+00:00 app[web.1]:     provider: 'google' } ]
-2016-08-10T06:22:28.811153+00:00 app[web.1]: > testing afterRemote function
-2016-08-10T06:22:28.811190+00:00 app[web.1]: time : 1470810147
-2016-08-10T06:22:28.811192+00:00 app[web.1]: device: C3B15
-2016-08-10T06:22:28.811237+00:00 app[web.1]: data : 00000060413909e24236cfb7
-2016-08-10T06:22:28.811274+00:00 app[web.1]: name: IOT_01
-2016-08-10T06:22:28.811307+00:00 app[web.1]: rssi : -139.00
-2016-08-10T06:22:28.811343+00:00 app[web.1]: snr : 8.06
-2016-08-10T06:22:28.811378+00:00 app[web.1]: station : 2848
-2016-08-10T06:22:28.811418+00:00 app[web.1]: lat : 45.702847
-2016-08-10T06:22:28.811459+00:00 app[web.1]: log : 11.564913
-2016-08-10T06:22:28.811494+00:00 app[web.1]: alt : 96
-2016-08-10T06:22:28.975662+00:00 app[web.1]: [ { formattedAddress: 'Via Don A. Battistella, 57, 36042 Breganze VI, Italy',
-2016-08-10T06:22:28.975665+00:00 app[web.1]:     latitude: 45.70283,
-2016-08-10T06:22:28.975665+00:00 app[web.1]:     longitude: 11.56484,
-2016-08-10T06:22:28.975666+00:00 app[web.1]:     extra: 
-2016-08-10T06:22:28.975667+00:00 app[web.1]:      { googlePlaceId: 'ChIJlX1vfVTJeEcRJQ7R00PY6a0',
-2016-08-10T06:22:28.975667+00:00 app[web.1]:        confidence: 1,
-2016-08-10T06:22:28.975667+00:00 app[web.1]:        premise: null,
-2016-08-10T06:22:28.975668+00:00 app[web.1]:        subpremise: null,
-2016-08-10T06:22:28.975668+00:00 app[web.1]:        neighborhood: null,
-2016-08-10T06:22:28.975669+00:00 app[web.1]:        establishment: null },
-2016-08-10T06:22:28.975669+00:00 app[web.1]:     administrativeLevels: 
-2016-08-10T06:22:28.975669+00:00 app[web.1]:      { level3long: 'Breganze',
-2016-08-10T06:22:28.975670+00:00 app[web.1]:        level3short: 'Breganze',
-2016-08-10T06:22:28.975671+00:00 app[web.1]:        level2long: 'Provincia di Vicenza',
-2016-08-10T06:22:28.975671+00:00 app[web.1]:        level2short: 'VI',
-2016-08-10T06:22:28.975671+00:00 app[web.1]:        level1long: 'Veneto',
-2016-08-10T06:22:28.975672+00:00 app[web.1]:        level1short: 'Veneto' },
-2016-08-10T06:22:28.975672+00:00 app[web.1]:     streetNumber: '57',
-2016-08-10T06:22:28.975673+00:00 app[web.1]:     streetName: 'Via Don A. Battistella',
-2016-08-10T06:22:28.975673+00:00 app[web.1]:     city: 'Breganze',
-2016-08-10T06:22:28.975673+00:00 app[web.1]:     country: 'Italy',
-2016-08-10T06:22:28.975674+00:00 app[web.1]:     countryCode: 'IT',
-2016-08-10T06:22:28.975674+00:00 app[web.1]:     zipcode: '36042',
-2016-08-10T06:22:28.975674+00:00 app[web.1]:     provider: 'google' } ]
-2016-08-10T06:22:28.817788+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=614651b4-1fcb-471a-8cb7-c9eb51109d8a fwd="185.110.97.11" dyno=web.1 connect=1ms service=16ms status=500 bytes=465
-2016-08-10T06:23:22.514167+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=461c1850-51e7-4a1e-81f7-5b1b6fe8701f fwd="185.110.97.11" dyno=web.1 connect=2ms service=12ms status=500 bytes=470
-2016-08-10T06:23:29.163606+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=b0181b09-799d-4e45-8fbd-cd452d6b9f32 fwd="185.110.97.11" dyno=web.1 connect=1ms service=7ms status=500 bytes=470
-2016-08-10T06:28:28.739225+00:00 heroku[api]: Deploy bb7cc05 by u.simonato@libero.it
-2016-08-10T06:28:28.739324+00:00 heroku[api]: Release v91 created by u.simonato@libero.it
-2016-08-10T06:28:28.902533+00:00 heroku[slug-compiler]: Slug compilation started
-2016-08-10T06:28:28.902539+00:00 heroku[slug-compiler]: Slug compilation finished
-2016-08-10T06:28:29.064044+00:00 heroku[web.1]: Restarting
 2016-08-10T06:28:29.064824+00:00 heroku[web.1]: State changed from up to starting
 2016-08-10T06:28:31.557565+00:00 heroku[web.1]: Starting process with command `npm start`
 2016-08-10T06:28:31.749687+00:00 heroku[web.1]: Stopping all processes with SIGTERM
@@ -173,4 +83,63 @@
 2016-08-10T06:29:59.622699+00:00 app[web.1]:     provider: 'google' } ]
 2016-08-10T06:30:46.641096+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=9089c5dc-e3a3-46d9-88ce-ca1ff121e3d3 fwd="185.110.97.11" dyno=web.1 connect=0ms service=7ms status=500 bytes=470
 2016-08-10T06:30:59.792074+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=b769e3c0-c190-45c4-9079-e76d06b98b84 fwd="185.110.97.11" dyno=web.1 connect=0ms service=13ms status=500 bytes=470
-Terminare il processo batch (S/N)? 
+2016-08-10T06:39:30.393700+00:00 heroku[api]: Deploy 8e0fd47 by u.simonato@libero.it
+2016-08-10T06:39:30.393809+00:00 heroku[api]: Release v92 created by u.simonato@libero.it
+2016-08-10T06:39:30.616219+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-10T06:39:30.616241+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-10T06:39:30.638268+00:00 heroku[web.1]: Restarting
+2016-08-10T06:39:30.641372+00:00 heroku[web.1]: State changed from up to starting
+2016-08-10T06:39:32.834729+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-10T06:39:33.273450+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-10T06:39:33.451805+00:00 heroku[web.1]: Process exited with status 143
+2016-08-10T06:39:34.861954+00:00 app[web.1]: 
+2016-08-10T06:39:34.861966+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-10T06:39:34.861967+00:00 app[web.1]: > node .
+2016-08-10T06:39:34.861968+00:00 app[web.1]: 
+2016-08-10T06:39:36.070176+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:58627/explorer
+2016-08-10T06:39:36.069548+00:00 app[web.1]: Web server listening at: http://0.0.0.0:58627
+2016-08-10T06:39:36.407630+00:00 heroku[web.1]: State changed from starting to up
+2016-08-10T06:40:04.627656+00:00 app[web.1]: > testing afterRemote function
+2016-08-10T06:40:04.627719+00:00 app[web.1]: time : 1470811203
+2016-08-10T06:40:04.627775+00:00 app[web.1]: device: C3B15
+2016-08-10T06:40:04.627823+00:00 app[web.1]: data : 0000006741390a194236cfb1
+2016-08-10T06:40:04.627870+00:00 app[web.1]: name: IOT_01
+2016-08-10T06:40:04.627914+00:00 app[web.1]: rssi : -138.00
+2016-08-10T06:40:04.627965+00:00 app[web.1]: snr : 13.41
+2016-08-10T06:40:04.628010+00:00 app[web.1]: station : 284B
+2016-08-10T06:40:04.628059+00:00 app[web.1]: lat : 45.702824
+2016-08-10T06:40:04.628107+00:00 app[web.1]: log : 11.564965
+2016-08-10T06:40:04.628154+00:00 app[web.1]: alt : 103
+2016-08-10T06:40:04.628190+00:00 app[web.1]: passo 0 : 
+2016-08-10T06:40:04.628303+00:00 app[web.1]: passo 1 : 
+2016-08-10T06:40:04.630711+00:00 app[web.1]: passo 2 : 
+2016-08-10T06:40:04.764479+00:00 app[web.1]: [ { formattedAddress: 'Via Don A. Battistella, 57, 36042 Breganze VI, Italy',
+2016-08-10T06:40:04.764482+00:00 app[web.1]:     latitude: 45.70283,
+2016-08-10T06:40:04.764483+00:00 app[web.1]:     longitude: 11.56484,
+2016-08-10T06:40:04.764483+00:00 app[web.1]:     extra: 
+2016-08-10T06:40:04.764484+00:00 app[web.1]:      { googlePlaceId: 'ChIJlX1vfVTJeEcRJQ7R00PY6a0',
+2016-08-10T06:40:04.764485+00:00 app[web.1]:        confidence: 1,
+2016-08-10T06:40:04.764485+00:00 app[web.1]:        premise: null,
+2016-08-10T06:40:04.764486+00:00 app[web.1]:        subpremise: null,
+2016-08-10T06:40:04.764487+00:00 app[web.1]:        neighborhood: null,
+2016-08-10T06:40:04.764487+00:00 app[web.1]:        establishment: null },
+2016-08-10T06:40:04.764488+00:00 app[web.1]:     administrativeLevels: 
+2016-08-10T06:40:04.764488+00:00 app[web.1]:      { level3long: 'Breganze',
+2016-08-10T06:40:04.764489+00:00 app[web.1]:        level3short: 'Breganze',
+2016-08-10T06:40:04.764490+00:00 app[web.1]:        level2long: 'Provincia di Vicenza',
+2016-08-10T06:40:04.764490+00:00 app[web.1]:        level2short: 'VI',
+2016-08-10T06:40:04.764491+00:00 app[web.1]:        level1long: 'Veneto',
+2016-08-10T06:40:04.764491+00:00 app[web.1]:        level1short: 'Veneto' },
+2016-08-10T06:40:04.764492+00:00 app[web.1]:     streetNumber: '57',
+2016-08-10T06:40:04.764492+00:00 app[web.1]:     streetName: 'Via Don A. Battistella',
+2016-08-10T06:40:04.764493+00:00 app[web.1]:     city: 'Breganze',
+2016-08-10T06:40:04.764494+00:00 app[web.1]:     country: 'Italy',
+2016-08-10T06:40:04.764494+00:00 app[web.1]:     countryCode: 'IT',
+2016-08-10T06:40:04.764495+00:00 app[web.1]:     zipcode: '36042',
+2016-08-10T06:40:04.764495+00:00 app[web.1]:     provider: 'google' } ]
+2016-08-10T06:40:04.655456+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=1dee5468-6394-4c9e-96d0-eac858082b7e fwd="185.110.97.11" dyno=web.1 connect=0ms service=102ms status=500 bytes=465
+2016-08-10T06:41:04.997277+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=b53b2d5c-3aa4-4272-9dad-e139e294e446 fwd="185.110.97.11" dyno=web.1 connect=0ms service=10ms status=500 bytes=470
+2016-08-10T07:13:25.605578+00:00 heroku[web.1]: Idling
+2016-08-10T07:13:25.606131+00:00 heroku[web.1]: State changed from up to down
+2016-08-10T07:13:27.318336+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-10T07:13:27.815394+00:00 heroku[web.1]: Process exited with status 143

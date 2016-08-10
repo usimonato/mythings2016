@@ -20,7 +20,6 @@ var lat_convert;
 var lng_convert;
 var address;
 var Wait_address;
-var S = require('string');
 
 
     // IMPORTANT: Save the old System.out!
@@ -92,14 +91,16 @@ module.exports = function(Message)
           // console.log(address);
            //console.log('passo 1C : ');
            console.log('passo 1A : ');
-           address = S(res).right(10).toString(); //'JP'
+           var test = new Array(32);
+           test[
+           address = res[0].formattedAddress;
            Wait_address = false;
            console.log(res);
            console.log('passo 1C'+ address);
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;
-      while ((i < 10) && (Wait_address == true) )
+      while ((i < 10) && (Wait_address == true))
       {
             sleep(1000);
             i++;

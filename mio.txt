@@ -1,16 +1,3 @@
-2016-08-10T06:09:56.276084+00:00 app[web.1]: 
-2016-08-10T06:09:56.276429+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
-2016-08-10T06:09:56.276534+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2016-08-10T06:09:56.418314+00:00 heroku[web.1]: State changed from starting to crashed
-2016-08-10T06:09:56.418314+00:00 heroku[web.1]: State changed from crashed to starting
-2016-08-10T06:09:56.399160+00:00 heroku[web.1]: Process exited with status 1
-2016-08-10T06:10:00.486165+00:00 heroku[web.1]: Starting process with command `npm start`
-2016-08-10T06:10:03.763387+00:00 app[web.1]: > mythings2016@1.0.0 start /app
-2016-08-10T06:10:03.763388+00:00 app[web.1]: 
-2016-08-10T06:10:03.763388+00:00 app[web.1]: > node .
-2016-08-10T06:10:03.763361+00:00 app[web.1]: 
-2016-08-10T06:10:05.011868+00:00 app[web.1]: /app/common/models/message.js:64
-2016-08-10T06:10:05.013060+00:00 app[web.1]:       getLocationData(position, function(locationData) {console.log(locationData); address = locationData;}
 2016-08-10T06:10:05.013074+00:00 app[web.1]:                                                                                                           ^
 2016-08-10T06:10:05.013086+00:00 app[web.1]: 
 2016-08-10T06:10:05.013099+00:00 app[web.1]:     at exports.runInThisContext (vm.js:53:16)
@@ -99,6 +86,17 @@
 2016-08-10T06:14:41.354131+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
 2016-08-10T06:14:41.414071+00:00 heroku[web.1]: Process exited with status 1
 2016-08-10T06:14:41.441170+00:00 heroku[web.1]: State changed from starting to crashed
+2016-08-10T06:16:59.685634+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-10T06:16:59.685639+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-10T06:16:59.722205+00:00 heroku[web.1]: State changed from crashed to starting
+2016-08-10T06:16:59.518911+00:00 heroku[api]: Deploy 1b028d3 by u.simonato@libero.it
+2016-08-10T06:16:59.518976+00:00 heroku[api]: Release v89 created by u.simonato@libero.it
+2016-08-10T06:17:02.454879+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-10T06:17:04.578057+00:00 app[web.1]: 
+2016-08-10T06:17:04.578093+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-10T06:17:04.578094+00:00 app[web.1]: > node .
+2016-08-10T06:17:04.578094+00:00 app[web.1]: 
+2016-08-10T06:17:06.255064+00:00 app[web.1]: Web server listening at: http://0.0.0.0:12397
+2016-08-10T06:17:06.255723+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:12397/explorer
+2016-08-10T06:17:06.907510+00:00 heroku[web.1]: State changed from starting to up
 Terminare il processo batch (S/N)? 
-
-C:\FW\mythings2016>

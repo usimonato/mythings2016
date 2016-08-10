@@ -7,12 +7,14 @@ var NodeGeocoder = require('node-geocoder');
 var options = {
   provider: 'google',
   // Optional depending on the providers
-  httpAdapter: 'https', // Default 
+  httpAdapter: 'https', // Default
   apiKey: 'AIzaSyDMYtkCOaCIUcES2QDNDYIMUOjfldouwtc', // YOUR_API_KEY for Geocoding Google Premier
   formatter: null         // 'gpx', 'string', ...
 };
 
 var geocoder = NodeGeocoder(options);
+var lat_convert;
+var lng_convert;
 
 //var moment = require('moment-timezone');
 function Bytes2Float32(bytes) {
@@ -31,6 +33,12 @@ function Bytes2Float32(bytes) {
 
     return sign * significand * Math.pow(2, exponent);
 }
+}
+
+function getLocationData(callback) {
+   geocoder.reverse({lat:lat_convert, lon:lng_convert}, function(err, res) {console.log(res);});
+   callback(res[0].formatted_address);
+}
 
 module.exports = function(Message)
 { //Use the environment variables in production
@@ -40,10 +48,6 @@ module.exports = function(Message)
    Message.afterRemote('create', function (ctx, message, next)
    {
       var ms;
-      var lat_convert;
-      var lng_convert;
-      var address;
-
 
       console.log('> testing afterRemote function');
       console.log('time : '+message.time);
@@ -56,11 +60,10 @@ module.exports = function(Message)
       console.log('lat : '+message.lat);
       console.log('log : '+message.log);
       console.log('alt : '+message.alt);
-      geocoder.reverse({lat:message.lat, lon:message.log}, function(err, res) {console.log(res); (address = res[0].formatted_address);});
-      lat_convert = Bytes2Float32(0x4236cfb6);
-      console.log('lat convert: '+lat_convert);
-      lng_convert = Bytes2Float32(0x413909c8);
-      console.log('lng convert: '+lng_convert);
+      lat_convert = message.lat;
+      lng_convert = message.log;
+      getLocationData(position, function(locationData) {console.log(locationData); address = locationData;}
+
       var dataora = new Date();
      // moment(dataora).tz('Europe/Berlin').format(format);
       //var formatted = dt.toFormat("YYYYMMDDHH24MISS");

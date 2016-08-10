@@ -20,6 +20,7 @@ var lat_convert;
 var lng_convert;
 var address;
 var Wait_address;
+var S = require('string');
 
 
     // IMPORTANT: Save the old System.out!
@@ -91,7 +92,7 @@ module.exports = function(Message)
           // console.log(address);
            //console.log('passo 1C : ');
            console.log('passo 1A : ');
-           address = res[0].formattedAddress;
+           address = S(res).right(10).toString(); //'JP'
            Wait_address = false;
            console.log(res);
            console.log('passo 1C'+ address);

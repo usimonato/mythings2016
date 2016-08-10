@@ -36,7 +36,7 @@ function Bytes2Float32(bytes) {
 }
 
 function getLocationData(callback) {
-   geocoder.reverse({lat:lat_convert, lon:lng_convert}, function(err, res) {console.log(res);});
+   geocoder.reverse({lat:lat_convert, lon:lng_convert}, function(err, res) {(console.log(res);});
    callback(res[0].formatted_address);
 }
 

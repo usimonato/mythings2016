@@ -44,7 +44,7 @@ function getLocationData(callback) {
    geocoder.reverse({lat:lat_convert, lon:lng_convert}, function(err, res) {console.log(res);});
    console.log('passo 2B');
    callback(res[0].formatted_address);
-   console.log('passo 2C);
+   console.log('passo 2C');
 }
 
 module.exports = function(Message)
@@ -67,7 +67,7 @@ module.exports = function(Message)
       console.log('alt : '+message.alt);
       lat_convert = message.lat;
       lng_convert = message.log;
-      console.log('passo 0 : ');
+      console.log('passo 0');
       Wait_address = true;
       geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
       {

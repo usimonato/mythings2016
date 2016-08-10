@@ -1182,3 +1182,107 @@
 2016-08-10T14:23:15.984370+00:00 app[web.1]:     provider: 'google' } ]
 2016-08-10T14:23:15.984402+00:00 app[web.1]: passo 1B
 2016-08-10T14:24:15.831053+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=106c8b57-c77d-4a14-b6e5-9f08bcd90c81 fwd="185.110.97.11" dyno=web.1 connect=0ms service=14ms status=500 bytes=470
+2016-08-10T15:28:27.879750+00:00 app[web.1]:      'read-write-directmessages',
+2016-08-10T15:29:27.887207+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=16398331-0afd-4203-882a-cc4dd6c9a9fc fwd="185.110.97.11" dyno=web.1 connect=0ms service=5ms status=500 bytes=470
+2016-08-10T15:46:04.121425+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-10T15:46:04.121430+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-10T15:46:04.202270+00:00 heroku[web.1]: Restarting
+2016-08-10T15:46:04.202913+00:00 heroku[web.1]: State changed from up to starting
+2016-08-10T15:46:06.801343+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-10T15:46:07.085628+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-10T15:46:07.513679+00:00 heroku[web.1]: Process exited with status 143
+2016-08-10T15:46:03.916575+00:00 heroku[api]: Release v127 created by u.simonato@libero.it
+2016-08-10T15:46:03.916476+00:00 heroku[api]: Deploy 9b4585e by u.simonato@libero.it
+2016-08-10T15:46:09.044016+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-10T15:46:09.043999+00:00 app[web.1]: 
+2016-08-10T15:46:09.044018+00:00 app[web.1]: 
+2016-08-10T15:46:09.044017+00:00 app[web.1]: > node .
+2016-08-10T15:46:09.874218+00:00 app[web.1]:     at Function.Module._load (module.js:314:12)
+2016-08-10T15:46:09.874217+00:00 app[web.1]:     at Module.load (module.js:357:32)
+2016-08-10T15:46:09.966757+00:00 heroku[web.1]: Process exited with status 1
+2016-08-10T15:46:09.874214+00:00 app[web.1]:     at exports.runInThisContext (vm.js:53:16)
+2016-08-10T15:46:09.874212+00:00 app[web.1]: 
+2016-08-10T15:46:09.874216+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:422:10)
+2016-08-10T15:46:09.874211+00:00 app[web.1]:                ^^^^^^^^^^^
+2016-08-10T15:46:09.874192+00:00 app[web.1]: /app/common/models/message.js:47
+2016-08-10T15:46:09.874214+00:00 app[web.1]:     at Module._compile (module.js:387:25)
+2016-08-10T15:46:09.874213+00:00 app[web.1]: SyntaxError: Unexpected token ILLEGAL
+2016-08-10T15:46:09.874211+00:00 app[web.1]:    console.log('passo 2C);
+2016-08-10T15:46:09.899285+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-08-10T15:46:09.899089+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-08-10T15:46:09.874219+00:00 app[web.1]:     at Module.require (module.js:367:17)
+2016-08-10T15:46:09.874219+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2016-08-10T15:46:09.874220+00:00 app[web.1]:     at /app/node_modules/loopback-boot/lib/executor.js:245:20
+2016-08-10T15:46:09.874220+00:00 app[web.1]:     at Array.forEach (native)
+2016-08-10T15:46:09.874222+00:00 app[web.1]:     at defineModels (/app/node_modules/loopback-boot/lib/executor.js:226:23)
+2016-08-10T15:46:09.887483+00:00 app[web.1]: 
+2016-08-10T15:46:09.896932+00:00 app[web.1]: npm ERR! Linux 3.13.0-91-generic
+2016-08-10T15:46:09.897373+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-10T15:46:09.897604+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-10T15:46:09.898531+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-10T15:46:09.899850+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-10T15:46:09.899475+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-08-10T15:46:09.898706+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-08-10T15:46:09.898858+00:00 app[web.1]: npm ERR! Exit status 1
+2016-08-10T15:46:09.898980+00:00 app[web.1]: npm ERR! 
+2016-08-10T15:46:09.898221+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-10T15:46:09.904678+00:00 app[web.1]: 
+2016-08-10T15:46:09.900790+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-10T15:46:09.899659+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-10T15:46:09.904931+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-10T15:46:09.900004+00:00 app[web.1]: npm ERR!     node .
+2016-08-10T15:46:09.900169+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-10T15:46:09.900316+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-10T15:46:09.900428+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-10T15:46:09.900602+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-10T15:46:09.905104+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-10T15:46:09.982611+00:00 heroku[web.1]: State changed from crashed to starting
+2016-08-10T15:46:09.981769+00:00 heroku[web.1]: State changed from starting to crashed
+2016-08-10T15:46:12.889423+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-10T15:46:14.844463+00:00 app[web.1]: 
+2016-08-10T15:46:14.844478+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-10T15:46:14.844479+00:00 app[web.1]: > node .
+2016-08-10T15:46:14.844479+00:00 app[web.1]: 
+2016-08-10T15:46:15.619238+00:00 app[web.1]: /app/common/models/message.js:47
+2016-08-10T15:46:15.619250+00:00 app[web.1]:                ^^^^^^^^^^^
+2016-08-10T15:46:15.619251+00:00 app[web.1]: 
+2016-08-10T15:46:15.619249+00:00 app[web.1]:    console.log('passo 2C);
+2016-08-10T15:46:15.619253+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:422:10)
+2016-08-10T15:46:15.619251+00:00 app[web.1]: SyntaxError: Unexpected token ILLEGAL
+2016-08-10T15:46:15.619255+00:00 app[web.1]:     at Function.Module._load (module.js:314:12)
+2016-08-10T15:46:15.619254+00:00 app[web.1]:     at Module.load (module.js:357:32)
+2016-08-10T15:46:15.619256+00:00 app[web.1]:     at /app/node_modules/loopback-boot/lib/executor.js:245:20
+2016-08-10T15:46:15.619257+00:00 app[web.1]:     at Array.forEach (native)
+2016-08-10T15:46:15.619258+00:00 app[web.1]:     at defineModels (/app/node_modules/loopback-boot/lib/executor.js:226:23)
+2016-08-10T15:46:15.630004+00:00 app[web.1]: 
+2016-08-10T15:46:15.640435+00:00 app[web.1]: npm ERR! Linux 3.13.0-91-generic
+2016-08-10T15:46:15.640948+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-10T15:46:15.619252+00:00 app[web.1]:     at exports.runInThisContext (vm.js:53:16)
+2016-08-10T15:46:15.619252+00:00 app[web.1]:     at Module._compile (module.js:387:25)
+2016-08-10T15:46:15.642151+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-08-10T15:46:15.642257+00:00 app[web.1]: npm ERR! Exit status 1
+2016-08-10T15:46:15.619256+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2016-08-10T15:46:15.619255+00:00 app[web.1]:     at Module.require (module.js:367:17)
+2016-08-10T15:46:15.641255+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-10T15:46:15.642029+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-10T15:46:15.642382+00:00 app[web.1]: npm ERR! 
+2016-08-10T15:46:15.643051+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-10T15:46:15.641620+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-10T15:46:15.642617+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-08-10T15:46:15.642732+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-08-10T15:46:15.642861+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-08-10T15:46:15.644519+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-10T15:46:15.643929+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-10T15:46:15.644125+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-10T15:46:15.643712+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-10T15:46:15.643263+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-10T15:46:15.643491+00:00 app[web.1]: npm ERR!     node .
+2016-08-10T15:46:15.644322+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-10T15:46:15.650384+00:00 app[web.1]: 
+2016-08-10T15:46:15.650583+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-10T15:46:15.650707+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-10T15:46:15.731232+00:00 heroku[web.1]: Process exited with status 1
+2016-08-10T15:46:15.730060+00:00 heroku[web.1]: State changed from starting to crashed
+2016-08-10T15:48:22.249925+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=4de5c16c-92cf-4e5c-a686-40d0ea8c9d5d fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+2016-08-10T15:49:22.584100+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=e21863f0-9612-4a53-85bc-4d88f90dc8ca fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+Terminare il processo batch (S/N)? 

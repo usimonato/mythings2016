@@ -65,12 +65,12 @@ module.exports = function(Message)
       lat_convert = message.lat;
       lng_convert = message.log;
       console.log('passo 0 : ');
-      //getLocationData(function(locationData) {console.log(locationData); address = locationData;});
-      geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res) {console.log(res);}).catch(function(err) {console.log(err);});
+      geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res) {console.log(res); address = res[0].formatted_address;}).catch(function(err) {console.log(err);});
       console.log('passo 3 : ');
       var dataora = new Date();
       console.log('dataora : '+dataora);
       console.log('passo 4 : ');
+      console.log('address : '+address);
       console.log('passo 5 : ');
       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento da code: ' + message.name + ' - ' + ' - lat:' +  +message.lat + ', lng:' +  message.log +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);

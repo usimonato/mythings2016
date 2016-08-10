@@ -61,22 +61,12 @@ module.exports = function(Message)
       console.log('alt : '+message.alt);
       lat_convert = message.lat;
       lng_convert = message.log;
-      getLocationData(function(locationData) {console.log(locationData); address = locationData;});
-      console.log('address : '+address);
-      var dataora = new Date();
-     // moment(dataora).tz('Europe/Berlin').format(format);
-      //var formatted = dt.toFormat("YYYYMMDDHH24MISS");
-      //client.post('statuses/update', {status: "Test1"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
-      // Tweet body.
-      //console.log(response);
-      //client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  +message.lat + ' lng:' +  message.log +  ' alt:' +  message.alt +   ' Evento da ' + message.name + ' -' + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
-      // Using callback
+      getLocationData(function(locationData) {console.log('test :' + locationData); address = locationData;});
       console.log('passo 0 : ');
-      //var address = document.getElementById("Address");
+      var dataora = new Date();
+      console.log('dataora : '+dataora);
       console.log('passo 1 : ');
       console.log('passo 2 : ');
-      console.log(address);
-      console.log('dataora : '+dataora);
       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento da code: ' + message.name + ' - ' + ' - lat:' +  +message.lat + ', lng:' +  message.log +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);
 

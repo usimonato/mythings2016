@@ -71,9 +71,9 @@ module.exports = function(Message)
       console.log('passo 0 : ');
       geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
       {
-           ByteArrayOutputStream baos = new ByteArrayOutputStream();
-           PrintStream ps = new PrintStream(baos);
-           PrintStream old = System.out;
+           var baos = new ByteArrayOutputStream();
+           var ps = new PrintStream(baos);
+           var old = System.out;
            System.setOut(ps);
            System.out.println(res);
            // Put things back

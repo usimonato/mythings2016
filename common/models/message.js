@@ -61,8 +61,8 @@ module.exports = function(Message)
       console.log('alt : '+message.alt);
       lat_convert = message.lat;
       lng_convert = message.log;
-      getLocationData(position, function(locationData) {console.log(locationData); address = locationData;}
-
+      getLocationData(function(locationData) {console.log(locationData); address = locationData;};
+      console.log('address : '+address);
       var dataora = new Date();
      // moment(dataora).tz('Europe/Berlin').format(format);
       //var formatted = dt.toFormat("YYYYMMDDHH24MISS");

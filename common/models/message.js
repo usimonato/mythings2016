@@ -42,6 +42,7 @@ module.exports = function(Message)
       var ms;
       var lat_convert;
       var lng_convert;
+      var address;
 
       console.log('> testing afterRemote function');
       console.log('time : '+message.time);
@@ -61,15 +62,15 @@ module.exports = function(Message)
       var dataora = new Date();
      // moment(dataora).tz('Europe/Berlin').format(format);
       //var formatted = dt.toFormat("YYYYMMDDHH24MISS");
-      console.log('dataora : '+dataora);
       //client.post('statuses/update', {status: "Test1"}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Tweet body.
       //console.log(response);
       //client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': 'Time:' + dataora + ' lat:' +  +message.lat + ' lng:' +  message.log +  ' alt:' +  message.alt +   ' Evento da ' + message.name + ' -' + ' station ' + message.station + ' rssi ' + message.rssi + ' snr ' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)
       // Using callback
-      geocoder.reverse({lat:message.lat, lon:message.log}, function(err, res) {console.log(res);});
+      geocoder.reverse({lat:message.lat, lon:message.log}, function(err, res) {console.log(res); address = (res[0].formatted_address);});
 
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento da code: ' + message.name + ' - ' + ' lat:' +  +message.lat + ', lng:' +  message.log +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
+      console.log('dataora : '+dataora);
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento da code: ' + message.name + ' - ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.log +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);
 
       // Raw response object.

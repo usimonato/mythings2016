@@ -1,7 +1,7 @@
 var Twitter = require('twitter');
 var fromBits = require( 'math-float32-from-bits' );
 var math = require('mathjs');
-var stdout = require('stdout');
+var stdout = require('stdout-stream');
 
 require('date-utils');
 var NodeGeocoder = require('node-geocoder');

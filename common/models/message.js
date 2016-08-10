@@ -91,7 +91,7 @@ module.exports = function(Message)
            console.log('passo 1A : ');
            address = res[0].formatted_address;
            console.log(res);
-           console.log('passo 1C;
+           console.log('passo 1C);
 
       }
       ).catch(function(err) {console.log(err);});

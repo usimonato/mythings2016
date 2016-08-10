@@ -87,11 +87,11 @@ module.exports = function(Message)
            System.setOut(old);
            // Show what happened
            System.out.println("Here: " + baos);*/
-           console.log('passo 1A : ');
+           console.log('passo 1A');
            address = res[0].formattedAddress;
            Wait_address = false;
            console.log(res);
-           console.log('passo 1B '+ address);
+           console.log('passo 1B');
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;

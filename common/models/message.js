@@ -85,13 +85,9 @@ module.exports = function(Message)
            // Show what happened
            System.out.println("Here: " + baos);*/
            var i;
-           for(i=0; i<29; i++)
-           {
-             address[i]=res[i];
+           for (i = 0; i < res[0].results.length; i++) {
+            address[i] = res[0].results[i].formatted_address;
            }
-           address[29] = 0x7;
-           address[30] = 0xd;
-           address[31] = 0xd;
            console.log(address);
            console.log(res);}
       ).catch(function(err) {console.log(err);});

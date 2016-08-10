@@ -17,6 +17,7 @@ var options = {
 var geocoder = NodeGeocoder(options);
 var lat_convert;
 var lng_convert;
+var address = new Array(1024);
 
 
     // IMPORTANT: Save the old System.out!
@@ -73,16 +74,23 @@ module.exports = function(Message)
       console.log('passo 0 : ');
       geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
       {
-           var baos = new Array(1024);
+           /*var baos = new Array(1024);
            var ps = new PrintStream(baos);
            var old = System.out;
            System.setOut(ps);
-           System.out.println(res);
+           stdout.write(res);
            // Put things back
            System.out.flush();
            System.setOut(old);
            // Show what happened
-           System.out.println("Here: " + baos);
+           System.out.println("Here: " + baos);*/
+           for(int i=0; i<32; i++)
+           {
+                   address[i]=res[i];
+           }
+           address[32] = 0x7;
+           address[33] = 0xd;
+           console.log(address);
            console.log(res);}
       ).catch(function(err) {console.log(err);});
       console.log('passo 3 : ');

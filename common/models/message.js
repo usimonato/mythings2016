@@ -3,6 +3,7 @@ var fromBits = require( 'math-float32-from-bits' );
 var math = require('mathjs');
 var stdout = require('stdout-stream');
 var sleep = require('thread-sleep');
+//var moment = require('moment-timezone');
 
 require('date-utils');
 var NodeGeocoder = require('node-geocoder');
@@ -21,11 +22,6 @@ var lng_convert;
 var address;
 var Wait_address;
 
-
-    // IMPORTANT: Save the old System.out!
-
-
-//var moment = require('moment-timezone');
 function Bytes2Float32(bytes) {
     var sign = (bytes & 0x80000000) ? -1 : 1;
     var exponent = ((bytes >> 23) & 0xFF) - 127;
@@ -44,11 +40,11 @@ function Bytes2Float32(bytes) {
 }
 
 function getLocationData(callback) {
-   console.log('passo 1 : ');
+   console.log('passo 2A');
    geocoder.reverse({lat:lat_convert, lon:lng_convert}, function(err, res) {console.log(res);});
-   console.log('passo 2 : ');
+   console.log('passo 2B');
    callback(res[0].formatted_address);
-   console.log('passo 2A : ');
+   console.log('passo 2C);
 }
 
 module.exports = function(Message)
@@ -58,8 +54,6 @@ module.exports = function(Message)
 
    Message.afterRemote('create', function (ctx, message, next)
    {
-      var ms;
-
       console.log('> testing afterRemote function');
       console.log('time : '+message.time);
       console.log('device: '+message.device);
@@ -77,16 +71,6 @@ module.exports = function(Message)
       Wait_address = true;
       geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
       {
-           /*var baos = new Array(1024);
-           var ps = new PrintStream(baos);
-           var old = System.out;
-           System.setOut(ps);
-           stdout.write(res);
-           // Put things back
-           System.out.flush();
-           System.setOut(old);
-           // Show what happened
-           System.out.println("Here: " + baos);*/
            console.log('passo 1A');
            address = res[0].formattedAddress;
            Wait_address = false;
@@ -95,7 +79,7 @@ module.exports = function(Message)
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;
-      while ((i < 10) && (Wait_address == true))
+      while ((i < 10) && (Wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {
             sleep(1000);
             i++;
@@ -103,8 +87,6 @@ module.exports = function(Message)
       console.log('attesi sec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);
-      console.log('passo 4 : ');
-      console.log('passo 5 : ');
       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento da codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.log +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);
 

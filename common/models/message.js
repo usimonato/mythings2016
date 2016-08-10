@@ -87,16 +87,11 @@ module.exports = function(Message)
            System.setOut(old);
            // Show what happened
            System.out.println("Here: " + baos);*/
-           console.log('passo 1B : ');
-          // console.log(address);
-           //console.log('passo 1C : ');
            console.log('passo 1A : ');
-           var test = new Array(32);
-           test[
            address = res[0].formattedAddress;
            Wait_address = false;
            console.log(res);
-           console.log('passo 1C'+ address);
+           console.log('passo 1B '+ address);
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;
@@ -110,7 +105,7 @@ module.exports = function(Message)
       console.log('dataora : '+dataora);
       console.log('passo 4 : ');
       console.log('passo 5 : ');
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento da code: ' + message.name + ' - ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.log +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento da codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.log +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);
 
       // Raw response object.

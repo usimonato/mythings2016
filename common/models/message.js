@@ -71,7 +71,7 @@ module.exports = function(Message)
       console.log('passo 0 : ');
       //var address = document.getElementById("Address");
       console.log('passo 1 : ');
-      geocoder.reverse({lat:message.lat, lon:message.log}, function(err, res) {console.log(res); address = res[0].formatted_address);});
+      geocoder.reverse({lat:message.lat, lon:message.log}, function(err, res) {console.log(res); (address = res[0].formatted_address);});
       console.log('passo 2 : ');
       console.log(res[0].formatted_address);
       console.log('dataora : '+dataora);

@@ -1,4 +1,3 @@
-import java.io.ByteArrayOutputStream;
 var Twitter = require('twitter');
 var fromBits = require( 'math-float32-from-bits' );
 var math = require('mathjs');
@@ -74,7 +73,7 @@ module.exports = function(Message)
       console.log('passo 0 : ');
       geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
       {
-           var baos = new ByteArrayOutputStream();
+           var baos = new Array(1024);
            var ps = new PrintStream(baos);
            var old = System.out;
            System.setOut(ps);
@@ -83,7 +82,7 @@ module.exports = function(Message)
            System.out.flush();
            System.setOut(old);
            // Show what happened
-           System.out.println("Here: " + baos.toString());
+           System.out.println("Here: " + baos);
            console.log(res);}
       ).catch(function(err) {console.log(err);});
       console.log('passo 3 : ');

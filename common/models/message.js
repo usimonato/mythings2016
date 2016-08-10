@@ -89,10 +89,9 @@ module.exports = function(Message)
           // console.log(address);
            //console.log('passo 1C : ');
            console.log('passo 1A : ');
-           var i;
-           adress = res[0].formatted_address;
+           address = res[0].formatted_address;
            console.log(res);
-           console.log('passo 1B : ');
+           console.log('passo 1C;
 
       }
       ).catch(function(err) {console.log(err);});

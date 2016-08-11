@@ -73,16 +73,48 @@ module.exports = function(Message)
       {
            console.log('passo 1A');
            address = res[0].formattedAddress;
+           if(address == null)
+           {
+             if(res[1].formattedAddress != null)
+             {
+               address = res[1].formattedAddress;
+             }
+           }
            Wait_address = false;
            console.log(res);
            console.log('passo 1B');
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;
-      while ((i < 10) && (Wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
+      while ((i < 5) && (Wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {
             sleep(1000);
             i++;
+      }
+      if(address == null)
+      {
+          Wait_address = true;
+          geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
+          {
+               console.log('passo 1C');
+               address = res[0].formattedAddress;
+               if(address == null)
+               {
+                  if(res[1].formattedAddress != null)
+                  {
+                      address = res[1].formattedAddress;
+                  }
+               }
+               Wait_address = false;
+               console.log(res);
+               console.log('passo 1D');
+               }
+           ).catch(function(err) {console.log(err);});
+           while ((i < 10) && (Wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
+           {
+                 sleep(1000);
+                 i++;
+           }
       }
       console.log('attesi sec: '+i);
       var dataora = new Date();

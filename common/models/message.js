@@ -77,7 +77,7 @@ module.exports = function(Message)
       {
            console.log('passo 1A');
            address = res[0].formattedAddress;
-           if(address == null)
+           if(address == 'undefined')
            {
              if(res[1].formattedAddress != 'undefined')
              {

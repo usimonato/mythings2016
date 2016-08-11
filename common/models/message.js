@@ -19,6 +19,7 @@ var options = {
 var geocoder = NodeGeocoder(options);
 var lat_convert;
 var lng_convert;
+var alt_convert;
 var address;
 var evento;
 var wait_address;
@@ -66,7 +67,7 @@ module.exports = function(Message)
       console.log('lat : '+message.lat);
       console.log('lon : '+message.lon);
       console.log('alt : '+message.alt);
-      console.log('event : '+message.event);
+      console.log('event :'+message.event);
       console.log('passo 0');
       wait_address = true;
       geocoder.reverse({lat:message.lat, lon:message.lon}).then(function(res)
@@ -92,24 +93,25 @@ module.exports = function(Message)
             sleep(1000);
             i++;
       }
-      switch (message.event) 
+      evento =  message.alt & 0xFFFF0000;
+      switch (evento)
       {
-		case 0: {
+		case 0x00000000: {
                     evento = 'Tasto';
 		    break;
 		}
-		case 1: {
+		case 0x00010000: {
                     evento = 'Mosso';
 		}
-		
-		case 2: {
+
+		case 0x00020000: {
                      evento = 'Info';
 		}
 		default: {
                   evento = 'Non Definito';
 		}
       }
-
+      alt_convert =  message.alt & 0x0000FFFF;
       /*if(address == null)
       {
           wait_address = true;
@@ -141,7 +143,7 @@ module.exports = function(Message)
       console.log('attesi sec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' da codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  message.alt  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' da codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);
 
       // Raw response object.

@@ -88,9 +88,9 @@ module.exports = function(Message)
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;
-      while ((i < 12) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
+      while ((i < 3) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {
-            sleep(1000);
+            sleep(5000);
             i++;
       }
       evento =  message.alt & 0xFF00;

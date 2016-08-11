@@ -74,7 +74,7 @@ module.exports = function(Message)
       {
            console.log('passo 1A');
            address = res[0].formattedAddress;
-           if(address == 'undefined')
+           if(address == null)
            {
              if(res[1].formattedAddress != 'undefined')
              {
@@ -88,9 +88,9 @@ module.exports = function(Message)
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;
-      while ((i < 3) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
+      while ((i < 10000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {
-            sleep(5000);
+            sleep(1);
             i++;
       }
       evento =  message.alt & 0xFF00;
@@ -138,12 +138,12 @@ module.exports = function(Message)
                  i++;
            }
       } */
-      if(address == 'undefined')
+      if(address == null)
          adress = 'non risolto';
-      console.log('attesi sec: '+i);
+      console.log('attesi msec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + '- codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);
 
       // Raw response object.

@@ -43,10 +43,11 @@ function Bytes2Float32(bytes) {
 
 function getLocationData(callback) {
    console.log('passo 2A');
-   geocoder.reverse({lat:lat_convert, lon:lng_convert}, function(err, res) {console.log(res);});
+   geocoder.reverse({lat:lat_convert, lon:log_convert}, function(err, res) {console.log(res);});
    console.log('passo 2B');
    callback(res[0].formatted_address);
    console.log('passo 2C');
+   wait_address = false;
 }
 
 module.exports = function(Message)
@@ -70,7 +71,9 @@ module.exports = function(Message)
       console.log('event :'+message.event);
       console.log('passo 0');
       wait_address = true;
-      geocoder.reverse({lat:message.lat, lon:message.lon}).then(function(res)
+      getLocationData(function(locationData) {console.log(locationData);
+
+      /*geocoder.reverse({lat:message.lat, lon:message.lon}).then(function(res)
       {
            console.log('passo 1A');
            address = res[0].formattedAddress;
@@ -86,7 +89,7 @@ module.exports = function(Message)
            console.log(res);
            console.log('passo 1C');
       }
-      ).catch(function(err) {console.log(err);});
+      ).catch(function(err) {console.log(err);});  */
       var i = 0;
       while ((i < 10000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {

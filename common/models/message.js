@@ -106,7 +106,7 @@ module.exports = function(Message)
                      evento = 'Info';
 		}
 		default: {
-                  evento = 'None';
+                  evento = 'Non Definito';
 		}
       }
 
@@ -136,6 +136,8 @@ module.exports = function(Message)
                  i++;
            }
       } */
+      if(address == null)
+         adress = 'non risolto';
       console.log('attesi sec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);

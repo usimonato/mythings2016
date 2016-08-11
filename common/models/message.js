@@ -71,9 +71,9 @@ module.exports = function(Message)
       console.log('event :'+message.event);
       console.log('passo 0');
       wait_address = true;
-      getLocationData(function(locationData) {console.log(locationData)});
+     // getLocationData(function(locationData) {console.log(locationData)});
 
-      /*geocoder.reverse({lat:message.lat, lon:message.lon}).then(function(res)
+      geocoder.reverse({lat:message.lat, lon:message.lon}).then(function(res)
       {
            console.log('passo 1A');
            address = res[0].formattedAddress;
@@ -89,7 +89,7 @@ module.exports = function(Message)
            console.log(res);
            console.log('passo 1C');
       }
-      ).catch(function(err) {console.log(err);});  */
+      ).catch(function(err) {console.log(err);});
       var i = 0;
       while ((i < 10000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {
@@ -111,7 +111,7 @@ module.exports = function(Message)
                      evento = 'Periodico';
 		}
 		default: {
-                  evento = 'Non Definito';
+                  evento = 'Prova';
 		}
       }
       alt_convert =  message.alt & 0x00FF;

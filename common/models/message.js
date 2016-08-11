@@ -74,9 +74,9 @@ module.exports = function(Message)
       {
            console.log('passo 1A');
            address = res[0].formattedAddress;
-           if(address == null)
+           if(address == 'undefined')
            {
-             if(res[1].formattedAddress != null)
+             if(res[1].formattedAddress != 'undefined')
              {
                address = res[1].formattedAddress;
                console.log('passo 1B');
@@ -93,25 +93,25 @@ module.exports = function(Message)
             sleep(1000);
             i++;
       }
-      evento =  message.alt & 0xFFFF0000;
+      evento =  message.alt & 0xFF00;
       switch (evento)
       {
-		case 0x00010000: {
+		case 0x0100: {
                     evento = 'Tasto';
 		    break;
 		}
-		case 0x00020000: {
+		case 0x0200: {
                     evento = 'Mosso';
 		}
 
-		case 0x00030000: {
+		case 0x0300: {
                      evento = 'Periodico';
 		}
 		default: {
                   evento = 'Non Definito';
 		}
       }
-      alt_convert =  message.alt & 0x0000FFFF;
+      alt_convert =  message.alt & 0x00FF;
       /*if(address == null)
       {
           wait_address = true;
@@ -138,7 +138,7 @@ module.exports = function(Message)
                  i++;
            }
       } */
-      if(address == null)
+      if(address == 'undefined')
          adress = 'non risolto';
       console.log('attesi sec: '+i);
       var dataora = new Date();

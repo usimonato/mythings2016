@@ -20,7 +20,7 @@ var geocoder = NodeGeocoder(options);
 var lat_convert;
 var lng_convert;
 var address;
-var Wait_address;
+var wait_address;
 
 function Bytes2Float32(bytes) {
     var sign = (bytes & 0x80000000) ? -1 : 1;
@@ -68,7 +68,7 @@ module.exports = function(Message)
       lat_convert = message.lat;
       lng_convert = message.log;
       console.log('passo 0');
-      Wait_address = true;
+      wait_address = true;
       geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
       {
            console.log('passo 1A');
@@ -81,20 +81,20 @@ module.exports = function(Message)
                console.log('passo 1B');
              }
            }
-           Wait_address = false;
+           wait_address = false;
            console.log(res);
            console.log('passo 1C');
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;
-      while ((i < 20) && (Wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
+      while ((i < 30) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {
             sleep(1000);
             i++;
       }
-      if(address == null)
+      /*if(address == null)
       {
-          Wait_address = true;
+          wait_address = true;
           geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
           {
                console.log('passo 1D');
@@ -107,17 +107,17 @@ module.exports = function(Message)
                       console.log('passo 1E')
                   }
                }
-               Wait_address = false;
+               wait_address = false;
                console.log(res);
                console.log('passo 1F');
                }
            ).catch(function(err) {console.log(err);});
-           while ((i < 30) && (Wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
+           while ((i < 30) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
            {
                  sleep(1000);
                  i++;
            }
-      }
+      } */
       console.log('attesi sec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);

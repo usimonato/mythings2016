@@ -105,10 +105,12 @@ module.exports = function(Message)
 		}
 		case 0x0200: {
                     evento = 'Mosso';
+                    break;
 		}
 
 		case 0x0300: {
                      evento = 'Periodico';
+                     break;
 		}
 		default: {
                   evento = 'Prova';
@@ -141,12 +143,12 @@ module.exports = function(Message)
                  i++;
            }
       } */
-      if(address == null)
+      if(address == 'undefined')
          adress = 'non risolto';
       console.log('attesi msec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);
 
       // Raw response object.

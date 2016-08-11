@@ -96,15 +96,15 @@ module.exports = function(Message)
       evento =  message.alt & 0xFFFF0000;
       switch (evento)
       {
-		case 0x00000000: {
+		case 0x00010000: {
                     evento = 'Tasto';
 		    break;
 		}
-		case 0x00010000: {
+		case 0x00020000: {
                     evento = 'Mosso';
 		}
 
-		case 0x00020000: {
+		case 0x00030000: {
                      evento = 'Info';
 		}
 		default: {
@@ -143,7 +143,7 @@ module.exports = function(Message)
       console.log('attesi sec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' da codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + '- codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + ' dbm , snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet)// Tweet body.
       console.log(response);
 
       // Raw response object.

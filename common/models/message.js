@@ -105,7 +105,7 @@ module.exports = function(Message)
 		}
 
 		case 0x00030000: {
-                     evento = 'Info';
+                     evento = 'Periodico';
 		}
 		default: {
                   evento = 'Non Definito';

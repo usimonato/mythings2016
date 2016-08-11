@@ -71,7 +71,7 @@ module.exports = function(Message)
       console.log('event :'+message.event);
       console.log('passo 0');
       wait_address = true;
-      getLocationData(function(locationData) {console.log(locationData)};
+      getLocationData(function(locationData) {console.log(locationData)});
 
       /*geocoder.reverse({lat:message.lat, lon:message.lon}).then(function(res)
       {

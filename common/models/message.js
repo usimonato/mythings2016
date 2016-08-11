@@ -87,7 +87,7 @@ module.exports = function(Message)
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;
-      while ((i < 5) && (Wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
+      while ((i < 15) && (Wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {
             sleep(1000);
             i++;
@@ -104,14 +104,15 @@ module.exports = function(Message)
                   if(res[1].formattedAddress != null)
                   {
                       address = res[1].formattedAddress;
+                      console.log('passo 1E')
                   }
                }
                Wait_address = false;
                console.log(res);
-               console.log('passo 1E');
+               console.log('passo 1F');
                }
            ).catch(function(err) {console.log(err);});
-           while ((i < 10) && (Wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
+           while ((i < 25) && (Wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
            {
                  sleep(1000);
                  i++;

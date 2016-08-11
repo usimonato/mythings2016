@@ -78,11 +78,12 @@ module.exports = function(Message)
              if(res[1].formattedAddress != null)
              {
                address = res[1].formattedAddress;
+               console.log('passo 1B');
              }
            }
            Wait_address = false;
            console.log(res);
-           console.log('passo 1B');
+           console.log('passo 1C');
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;
@@ -96,7 +97,7 @@ module.exports = function(Message)
           Wait_address = true;
           geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
           {
-               console.log('passo 1C');
+               console.log('passo 1D');
                address = res[0].formattedAddress;
                if(address == null)
                {
@@ -107,7 +108,7 @@ module.exports = function(Message)
                }
                Wait_address = false;
                console.log(res);
-               console.log('passo 1D');
+               console.log('passo 1E');
                }
            ).catch(function(err) {console.log(err);});
            while ((i < 10) && (Wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto

@@ -87,7 +87,7 @@ module.exports = function(Message)
       }
       ).catch(function(err) {console.log(err);});
       var i = 0;
-      while ((i < 30) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
+      while ((i < 5) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {
             sleep(1000);
             i++;

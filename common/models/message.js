@@ -112,6 +112,14 @@ module.exports = function(Message)
                      evento = 'Periodico';
                      break;
 		}
+                case 0x0400: {
+                     evento = 'Aperto';
+                     break;
+		}
+		case 0x0500: {
+                     evento = 'Chiuso';
+                     break;
+		}
 		default: {
                   evento = 'Prova';
 		}
@@ -143,6 +151,7 @@ module.exports = function(Message)
                  i++;
            }
       } */
+      console.log('address : '+address);
       if(address == 'undefined')
          adress = 'non risolto';
       console.log('attesi msec: '+i);

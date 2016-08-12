@@ -153,7 +153,7 @@ module.exports = function(Message)
       } */
       console.log('address : '+address);
       if(address == 'undefined')
-         adress = 'non risolto';
+         address = 'non risolto';
       console.log('attesi msec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);

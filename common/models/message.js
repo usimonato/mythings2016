@@ -146,6 +146,15 @@ module.exports = function(Message)
       console.log('event :'+message.event);
       console.log('passo 0');
       wait_address = true;
+
+      sequence
+      .then(function (next) {
+        setTimeout(function () {next(err, "Hi", "World!");}, 120);}).then(function (next, err, a, b) {setTimeout(function () {next(err, "Hello", b);}, 270);
+      })
+      .then(function (next, err, a, b) {
+        setTimeout(function () {console.log(a, b); next();}, 50);
+      });
+
      // getLocationData(function(locationData) {console.log(locationData)});
 
 

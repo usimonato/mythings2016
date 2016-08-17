@@ -263,18 +263,21 @@ module.exports = function(Message)
       console.log('passo 6666666');
       if(address_new == null)
       {
-         usingItNow(myCallback);
          console.log('passo 77777777');
+         usingItNow(myCallback);
       }
-      console.log('address_last: '+address_last);
+
       if(address_new != address_last)
       {
-         usingItNow(myCallback);
          console.log('passo 88888888');
+         usingItNow(myCallback);
+
       }
 
       if(address_last == null)
          address_last = 'non risolto';
+         
+      console.log('address_last: '+address_last);   
       console.log('attesi msec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);

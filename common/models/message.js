@@ -17,7 +17,8 @@ var options = {
   formatter: null         // 'gpx', 'string', ...
 };
 
-var geocoder = NodeGeocoder(options);
+//var geocoder = NodeGeocoder(options);
+var geocoder = require('geocoder');
 var lat_convert;
 var lon_convert;
 var alt_convert;

@@ -58,6 +58,10 @@ var myCallback = function(err, data) {
    console.log('passo 2D');
    wait_address = false;
   if (err) {console.log(err);}; // Check for the error and throw if it exists.
+  if(res[0].formattedAddress == null)
+  {
+         address = data;
+  }
   console.log('got data: '+data); // Otherwise proceed as usual.
 };
 
@@ -76,13 +80,8 @@ var usingItNow = function(callback) {
      console.log(res);});
    console.log('passo 2C')
    var j = 0;
-   while ((j < 100) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
-   {
-            sleep(100);
-            j++;
-   }
-
-   callback(null,'Test');
+   sleep(100);
+   callback(null,res[0].formattedAddress);
   // callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
 };
 

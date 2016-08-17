@@ -64,13 +64,10 @@ var usingItNow = function(callback) {
    console.log('lon : '+lon_convert);
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
    var j = 0;
+
    while ((j < 2000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
    {
          sleep(1);
-         if( status == geocoder.GeocoderStatus.OK )
-         {
-             wait_address = false;
-         }  
          j++;
    }
    wait_address = false;

@@ -17,8 +17,8 @@ var options = {
   formatter: null         // 'gpx', 'string', ...
 };
 
-//var geocoder = NodeGeocoder(options);
-var geocoder = require('geocoder');
+var geocoder = NodeGeocoder(options);
+//var geocoder = require('geocoder');
 var lat_convert;
 var lon_convert;
 var alt_convert;
@@ -66,15 +66,20 @@ var usingItNow = function(callback) {
    console.log('lat : '+lat_convert);
    console.log('lon : '+lon_convert);
    geocoder.reverseGeocode({lat:lat_convert, lon:lon_convert}, function(err, res) {
+     wait_address = false;
      address = res[0].formattedAddress;
      console.log('address risolto : '+address);
      console.log(res);});
-   sleep(200);
-   sleep(400);
-   sleep(800);
-   wait_address = false;
+
+
+
    console.log('passo 2B')
-   sleep(100);
+   var j = 0;
+   while ((j < 100) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
+   {
+            sleep(100);
+            j++;
+   }
 
    callback(null,'Test');
   // callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument

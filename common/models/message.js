@@ -81,7 +81,7 @@ var usingItNow = function(callback) {
    console.log('passo 2C')
    var j = 0;
    sleep(100);
-   callback(null,res[0].formattedAddress);
+   callback(null,address);
   // callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
 };
 
@@ -251,12 +251,12 @@ module.exports = function(Message)
            }
       } */
       console.log('passo 6666666');
-      if(address == null)
+      /*if(address == null)
       {
          usingItNow(myCallback);
-      }
+      }  */
       console.log('address : '+address);
-      if(address === 'undefined')
+      if(address == null)
          address = 'non risolto';
       console.log('attesi msec: '+i);
       var dataora = new Date();

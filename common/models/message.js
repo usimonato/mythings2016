@@ -68,7 +68,7 @@ function test(){
     }
 }
 
-wait.launchFiber(test);
+
 
 module.exports = function(Message)
 { //Use the environment variables in production

@@ -77,6 +77,24 @@ function test(){
 
 
 
+function getLocation(location) {
+  getLocationData(location, function(latLong) {
+    console.log('latLong:', latLong);
+  });
+}
+
+function getLocationData(location, callback) {
+  geocoder.geocode(location, function(err, res) {
+    if (err){
+      console.log('geocode error', err);
+    }else{
+      callback(res);
+    }
+  });
+}
+
+
+
 module.exports = function(Message)
 { //Use the environment variables in production
   var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consumer_secret: process.env.TWITTER_CONSUMER_SECRET, access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY, access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET, });
@@ -126,8 +144,11 @@ module.exports = function(Message)
      lat_convert = message.lat;
      lon_convert = message.lon;
      console.log('passo 11111111111');
-     usingItNow(myCallback);
+     //usingItNow(myCallback);
+
+     getLocation('1060 W Addison St, Chicago, IL 60613');
      console.log('passo 22222222222');
+     function getLocationData(position, callback) {
 
     /* geocoder.reverse(
       {lat:message.lat, lon:message.lon}).then(function(res)

@@ -65,7 +65,7 @@ var usingItNow = function(callback) {
    console.log('passo 2A');
    console.log('lat : '+lat_convert);
    console.log('lon : '+lon_convert);
-   geocoder.reverseGeocode({lat:lat_convert, lon:lon_convert}, function(err, res) {
+   geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {
      wait_address = false;
      address = res[0].formattedAddress;
      console.log('address risolto : '+address);

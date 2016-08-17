@@ -266,7 +266,13 @@ module.exports = function(Message)
          usingItNow(myCallback);
          console.log('passo 77777777');
       }
-      console.log('address : '+address_last);
+      console.log('address_last: '+address_last);
+      if(address_new != address_last)
+      {
+         usingItNow(myCallback);
+         console.log('passo 88888888');
+      }
+
       if(address_last == null)
          address_last = 'non risolto';
       console.log('attesi msec: '+i);

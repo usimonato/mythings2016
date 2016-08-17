@@ -174,6 +174,7 @@ module.exports = function(Message)
      lat_convert = message.lat;
      lon_convert = message.lon;
      console.log('passo 11111111111');
+     address_new = null;
      usingItNow(myCallback);
 
      //getLocation('1060 W Addison St, Chicago, IL 60613');
@@ -263,6 +264,7 @@ module.exports = function(Message)
       if(address_new == null)
       {
          usingItNow(myCallback);
+         console.log('passo 77777777');
       }
       console.log('address : '+address_last);
       if(address_last == null)

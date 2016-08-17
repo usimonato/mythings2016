@@ -68,7 +68,10 @@ var usingItNow = function(callback) {
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {
      console.log('passo 2B')
      wait_address = false;
-     address = res[0].formattedAddress;
+     if(res[0].formattedAddress == null)
+     {
+         address = res[0].formattedAddress;
+     }
      console.log('address risolto : '+address);
      console.log(res);});
    console.log('passo 2C')
@@ -248,8 +251,13 @@ module.exports = function(Message)
                  i++;
            }
       } */
+      console.log('passo 6666666');
+      if(address == null)
+      {
+         usingItNow(myCallback);
+      }
       console.log('address : '+address);
-      if(address == 'undefined')
+      if(address === 'undefined')
          address = 'non risolto';
       console.log('attesi msec: '+i);
       var dataora = new Date();

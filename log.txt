@@ -1152,3 +1152,105 @@
 2016-08-17T07:32:13.586812+00:00 app[web.1]:   read: [Function],
 2016-08-17T07:32:13.586815+00:00 app[web.1]:   body: '{"created_at":"Wed Aug 17 07:32:13 +0000 2016","id":765813467622346753,"id_str":"765813467622346753","text":"Evento:Tasto- codice: IOT_01 - in undefined - lat:45.70284, lng:11.564837, alt:109 - base:284E, rssi:-138.00dbm, snr:9.42","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"\\u003ca href=\\"http:\\/\\/127.0.0.1\\/\\" rel=\\"nofollow\\"\\u003eMythings1\\u003c\\/a\\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":762367617407545344,"id_str":"762367617407545344","name":"usthings2016","screen_name":"usthings2016","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1,"friends_count":1,"listed_count":0,"created_at":"Sun Aug 07 19:19:38 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":1,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"}' }
 Terminare il processo batch (S/N)? 
+2016-08-17T07:32:13.586277+00:00 app[web.1]:      'strict-transport-security': 'max-age=631138519',
+2016-08-17T07:32:13.586278+00:00 app[web.1]:      'x-access-level': 'read-write-directmessages',
+2016-08-17T07:32:13.586279+00:00 app[web.1]:      'x-frame-options': 'SAMEORIGIN',
+2016-08-17T07:32:13.586278+00:00 app[web.1]:      'x-connection-hash': '708388346fe9e8887f26c73fe4da9911',
+2016-08-17T07:32:13.586279+00:00 app[web.1]:      'x-content-type-options': 'nosniff',
+2016-08-17T07:32:13.586280+00:00 app[web.1]:      'x-response-time': '79',
+2016-08-17T07:32:13.586280+00:00 app[web.1]:      'x-transaction': '002646c100df9b6f',
+2016-08-17T07:32:13.586282+00:00 app[web.1]:      'x-xss-protection': '1; mode=block' },
+2016-08-17T07:32:13.586281+00:00 app[web.1]:      'x-twitter-response-tags': 'BouncerCompliant',
+2016-08-17T07:32:13.586281+00:00 app[web.1]:      'x-tsa-request-body-time': '0',
+2016-08-17T07:32:13.586283+00:00 app[web.1]:   rawHeaders: 
+2016-08-17T07:32:13.586283+00:00 app[web.1]:    [ 'cache-control',
+2016-08-17T07:32:13.586284+00:00 app[web.1]:      'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
+2016-08-17T07:32:13.586285+00:00 app[web.1]:      'close',
+2016-08-17T07:32:13.586284+00:00 app[web.1]:      'connection',
+2016-08-17T07:32:13.586286+00:00 app[web.1]:      'content-disposition',
+2016-08-17T07:32:13.586286+00:00 app[web.1]:      'attachment; filename=json.json',
+2016-08-17T07:32:13.586287+00:00 app[web.1]:      'content-length',
+2016-08-17T07:32:13.586287+00:00 app[web.1]:      '1948',
+2016-08-17T07:32:13.586288+00:00 app[web.1]:      'content-type',
+2016-08-17T07:32:13.586289+00:00 app[web.1]:      'date',
+2016-08-17T07:32:13.586288+00:00 app[web.1]:      'application/json;charset=utf-8',
+2016-08-17T07:32:13.586291+00:00 app[web.1]:      'Tue, 31 Mar 1981 05:00:00 GMT',
+2016-08-17T07:32:13.586289+00:00 app[web.1]:      'Wed, 17 Aug 2016 07:32:13 GMT',
+2016-08-17T07:32:13.586290+00:00 app[web.1]:      'expires',
+2016-08-17T07:32:13.586291+00:00 app[web.1]:      'last-modified',
+2016-08-17T07:32:13.586292+00:00 app[web.1]:      'Wed, 17 Aug 2016 07:32:13 GMT',
+2016-08-17T07:32:13.586292+00:00 app[web.1]:      'pragma',
+2016-08-17T07:32:13.586293+00:00 app[web.1]:      'no-cache',
+2016-08-17T07:32:13.586293+00:00 app[web.1]:      'server',
+2016-08-17T07:32:13.586294+00:00 app[web.1]:      'tsa_b',
+2016-08-17T07:32:13.586294+00:00 app[web.1]:      'set-cookie',
+2016-08-17T07:32:13.586295+00:00 app[web.1]:      'set-cookie',
+2016-08-17T07:32:13.586295+00:00 app[web.1]:      'lang=it; Path=/',
+2016-08-17T07:32:13.586296+00:00 app[web.1]:      'guest_id=v1%3A147141913345574259; Domain=.twitter.com; Path=/; Expires=Fri, 17-Aug-2018 07:32:13 UTC',
+2016-08-17T07:32:13.586297+00:00 app[web.1]:      'status',
+2016-08-17T07:32:13.586297+00:00 app[web.1]:      '200 OK',
+2016-08-17T07:32:13.586298+00:00 app[web.1]:      'strict-transport-security',
+2016-08-17T07:32:13.586298+00:00 app[web.1]:      'max-age=631138519',
+2016-08-17T07:32:13.586299+00:00 app[web.1]:      'x-access-level',
+2016-08-17T07:32:13.586300+00:00 app[web.1]:      'read-write-directmessages',
+2016-08-17T07:32:13.586300+00:00 app[web.1]:      'x-connection-hash',
+2016-08-17T07:32:13.586301+00:00 app[web.1]:      '708388346fe9e8887f26c73fe4da9911',
+2016-08-17T07:32:13.586301+00:00 app[web.1]:      'x-content-type-options',
+2016-08-17T07:32:13.586302+00:00 app[web.1]:      'nosniff',
+2016-08-17T07:32:13.586302+00:00 app[web.1]:      'x-frame-options',
+2016-08-17T07:32:13.586786+00:00 app[web.1]:         parser: null,
+2016-08-17T07:32:13.586789+00:00 app[web.1]:         res: [Circular] },
+2016-08-17T07:32:13.586789+00:00 app[web.1]:      ntick: true,
+2016-08-17T07:32:13.586790+00:00 app[web.1]:      response: [Circular],
+2016-08-17T07:32:13.586790+00:00 app[web.1]:      originalHost: 'api.twitter.com',
+2016-08-17T07:32:13.586791+00:00 app[web.1]:      originalHostHeaderName: 'host',
+2016-08-17T07:32:13.586791+00:00 app[web.1]:      responseContent: [Circular],
+2016-08-17T07:32:13.586792+00:00 app[web.1]:      _destdata: true,
+2016-08-17T07:32:13.586792+00:00 app[web.1]:      _ended: true,
+2016-08-17T07:32:13.586793+00:00 app[web.1]:      _callbackCalled: true },
+2016-08-17T07:32:13.586794+00:00 app[web.1]:   toJSON: [Function: responseToJSON],
+2016-08-17T07:32:13.586794+00:00 app[web.1]:   caseless: 
+2016-08-17T07:32:13.586795+00:00 app[web.1]:    Caseless {
+2016-08-17T07:32:13.586795+00:00 app[web.1]:      dict: 
+2016-08-17T07:32:13.586799+00:00 app[web.1]:       { 'cache-control': 'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
+2016-08-17T07:32:13.586800+00:00 app[web.1]:         connection: 'close',
+2016-08-17T07:32:13.586801+00:00 app[web.1]:         'content-disposition': 'attachment; filename=json.json',
+2016-08-17T07:32:13.586801+00:00 app[web.1]:         'content-length': '1948',
+2016-08-17T07:32:13.586802+00:00 app[web.1]:         'content-type': 'application/json;charset=utf-8',
+2016-08-17T07:32:13.586802+00:00 app[web.1]:         date: 'Wed, 17 Aug 2016 07:32:13 GMT',
+2016-08-17T07:32:13.586803+00:00 app[web.1]:         expires: 'Tue, 31 Mar 1981 05:00:00 GMT',
+2016-08-17T07:32:13.586804+00:00 app[web.1]:         server: 'tsa_b',
+2016-08-17T07:32:13.586804+00:00 app[web.1]:         pragma: 'no-cache',
+2016-08-17T07:32:13.586805+00:00 app[web.1]:         'set-cookie': [Object],
+2016-08-17T07:32:13.586803+00:00 app[web.1]:         'last-modified': 'Wed, 17 Aug 2016 07:32:13 GMT',
+2016-08-17T07:32:13.586806+00:00 app[web.1]:         status: '200 OK',
+2016-08-17T07:32:13.586806+00:00 app[web.1]:         'strict-transport-security': 'max-age=631138519',
+2016-08-17T07:32:13.586807+00:00 app[web.1]:         'x-access-level': 'read-write-directmessages',
+2016-08-17T07:32:13.586807+00:00 app[web.1]:         'x-connection-hash': '708388346fe9e8887f26c73fe4da9911',
+2016-08-17T07:32:13.586808+00:00 app[web.1]:         'x-content-type-options': 'nosniff',
+2016-08-17T07:32:13.586808+00:00 app[web.1]:         'x-frame-options': 'SAMEORIGIN',
+2016-08-17T07:32:13.586809+00:00 app[web.1]:         'x-response-time': '79',
+2016-08-17T07:32:13.586809+00:00 app[web.1]:         'x-transaction': '002646c100df9b6f',
+2016-08-17T07:32:13.586811+00:00 app[web.1]:         'x-twitter-response-tags': 'BouncerCompliant',
+2016-08-17T07:32:13.586810+00:00 app[web.1]:         'x-tsa-request-body-time': '0',
+2016-08-17T07:32:13.586811+00:00 app[web.1]:         'x-xss-protection': '1; mode=block' } },
+2016-08-17T07:32:13.586812+00:00 app[web.1]:   read: [Function],
+2016-08-17T07:32:13.586815+00:00 app[web.1]:   body: '{"created_at":"Wed Aug 17 07:32:13 +0000 2016","id":765813467622346753,"id_str":"765813467622346753","text":"Evento:Tasto- codice: IOT_01 - in undefined - lat:45.70284, lng:11.564837, alt:109 - base:284E, rssi:-138.00dbm, snr:9.42","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"\\u003ca href=\\"http:\\/\\/127.0.0.1\\/\\" rel=\\"nofollow\\"\\u003eMythings1\\u003c\\/a\\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":762367617407545344,"id_str":"762367617407545344","name":"usthings2016","screen_name":"usthings2016","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1,"friends_count":1,"listed_count":0,"created_at":"Sun Aug 07 19:19:38 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":1,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"}' }
+2016-08-17T07:33:07.590642+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=b1a3a6c5-220a-4d82-b828-253128d95ecb fwd="185.110.97.11" dyno=web.1 connect=0ms service=21ms status=500 bytes=470
+2016-08-17T07:35:13.423306+00:00 heroku[api]: Deploy f8de514 by u.simonato@libero.it
+2016-08-17T07:35:13.423363+00:00 heroku[api]: Release v164 created by u.simonato@libero.it
+2016-08-17T07:35:13.639655+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-17T07:35:13.639664+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-17T07:35:13.603059+00:00 heroku[web.1]: Restarting
+2016-08-17T07:35:13.603963+00:00 heroku[web.1]: State changed from up to starting
+2016-08-17T07:35:16.927859+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-17T07:35:17.228395+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T07:35:17.866025+00:00 heroku[web.1]: Process exited with status 143
+2016-08-17T07:35:19.791930+00:00 app[web.1]: 
+2016-08-17T07:35:19.791942+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T07:35:19.791943+00:00 app[web.1]: > node .
+2016-08-17T07:35:19.791943+00:00 app[web.1]: 
+2016-08-17T07:35:21.639433+00:00 heroku[web.1]: State changed from starting to up
+2016-08-17T07:35:21.594920+00:00 app[web.1]: Web server listening at: http://0.0.0.0:59520
+2016-08-17T07:35:21.595954+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:59520/explorer
+Terminare il processo batch (S/N)? 

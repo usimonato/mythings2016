@@ -73,8 +73,34 @@ module.exports = function(Message)
       wait_address = true;
      // getLocationData(function(locationData) {console.log(locationData)});
 
-      geocoder.reverse({lat:message.lat, lon:message.lon}).then(function(res)
-      {
+
+     // Using callback
+     geocoder.reverse({lat:message.lat, lon:message.lon}, function(err, res)
+     {
+           if(err == NULL)
+           {
+                  console.log('passo 1A');
+                  address = res[0].formattedAddress;
+                  if(address == 'undefined')
+                  {
+                   if(res[1].formattedAddress != 'undefined')
+                   {
+                        address = res[1].formattedAddress;
+                        console.log('passo 1B');
+                   }
+                  }
+                  wait_address = false;
+                  console.log(res);
+                  console.log('passo 1C');
+           }
+           else {console.log(err);}
+
+     });
+
+
+     /* geocoder.reverse(
+      {lat:message.lat, lon:message.lon}).then(function(res)
+         {
            console.log('passo 1A');
            address = res[0].formattedAddress;
            if(address == 'undefined')
@@ -88,8 +114,9 @@ module.exports = function(Message)
            wait_address = false;
            console.log(res);
            console.log('passo 1C');
-      }
-      ).catch(function(err) {console.log(err);});
+         }
+      ).catch(function(err) {console.log(err);});*/
+
       var i = 0;
       while ((i < 10000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {
@@ -157,7 +184,7 @@ module.exports = function(Message)
       console.log('attesi msec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);
-    
+
       client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + message.name + " - in " + address + " - lat:" +  +message.lat + ", lng:" +  message.lon +  ", alt:" +  alt_convert  + " - base:" + message.station + ", rssi:" + message.rssi + "dbm, snr:" + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm, snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
       next(); });

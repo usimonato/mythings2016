@@ -64,7 +64,7 @@ var usingItNow = function(callback) {
    console.log('lon : '+lon_convert);
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
    var j = 0;
-   while ((j < 1000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
+   while ((j < 2000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
    {
          sleep(1);
          /*if( status == geocoder.GeocoderStatus.OK )
@@ -74,8 +74,8 @@ var usingItNow = function(callback) {
          j++;
    }
    wait_address = false;
-   callback(null,res[0].formattedAddress);
    console.log('passo 2B');
+   callback(null,'Test');
   // callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
 };
 

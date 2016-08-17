@@ -138,3 +138,143 @@
 2016-08-17T13:32:29.293287+00:00 app[web.1]:     zipcode: '359250',
 2016-08-17T13:32:29.293288+00:00 app[web.1]:     provider: 'google' } ]
 Terminare il processo batch (S/N)? 
+2016-08-17T13:25:45.806630+00:00 app[web.1]: lat : 45.767
+2016-08-17T13:25:45.806711+00:00 app[web.1]: lon : 45.767
+2016-08-17T13:25:45.806787+00:00 app[web.1]: alt : 0
+2016-08-17T13:25:45.807159+00:00 app[web.1]: passo 2A
+2016-08-17T13:25:45.807416+00:00 app[web.1]: lat : 45.767
+2016-08-17T13:25:45.806214+00:00 app[web.1]: data : string
+2016-08-17T13:25:45.806967+00:00 app[web.1]: passo 11111111111
+2016-08-17T13:25:45.806361+00:00 app[web.1]: rssi : string
+2016-08-17T13:25:45.807480+00:00 app[web.1]: lon : 45.767
+2016-08-17T13:25:45.806903+00:00 app[web.1]: passo 0
+2016-08-17T13:25:46.016939+00:00 app[web.1]:     latitude: 45.7767937,
+2016-08-17T13:25:46.016941+00:00 app[web.1]:     extra: 
+2016-08-17T13:25:46.016935+00:00 app[web.1]: [ { formattedAddress: 'Unnamed Road, Respublika Kalmykiya, Russia, 359250',
+2016-08-17T13:25:46.016942+00:00 app[web.1]:      { googlePlaceId: 'ChIJ7VTuMm_AqkER5PTxV0NvhmM',
+2016-08-17T13:25:46.016943+00:00 app[web.1]:        confidence: 0.7,
+2016-08-17T13:25:46.016944+00:00 app[web.1]:        subpremise: null,
+2016-08-17T13:25:46.016945+00:00 app[web.1]:        neighborhood: null,
+2016-08-17T13:25:46.016945+00:00 app[web.1]:        establishment: null },
+2016-08-17T13:25:46.016940+00:00 app[web.1]:     longitude: 45.7428726,
+2016-08-17T13:25:46.016946+00:00 app[web.1]:     administrativeLevels: 
+2016-08-17T13:25:46.016947+00:00 app[web.1]:      { level2long: 'Chernozemelskiy rayon',
+2016-08-17T13:25:46.016943+00:00 app[web.1]:        premise: null,
+2016-08-17T13:25:46.016950+00:00 app[web.1]:     streetName: 'Unnamed Road',
+2016-08-17T13:25:46.016952+00:00 app[web.1]:     provider: 'google' } ]
+2016-08-17T13:25:46.016948+00:00 app[web.1]:        level2short: 'Chernozemelskiy r-n',
+2016-08-17T13:25:46.016948+00:00 app[web.1]:        level1long: 'Respublika Kalmykiya',
+2016-08-17T13:25:46.016951+00:00 app[web.1]:     countryCode: 'RU',
+2016-08-17T13:25:46.016952+00:00 app[web.1]:     zipcode: '359250',
+2016-08-17T13:25:46.016950+00:00 app[web.1]:     country: 'Russia',
+2016-08-17T13:25:46.016949+00:00 app[web.1]:        level1short: 'Respublika Kalmykiya' },
+2016-08-17T13:25:45.864783+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=0a3c315a-3b78-4ad5-8d54-31e6006f65de fwd="95.233.59.235" dyno=web.1 connect=6ms service=179ms status=500 bytes=468
+2016-08-17T13:31:39.571257+00:00 heroku[api]: Release v184 created by u.simonato@libero.it
+2016-08-17T13:31:39.571144+00:00 heroku[api]: Deploy 9eab9ef by u.simonato@libero.it
+2016-08-17T13:31:39.768486+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-17T13:31:39.768496+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-17T13:31:39.854222+00:00 heroku[web.1]: Restarting
+2016-08-17T13:31:39.854802+00:00 heroku[web.1]: State changed from up to starting
+2016-08-17T13:31:43.622235+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T13:31:43.781001+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-17T13:31:44.812093+00:00 heroku[web.1]: Process exited with status 143
+2016-08-17T13:31:45.985446+00:00 app[web.1]: 
+2016-08-17T13:31:45.985459+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T13:31:45.985461+00:00 app[web.1]: 
+2016-08-17T13:31:45.985460+00:00 app[web.1]: > node .
+2016-08-17T13:31:47.517195+00:00 app[web.1]: Web server listening at: http://0.0.0.0:47140
+2016-08-17T13:31:47.517838+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:47140/explorer
+2016-08-17T13:31:47.974242+00:00 heroku[web.1]: State changed from starting to up
+2016-08-17T13:32:29.153835+00:00 app[web.1]: time : 638
+2016-08-17T13:32:29.153605+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T13:32:29.153989+00:00 app[web.1]: name: string
+2016-08-17T13:32:29.154065+00:00 app[web.1]: rssi : string
+2016-08-17T13:32:29.154137+00:00 app[web.1]: snr : string
+2016-08-17T13:32:29.171714+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=45866651-3450-4e6c-9346-f0af843515d4 fwd="95.233.59.235" dyno=web.1 connect=0ms service=114ms status=500 bytes=468
+2016-08-17T13:32:29.154212+00:00 app[web.1]: station : string
+2016-08-17T13:32:29.154289+00:00 app[web.1]: lat : 45.767
+2016-08-17T13:32:29.154362+00:00 app[web.1]: lon : 45.767
+2016-08-17T13:32:29.154463+00:00 app[web.1]: alt : 0
+2016-08-17T13:32:29.154534+00:00 app[web.1]: event :0
+2016-08-17T13:32:29.154563+00:00 app[web.1]: passo 0
+2016-08-17T13:32:29.155017+00:00 app[web.1]: passo 2A
+2016-08-17T13:32:29.153913+00:00 app[web.1]: data : string
+2016-08-17T13:32:29.153837+00:00 app[web.1]: device: string
+2016-08-17T13:32:29.154845+00:00 app[web.1]: passo 11111111111
+2016-08-17T13:32:29.155077+00:00 app[web.1]: lat : 45.767
+2016-08-17T13:32:29.293277+00:00 app[web.1]:     latitude: 45.7767937,
+2016-08-17T13:32:29.293278+00:00 app[web.1]:     longitude: 45.7428726,
+2016-08-17T13:32:29.155132+00:00 app[web.1]: lon : 45.767
+2016-08-17T13:32:29.293274+00:00 app[web.1]: [ { formattedAddress: 'Unnamed Road, Respublika Kalmykiya, Russia, 359250',
+2016-08-17T13:32:29.293283+00:00 app[web.1]:        establishment: null },
+2016-08-17T13:32:29.293283+00:00 app[web.1]:     administrativeLevels: 
+2016-08-17T13:32:29.293284+00:00 app[web.1]:      { level2long: 'Chernozemelskiy rayon',
+2016-08-17T13:32:29.293285+00:00 app[web.1]:        level2short: 'Chernozemelskiy r-n',
+2016-08-17T13:32:29.293285+00:00 app[web.1]:        level1long: 'Respublika Kalmykiya',
+2016-08-17T13:32:29.293286+00:00 app[web.1]:        level1short: 'Respublika Kalmykiya' },
+2016-08-17T13:32:29.293286+00:00 app[web.1]:     streetName: 'Unnamed Road',
+2016-08-17T13:32:29.293280+00:00 app[web.1]:        confidence: 0.7,
+2016-08-17T13:32:29.293282+00:00 app[web.1]:        neighborhood: null,
+2016-08-17T13:32:29.293287+00:00 app[web.1]:     country: 'Russia',
+2016-08-17T13:32:29.293287+00:00 app[web.1]:     zipcode: '359250',
+2016-08-17T13:32:29.293279+00:00 app[web.1]:     extra: 
+2016-08-17T13:32:29.293280+00:00 app[web.1]:      { googlePlaceId: 'ChIJ7VTuMm_AqkER5PTxV0NvhmM',
+2016-08-17T13:32:29.293287+00:00 app[web.1]:     countryCode: 'RU',
+2016-08-17T13:32:29.293288+00:00 app[web.1]:     provider: 'google' } ]
+2016-08-17T13:32:29.293281+00:00 app[web.1]:        subpremise: null,
+2016-08-17T13:32:29.293281+00:00 app[web.1]:        premise: null,
+2016-08-17T13:35:27.444914+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-17T13:35:27.444909+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-17T13:35:27.280951+00:00 heroku[api]: Deploy 3dc8a46 by u.simonato@libero.it
+2016-08-17T13:35:27.281017+00:00 heroku[api]: Release v185 created by u.simonato@libero.it
+2016-08-17T13:35:28.123441+00:00 heroku[web.1]: Restarting
+2016-08-17T13:35:28.124143+00:00 heroku[web.1]: State changed from up to starting
+2016-08-17T13:35:30.745320+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-17T13:35:31.533848+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T13:35:31.549556+00:00 heroku[web.1]: Process exited with status 143
+2016-08-17T13:35:33.416084+00:00 app[web.1]: 
+2016-08-17T13:35:33.416104+00:00 app[web.1]: > node .
+2016-08-17T13:35:33.416103+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T13:35:33.416105+00:00 app[web.1]: 
+2016-08-17T13:35:34.862078+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:36649/explorer
+2016-08-17T13:35:34.861284+00:00 app[web.1]: Web server listening at: http://0.0.0.0:36649
+2016-08-17T13:35:35.129939+00:00 heroku[web.1]: State changed from starting to up
+2016-08-17T13:36:03.897564+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T13:36:03.897719+00:00 app[web.1]: time : 640
+2016-08-17T13:36:03.897813+00:00 app[web.1]: device: string
+2016-08-17T13:36:03.897857+00:00 app[web.1]: data : string
+2016-08-17T13:36:03.897924+00:00 app[web.1]: name: string
+2016-08-17T13:36:03.897985+00:00 app[web.1]: rssi : string
+2016-08-17T13:36:03.898062+00:00 app[web.1]: snr : string
+2016-08-17T13:36:03.898117+00:00 app[web.1]: station : string
+2016-08-17T13:36:03.898183+00:00 app[web.1]: lat : 45.767
+2016-08-17T13:36:03.898245+00:00 app[web.1]: lon : 45.767
+2016-08-17T13:36:03.898304+00:00 app[web.1]: alt : 0
+2016-08-17T13:36:03.898371+00:00 app[web.1]: event :0
+2016-08-17T13:36:03.898415+00:00 app[web.1]: passo 0
+2016-08-17T13:36:03.898463+00:00 app[web.1]: passo 11111111111
+2016-08-17T13:36:03.898659+00:00 app[web.1]: passo 2A
+2016-08-17T13:36:03.898720+00:00 app[web.1]: lat : 45.767
+2016-08-17T13:36:03.898791+00:00 app[web.1]: lon : 45.767
+2016-08-17T13:36:05.074532+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=61f31495-38d3-40dc-8ca1-d58e979fbee0 fwd="95.233.59.235" dyno=web.1 connect=0ms service=1265ms status=500 bytes=465
+2016-08-17T13:36:05.151084+00:00 app[web.1]: [ { formattedAddress: 'Unnamed Road, Respublika Kalmykiya, Russia, 359250',
+2016-08-17T13:36:05.151097+00:00 app[web.1]:     latitude: 45.7767937,
+2016-08-17T13:36:05.151097+00:00 app[web.1]:     longitude: 45.7428726,
+2016-08-17T13:36:05.151098+00:00 app[web.1]:     extra: 
+2016-08-17T13:36:05.151099+00:00 app[web.1]:      { googlePlaceId: 'ChIJ7VTuMm_AqkER5PTxV0NvhmM',
+2016-08-17T13:36:05.151100+00:00 app[web.1]:        confidence: 0.7,
+2016-08-17T13:36:05.151100+00:00 app[web.1]:        premise: null,
+2016-08-17T13:36:05.151101+00:00 app[web.1]:        subpremise: null,
+2016-08-17T13:36:05.151101+00:00 app[web.1]:        neighborhood: null,
+2016-08-17T13:36:05.151102+00:00 app[web.1]:        establishment: null },
+2016-08-17T13:36:05.151102+00:00 app[web.1]:     administrativeLevels: 
+2016-08-17T13:36:05.151103+00:00 app[web.1]:      { level2long: 'Chernozemelskiy rayon',
+2016-08-17T13:36:05.151103+00:00 app[web.1]:        level2short: 'Chernozemelskiy r-n',
+2016-08-17T13:36:05.151103+00:00 app[web.1]:        level1long: 'Respublika Kalmykiya',
+2016-08-17T13:36:05.151104+00:00 app[web.1]:        level1short: 'Respublika Kalmykiya' },
+2016-08-17T13:36:05.151104+00:00 app[web.1]:     streetName: 'Unnamed Road',
+2016-08-17T13:36:05.151104+00:00 app[web.1]:     country: 'Russia',
+2016-08-17T13:36:05.151105+00:00 app[web.1]:     countryCode: 'RU',
+2016-08-17T13:36:05.151105+00:00 app[web.1]:     zipcode: '359250',
+2016-08-17T13:36:05.151106+00:00 app[web.1]:     provider: 'google' } ]
+Terminare il processo batch (S/N)? 

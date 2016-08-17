@@ -1,0 +1,104 @@
+2016-08-17T06:45:07.398149+00:00 heroku[web.1]: State changed from starting to crashed
+2016-08-17T06:50:00.605139+00:00 heroku[api]: Deploy bb1b33c by u.simonato@libero.it
+2016-08-17T06:50:00.605223+00:00 heroku[api]: Release v156 created by u.simonato@libero.it
+2016-08-17T06:50:00.782392+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-17T06:50:00.782403+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-17T06:50:01.776113+00:00 heroku[web.1]: State changed from crashed to starting
+2016-08-17T06:50:05.530773+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T06:50:07.846664+00:00 app[web.1]: 
+2016-08-17T06:50:07.846681+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T06:50:07.846682+00:00 app[web.1]: 
+2016-08-17T06:50:07.846682+00:00 app[web.1]: > node .
+2016-08-17T06:50:09.044233+00:00 heroku[web.1]: Process exited with status 1
+2016-08-17T06:50:08.935749+00:00 app[web.1]: /app/common/models/message.js:166
+2016-08-17T06:50:08.935760+00:00 app[web.1]: };
+2016-08-17T06:50:08.935761+00:00 app[web.1]: ^
+2016-08-17T06:50:08.935761+00:00 app[web.1]: 
+2016-08-17T06:50:08.935762+00:00 app[web.1]: SyntaxError: missing ) after argument list
+2016-08-17T06:50:08.935763+00:00 app[web.1]:     at exports.runInThisContext (vm.js:53:16)
+2016-08-17T06:50:08.935764+00:00 app[web.1]:     at Module._compile (module.js:387:25)
+2016-08-17T06:50:08.935766+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:422:10)
+2016-08-17T06:50:08.935767+00:00 app[web.1]:     at Module.load (module.js:357:32)
+2016-08-17T06:50:08.935770+00:00 app[web.1]:     at Function.Module._load (module.js:314:12)
+2016-08-17T06:50:08.935771+00:00 app[web.1]:     at Module.require (module.js:367:17)
+2016-08-17T06:50:08.935771+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2016-08-17T06:50:08.935772+00:00 app[web.1]:     at /app/node_modules/loopback-boot/lib/executor.js:245:20
+2016-08-17T06:50:08.935773+00:00 app[web.1]:     at Array.forEach (native)
+2016-08-17T06:50:08.935774+00:00 app[web.1]:     at defineModels (/app/node_modules/loopback-boot/lib/executor.js:226:23)
+2016-08-17T06:50:08.954065+00:00 app[web.1]: 
+2016-08-17T06:50:08.965843+00:00 app[web.1]: npm ERR! Linux 3.13.0-85-generic
+2016-08-17T06:50:08.966317+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-17T06:50:08.966611+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-17T06:50:08.967131+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-17T06:50:08.967551+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-17T06:50:08.967758+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-08-17T06:50:08.967913+00:00 app[web.1]: npm ERR! Exit status 1
+2016-08-17T06:50:08.968083+00:00 app[web.1]: npm ERR! 
+2016-08-17T06:50:08.968348+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-08-17T06:50:08.968540+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-08-17T06:50:08.968707+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-08-17T06:50:08.968868+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-17T06:50:08.969097+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-17T06:50:08.969343+00:00 app[web.1]: npm ERR!     node .
+2016-08-17T06:50:08.969515+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-17T06:50:08.969686+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-17T06:50:08.969892+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-17T06:50:08.970110+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-17T06:50:08.975557+00:00 app[web.1]: 
+2016-08-17T06:50:08.970292+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-17T06:50:08.975831+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-17T06:50:08.975986+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-17T06:50:09.066726+00:00 heroku[web.1]: State changed from starting to crashed
+2016-08-17T06:52:26.241879+00:00 heroku[api]: Deploy 2e6c630 by u.simonato@libero.it
+2016-08-17T06:52:26.241949+00:00 heroku[api]: Release v157 created by u.simonato@libero.it
+2016-08-17T06:52:26.445105+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-17T06:52:26.445111+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-17T06:52:26.491228+00:00 heroku[web.1]: State changed from crashed to starting
+2016-08-17T06:52:30.818143+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T06:52:33.675397+00:00 app[web.1]: 
+2016-08-17T06:52:33.675410+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T06:52:33.675411+00:00 app[web.1]: > node .
+2016-08-17T06:52:33.675411+00:00 app[web.1]: 
+2016-08-17T06:52:34.530179+00:00 app[web.1]: /app/common/models/message.js:166
+2016-08-17T06:52:34.530197+00:00 app[web.1]: 
+2016-08-17T06:52:34.530196+00:00 app[web.1]: };
+2016-08-17T06:52:34.530198+00:00 app[web.1]: SyntaxError: missing ) after argument list
+2016-08-17T06:52:34.530196+00:00 app[web.1]: ^
+2016-08-17T06:52:34.530199+00:00 app[web.1]:     at exports.runInThisContext (vm.js:53:16)
+2016-08-17T06:52:34.530199+00:00 app[web.1]:     at Module._compile (module.js:387:25)
+2016-08-17T06:52:34.530203+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:422:10)
+2016-08-17T06:52:34.530203+00:00 app[web.1]:     at Module.load (module.js:357:32)
+2016-08-17T06:52:34.530207+00:00 app[web.1]:     at defineModels (/app/node_modules/loopback-boot/lib/executor.js:226:23)
+2016-08-17T06:52:34.530207+00:00 app[web.1]:     at Array.forEach (native)
+2016-08-17T06:52:34.530204+00:00 app[web.1]:     at Function.Module._load (module.js:314:12)
+2016-08-17T06:52:34.530204+00:00 app[web.1]:     at Module.require (module.js:367:17)
+2016-08-17T06:52:34.544029+00:00 app[web.1]: 
+2016-08-17T06:52:34.530205+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2016-08-17T06:52:34.530206+00:00 app[web.1]:     at /app/node_modules/loopback-boot/lib/executor.js:245:20
+2016-08-17T06:52:34.551974+00:00 app[web.1]: npm ERR! Linux 3.13.0-85-generic
+2016-08-17T06:52:34.552274+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-17T06:52:34.552440+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-17T06:52:34.552855+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-17T06:52:34.553136+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-17T06:52:34.553659+00:00 app[web.1]: npm ERR! 
+2016-08-17T06:52:34.553437+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-08-17T06:52:34.553535+00:00 app[web.1]: npm ERR! Exit status 1
+2016-08-17T06:52:34.553767+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-08-17T06:52:34.553884+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-08-17T06:52:34.553992+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-08-17T06:52:34.554116+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-17T06:52:34.554250+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-17T06:52:34.554411+00:00 app[web.1]: npm ERR!     node .
+2016-08-17T06:52:34.554571+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-17T06:52:34.554741+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-17T06:52:34.555046+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-17T06:52:34.554892+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-17T06:52:34.555215+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-17T06:52:34.559052+00:00 app[web.1]: 
+2016-08-17T06:52:34.559299+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-17T06:52:34.559428+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-17T06:52:34.623615+00:00 heroku[web.1]: Process exited with status 1
+2016-08-17T06:52:34.626188+00:00 heroku[web.1]: State changed from starting to crashed
+Terminare il processo batch (S/N)? 
+
+C:\FW\mythings2016>

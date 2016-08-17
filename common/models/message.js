@@ -129,7 +129,7 @@ function getLocationData(location, callback) {
 module.exports = function(Message)
 { //Use the environment variables in production
 //Available methods : // client.get(path, params, callback); // client.post(ngath, params, callback); // client.stream(path, params, callback);
-
+   var Sequence = exports.Sequence || require('sequence').Sequence, sequence = Sequence.create(), err;
    Message.afterRemote('create', function (ctx, message, next)
    {
       console.log('> testing afterRemote function');
@@ -277,7 +277,7 @@ module.exports = function(Message)
       if(address_last == null)
          address_last = 'non risolto';
          
-      console.log('address_last: '+address_last);   
+      console.log('address_last: '+address_last);
       console.log('attesi msec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);

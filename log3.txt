@@ -1,0 +1,102 @@
+2016-08-17T18:37:04.373310+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:22978/explorer
+2016-08-17T18:37:04.900779+00:00 heroku[web.1]: State changed from starting to up
+2016-08-17T18:37:05.733829+00:00 app[web.1]: rssi : string
+2016-08-17T18:37:05.733941+00:00 app[web.1]: station : string
+2016-08-17T18:37:05.733882+00:00 app[web.1]: snr : string
+2016-08-17T18:37:05.733649+00:00 app[web.1]: device: string
+2016-08-17T18:37:05.733443+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T18:37:05.733563+00:00 app[web.1]: time : 817
+2016-08-17T18:37:05.733761+00:00 app[web.1]: name: string
+2016-08-17T18:37:05.736597+00:00 app[web.1]: passo 0
+2016-08-17T18:37:05.734066+00:00 app[web.1]: lon : 0
+2016-08-17T18:37:05.734125+00:00 app[web.1]: alt : 0
+2016-08-17T18:37:05.734194+00:00 app[web.1]: event :0
+2016-08-17T18:37:05.736668+00:00 app[web.1]: passo 11111111111
+2016-08-17T18:37:05.736948+00:00 app[web.1]: passo 2A
+2016-08-17T18:37:05.733700+00:00 app[web.1]: data : string
+2016-08-17T18:37:05.737027+00:00 app[web.1]: lat : 55
+2016-08-17T18:37:05.737083+00:00 app[web.1]: lon : 0
+2016-08-17T18:37:05.741104+00:00 app[web.1]: passo 2C
+2016-08-17T18:37:05.841796+00:00 app[web.1]: passo 2D
+2016-08-17T18:37:05.842032+00:00 app[web.1]: got data: null
+2016-08-17T18:37:05.842291+00:00 app[web.1]: passo 2A
+2016-08-17T18:37:05.842080+00:00 app[web.1]: passo 55555555555
+2016-08-17T18:37:05.842209+00:00 app[web.1]: passo 6666666
+2016-08-17T18:37:05.734013+00:00 app[web.1]: lat : 55
+2016-08-17T18:37:05.842360+00:00 app[web.1]: lat : 55
+2016-08-17T18:37:05.842405+00:00 app[web.1]: lon : 0
+2016-08-17T18:37:05.943828+00:00 app[web.1]: passo 2D
+2016-08-17T18:37:05.944106+00:00 app[web.1]: attesi msec: 0
+2016-08-17T18:37:05.943932+00:00 app[web.1]: got data: null
+2016-08-17T18:37:05.943933+00:00 app[web.1]: passo 77777777
+2016-08-17T18:37:05.944015+00:00 app[web.1]: address_last: undefined
+2016-08-17T18:37:05.842905+00:00 app[web.1]: passo 2C
+2016-08-17T18:37:05.945233+00:00 app[web.1]: dataora : Wed Aug 17 2016 18:37:05 GMT+0000 (UTC)
+2016-08-17T18:37:06.131338+00:00 app[web.1]:         fn = function () { throw arg; };
+2016-08-17T18:37:06.116528+00:00 app[web.1]: passo 2B
+2016-08-17T18:37:06.131357+00:00 app[web.1]: 
+2016-08-17T18:37:06.131348+00:00 app[web.1]:                            ^
+2016-08-17T18:37:06.131316+00:00 app[web.1]: /app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:49
+2016-08-17T18:37:06.131373+00:00 app[web.1]:     at tryCatcher (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/util.js:16:23)
+2016-08-17T18:37:06.131372+00:00 app[web.1]:     at null.<anonymous> (/app/common/models/message.js:77:12)
+2016-08-17T18:37:06.131374+00:00 app[web.1]:     at Promise.errorAdapter (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/nodeify.js:35:34)
+2016-08-17T18:37:06.131371+00:00 app[web.1]: TypeError: Cannot read property '0' of undefined
+2016-08-17T18:37:06.131375+00:00 app[web.1]:     at Promise.<anonymous> (/app/node_modules/loopback/node_modules/continuation-local-storage/context.js:76:17)
+2016-08-17T18:37:06.131375+00:00 app[web.1]:     at bound (domain.js:287:14)
+2016-08-17T18:37:06.131377+00:00 app[web.1]:     at Promise._settlePromise0 (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:605:10)
+2016-08-17T18:37:06.131378+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:680:18)
+2016-08-17T18:37:06.131380+00:00 app[web.1]:     at Immediate.Async.drainQueues (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:16:14)
+2016-08-17T18:37:06.131379+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:136:10)
+2016-08-17T18:37:06.131377+00:00 app[web.1]:     at Promise._settlePromise (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:557:21)
+2016-08-17T18:37:06.131394+00:00 app[web.1]:     at processImmediate [as _immediateCallback] (timers.js:514:5)
+2016-08-17T18:37:06.131382+00:00 app[web.1]:     at tryOnImmediate (timers.js:534:15)
+2016-08-17T18:37:06.209006+00:00 app[web.1]: npm ERR! Linux 3.13.0-91-generic
+2016-08-17T18:37:06.179846+00:00 app[web.1]: 
+2016-08-17T18:37:06.209416+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-17T18:37:06.222883+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-17T18:37:06.131379+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:126:16)
+2016-08-17T18:37:06.131381+00:00 app[web.1]:     at Immediate._onImmediate (/app/node_modules/loopback/node_modules/continuation-local-storage/node_modules/async-listener/glue.js:188:31)
+2016-08-17T18:37:06.223373+00:00 app[web.1]: npm ERR! Exit status 1
+2016-08-17T18:37:06.223610+00:00 app[web.1]: npm ERR! 
+2016-08-17T18:37:06.210125+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-17T18:37:06.209663+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-17T18:37:06.131376+00:00 app[web.1]:     at Promise.runBound [as _rejectionHandler0] (domain.js:300:12)
+2016-08-17T18:37:06.224040+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-08-17T18:37:06.224451+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-17T18:37:06.224247+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-08-17T18:37:06.226785+00:00 app[web.1]: npm ERR!     node .
+2016-08-17T18:37:06.227153+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-17T18:37:06.226565+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-17T18:37:06.226976+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-17T18:37:06.227665+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-17T18:37:06.227323+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-17T18:37:06.227496+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-17T18:37:06.223128+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-08-17T18:37:06.236210+00:00 app[web.1]: 
+2016-08-17T18:37:06.223822+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-08-17T18:37:06.236689+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-17T18:37:06.236525+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-17T18:37:05.965262+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=91e7111c-72ac-4c23-826a-59235fd88184 fwd="95.233.59.235" dyno=web.1 connect=0ms service=409ms status=200 bytes=517
+2016-08-17T18:37:06.359079+00:00 heroku[web.1]: Process exited with status 1
+2016-08-17T18:37:06.337625+00:00 heroku[web.1]: State changed from up to crashed
+2016-08-17T18:37:32.897691+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=89c4aef1-2dca-43d1-b859-875d71e4ecc4 fwd="95.233.59.235" dyno= connect= service= status=503 bytes=
+2016-08-17T18:37:47.634448+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=a2227c3b-c481-4149-a136-c4b243fe7829 fwd="95.233.59.235" dyno= connect= service= status=503 bytes=
+2016-08-17T18:37:53.108757+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=5a1305a8-6433-4f87-ab8f-7293c7ff4f8b fwd="95.233.59.235" dyno= connect= service= status=503 bytes=
+2016-08-17T18:37:56.763240+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=991262bc-8144-4826-8c57-aec23f7e0105 fwd="95.233.59.235" dyno= connect= service= status=503 bytes=
+2016-08-17T18:38:04.737285+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=abfb56bb-569d-493d-9892-fa4f2c0345ee fwd="95.233.59.235" dyno= connect= service= status=503 bytes=
+2016-08-17T18:38:25.595956+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=f7deeb4b-54f7-44c7-9fac-5b151efd78fe fwd="95.233.59.235" dyno= connect= service= status=503 bytes=
+2016-08-17T18:38:32.347276+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=c84b2903-126e-4d8e-ae50-8ad5db99cdc0 fwd="95.233.59.235" dyno= connect= service= status=503 bytes=
+2016-08-17T18:49:30.301142+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-17T18:49:30.301147+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-17T18:49:30.092383+00:00 heroku[api]: Deploy 1e0ed2c by u.simonato@libero.it
+2016-08-17T18:49:30.092450+00:00 heroku[api]: Release v216 created by u.simonato@libero.it
+2016-08-17T18:49:30.756919+00:00 heroku[web.1]: State changed from crashed to starting
+2016-08-17T18:49:40.243244+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T18:49:42.435155+00:00 app[web.1]: 
+2016-08-17T18:49:42.435175+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T18:49:42.435176+00:00 app[web.1]: > node .
+2016-08-17T18:49:42.435177+00:00 app[web.1]: 
+2016-08-17T18:49:44.671919+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:13283/explorer
+2016-08-17T18:49:44.670772+00:00 app[web.1]: Web server listening at: http://0.0.0.0:13283
+2016-08-17T18:49:45.132692+00:00 heroku[web.1]: State changed from starting to up
+Terminare il processo batch (S/N)? 

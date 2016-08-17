@@ -3,6 +3,7 @@ var fromBits = require( 'math-float32-from-bits' );
 var math = require('mathjs');
 var stdout = require('stdout-stream');
 var sleep = require('thread-sleep');
+var wait=require('wait.for');
 //var moment = require('moment-timezone');
 
 require('date-utils');
@@ -59,6 +60,16 @@ var usingItNow = function(callback) {
   callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
 };
 
+function test(){
+    var addresses = wait.for(dns.resolve4,"google.com");
+    for (var i = 0; i < addresses.length; i++) {
+        var a = addresses[i];
+        console.log("reverse for " + a + ": " + JSON.stringify(wait.for(dns.reverse,a)));
+    }
+}
+
+wait.launchFiber(test);
+
 module.exports = function(Message)
 { //Use the environment variables in production
   var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consumer_secret: process.env.TWITTER_CONSUMER_SECRET, access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY, access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET, });
@@ -84,10 +95,11 @@ module.exports = function(Message)
 
 
      // Using callback
-   /*  geocoder.reverse({lat:message.lat, lon:message.lon}, function(err, res)
+     geocoder.reverse({lat:message.lat, lon:message.lon}, function(err, res)
      {
-           if(err == NULL)
-           {
+           if(err )
+           {console.log(err);}
+           else {
                   console.log('passo 1A');
                   address = res[0].formattedAddress;
                   if(address == 'undefined')
@@ -102,12 +114,11 @@ module.exports = function(Message)
                   console.log(res);
                   console.log('passo 1C');
            }
-           else {console.log(err);}
 
-     }); */
+     });
      usingItNow(myCallback);
 
-     geocoder.reverse(
+    /* geocoder.reverse(
       {lat:message.lat, lon:message.lon}).then(function(res)
          {
            console.log('passo 1A');
@@ -124,7 +135,7 @@ module.exports = function(Message)
            console.log(res);
            console.log('passo 1C');
          }
-      ).catch(function(err) {console.log(err);});
+      ).catch(function(err) {console.log(err);}); */
 
       var i = 0;
       while ((i < 10000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto

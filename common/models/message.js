@@ -76,7 +76,7 @@ var usingItNow = function(callback) {
      wait_address = false;
      if(res[0].formattedAddress == null)
      {
-         console.log('address non risolto : '+res[0].formattedAddress ;
+         console.log('address non risolto : +res[0].formattedAddress ;
          address_new = null;
      }
      else

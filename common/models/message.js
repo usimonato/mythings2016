@@ -58,7 +58,7 @@ var myCallback = function(err, data) {
    console.log('passo 2D');
    wait_address = false;
   if (err) {console.log(err);}; // Check for the error and throw if it exists.
-  if(res[0].formattedAddress == null)
+  if(data == null)
   {
          address = data;
   }

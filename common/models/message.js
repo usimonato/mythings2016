@@ -25,6 +25,8 @@ var address;
 var evento;
 var wait_address;
 
+var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consumer_secret: process.env.TWITTER_CONSUMER_SECRET, access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY, access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET, });
+
 function Bytes2Float32(bytes) {
     var sign = (bytes & 0x80000000) ? -1 : 1;
     var exponent = ((bytes >> 23) & 0xFF) - 127;
@@ -107,7 +109,6 @@ function getLocationData(location, callback) {
 
 module.exports = function(Message)
 { //Use the environment variables in production
-  var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consumer_secret: process.env.TWITTER_CONSUMER_SECRET, access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY, access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET, });
 //Available methods : // client.get(path, params, callback); // client.post(ngath, params, callback); // client.stream(path, params, callback);
 
    Message.afterRemote('create', function (ctx, message, next)

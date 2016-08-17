@@ -99,22 +99,4 @@
 2016-08-17T11:52:12.579009+00:00 heroku[web.1]: State changed from starting to up
 2016-08-17T11:52:12.519011+00:00 app[web.1]: Web server listening at: http://0.0.0.0:4286
 2016-08-17T11:52:12.520315+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:4286/explorer
-2016-08-17T11:54:15.380192+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=1b31e738-a830-43cd-a0ee-81b335d21e66 fwd="95.233.59.235" dyno=web.1 connect=0ms service=79ms status=500 bytes=469
-2016-08-17T11:54:15.384628+00:00 app[web.1]: > testing afterRemote function
-2016-08-17T11:54:15.384726+00:00 app[web.1]: time : 623
-2016-08-17T11:54:15.384771+00:00 app[web.1]: device: string
-2016-08-17T11:54:15.384821+00:00 app[web.1]: data : string
-2016-08-17T11:54:15.384872+00:00 app[web.1]: name: string
-2016-08-17T11:54:15.384904+00:00 app[web.1]: rssi : string
-2016-08-17T11:54:15.384955+00:00 app[web.1]: snr : string
-2016-08-17T11:54:15.385003+00:00 app[web.1]: station : string
-2016-08-17T11:54:15.385047+00:00 app[web.1]: lat : 0
-2016-08-17T11:54:15.385105+00:00 app[web.1]: lon : 0
-2016-08-17T11:54:15.385134+00:00 app[web.1]: alt : 0
-2016-08-17T11:54:15.385179+00:00 app[web.1]: event :0
-2016-08-17T11:54:15.385220+00:00 app[web.1]: passo 0
-2016-08-17T11:54:15.385250+00:00 app[web.1]: passo 11111111111
-2016-08-17T11:54:15.385409+00:00 app[web.1]: passo 2A
 Terminare il processo batch (S/N)? 
-
-C:\FW\mythings2016>

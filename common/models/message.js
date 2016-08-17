@@ -19,7 +19,7 @@ var options = {
 
 var geocoder = NodeGeocoder(options);
 var lat_convert;
-var lng_convert;
+var lon_convert;
 var alt_convert;
 var address;
 var evento;
@@ -53,7 +53,7 @@ function getLocationData(callback) {
 
 var myCallback = function(err, data) {
    console.log('passo 2A');
-   geocoder.reverse({lat:lat_convert, lon:log_convert}, function(err, res) {console.log(res);});
+   geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
    console.log('passo 2B');
    callback(res[0].formatted_address);
    console.log('passo 2C');
@@ -122,6 +122,8 @@ module.exports = function(Message)
            }
 
      }); */
+     lat_convert = message.lat;
+     lon_convert = message.lon;
      console.log('passo 11111111111');
      usingItNow(myCallback);
      console.log('passo 22222222222');

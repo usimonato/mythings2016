@@ -1,0 +1,122 @@
+2016-08-17T11:22:37.165462+00:00 app[web.1]:      'x-transaction': '00f7517b00c43bb0',
+2016-08-17T11:23:30.351028+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=41a5c3d6-f3e8-488b-84f5-79d86eab2371 fwd="185.110.97.11" dyno=web.1 connect=0ms service=10ms status=500 bytes=470
+2016-08-17T11:28:23.449450+00:00 heroku[api]: Deploy 446f55b by u.simonato@libero.it
+2016-08-17T11:28:23.449549+00:00 heroku[api]: Release v171 created by u.simonato@libero.it
+2016-08-17T11:28:23.685455+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-17T11:28:23.685462+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-17T11:28:23.689569+00:00 heroku[web.1]: Restarting
+2016-08-17T11:28:23.690028+00:00 heroku[web.1]: State changed from up to starting
+2016-08-17T11:28:26.773065+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-17T11:28:27.559593+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T11:28:27.640803+00:00 heroku[web.1]: Process exited with status 143
+2016-08-17T11:28:30.312229+00:00 app[web.1]: 
+2016-08-17T11:28:30.312248+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T11:28:30.312248+00:00 app[web.1]: > node .
+2016-08-17T11:28:30.312249+00:00 app[web.1]: 
+2016-08-17T11:28:32.264248+00:00 app[web.1]: Web server listening at: http://0.0.0.0:37541
+2016-08-17T11:28:32.265163+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:37541/explorer
+2016-08-17T11:28:32.305267+00:00 heroku[web.1]: State changed from starting to up
+2016-08-17T11:30:27.401195+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=6a3976aa-1254-464b-89cf-c3af533a36fc fwd="95.233.59.235" dyno=web.1 connect=1ms service=273ms status=500 bytes=473
+2016-08-17T11:30:27.400130+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T11:30:27.400368+00:00 app[web.1]: time : 300
+2016-08-17T11:30:27.400467+00:00 app[web.1]: device: string
+2016-08-17T11:30:27.400569+00:00 app[web.1]: data : string
+2016-08-17T11:30:27.400639+00:00 app[web.1]: name: string
+2016-08-17T11:30:27.400739+00:00 app[web.1]: rssi : string
+2016-08-17T11:30:27.400808+00:00 app[web.1]: snr : string
+2016-08-17T11:30:27.400910+00:00 app[web.1]: station : string
+2016-08-17T11:30:27.401052+00:00 app[web.1]: lat : 10000
+2016-08-17T11:30:27.401138+00:00 app[web.1]: lon : 10000
+2016-08-17T11:30:27.401256+00:00 app[web.1]: alt : 0
+2016-08-17T11:30:27.401348+00:00 app[web.1]: event :0
+2016-08-17T11:30:27.401421+00:00 app[web.1]: passo 0
+2016-08-17T11:30:27.401483+00:00 app[web.1]: passo 11111111111
+2016-08-17T11:30:27.401777+00:00 app[web.1]: passo 2A
+2016-08-17T11:31:24.879194+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=8f96047f-60ee-4b31-beee-aef7a6f8fc60 fwd="95.233.59.235" dyno=web.1 connect=0ms service=41ms status=500 bytes=473
+2016-08-17T11:31:24.881662+00:00 app[web.1]: time : 500
+2016-08-17T11:31:24.881818+00:00 app[web.1]: device: string
+2016-08-17T11:31:24.881881+00:00 app[web.1]: data : string
+2016-08-17T11:31:24.881553+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T11:31:24.881977+00:00 app[web.1]: name: string
+2016-08-17T11:31:24.882039+00:00 app[web.1]: rssi : string
+2016-08-17T11:31:24.882141+00:00 app[web.1]: snr : string
+2016-08-17T11:31:24.882207+00:00 app[web.1]: station : string
+2016-08-17T11:31:24.882292+00:00 app[web.1]: lat : 10000
+2016-08-17T11:31:24.882353+00:00 app[web.1]: lon : 10000
+2016-08-17T11:31:24.882411+00:00 app[web.1]: alt : 0
+2016-08-17T11:31:24.882504+00:00 app[web.1]: event :0
+2016-08-17T11:31:24.882556+00:00 app[web.1]: passo 0
+2016-08-17T11:31:24.882633+00:00 app[web.1]: passo 11111111111
+2016-08-17T11:31:24.882690+00:00 app[web.1]: passo 2A
+2016-08-17T11:32:15.687853+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=6b719b98-8901-4b72-a0cb-e92948ad965e fwd="95.233.59.235" dyno=web.1 connect=1ms service=17ms status=500 bytes=470
+2016-08-17T11:32:33.926430+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T11:32:33.926474+00:00 app[web.1]: time : 600
+2016-08-17T11:32:33.929485+00:00 app[web.1]: device: string
+2016-08-17T11:32:33.929493+00:00 app[web.1]: data : string
+2016-08-17T11:32:33.929494+00:00 app[web.1]: name: string
+2016-08-17T11:32:33.929495+00:00 app[web.1]: rssi : string
+2016-08-17T11:32:33.929495+00:00 app[web.1]: snr : string
+2016-08-17T11:32:33.929497+00:00 app[web.1]: lat : 100
+2016-08-17T11:32:33.929498+00:00 app[web.1]: lon : 100
+2016-08-17T11:32:33.929496+00:00 app[web.1]: station : string
+2016-08-17T11:32:33.929500+00:00 app[web.1]: event :0
+2016-08-17T11:32:33.929501+00:00 app[web.1]: passo 0
+2016-08-17T11:32:33.929501+00:00 app[web.1]: passo 11111111111
+2016-08-17T11:32:33.929502+00:00 app[web.1]: passo 2A
+2016-08-17T11:32:33.929499+00:00 app[web.1]: alt : 0
+2016-08-17T11:32:33.930841+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=dbcce6da-0167-49a8-9255-1730e0de72dd fwd="95.233.59.235" dyno=web.1 connect=0ms service=32ms status=500 bytes=473
+2016-08-17T11:33:04.782925+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=149c00bb-255f-4ade-8f16-6f50cb84912f fwd="95.233.59.235" dyno=web.1 connect=0ms service=9ms status=500 bytes=470
+2016-08-17T11:33:14.140577+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=45f180ca-1be5-420d-a925-2f34d0398b03 fwd="95.233.59.235" dyno=web.1 connect=0ms service=18ms status=500 bytes=470
+2016-08-17T11:33:35.269578+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=52762f02-0288-4fcb-aa22-4ccc0cbf511e fwd="95.233.59.235" dyno=web.1 connect=0ms service=60ms status=500 bytes=473
+2016-08-17T11:33:35.264430+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T11:33:35.264547+00:00 app[web.1]: time : 610
+2016-08-17T11:33:35.264737+00:00 app[web.1]: device: string
+2016-08-17T11:33:35.264898+00:00 app[web.1]: data : string
+2016-08-17T11:33:35.265142+00:00 app[web.1]: name: string
+2016-08-17T11:33:35.265301+00:00 app[web.1]: rssi : string
+2016-08-17T11:33:35.265627+00:00 app[web.1]: snr : string
+2016-08-17T11:33:35.265681+00:00 app[web.1]: station : string
+2016-08-17T11:33:35.265830+00:00 app[web.1]: lat : 0
+2016-08-17T11:33:35.265879+00:00 app[web.1]: lon : 0
+2016-08-17T11:33:35.266094+00:00 app[web.1]: alt : 0
+2016-08-17T11:33:35.266207+00:00 app[web.1]: event :0
+2016-08-17T11:33:35.266454+00:00 app[web.1]: passo 0
+2016-08-17T11:33:35.271891+00:00 app[web.1]: passo 11111111111
+2016-08-17T11:33:35.272648+00:00 app[web.1]: passo 2A
+2016-08-17T11:37:52.478192+00:00 heroku[api]: Deploy aa58816 by u.simonato@libero.it
+2016-08-17T11:37:52.478237+00:00 heroku[api]: Release v172 created by u.simonato@libero.it
+2016-08-17T11:37:52.706864+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-17T11:37:52.706868+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-17T11:37:52.967148+00:00 heroku[web.1]: Restarting
+2016-08-17T11:37:52.968747+00:00 heroku[web.1]: State changed from up to starting
+2016-08-17T11:37:55.883662+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T11:37:56.718113+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-17T11:37:57.956729+00:00 heroku[web.1]: Process exited with status 0
+2016-08-17T11:37:58.030298+00:00 app[web.1]: 
+2016-08-17T11:37:58.030324+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T11:37:58.030325+00:00 app[web.1]: > node .
+2016-08-17T11:37:58.030326+00:00 app[web.1]: 
+2016-08-17T11:37:59.784345+00:00 app[web.1]: Web server listening at: http://0.0.0.0:52664
+2016-08-17T11:37:59.785643+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:52664/explorer
+2016-08-17T11:38:00.057962+00:00 heroku[web.1]: State changed from starting to up
+2016-08-17T11:38:27.860670+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=56241d4a-b2a6-40b8-851a-b722f15406bf fwd="95.233.59.235" dyno=web.1 connect=0ms service=156ms status=500 bytes=470
+2016-08-17T11:38:27.776264+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T11:38:27.776370+00:00 app[web.1]: time : 620
+2016-08-17T11:38:27.776461+00:00 app[web.1]: device: string
+2016-08-17T11:38:27.776542+00:00 app[web.1]: data : string
+2016-08-17T11:38:27.776621+00:00 app[web.1]: name: string
+2016-08-17T11:38:27.776708+00:00 app[web.1]: rssi : string
+2016-08-17T11:38:27.776801+00:00 app[web.1]: snr : string
+2016-08-17T11:38:27.776873+00:00 app[web.1]: station : string
+2016-08-17T11:38:27.776957+00:00 app[web.1]: lat : 0
+2016-08-17T11:38:27.777084+00:00 app[web.1]: lon : 0
+2016-08-17T11:38:27.777160+00:00 app[web.1]: alt : 0
+2016-08-17T11:38:27.777237+00:00 app[web.1]: event :0
+2016-08-17T11:38:27.777370+00:00 app[web.1]: passo 0
+2016-08-17T11:38:27.777371+00:00 app[web.1]: passo 11111111111
+2016-08-17T11:38:27.777680+00:00 app[web.1]: passo 2A
+2016-08-17T11:38:27.781719+00:00 app[web.1]: passo 2B
+2016-08-17T11:38:27.877676+00:00 app[web.1]: undefined
+Terminare il processo batch (S/N)? 
+
+C:\FW\mythings2016>

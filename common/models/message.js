@@ -55,8 +55,6 @@ var myCallback = function(err, data) {
    console.log('passo 2A');
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
    console.log('passo 2B');
-   callback(res[0].formatted_address);
-   console.log('passo 2C');
    wait_address = false;
   if (err) {console.log(err);}; // Check for the error and throw if it exists.
   console.log('got data: '+data); // Otherwise proceed as usual.

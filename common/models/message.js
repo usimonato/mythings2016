@@ -3,7 +3,7 @@ var fromBits = require( 'math-float32-from-bits' );
 var math = require('mathjs');
 var stdout = require('stdout-stream');
 var sleep = require('thread-sleep');
-var wait=require('wait.for');
+///var wait=require('wait.for');
 //var moment = require('moment-timezone');
 
 require('date-utils');

@@ -2194,4 +2194,105 @@
 2016-08-17T08:36:15.299214+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=28e6e7ac-f82f-4464-8b01-834b97e8a4a6 fwd="185.110.97.11" dyno=web.1 connect=0ms service=22ms status=500 bytes=470
 Terminare il processo batch (S/N)? 
 
-C:\FW\mythings2016>
+C:\FW\mythings2016>2016-08-17T08:35:19.779023+00:00 app[web.1]:         pragma: 'no-cache',
+2016-08-17T08:35:19.779023+00:00 app[web.1]:         server: 'tsa_b',
+2016-08-17T08:35:19.779024+00:00 app[web.1]:         'set-cookie': [Object],
+2016-08-17T08:35:19.779024+00:00 app[web.1]:         status: '200 OK',
+2016-08-17T08:35:19.779025+00:00 app[web.1]:         'strict-transport-security': 'max-age=631138519',
+2016-08-17T08:35:19.779025+00:00 app[web.1]:         'x-access-level': 'read-write-directmessages',
+2016-08-17T08:35:19.779026+00:00 app[web.1]:         'x-connection-hash': '3353b106901659e591e121127e2b5dc0',
+2016-08-17T08:35:19.779027+00:00 app[web.1]:         'x-content-type-options': 'nosniff',
+2016-08-17T08:35:19.779028+00:00 app[web.1]:         'x-response-time': '117',
+2016-08-17T08:35:19.779027+00:00 app[web.1]:         'x-frame-options': 'SAMEORIGIN',
+2016-08-17T08:35:19.779028+00:00 app[web.1]:         'x-transaction': '0065b18a00d90273',
+2016-08-17T08:35:19.779029+00:00 app[web.1]:         'x-tsa-request-body-time': '1',
+2016-08-17T08:35:19.779029+00:00 app[web.1]:         'x-twitter-response-tags': 'BouncerCompliant',
+2016-08-17T08:35:19.779030+00:00 app[web.1]:         'x-xss-protection': '1; mode=block' } },
+2016-08-17T08:35:19.779030+00:00 app[web.1]:   read: [Function],
+2016-08-17T08:35:19.779044+00:00 app[web.1]:   body: '{"id":765829347894824963,"id_str":"765829347894824963","text":"Evento:Tasto - codice: IOT_01 - in undefined - lat:45.702766, lng:11.564722, alt:139 - base:23DA, rssi:-138.00dbm, snr:8.53","sender":{"id":762367617407545344,"id_str":"762367617407545344","name":"usthings2016","screen_name":"usthings2016","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1,"friends_count":1,"listed_count":0,"created_at":"Sun Aug 07 19:19:38 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":4,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"sender_id":762367617407545344,"sender_id_str":"762367617407545344","sender_screen_name":"usthings2016","recipient":{"id":757327116518191104,"id_str":"757327116518191104","name":"GRS Breganze","screen_name":"GRS_Breganze","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1,"friends_count":1,"listed_count":0,"created_at":"Sun Jul 24 21:30:29 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":4,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":true,"follow_request_sent":false,"notifications":false},"recipient_id":757327116518191104,"recipient_id_str":"757327116518191104","recipient_screen_name":"GRS_Breganze","created_at":"Wed Aug 17 08:35:19 +0000 2016","entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]}}' }
+2016-08-17T08:36:15.299214+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=28e6e7ac-f82f-4464-8b01-834b97e8a4a6 fwd="185.110.97.11" dyno=web.1 connect=0ms service=22ms status=500 bytes=470
+2016-08-17T09:09:16.142238+00:00 heroku[web.1]: Idling
+2016-08-17T09:09:16.142866+00:00 heroku[web.1]: State changed from up to down
+2016-08-17T09:09:20.653731+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-17T09:09:22.054279+00:00 heroku[web.1]: Process exited with status 0
+2016-08-17T09:23:23.270949+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-17T09:23:23.270954+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-17T09:23:23.073558+00:00 heroku[api]: Deploy 9b50cee by u.simonato@libero.it
+2016-08-17T09:23:23.073662+00:00 heroku[api]: Release v167 created by u.simonato@libero.it
+2016-08-17T09:23:23.287765+00:00 heroku[web.1]: State changed from down to starting
+2016-08-17T09:23:26.249332+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T09:23:28.534013+00:00 app[web.1]: 
+2016-08-17T09:23:28.534027+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T09:23:28.534027+00:00 app[web.1]: > node .
+2016-08-17T09:23:28.534028+00:00 app[web.1]: 
+2016-08-17T09:23:29.722016+00:00 app[web.1]: /app/node_modules/wait.for/waitfor.js:15
+2016-08-17T09:23:29.722028+00:00 app[web.1]:         Fiber( function(){ fn.apply(null, newargs)} ).run(); //launch new fiber, call the fn with the args, this=null (strict)
+2016-08-17T09:23:29.722029+00:00 app[web.1]:                                                       ^
+2016-08-17T09:23:29.722030+00:00 app[web.1]: 
+2016-08-17T09:23:29.722031+00:00 app[web.1]: ReferenceError: dns is not defined
+2016-08-17T09:23:29.722031+00:00 app[web.1]:     at test (/app/common/models/message.js:64:30)
+2016-08-17T09:23:29.722032+00:00 app[web.1]:     at /app/node_modules/wait.for/waitfor.js:15:31
+2016-08-17T09:23:29.732937+00:00 app[web.1]: 
+2016-08-17T09:23:29.742644+00:00 app[web.1]: npm ERR! Linux 3.13.0-91-generic
+2016-08-17T09:23:29.743101+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-17T09:23:29.743362+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-17T09:23:29.743838+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-17T09:23:29.744555+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-08-17T09:23:29.744300+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-17T09:23:29.744723+00:00 app[web.1]: npm ERR! Exit status 1
+2016-08-17T09:23:29.744911+00:00 app[web.1]: npm ERR! 
+2016-08-17T09:23:29.745083+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-08-17T09:23:29.745280+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-08-17T09:23:29.745658+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-17T09:23:29.745797+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-17T09:23:29.745989+00:00 app[web.1]: npm ERR!     node .
+2016-08-17T09:23:29.746177+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-17T09:23:29.746424+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-17T09:23:29.745458+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-08-17T09:23:29.746515+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-17T09:23:29.746692+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-17T09:23:29.746867+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-17T09:23:29.751853+00:00 app[web.1]: 
+2016-08-17T09:23:29.752146+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-17T09:23:29.752331+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-17T09:23:29.856109+00:00 heroku[web.1]: Process exited with status 1
+2016-08-17T09:23:29.848985+00:00 heroku[web.1]: State changed from starting to crashed
+2016-08-17T09:23:29.850003+00:00 heroku[web.1]: State changed from crashed to starting
+2016-08-17T09:23:33.193213+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T09:23:36.073870+00:00 app[web.1]: 
+2016-08-17T09:23:36.073883+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T09:23:36.073884+00:00 app[web.1]: > node .
+2016-08-17T09:23:36.073884+00:00 app[web.1]: 
+2016-08-17T09:23:37.611644+00:00 app[web.1]: /app/node_modules/wait.for/waitfor.js:15
+2016-08-17T09:23:37.611654+00:00 app[web.1]:         Fiber( function(){ fn.apply(null, newargs)} ).run(); //launch new fiber, call the fn with the args, this=null (strict)
+2016-08-17T09:23:37.611655+00:00 app[web.1]:                                                       ^
+2016-08-17T09:23:37.611656+00:00 app[web.1]: 
+2016-08-17T09:23:37.611657+00:00 app[web.1]: ReferenceError: dns is not defined
+2016-08-17T09:23:37.611657+00:00 app[web.1]:     at test (/app/common/models/message.js:64:30)
+2016-08-17T09:23:37.611658+00:00 app[web.1]:     at /app/node_modules/wait.for/waitfor.js:15:31
+2016-08-17T09:23:37.624447+00:00 app[web.1]: 
+2016-08-17T09:23:37.632355+00:00 app[web.1]: npm ERR! Linux 3.13.0-91-generic
+2016-08-17T09:23:37.632750+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-17T09:23:37.632998+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-17T09:23:37.633411+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-17T09:23:37.633737+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-17T09:23:37.633927+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-08-17T09:23:37.634069+00:00 app[web.1]: npm ERR! Exit status 1
+2016-08-17T09:23:37.634248+00:00 app[web.1]: npm ERR! 
+2016-08-17T09:23:37.634414+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-08-17T09:23:37.634583+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-08-17T09:23:37.635067+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-17T09:23:37.634910+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-17T09:23:37.634754+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-08-17T09:23:37.635231+00:00 app[web.1]: npm ERR!     node .
+2016-08-17T09:23:37.635401+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-17T09:23:37.635582+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-17T09:23:37.635894+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-17T09:23:37.635737+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-17T09:23:37.636049+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-17T09:23:37.642939+00:00 app[web.1]: 
+2016-08-17T09:23:37.643235+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-17T09:23:37.643424+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-17T09:23:37.725395+00:00 heroku[web.1]: Process exited with status 1
+2016-08-17T09:23:37.742401+00:00 heroku[web.1]: State changed from starting to crashed
+Terminare il processo batch (S/N)? 

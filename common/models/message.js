@@ -84,11 +84,12 @@ function getLocation(location) {
 }
 
 function getLocationData(location, callback) {
+  console.log('passo 33333333333');
   geocoder.geocode(location, function(err, res) {
     if (err){
       console.log('geocode error', err);
     }else{
-      console.log('passo 333333333333');
+      console.log('passo 444444444444');
       wait_address = false;
       callback(res);
     }

@@ -148,7 +148,6 @@ module.exports = function(Message)
 
      getLocation('1060 W Addison St, Chicago, IL 60613');
      console.log('passo 22222222222');
-     function getLocationData(position, callback) {
 
     /* geocoder.reverse(
       {lat:message.lat, lon:message.lon}).then(function(res)

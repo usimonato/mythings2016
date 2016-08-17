@@ -22,7 +22,8 @@ var geocoder = NodeGeocoder(options);
 var lat_convert;
 var lon_convert;
 var alt_convert;
-var address;
+var address_new;
+var address_last;
 var evento;
 var wait_address;
 
@@ -58,9 +59,10 @@ var myCallback = function(err, data) {
    console.log('passo 2D');
    wait_address = false;
   if (err) {console.log(err);}; // Check for the error and throw if it exists.
-  if(data == null)
+  if(data != null)
   {
-         address = data;
+         address_new  = data;
+         address_last = data;
   }
   console.log('got data: '+data); // Otherwise proceed as usual.
 };
@@ -74,19 +76,21 @@ var usingItNow = function(callback) {
      wait_address = false;
      if(res[0].formattedAddress == null)
      {
-         console.log('address non risolto : '+address);
+         console.log('address non risolto : '+res[0].formattedAddress ;
+         address_new = null;
      }
      else
       {
-         address = res[0].formattedAddress;
-         console.log('address risolto : '+address);
+         address_new = res[0].formattedAddress;
+         address_last = address_new;
+         console.log('address risolto : '+address_new);
      }
 
     console.log(res);});
    console.log('passo 2C')
    var j = 0;
    sleep(100);
-   callback(null,address);
+   callback(null,address_new);
   // callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
 };
 
@@ -256,18 +260,18 @@ module.exports = function(Message)
            }
       } */
       console.log('passo 6666666');
-      /*if(address == null)
+      if(address_new == null)
       {
          usingItNow(myCallback);
-      }  */
-      console.log('address : '+address);
-      if(address == null)
-         address = 'non risolto';
+      }
+      console.log('address : '+address_last);
+      if(address_last == null)
+         address_last = 'non risolto';
       console.log('attesi msec: '+i);
       var dataora = new Date();
       console.log('dataora : '+dataora);
 
-      client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + message.name + " - in " + address + " - lat:" +  +message.lat + ", lng:" +  message.lon +  ", alt:" +  alt_convert  + " - base:" + message.station + ", rssi:" + message.rssi + "dbm, snr:" + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
-      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm, snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
+      client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + message.name + " - in " + address_last + " - lat:" +  +message.lat + ", lng:" +  message.lon +  ", alt:" +  alt_convert  + " - base:" + message.station + ", rssi:" + message.rssi + "dbm, snr:" + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
+      client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address_last + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm, snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
       next(); });
 };

@@ -63,7 +63,6 @@ var myCallback = function(err, data) {
 var usingItNow = function(callback) {
    console.log('passo 2B');
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
-   geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
    console.log('passo 2C');
    callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
 };

@@ -65,12 +65,12 @@ var usingItNow = function(callback) {
    console.log('lat : '+lat_convert);
    console.log('lon : '+lon_convert);
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
-   sleep(100);
    sleep(200);
    sleep(400);
    sleep(800);
    wait_address = false;
-   console.log('passo 2B');
+   console.log('passo 2B')
+   sleep(100);
    address = res[0].formattedAddress;
    callback(null,'Test');
   // callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument

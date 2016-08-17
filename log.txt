@@ -2132,3 +2132,144 @@
 2016-08-17T14:21:37.637333+00:00 app[web.1]:         oldBind: [Function],
 2016-08-17T14:21:37.637334+00:00 app[web.1]:         bind: [Function] },
 Terminare il processo batch (S/N)? 
+2016-08-17T14:21:37.639407+00:00 app[web.1]:        level1short: 'Respublika Kalmykiya' },
+2016-08-17T14:21:37.637317+00:00 app[web.1]:         secure: [Function],
+2016-08-17T14:21:37.637318+00:00 app[web.1]:         agentRemove: [Function: onRemove],
+2016-08-17T14:21:37.638118+00:00 app[web.1]:      is_translation_enabled: false,
+2016-08-17T14:21:37.637318+00:00 app[web.1]:         drain: [Function: ondrain],
+2016-08-17T14:21:37.638123+00:00 app[web.1]:      profile_link_color: '2B7BB9',
+2016-08-17T14:21:37.637319+00:00 app[web.1]:      _connecting: false,
+2016-08-17T14:21:37.639409+00:00 app[web.1]:     zipcode: '359136',
+2016-08-17T14:21:37.637320+00:00 app[web.1]:      _handle: null,
+2016-08-17T14:21:37.637321+00:00 app[web.1]:      _host: 'api.twitter.com',
+2016-08-17T14:21:37.637313+00:00 app[web.1]:      _controlReleased: true,
+2016-08-17T14:21:37.637320+00:00 app[web.1]:      _parent: null,
+2016-08-17T14:21:37.637322+00:00 app[web.1]:         highWaterMark: 16384,
+2016-08-17T14:21:37.637321+00:00 app[web.1]:       ReadableState {
+2016-08-17T14:21:37.637322+00:00 app[web.1]:         buffer: [],
+2016-08-17T14:21:37.638123+00:00 app[web.1]:      profile_sidebar_border_color: 'C0DEED',
+2016-08-17T14:21:37.637313+00:00 app[web.1]:      _securePending: false,
+2016-08-17T14:21:37.638125+00:00 app[web.1]:      profile_use_background_image: true,
+2016-08-17T14:21:37.639408+00:00 app[web.1]:     country: 'Russia',
+2016-08-17T14:21:37.639350+00:00 app[web.1]: [ { formattedAddress: 'Unnamed Road, Respublika Kalmykiya, Russia, 359136',
+2016-08-17T14:21:37.639351+00:00 app[web.1]:     latitude: 45.7661587,
+2016-08-17T14:21:37.639409+00:00 app[web.1]:     provider: 'google' } ]
+2016-08-17T14:21:37.638124+00:00 app[web.1]:      profile_text_color: '333333',
+2016-08-17T14:21:37.639352+00:00 app[web.1]:      { googlePlaceId: 'ChIJfYRvQxxVVUARarSd6uRZzfA',
+2016-08-17T14:21:37.637323+00:00 app[web.1]:         pipes: null,
+2016-08-17T14:21:37.639352+00:00 app[web.1]:     extra: 
+2016-08-17T14:21:37.637323+00:00 app[web.1]:         flowing: true,
+2016-08-17T14:21:37.638117+00:00 app[web.1]:      lang: 'it',
+2016-08-17T14:21:37.638126+00:00 app[web.1]:      default_profile_image: true,
+2016-08-17T14:21:37.637324+00:00 app[web.1]:         ended: false,
+2016-08-17T14:21:37.639353+00:00 app[web.1]:        premise: null,
+2016-08-17T14:21:37.638125+00:00 app[web.1]:      has_extended_profile: false,
+2016-08-17T14:21:37.637324+00:00 app[web.1]:         endEmitted: false,
+2016-08-17T14:21:37.637324+00:00 app[web.1]:         reading: true,
+2016-08-17T14:21:37.638127+00:00 app[web.1]:      following: false,
+2016-08-17T14:21:37.639351+00:00 app[web.1]:     longitude: 45.0108812,
+2016-08-17T14:21:37.637325+00:00 app[web.1]:         sync: false,
+2016-08-17T14:21:37.639353+00:00 app[web.1]:        confidence: 0.7,
+2016-08-17T14:21:37.637315+00:00 app[web.1]:      authorizationError: null,
+2016-08-17T14:21:37.639354+00:00 app[web.1]:        subpremise: null,
+2016-08-17T14:21:37.637314+00:00 app[web.1]:      npnProtocol: false,
+2016-08-17T14:21:37.639355+00:00 app[web.1]:        establishment: null },
+2016-08-17T14:21:37.639354+00:00 app[web.1]:        neighborhood: null,
+2016-08-17T14:21:37.638124+00:00 app[web.1]:      profile_sidebar_fill_color: 'DDEEF6',
+2016-08-17T14:21:37.637325+00:00 app[web.1]:         readableListening: false,
+2016-08-17T14:21:37.638126+00:00 app[web.1]:      default_profile: true,
+2016-08-17T14:21:37.637327+00:00 app[web.1]:         awaitDrain: 0,
+2016-08-17T14:21:37.639355+00:00 app[web.1]:     administrativeLevels: 
+2016-08-17T14:21:37.639356+00:00 app[web.1]:      { level2long: 'Iki-Burulskiy rayon',
+2016-08-17T14:21:37.639356+00:00 app[web.1]:        level2short: 'Iki-Burulskiy r-n',
+2016-08-17T14:21:37.637327+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-08-17T14:21:37.637327+00:00 app[web.1]:         resumeScheduled: false,
+2016-08-17T14:21:37.637327+00:00 app[web.1]:         ranOut: false,
+2016-08-17T14:21:37.638127+00:00 app[web.1]:      follow_request_sent: false,
+2016-08-17T14:21:37.637328+00:00 app[web.1]:         readingMore: true,
+2016-08-17T14:21:37.638128+00:00 app[web.1]:      notifications: false },
+2016-08-17T14:21:37.637329+00:00 app[web.1]:      domain: 
+2016-08-17T14:21:37.637329+00:00 app[web.1]:      readable: false,
+2016-08-17T14:21:37.637328+00:00 app[web.1]:         encoding: null },
+2016-08-17T14:21:37.637328+00:00 app[web.1]:         decoder: null,
+2016-08-17T14:21:37.637330+00:00 app[web.1]:         _events: {},
+2016-08-17T14:21:37.637330+00:00 app[web.1]:         _eventsCount: 0,
+2016-08-17T14:21:37.637333+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-17T14:21:37.638128+00:00 app[web.1]:   sender_id: 762367617407545300,
+2016-08-17T14:21:37.637317+00:00 app[web.1]:         finish: [Function: onSocketFinish],
+2016-08-17T14:21:37.638131+00:00 app[web.1]:    { id: 757327116518191100,
+2016-08-17T14:21:37.638131+00:00 app[web.1]:      id_str: '757327116518191104',
+2016-08-17T14:21:37.638129+00:00 app[web.1]:   sender_id_str: '762367617407545344',
+2016-08-17T14:21:37.637319+00:00 app[web.1]:      _eventsCount: 9,
+2016-08-17T14:21:37.638130+00:00 app[web.1]:   recipient: 
+2016-08-17T14:21:37.638132+00:00 app[web.1]:      name: 'GRS Breganze',
+2016-08-17T14:21:37.637320+00:00 app[web.1]:      _hadError: false,
+2016-08-17T14:21:37.637333+00:00 app[web.1]:         members: [Object],
+2016-08-17T14:21:37.637333+00:00 app[web.1]:         oldBind: [Function],
+2016-08-17T14:21:37.638129+00:00 app[web.1]:   sender_screen_name: 'usthings2016',
+2016-08-17T14:21:37.638132+00:00 app[web.1]:      screen_name: 'GRS_Breganze',
+2016-08-17T14:21:37.637321+00:00 app[web.1]:      _readableState: 
+2016-08-17T14:21:37.637321+00:00 app[web.1]:         objectMode: false,
+2016-08-17T14:21:37.637334+00:00 app[web.1]:         bind: [Function] },
+2016-08-17T14:21:37.637322+00:00 app[web.1]:         length: 0,
+2016-08-17T14:21:37.637325+00:00 app[web.1]:         needReadable: true,
+2016-08-17T14:21:37.637323+00:00 app[web.1]:         pipesCount: 0,
+2016-08-17T14:21:37.637329+00:00 app[web.1]:       Domain {
+2016-08-17T14:21:37.637325+00:00 app[web.1]:         emittedReadable: false,
+2016-08-17T14:21:37.637330+00:00 app[web.1]:         domain: null,
+2016-08-17T14:32:41.934444+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-17T14:32:41.934439+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-17T14:32:41.709804+00:00 heroku[api]: Deploy ac47f98 by u.simonato@libero.it
+2016-08-17T14:32:41.709928+00:00 heroku[api]: Release v191 created by u.simonato@libero.it
+2016-08-17T14:32:42.280413+00:00 heroku[web.1]: Restarting
+2016-08-17T14:32:42.296772+00:00 heroku[web.1]: State changed from up to starting
+2016-08-17T14:32:45.231086+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T14:32:46.095126+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-17T14:32:47.102685+00:00 heroku[web.1]: Process exited with status 143
+2016-08-17T14:32:47.126809+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T14:32:47.126810+00:00 app[web.1]: > node .
+2016-08-17T14:32:47.126811+00:00 app[web.1]: 
+2016-08-17T14:32:47.126789+00:00 app[web.1]: 
+2016-08-17T14:32:49.213208+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:27021/explorer
+2016-08-17T14:32:49.212503+00:00 app[web.1]: Web server listening at: http://0.0.0.0:27021
+2016-08-17T14:32:49.422763+00:00 heroku[web.1]: State changed from starting to up
+2016-08-17T14:35:22.169635+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T14:35:22.169813+00:00 app[web.1]: time : 660
+2016-08-17T14:35:22.169904+00:00 app[web.1]: device: string
+2016-08-17T14:35:22.169916+00:00 app[web.1]: data : string
+2016-08-17T14:35:22.169971+00:00 app[web.1]: name: string
+2016-08-17T14:35:22.170080+00:00 app[web.1]: rssi : string
+2016-08-17T14:35:22.170214+00:00 app[web.1]: snr : string
+2016-08-17T14:35:22.170288+00:00 app[web.1]: station : string
+2016-08-17T14:35:22.170406+00:00 app[web.1]: lat : 45.767
+2016-08-17T14:35:22.170466+00:00 app[web.1]: lon : 45
+2016-08-17T14:35:22.170523+00:00 app[web.1]: alt : 0
+2016-08-17T14:35:22.170580+00:00 app[web.1]: event :0
+2016-08-17T14:35:22.170622+00:00 app[web.1]: passo 0
+2016-08-17T14:35:22.170915+00:00 app[web.1]: passo 11111111111
+2016-08-17T14:35:22.171066+00:00 app[web.1]: passo 2A
+2016-08-17T14:35:22.171128+00:00 app[web.1]: lat : 45.767
+2016-08-17T14:35:22.171183+00:00 app[web.1]: lon : 45
+2016-08-17T14:35:23.721875+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=86ed8edd-f2d5-4cea-b486-51c7f294071d fwd="95.233.59.235" dyno=web.1 connect=1ms service=1677ms status=500 bytes=465
+2016-08-17T14:35:23.681411+00:00 app[web.1]: passo 2B
+2016-08-17T14:35:23.886410+00:00 app[web.1]: [ { formattedAddress: 'Unnamed Road, Respublika Kalmykiya, Russia, 359136',
+2016-08-17T14:35:23.886413+00:00 app[web.1]:     latitude: 45.7661587,
+2016-08-17T14:35:23.886414+00:00 app[web.1]:     longitude: 45.0108812,
+2016-08-17T14:35:23.886415+00:00 app[web.1]:     extra: 
+2016-08-17T14:35:23.886415+00:00 app[web.1]:      { googlePlaceId: 'ChIJfYRvQxxVVUARarSd6uRZzfA',
+2016-08-17T14:35:23.886416+00:00 app[web.1]:        confidence: 0.7,
+2016-08-17T14:35:23.886420+00:00 app[web.1]:        premise: null,
+2016-08-17T14:35:23.886420+00:00 app[web.1]:        subpremise: null,
+2016-08-17T14:35:23.886421+00:00 app[web.1]:        neighborhood: null,
+2016-08-17T14:35:23.886422+00:00 app[web.1]:        establishment: null },
+2016-08-17T14:35:23.886422+00:00 app[web.1]:     administrativeLevels: 
+2016-08-17T14:35:23.886423+00:00 app[web.1]:      { level2long: 'Iki-Burulskiy rayon',
+2016-08-17T14:35:23.886424+00:00 app[web.1]:        level2short: 'Iki-Burulskiy r-n',
+2016-08-17T14:35:23.886424+00:00 app[web.1]:        level1long: 'Respublika Kalmykiya',
+2016-08-17T14:35:23.886425+00:00 app[web.1]:        level1short: 'Respublika Kalmykiya' },
+2016-08-17T14:35:23.886425+00:00 app[web.1]:     streetName: 'Unnamed Road',
+2016-08-17T14:35:23.886426+00:00 app[web.1]:     country: 'Russia',
+2016-08-17T14:35:23.886427+00:00 app[web.1]:     countryCode: 'RU',
+2016-08-17T14:35:23.886427+00:00 app[web.1]:     zipcode: '359136',
+2016-08-17T14:35:23.886428+00:00 app[web.1]:     provider: 'google' } ]
+Terminare il processo batch (S/N)? 

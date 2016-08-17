@@ -67,10 +67,10 @@ var usingItNow = function(callback) {
    while ((j < 2000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
    {
          sleep(1);
-         /*if( status == geocoder.GeocoderStatus.OK )
+         if( status == geocoder.GeocoderStatus.OK )
          {
              wait_address = false;
-        }  */
+         }  
          j++;
    }
    wait_address = false;

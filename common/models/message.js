@@ -88,6 +88,8 @@ function getLocationData(location, callback) {
     if (err){
       console.log('geocode error', err);
     }else{
+      console.log('passo 333333333333');
+      wait_address = false;
       callback(res);
     }
   });

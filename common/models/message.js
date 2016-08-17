@@ -150,9 +150,11 @@ module.exports = function(Message)
       sequence
       .then(function (next) {
         setTimeout(function () {next(err, "Hi", "World!");}, 120);}).then(function (next, err, a, b) {setTimeout(function () {next(err, "Hello", b);}, 270);
+        console.log('passo IIIIIIIIIIIIIIIIIIIII');
       })
       .then(function (next, err, a, b) {
         setTimeout(function () {console.log(a, b); next();}, 50);
+         console.log('passo 00000000000000');
       });
 
      // getLocationData(function(locationData) {console.log(locationData)});

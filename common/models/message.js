@@ -63,7 +63,7 @@ var usingItNow = function(callback) {
    console.log('lat : '+lat_convert);
    console.log('lon : '+lon_convert);
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
-   if( status == google.maps.GeocoderStatus.OK ) {
+   if( status == geocoder.GeocoderStatus.OK ) {
         callback(null,res[0].formattedAddress);
    }
    console.log('passo 2B');

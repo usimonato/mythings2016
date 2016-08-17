@@ -72,7 +72,7 @@ var usingItNow = function(callback) {
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {
      console.log('passo 2B')
      wait_address = false;
-     if(res[0].formattedAddress == null)
+     if(res[0].formattedAddress != null)
      {
          address = res[0].formattedAddress;
      }

@@ -50,6 +50,15 @@ function getLocationData(callback) {
    wait_address = false;
 }
 
+var myCallback = function(err, data) {
+  if (err) throw err; // Check for the error and throw if it exists.
+  console.log('got data: '+data); // Otherwise proceed as usual.
+};
+
+var usingItNow = function(callback) {
+  callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
+};
+
 module.exports = function(Message)
 { //Use the environment variables in production
   var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consumer_secret: process.env.TWITTER_CONSUMER_SECRET, access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY, access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET, });
@@ -75,7 +84,7 @@ module.exports = function(Message)
 
 
      // Using callback
-     geocoder.reverse({lat:message.lat, lon:message.lon}, function(err, res)
+   /*  geocoder.reverse({lat:message.lat, lon:message.lon}, function(err, res)
      {
            if(err == NULL)
            {
@@ -95,10 +104,10 @@ module.exports = function(Message)
            }
            else {console.log(err);}
 
-     });
+     }); */
+     usingItNow(myCallback);
 
-
-     /* geocoder.reverse(
+     geocoder.reverse(
       {lat:message.lat, lon:message.lon}).then(function(res)
          {
            console.log('passo 1A');
@@ -115,7 +124,7 @@ module.exports = function(Message)
            console.log(res);
            console.log('passo 1C');
          }
-      ).catch(function(err) {console.log(err);});*/
+      ).catch(function(err) {console.log(err);});
 
       var i = 0;
       while ((i < 10000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto

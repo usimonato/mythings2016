@@ -66,6 +66,7 @@ var usingItNow = function(callback) {
    console.log('lon : '+lon_convert);
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {
      address = res[0].formattedAddress;
+     console.log(address);}
      console.log(res);});
    sleep(200);
    sleep(400);

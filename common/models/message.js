@@ -71,6 +71,7 @@ var usingItNow = function(callback) {
    sleep(800);
    wait_address = false;
    console.log('passo 2B');
+   address = res[0].formattedAddress;
    callback(null,'Test');
   // callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
 };

@@ -1,0 +1,251 @@
+2016-08-17T15:29:06.423029+00:00 app[web.1]: > node .
+2016-08-17T15:29:06.423029+00:00 app[web.1]: 
+2016-08-17T15:29:06.423028+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T15:29:08.456540+00:00 app[web.1]: Web server listening at: http://0.0.0.0:45432
+2016-08-17T15:29:08.457573+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:45432/explorer
+2016-08-17T15:29:08.529418+00:00 heroku[web.1]: State changed from starting to up
+2016-08-17T15:30:08.301439+00:00 app[web.1]: time : 670
+2016-08-17T15:30:08.301331+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T15:30:08.301650+00:00 app[web.1]: name: string
+2016-08-17T15:30:08.301781+00:00 app[web.1]: snr : string
+2016-08-17T15:30:08.301529+00:00 app[web.1]: device: string
+2016-08-17T15:30:08.301842+00:00 app[web.1]: station : string
+2016-08-17T15:30:08.301720+00:00 app[web.1]: rssi : string
+2016-08-17T15:30:08.302019+00:00 app[web.1]: alt : 0
+2016-08-17T15:30:08.302066+00:00 app[web.1]: event :0
+2016-08-17T15:30:08.301972+00:00 app[web.1]: lon : 0
+2016-08-17T15:30:08.302297+00:00 app[web.1]: passo 2A
+2016-08-17T15:30:08.302154+00:00 app[web.1]: passo 11111111111
+2016-08-17T15:30:08.302115+00:00 app[web.1]: passo 0
+2016-08-17T15:30:08.301585+00:00 app[web.1]: data : string
+2016-08-17T15:30:08.302350+00:00 app[web.1]: lat : 45.767
+2016-08-17T15:30:08.301928+00:00 app[web.1]: lat : 45.767
+2016-08-17T15:30:08.302398+00:00 app[web.1]: lon : 0
+2016-08-17T15:30:09.807514+00:00 app[web.1]: got data: Test
+2016-08-17T15:30:09.807630+00:00 app[web.1]: address : undefined
+2016-08-17T15:30:09.807424+00:00 app[web.1]: passo 2C
+2016-08-17T15:30:09.807553+00:00 app[web.1]: passo 55555555555
+2016-08-17T15:30:09.706984+00:00 app[web.1]: passo 2B
+2016-08-17T15:30:09.807675+00:00 app[web.1]: attesi msec: 0
+2016-08-17T15:30:09.897421+00:00 app[web.1]: /app/node_modules/geocoder/providers/google.js:41
+2016-08-17T15:30:09.897426+00:00 app[web.1]:     cbk(null,result);
+2016-08-17T15:30:09.808475+00:00 app[web.1]: dataora : Wed Aug 17 2016 15:30:09 GMT+0000 (UTC)
+2016-08-17T15:30:09.897427+00:00 app[web.1]:     ^
+2016-08-17T15:30:09.897428+00:00 app[web.1]: 
+2016-08-17T15:30:09.897429+00:00 app[web.1]: TypeError: cbk is not a function
+2016-08-17T15:30:09.897430+00:00 app[web.1]:     at Request._callback (/app/node_modules/geocoder/providers/google.js:41:5)
+2016-08-17T15:30:09.897431+00:00 app[web.1]:     at Request.self.callback (/app/node_modules/geocoder/node_modules/request/main.js:122:22)
+2016-08-17T15:30:09.897443+00:00 app[web.1]:     at /app/node_modules/loopback/node_modules/continuation-local-storage/node_modules/async-listener/glue.js:188:31
+2016-08-17T15:30:09.897437+00:00 app[web.1]:     at Request.emit (events.js:185:7)
+2016-08-17T15:30:09.897439+00:00 app[web.1]:     at Request.emit (events.js:182:7)
+2016-08-17T15:30:09.897443+00:00 app[web.1]:     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+2016-08-17T15:30:09.897444+00:00 app[web.1]:     at process._tickDomainCallback (internal/process/next_tick.js:122:9)
+2016-08-17T15:30:09.897445+00:00 app[web.1]:     at process.fallback (/app/node_modules/loopback/node_modules/continuation-local-storage/node_modules/async-listener/index.js:482:15)
+2016-08-17T15:30:09.910621+00:00 app[web.1]: 
+2016-08-17T15:30:09.897440+00:00 app[web.1]:     at emitNone (events.js:85:20)
+2016-08-17T15:30:09.897437+00:00 app[web.1]:     at Request.<anonymous> (/app/node_modules/geocoder/node_modules/request/main.js:654:16)
+2016-08-17T15:30:09.897441+00:00 app[web.1]:     at IncomingMessage.emit (events.js:179:7)
+2016-08-17T15:30:09.897438+00:00 app[web.1]:     at emitOne (events.js:95:20)
+2016-08-17T15:30:09.919277+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-17T15:30:09.897440+00:00 app[web.1]:     at IncomingMessage.<anonymous> (/app/node_modules/geocoder/node_modules/request/main.js:616:14)
+2016-08-17T15:30:09.918639+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-17T15:30:09.918419+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-17T15:30:09.897436+00:00 app[web.1]:     at emitTwo (events.js:100:13)
+2016-08-17T15:30:09.918103+00:00 app[web.1]: npm ERR! Linux 3.13.0-91-generic
+2016-08-17T15:30:09.919621+00:00 app[web.1]: npm ERR! Exit status 1
+2016-08-17T15:30:09.897442+00:00 app[web.1]:     at endReadableNT (_stream_readable.js:913:12)
+2016-08-17T15:30:09.919799+00:00 app[web.1]: npm ERR! 
+2016-08-17T15:30:09.919971+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-08-17T15:30:09.920147+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-08-17T15:30:09.920406+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-08-17T15:30:09.921024+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-17T15:30:09.919043+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-17T15:30:09.919457+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-08-17T15:30:09.921598+00:00 app[web.1]: npm ERR!     node .
+2016-08-17T15:30:09.921770+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-17T15:30:09.920861+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-17T15:30:09.921993+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-17T15:30:09.922315+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-17T15:30:09.922512+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-17T15:30:09.926281+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-17T15:30:09.922154+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-17T15:30:09.926372+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-17T15:30:09.926067+00:00 app[web.1]: 
+2016-08-17T15:30:09.986202+00:00 heroku[web.1]: Process exited with status 1
+2016-08-17T15:30:10.007583+00:00 heroku[web.1]: State changed from up to crashed
+2016-08-17T15:30:10.008692+00:00 heroku[web.1]: State changed from crashed to starting
+2016-08-17T15:30:09.829753+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=cfdba5d1-81ad-4c0b-867e-214aed4eb770 fwd="95.233.59.235" dyno=web.1 connect=1ms service=1613ms status=200 bytes=521
+2016-08-17T15:30:13.565050+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T15:30:15.948273+00:00 app[web.1]: > node .
+2016-08-17T15:30:15.948256+00:00 app[web.1]: 
+2016-08-17T15:30:15.948274+00:00 app[web.1]: 
+2016-08-17T15:30:15.948272+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T15:30:17.576462+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:9040/explorer
+2016-08-17T15:30:17.575774+00:00 app[web.1]: Web server listening at: http://0.0.0.0:9040
+2016-08-17T15:30:17.690350+00:00 heroku[web.1]: State changed from starting to up
+2016-08-17T15:46:28.648837+00:00 heroku[api]: Release v199 created by u.simonato@libero.it
+2016-08-17T15:46:28.648770+00:00 heroku[api]: Deploy c46d89b by u.simonato@libero.it
+2016-08-17T15:46:28.915542+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-17T15:46:28.915553+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-17T15:46:28.885769+00:00 heroku[web.1]: Restarting
+2016-08-17T15:46:28.886415+00:00 heroku[web.1]: State changed from up to starting
+2016-08-17T15:46:31.807669+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-17T15:46:32.598213+00:00 heroku[web.1]: Process exited with status 0
+2016-08-17T15:46:33.339981+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T15:46:36.143543+00:00 app[web.1]: 
+2016-08-17T15:46:36.143570+00:00 app[web.1]: 
+2016-08-17T15:46:36.143568+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T15:46:36.143569+00:00 app[web.1]: > node .
+2016-08-17T15:46:38.704582+00:00 heroku[web.1]: State changed from starting to up
+2016-08-17T15:46:38.606870+00:00 app[web.1]: Web server listening at: http://0.0.0.0:25806
+2016-08-17T15:46:38.612409+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:25806/explorer
+2016-08-17T15:50:00.944905+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T15:50:00.945000+00:00 app[web.1]: time : 671
+2016-08-17T15:50:00.945084+00:00 app[web.1]: device: string
+2016-08-17T15:50:00.945166+00:00 app[web.1]: data : string
+2016-08-17T15:50:00.945224+00:00 app[web.1]: name: string
+2016-08-17T15:50:00.945286+00:00 app[web.1]: rssi : string
+2016-08-17T15:50:00.945349+00:00 app[web.1]: snr : string
+2016-08-17T15:50:00.945411+00:00 app[web.1]: station : string
+2016-08-17T15:50:00.945478+00:00 app[web.1]: lat : 45.767
+2016-08-17T15:50:00.945539+00:00 app[web.1]: lon : 0
+2016-08-17T15:50:00.945600+00:00 app[web.1]: alt : 0
+2016-08-17T15:50:00.945676+00:00 app[web.1]: event :0
+2016-08-17T15:50:00.945720+00:00 app[web.1]: passo 0
+2016-08-17T15:50:00.945769+00:00 app[web.1]: passo 11111111111
+2016-08-17T15:50:00.945916+00:00 app[web.1]: passo 2A
+2016-08-17T15:50:00.945979+00:00 app[web.1]: lat : 45.767
+2016-08-17T15:50:00.946034+00:00 app[web.1]: lon : 0
+2016-08-17T15:50:02.350035+00:00 app[web.1]: passo 2B
+2016-08-17T15:50:02.450485+00:00 app[web.1]: passo 2C
+2016-08-17T15:50:02.450554+00:00 app[web.1]: got data: Test
+2016-08-17T15:50:02.450590+00:00 app[web.1]: passo 55555555555
+2016-08-17T15:50:02.450664+00:00 app[web.1]: address : undefined
+2016-08-17T15:50:02.450711+00:00 app[web.1]: attesi msec: 0
+2016-08-17T15:50:02.451509+00:00 app[web.1]: dataora : Wed Aug 17 2016 15:50:02 GMT+0000 (UTC)
+2016-08-17T15:50:02.536009+00:00 app[web.1]: /app/node_modules/geocoder/providers/google.js:41
+2016-08-17T15:50:02.536015+00:00 app[web.1]:     cbk(null,result);
+2016-08-17T15:50:02.536016+00:00 app[web.1]:     ^
+2016-08-17T15:50:02.536017+00:00 app[web.1]: 
+2016-08-17T15:50:02.536018+00:00 app[web.1]: TypeError: cbk is not a function
+2016-08-17T15:50:02.536019+00:00 app[web.1]:     at Request._callback (/app/node_modules/geocoder/providers/google.js:41:5)
+2016-08-17T15:50:02.536019+00:00 app[web.1]:     at Request.self.callback (/app/node_modules/geocoder/node_modules/request/main.js:122:22)
+2016-08-17T15:50:02.536020+00:00 app[web.1]:     at emitTwo (events.js:100:13)
+2016-08-17T15:50:02.536026+00:00 app[web.1]:     at Request.emit (events.js:185:7)
+2016-08-17T15:50:02.536027+00:00 app[web.1]:     at Request.<anonymous> (/app/node_modules/geocoder/node_modules/request/main.js:654:16)
+2016-08-17T15:50:02.536027+00:00 app[web.1]:     at emitOne (events.js:95:20)
+2016-08-17T15:50:02.536028+00:00 app[web.1]:     at Request.emit (events.js:182:7)
+2016-08-17T15:50:02.536029+00:00 app[web.1]:     at IncomingMessage.<anonymous> (/app/node_modules/geocoder/node_modules/request/main.js:616:14)
+2016-08-17T15:50:02.536029+00:00 app[web.1]:     at emitNone (events.js:85:20)
+2016-08-17T15:50:02.536030+00:00 app[web.1]:     at IncomingMessage.emit (events.js:179:7)
+2016-08-17T15:50:02.536030+00:00 app[web.1]:     at endReadableNT (_stream_readable.js:913:12)
+2016-08-17T15:50:02.536031+00:00 app[web.1]:     at /app/node_modules/loopback/node_modules/continuation-local-storage/node_modules/async-listener/glue.js:188:31
+2016-08-17T15:50:02.536032+00:00 app[web.1]:     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+2016-08-17T15:50:02.536032+00:00 app[web.1]:     at process._tickDomainCallback (internal/process/next_tick.js:122:9)
+2016-08-17T15:50:02.536034+00:00 app[web.1]:     at process.fallback (/app/node_modules/loopback/node_modules/continuation-local-storage/node_modules/async-listener/index.js:482:15)
+2016-08-17T15:50:02.550126+00:00 app[web.1]: 
+2016-08-17T15:50:02.557373+00:00 app[web.1]: npm ERR! Linux 3.13.0-91-generic
+2016-08-17T15:50:02.557692+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-17T15:50:02.557879+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-17T15:50:02.558285+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-17T15:50:02.558580+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-17T15:50:02.558752+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-08-17T15:50:02.558912+00:00 app[web.1]: npm ERR! Exit status 1
+2016-08-17T15:50:02.559086+00:00 app[web.1]: npm ERR! 
+2016-08-17T15:50:02.559247+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-08-17T15:50:02.559415+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-08-17T15:50:02.559575+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-08-17T15:50:02.559731+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-17T15:50:02.559885+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-17T15:50:02.560050+00:00 app[web.1]: npm ERR!     node .
+2016-08-17T15:50:02.560220+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-17T15:50:02.560383+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-17T15:50:02.560541+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-17T15:50:02.560703+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-17T15:50:02.560862+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-17T15:50:02.564093+00:00 app[web.1]: 
+2016-08-17T15:50:02.564316+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-17T15:50:02.564463+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-17T15:50:02.634268+00:00 heroku[web.1]: Process exited with status 1
+2016-08-17T15:50:02.643291+00:00 heroku[web.1]: State changed from up to crashed
+2016-08-17T15:50:02.644429+00:00 heroku[web.1]: State changed from crashed to starting
+2016-08-17T15:50:06.091404+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-17T15:50:08.421078+00:00 app[web.1]: 
+2016-08-17T15:50:08.421100+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-17T15:50:08.421100+00:00 app[web.1]: > node .
+2016-08-17T15:50:08.421101+00:00 app[web.1]: 
+2016-08-17T15:50:02.504696+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=3ac3b0b6-7093-47d0-b366-30d1cec755e7 fwd="95.233.59.235" dyno=web.1 connect=6ms service=1624ms status=200 bytes=521
+2016-08-17T15:50:10.387970+00:00 app[web.1]: Web server listening at: http://0.0.0.0:33782
+2016-08-17T15:50:10.389035+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:33782/explorer
+2016-08-17T15:50:10.463873+00:00 heroku[web.1]: State changed from starting to up
+2016-08-17T15:52:38.024101+00:00 app[web.1]: > testing afterRemote function
+2016-08-17T15:52:38.024203+00:00 app[web.1]: time : 672
+2016-08-17T15:52:38.024276+00:00 app[web.1]: device: string
+2016-08-17T15:52:38.024344+00:00 app[web.1]: data : string
+2016-08-17T15:52:38.024421+00:00 app[web.1]: name: string
+2016-08-17T15:52:38.024499+00:00 app[web.1]: rssi : string
+2016-08-17T15:52:38.024567+00:00 app[web.1]: snr : string
+2016-08-17T15:52:38.024634+00:00 app[web.1]: station : string
+2016-08-17T15:52:38.024707+00:00 app[web.1]: lat : 45.767
+2016-08-17T15:52:38.024768+00:00 app[web.1]: lon : 0
+2016-08-17T15:52:38.024853+00:00 app[web.1]: alt : 0
+2016-08-17T15:52:38.024894+00:00 app[web.1]: event :0
+2016-08-17T15:52:38.024939+00:00 app[web.1]: passo 0
+2016-08-17T15:52:38.025142+00:00 app[web.1]: passo 11111111111
+2016-08-17T15:52:38.025379+00:00 app[web.1]: passo 2A
+2016-08-17T15:52:38.025432+00:00 app[web.1]: lat : 45.767
+2016-08-17T15:52:38.025488+00:00 app[web.1]: lon : 0
+2016-08-17T15:52:39.433409+00:00 app[web.1]: passo 2B
+2016-08-17T15:52:39.533823+00:00 app[web.1]: passo 2C
+2016-08-17T15:52:39.533921+00:00 app[web.1]: got data: Test
+2016-08-17T15:52:39.533970+00:00 app[web.1]: passo 55555555555
+2016-08-17T15:52:39.534067+00:00 app[web.1]: address : undefined
+2016-08-17T15:52:39.534129+00:00 app[web.1]: attesi msec: 0
+2016-08-17T15:52:39.535685+00:00 app[web.1]: dataora : Wed Aug 17 2016 15:52:39 GMT+0000 (UTC)
+2016-08-17T15:52:39.662426+00:00 app[web.1]: /app/node_modules/geocoder/providers/google.js:41
+2016-08-17T15:52:39.662428+00:00 app[web.1]:     cbk(null,result);
+2016-08-17T15:52:39.662429+00:00 app[web.1]:     ^
+2016-08-17T15:52:39.662430+00:00 app[web.1]: 
+2016-08-17T15:52:39.662431+00:00 app[web.1]: TypeError: cbk is not a function
+2016-08-17T15:52:39.662432+00:00 app[web.1]:     at Request._callback (/app/node_modules/geocoder/providers/google.js:41:5)
+2016-08-17T15:52:39.662433+00:00 app[web.1]:     at Request.self.callback (/app/node_modules/geocoder/node_modules/request/main.js:122:22)
+2016-08-17T15:52:39.662434+00:00 app[web.1]:     at emitTwo (events.js:100:13)
+2016-08-17T15:52:39.662434+00:00 app[web.1]:     at Request.emit (events.js:185:7)
+2016-08-17T15:52:39.662435+00:00 app[web.1]:     at Request.<anonymous> (/app/node_modules/geocoder/node_modules/request/main.js:654:16)
+2016-08-17T15:52:39.662435+00:00 app[web.1]:     at emitOne (events.js:95:20)
+2016-08-17T15:52:39.662436+00:00 app[web.1]:     at Request.emit (events.js:182:7)
+2016-08-17T15:52:39.662437+00:00 app[web.1]:     at IncomingMessage.<anonymous> (/app/node_modules/geocoder/node_modules/request/main.js:616:14)
+2016-08-17T15:52:39.662438+00:00 app[web.1]:     at emitNone (events.js:85:20)
+2016-08-17T15:52:39.662438+00:00 app[web.1]:     at IncomingMessage.emit (events.js:179:7)
+2016-08-17T15:52:39.662439+00:00 app[web.1]:     at endReadableNT (_stream_readable.js:913:12)
+2016-08-17T15:52:39.662440+00:00 app[web.1]:     at /app/node_modules/loopback/node_modules/continuation-local-storage/node_modules/async-listener/glue.js:188:31
+2016-08-17T15:52:39.662441+00:00 app[web.1]:     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+2016-08-17T15:52:39.662441+00:00 app[web.1]:     at process._tickDomainCallback (internal/process/next_tick.js:122:9)
+2016-08-17T15:52:39.662443+00:00 app[web.1]:     at process.fallback (/app/node_modules/loopback/node_modules/continuation-local-storage/node_modules/async-listener/index.js:482:15)
+2016-08-17T15:52:39.683833+00:00 app[web.1]: 
+2016-08-17T15:52:39.695886+00:00 app[web.1]: npm ERR! Linux 3.13.0-91-generic
+2016-08-17T15:52:39.696385+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-17T15:52:39.696732+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-17T15:52:39.697413+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-17T15:52:39.697848+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-17T15:52:39.698088+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-08-17T15:52:39.698299+00:00 app[web.1]: npm ERR! Exit status 1
+2016-08-17T15:52:39.698539+00:00 app[web.1]: npm ERR! 
+2016-08-17T15:52:39.698760+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-08-17T15:52:39.698987+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-08-17T15:52:39.699200+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-08-17T15:52:39.699418+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-17T15:52:39.699628+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-17T15:52:39.699848+00:00 app[web.1]: npm ERR!     node .
+2016-08-17T15:52:39.700085+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-17T15:52:39.700331+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-17T15:52:39.700570+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-17T15:52:39.700807+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-17T15:52:39.701025+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-17T15:52:39.706227+00:00 app[web.1]: 
+2016-08-17T15:52:39.706514+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-17T15:52:39.706711+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-17T15:52:39.580147+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=c07896ca-4b3b-4228-8876-54064e331a57 fwd="95.233.59.235" dyno=web.1 connect=2ms service=1646ms status=200 bytes=521
+2016-08-17T15:52:39.781414+00:00 heroku[web.1]: Process exited with status 1
+2016-08-17T15:52:39.804993+00:00 heroku[web.1]: State changed from up to crashed
+Terminare il processo batch (S/N)? 

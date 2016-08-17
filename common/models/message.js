@@ -53,6 +53,9 @@ function getLocationData(callback) {
 
 var myCallback = function(err, data) {
    console.log('passo 2A');
+   console.log('lat : '+message.lat);
+   console.log('lon : '+message.lon);
+
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
    console.log('passo 2B');
    wait_address = false;

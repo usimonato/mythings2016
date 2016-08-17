@@ -52,6 +52,7 @@ function getLocationData(callback) {
 }
 
 var myCallback = function(err, data) {
+  sleep(5000);
   if (err) {console.log(err);}; // Check for the error and throw if it exists.
   console.log('got data: '+data); // Otherwise proceed as usual.
 };
@@ -97,8 +98,8 @@ module.exports = function(Message)
      // Using callback
      geocoder.reverse({lat:message.lat, lon:message.lon}, function(err, res)
      {
-           if(err )
-           {console.log(err);}
+           if(err)
+                  {console.log(err);}
            else {
                   console.log('passo 1A');
                   address = res[0].formattedAddress;
@@ -116,7 +117,9 @@ module.exports = function(Message)
            }
 
      });
+     console.log('passo 11111111111');
      usingItNow(myCallback);
+     console.log('passo 22222222222');
 
     /* geocoder.reverse(
       {lat:message.lat, lon:message.lon}).then(function(res)

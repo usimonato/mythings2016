@@ -55,16 +55,17 @@ var myCallback = function(err, data) {
    console.log('passo 2A');
    console.log('lat : '+lat_convert);
    console.log('lon : '+lon_convert);
-
-   geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
-   console.log('passo 2B');
    wait_address = false;
   if (err) {console.log(err);}; // Check for the error and throw if it exists.
   console.log('got data: '+data); // Otherwise proceed as usual.
 };
 
 var usingItNow = function(callback) {
-  callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
+   console.log('passo 2B');
+   geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
+   geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {console.log(res);});
+   console.log('passo 2C');
+   callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
 };
 
 function test(){
@@ -78,6 +79,7 @@ function test(){
 
 
 function getLocation(location) {
+  console.log('passo 22222222222');
   getLocationData(location, function(latLong) {
     console.log('latLong:', latLong);
   });
@@ -147,10 +149,10 @@ module.exports = function(Message)
      lat_convert = message.lat;
      lon_convert = message.lon;
      console.log('passo 11111111111');
-     //usingItNow(myCallback);
+     usingItNow(myCallback);
 
-     getLocation('1060 W Addison St, Chicago, IL 60613');
-     console.log('passo 22222222222');
+     //getLocation('1060 W Addison St, Chicago, IL 60613');
+     console.log('passo 55555555555');
 
     /* geocoder.reverse(
       {lat:message.lat, lon:message.lon}).then(function(res)

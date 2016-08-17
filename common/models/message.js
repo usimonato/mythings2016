@@ -55,7 +55,7 @@ function getLocationData(callback) {
 }
 
 var myCallback = function(err, data) {
-   console.log('passo 2C');
+   console.log('passo 2D');
    wait_address = false;
   if (err) {console.log(err);}; // Check for the error and throw if it exists.
   console.log('got data: '+data); // Otherwise proceed as usual.
@@ -66,14 +66,12 @@ var usingItNow = function(callback) {
    console.log('lat : '+lat_convert);
    console.log('lon : '+lon_convert);
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {
+     console.log('passo 2B')
      wait_address = false;
      address = res[0].formattedAddress;
      console.log('address risolto : '+address);
      console.log(res);});
-
-
-
-   console.log('passo 2B')
+   console.log('passo 2C')
    var j = 0;
    while ((j < 100) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
    {

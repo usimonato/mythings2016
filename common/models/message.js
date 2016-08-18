@@ -175,12 +175,12 @@ module.exports = function(Message)
      }); */
      lat_convert = message.lat;
      lon_convert = message.lon;
+     alt_convert = message.alt;
      console.log('passo 11111111111');
      address_new = null;
      //usingItNow(myCallback);
 
      //getLocation('1060 W Addison St, Chicago, IL 60613');
-     console.log('passo 55555555555');
 
     /* geocoder.reverse(
       {lat:message.lat, lon:message.lon}).then(function(res)
@@ -204,7 +204,7 @@ module.exports = function(Message)
        sequence
       .then(function (next) {
           wait_address = true;
-          geocoder.reverse({lat:message.lat, lon:message.log}).then(function(res)
+          geocoder.reverse({lat:lat_convert, lon:lon_convert}).then(function(res)
           {
                console.log('passo 1D');
                address_last = res[0].formattedAddress;
@@ -225,7 +225,8 @@ module.exports = function(Message)
           console.log('passo IIIIIIIIIIIIIIIIIIIII');
       })
       .then(function (next) {
-          evento =  message.alt & 0xFF00;
+          console.log('passo ZZZZZZZZZZ');
+          evento =  alt_convert & 0xFF00;
           switch (evento)
           {
 		case 0x0100: {
@@ -253,7 +254,8 @@ module.exports = function(Message)
                   evento = 'Prova';
 		}
           }
-          alt_convert =  message.alt & 0x00FF;
+          alt_convert =  alt_convert.alt & 0x00FF;
+          console.log('passo TTTTTTTTTTTTTT');
 
          if(address_last == null)
            address_last = 'non risolto';

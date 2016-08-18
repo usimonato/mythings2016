@@ -38,13 +38,8 @@ var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consu
 var myCallback = function(err, data) {
    console.log('passo 2D');
    wait_address = false;
-  if (err) {console.log(err);}; // Check for the error and throw if it exists.
-  if(data != null)
-  {
-         address_new  = data;
-         address_last = data;
-  }
-  console.log('got data: '+data); // Otherwise proceed as usual.
+   if (err) {console.log(err);}; // Check for the error and throw if it exists.
+   console.log('got data: '+data); // Otherwise proceed as usual.
 };
 
 var usingItNow = function(callback) {
@@ -52,23 +47,23 @@ var usingItNow = function(callback) {
    console.log('lat : '+lat_convert);
    console.log('lon : '+lon_convert);
    geocoder.reverse({lat:lat_convert, lon:lon_convert}, function(err, res) {
-     console.log('passo 2B')
-     wait_address = false;
-     if(res[0].formattedAddress == null)
-     {
-         console.log('address non risolto: ' +res[0].formattedAddress) ;
-         address_new = null;
-     }
-     else
-      {
-         address_new = res[0].formattedAddress;
-         address_last = address_new;
-         console.log('address risolto : '+address_new);
-           console.log('passo ZZZZZZZZZZ');
-          console.log('address_last: '+address_last);
-          evento =  alt_convert & 0xFF00;
-          switch (evento)
-          {
+   console.log('passo 2B')
+   wait_address = false;
+   if(res[0].formattedAddress == null)
+   {
+       console.log('address non risolto: ' +res[0].formattedAddress) ;
+       address_new = null;
+   }
+   else
+   {
+       address_new = res[0].formattedAddress;
+       address_last = address_new;
+       console.log('address risolto : '+address_new);
+    }
+    console.log(res);});
+    evento =  alt_convert & 0xFF00;
+    switch (evento)
+    {
 		case 0x0100: {
                     evento = 'Tasto';
 		    break;
@@ -93,26 +88,21 @@ var usingItNow = function(callback) {
 		default: {
                   evento = 'Prova';
 		}
-          }
-          alt_convert =  alt_convert & 0x00FF;
-          console.log('passo TTTTTTTTTTTTTT');
+       }
+       alt_convert =  alt_convert & 0x00FF;
+       console.log('passo TTTTTTTTTTTTTT');
 
-         if(address_last == null)
-           address_last = 'non risolto';
+       if(address_last == null)
+          address_last = 'non risolto';
 
-         console.log('address_last: '+address_last);
-         var dataora = new Date();
-         console.log('dataora : '+dataora);
-         client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + name_convert + " - in " + address_last + " - lat:" +  +lat_convert + ", lng:" +  lon_convert +  ", alt:" +  alt_convert  + " - base:" + station_convert + ", rssi:" + rssi_convert + "dbm, snr:" + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
-         client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ' - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
-         console.log('passo 00000000000000');
-     }
+       console.log('address_last: '+address_last);
+       var dataora = new Date();
+       console.log('dataora : '+dataora);
+       client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + name_convert + " - in " + address_last + " - lat:" +  +lat_convert + ", lng:" +  lon_convert +  ", alt:" +  alt_convert  + " - base:" + station_convert + ", rssi:" + rssi_convert + "dbm, snr:" + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
+       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ' - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
+       console.log('passo 00000000000000');
 
-   console.log(res);});
-   console.log('passo 2C')
-   var j = 0;
-   callback(null,address_new);
-  // callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
+       callback(null,address_new);
 };
 
 
@@ -122,7 +112,7 @@ var usingItNow = function(callback) {
 module.exports = function(Message)
 { //Use the environment variables in production
 //Available methods : // client.get(path, params, callback); // client.post(ngath, params, callback); // client.stream(path, params, callback);
-   
+
    var Sequence = exports.Sequence || require('sequence').Sequence, sequence = Sequence.create(), err;
    Message.afterRemote('create', function (ctx, message, next)
    {

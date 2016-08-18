@@ -46,15 +46,6 @@ function Bytes2Float32(bytes) {
     return sign * significand * Math.pow(2, exponent);
 }
 
-function getLocationData(callback) {
-   console.log('passo 2A');
-   geocoder.reverse({lat:lat_convert, lon:log_convert}, function(err, res) {console.log(res);});
-   console.log('passo 2B');
-   callback(res[0].formatted_address);
-   console.log('passo 2C');
-   wait_address = false;
-}
-
 var myCallback = function(err, data) {
    console.log('passo 2D');
    wait_address = false;
@@ -94,35 +85,7 @@ var usingItNow = function(callback) {
   // callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
 };
 
-function test(){
-    var addresses = wait.for(dns.resolve4,"google.com");
-    for (var i = 0; i < addresses.length; i++) {
-        var a = addresses[i];
-        console.log("reverse for " + a + ": " + JSON.stringify(wait.for(dns.reverse,a)));
-    }
-}
 
-
-
-function getLocation(location) {
-  console.log('passo 22222222222');
-  getLocationData(location, function(latLong) {
-    console.log('latLong:', latLong);
-  });
-}
-
-function getLocationData(location, callback) {
-  console.log('passo 33333333333');
-  geocoder.geocode(location, function(err, res) {
-    if (err){
-      console.log('geocode error', err);
-    }else{
-      console.log('passo 444444444444');
-      wait_address = false;
-      callback(res);
-    }
-  });
-}
 
 
 
@@ -204,7 +167,7 @@ module.exports = function(Message)
        sequence
       .then(function (next) {
           wait_address = true;
-          geocoder.reverse({lat:lat_convert, lon:lon_convert}).then(function(res)
+          /*geocoder.reverse({lat:lat_convert, lon:lon_convert}).then(function(res)
           {
                console.log('passo 1D');
                address_last = res[0].formattedAddress;
@@ -220,7 +183,8 @@ module.exports = function(Message)
                console.log(res);
                console.log('passo 1F');
                }
-          ).catch(function(err) {console.log(err);});
+          ).catch(function(err) {console.log(err);});*/
+          usingItNow(myCallback);
           console.log('address_risolto: '+address_last);
           console.log('passo IIIIIIIIIIIIIIIIIIIII');
       })

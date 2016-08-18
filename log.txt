@@ -1,78 +1,3 @@
-2016-08-17T22:17:47.559062+00:00 app[web.1]:         connection: [Circular],
-2016-08-17T22:17:47.559065+00:00 app[web.1]:         agent: [Object],
-2016-08-17T22:17:47.559065+00:00 app[web.1]:         socketPath: undefined,
-2016-08-17T22:17:47.559066+00:00 app[web.1]:         method: 'POST',
-2016-08-17T22:17:47.559067+00:00 app[web.1]:         onSocket: [Function],
-2016-08-17T22:17:47.559067+00:00 app[web.1]:         parser: null,
-2016-08-17T22:17:47.559063+00:00 app[web.1]:         _headers: [Object],
-2016-08-17T22:17:47.559068+00:00 app[web.1]:         res: [Circular] },
-2016-08-17T22:17:47.559062+00:00 app[web.1]:         _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 198\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="b4a38623473744f7b24b386745659ecd",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1471472267",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="U0QTNR7lTgRTpRyVMziWAjasinw%3D"\r\n\r\n',
-2016-08-17T22:17:47.559066+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
-2016-08-17T22:17:47.559068+00:00 app[web.1]:      read: [Function],
-2016-08-17T22:17:47.559072+00:00 app[web.1]:      _consuming: true,
-2016-08-17T22:17:47.559073+00:00 app[web.1]:      _idleNext: null,
-2016-08-17T22:17:47.559074+00:00 app[web.1]:   httpVersionMajor: 1,
-2016-08-17T22:17:47.559073+00:00 app[web.1]:      _idlePrev: null,
-2016-08-17T22:17:47.559075+00:00 app[web.1]:   httpVersionMinor: 1,
-2016-08-17T22:17:47.559076+00:00 app[web.1]:   headers: 
-2016-08-17T22:17:47.559074+00:00 app[web.1]:      _idleTimeout: -1 },
-2016-08-17T22:17:47.559075+00:00 app[web.1]:   httpVersion: '1.1',
-2016-08-17T22:17:47.559076+00:00 app[web.1]:   complete: true,
-2016-08-17T22:17:47.559078+00:00 app[web.1]:    { 'cache-control': 'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
-2016-08-17T22:17:47.559079+00:00 app[web.1]:      connection: 'close',
-2016-08-17T22:17:47.559080+00:00 app[web.1]:      'content-length': '2935',
-2016-08-17T22:17:47.559079+00:00 app[web.1]:      'content-disposition': 'attachment; filename=json.json',
-2016-08-17T22:17:47.559080+00:00 app[web.1]:      'content-type': 'application/json;charset=utf-8',
-2016-08-17T22:17:47.559083+00:00 app[web.1]:      server: 'tsa_b',
-2016-08-17T22:17:47.559081+00:00 app[web.1]:      date: 'Wed, 17 Aug 2016 22:17:47 GMT',
-2016-08-17T22:17:47.559081+00:00 app[web.1]:      expires: 'Tue, 31 Mar 1981 05:00:00 GMT',
-2016-08-17T22:17:47.559082+00:00 app[web.1]:      pragma: 'no-cache',
-2016-08-17T22:17:47.559084+00:00 app[web.1]:      'set-cookie': 
-2016-08-17T22:17:47.559085+00:00 app[web.1]:      status: '200 OK',
-2016-08-17T22:17:47.559087+00:00 app[web.1]:      'x-access-level': 'read-write-directmessages',
-2016-08-17T22:17:47.559084+00:00 app[web.1]:       [ 'lang=it; Path=/',
-2016-08-17T22:17:47.559082+00:00 app[web.1]:      'last-modified': 'Wed, 17 Aug 2016 22:17:47 GMT',
-2016-08-17T22:17:47.559085+00:00 app[web.1]:         'guest_id=v1%3A147147226732133834; Domain=.twitter.com; Path=/; Expires=Fri, 17-Aug-2018 22:17:47 UTC' ],
-2016-08-17T22:17:47.559086+00:00 app[web.1]:      'strict-transport-security': 'max-age=631138519',
-2016-08-17T22:17:47.559087+00:00 app[web.1]:      'x-connection-hash': '569abd7da9ec8b80dc851345be360bcf',
-2016-08-17T22:17:47.559088+00:00 app[web.1]:      'x-content-type-options': 'nosniff',
-2016-08-17T22:17:47.559091+00:00 app[web.1]:      'x-twitter-response-tags': 'BouncerCompliant',
-2016-08-17T22:17:47.559090+00:00 app[web.1]:      'x-tsa-request-body-time': '1',
-2016-08-17T22:17:47.559089+00:00 app[web.1]:      'x-transaction': '009d2bc70018d16e',
-2016-08-17T22:17:47.559091+00:00 app[web.1]:      'x-xss-protection': '1; mode=block' },
-2016-08-17T22:17:47.559088+00:00 app[web.1]:      'x-frame-options': 'SAMEORIGIN',
-2016-08-17T22:17:47.559089+00:00 app[web.1]:      'x-response-time': '193',
-2016-08-17T22:17:47.559092+00:00 app[web.1]:   rawHeaders: 
-2016-08-17T22:17:47.559092+00:00 app[web.1]:    [ 'cache-control',
-2016-08-17T22:17:47.559093+00:00 app[web.1]:      'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
-2016-08-17T22:17:47.559094+00:00 app[web.1]:      'close',
-2016-08-17T22:17:47.559095+00:00 app[web.1]:      'attachment; filename=json.json',
-2016-08-17T22:17:47.559093+00:00 app[web.1]:      'connection',
-2016-08-17T22:17:47.559094+00:00 app[web.1]:      'content-disposition',
-2016-08-17T22:17:47.559097+00:00 app[web.1]:      'application/json;charset=utf-8',
-2016-08-17T22:17:47.559097+00:00 app[web.1]:      'date',
-2016-08-17T22:17:47.559098+00:00 app[web.1]:      'Wed, 17 Aug 2016 22:17:47 GMT',
-2016-08-17T22:17:47.559095+00:00 app[web.1]:      'content-length',
-2016-08-17T22:17:47.559096+00:00 app[web.1]:      '2935',
-2016-08-17T22:17:47.559096+00:00 app[web.1]:      'content-type',
-2016-08-17T22:17:47.559098+00:00 app[web.1]:      'expires',
-2016-08-17T22:17:47.559099+00:00 app[web.1]:      'Tue, 31 Mar 1981 05:00:00 GMT',
-2016-08-17T22:17:47.559101+00:00 app[web.1]:      'server',
-2016-08-17T22:17:47.559101+00:00 app[web.1]:      'pragma',
-2016-08-17T22:17:47.559101+00:00 app[web.1]:      'no-cache',
-2016-08-17T22:17:47.559107+00:00 app[web.1]:      'x-access-level',
-2016-08-17T22:17:47.559103+00:00 app[web.1]:      'set-cookie',
-2016-08-17T22:17:47.559103+00:00 app[web.1]:      'lang=it; Path=/',
-2016-08-17T22:17:47.559104+00:00 app[web.1]:      'set-cookie',
-2016-08-17T22:17:47.559104+00:00 app[web.1]:      'guest_id=v1%3A147147226732133834; Domain=.twitter.com; Path=/; Expires=Fri, 17-Aug-2018 22:17:47 UTC',
-2016-08-17T22:17:47.559105+00:00 app[web.1]:      'status',
-2016-08-17T22:17:47.559105+00:00 app[web.1]:      '200 OK',
-2016-08-17T22:17:47.559106+00:00 app[web.1]:      'strict-transport-security',
-2016-08-17T22:17:47.559102+00:00 app[web.1]:      'tsa_b',
-2016-08-17T22:17:47.559106+00:00 app[web.1]:      'max-age=631138519',
-2016-08-17T22:17:47.559099+00:00 app[web.1]:      'last-modified',
-2016-08-17T22:17:47.559100+00:00 app[web.1]:      'Wed, 17 Aug 2016 22:17:47 GMT',
-2016-08-17T22:17:47.559109+00:00 app[web.1]:      'x-content-type-options',
 2016-08-17T22:17:47.559109+00:00 app[web.1]:      'nosniff',
 2016-08-17T22:17:47.559110+00:00 app[web.1]:      'x-frame-options',
 2016-08-17T22:17:47.559110+00:00 app[web.1]:      'SAMEORIGIN',
@@ -118,4 +43,60 @@
 2016-08-18T05:39:54.025323+00:00 app[web.1]: address_risolto: undefined
 2016-08-18T05:39:54.025382+00:00 app[web.1]: passo IIIIIIIIIIIIIIIIIIIII
 2016-08-18T05:39:54.135611+00:00 app[web.1]: { [Error: Status is ZERO_RESULTS.] cause: [Error: Status is ZERO_RESULTS.], isOperational: true }
+2016-08-18T05:49:42.983609+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-18T05:49:42.983615+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-18T05:49:42.781906+00:00 heroku[api]: Release v220 created by u.simonato@libero.it
+2016-08-18T05:49:42.781809+00:00 heroku[api]: Deploy d2ffb14 by u.simonato@libero.it
+2016-08-18T05:49:43.103087+00:00 heroku[web.1]: Restarting
+2016-08-18T05:49:43.105426+00:00 heroku[web.1]: State changed from up to starting
+2016-08-18T05:49:45.787605+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-18T05:49:46.543780+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-18T05:49:46.455124+00:00 heroku[web.1]: Process exited with status 0
+2016-08-18T05:49:49.054120+00:00 app[web.1]: 
+2016-08-18T05:49:49.054133+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-18T05:49:49.054134+00:00 app[web.1]: > node .
+2016-08-18T05:49:49.054135+00:00 app[web.1]: 
+2016-08-18T05:49:50.499999+00:00 app[web.1]: Web server listening at: http://0.0.0.0:55766
+2016-08-18T05:49:50.500674+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:55766/explorer
+2016-08-18T05:49:50.746549+00:00 heroku[web.1]: State changed from starting to up
+2016-08-18T05:51:37.288247+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=e86d9dec-1d75-4724-81f7-dd740f745d4c fwd="95.233.59.235" dyno=web.1 connect=1ms service=122ms status=200 bytes=518
+2016-08-18T05:51:37.284917+00:00 app[web.1]: > testing afterRemote function
+2016-08-18T05:51:37.285031+00:00 app[web.1]: time : 835
+2016-08-18T05:51:37.285122+00:00 app[web.1]: device: string
+2016-08-18T05:51:37.285203+00:00 app[web.1]: data : string
+2016-08-18T05:51:37.285287+00:00 app[web.1]: name: string
+2016-08-18T05:51:37.285361+00:00 app[web.1]: rssi : string
+2016-08-18T05:51:37.285444+00:00 app[web.1]: snr : string
+2016-08-18T05:51:37.285521+00:00 app[web.1]: station : string
+2016-08-18T05:51:37.285603+00:00 app[web.1]: lat : 45
+2016-08-18T05:51:37.285678+00:00 app[web.1]: lon : 10
+2016-08-18T05:51:37.285753+00:00 app[web.1]: alt : 0
+2016-08-18T05:51:37.285831+00:00 app[web.1]: event :0
+2016-08-18T05:51:37.285888+00:00 app[web.1]: passo 0
+2016-08-18T05:51:37.285959+00:00 app[web.1]: passo 11111111111
+2016-08-18T05:51:37.291178+00:00 app[web.1]: address_risolto: undefined
+2016-08-18T05:51:37.291179+00:00 app[web.1]: passo IIIIIIIIIIIIIIIIIIIII
+2016-08-18T05:51:37.433126+00:00 app[web.1]: passo 1D
+2016-08-18T05:51:37.462190+00:00 app[web.1]: [ { formattedAddress: 'Via Ferrarine, 29010 PC, Italy',
+2016-08-18T05:51:37.462193+00:00 app[web.1]:     latitude: 44.9974327,
+2016-08-18T05:51:37.462194+00:00 app[web.1]:     longitude: 10.0061783,
+2016-08-18T05:51:37.462195+00:00 app[web.1]:     extra: 
+2016-08-18T05:51:37.462195+00:00 app[web.1]:      { googlePlaceId: 'ChIJBSkt8p33gEcRpiEqPqZ5fFY',
+2016-08-18T05:51:37.462196+00:00 app[web.1]:        confidence: 0.7,
+2016-08-18T05:51:37.462197+00:00 app[web.1]:        premise: null,
+2016-08-18T05:51:37.462197+00:00 app[web.1]:        subpremise: null,
+2016-08-18T05:51:37.462197+00:00 app[web.1]:        neighborhood: null,
+2016-08-18T05:51:37.462198+00:00 app[web.1]:        establishment: null },
+2016-08-18T05:51:37.462199+00:00 app[web.1]:     administrativeLevels: 
+2016-08-18T05:51:37.462200+00:00 app[web.1]:      { level2long: 'Provincia di Piacenza',
+2016-08-18T05:51:37.462200+00:00 app[web.1]:        level2short: 'PC',
+2016-08-18T05:51:37.462201+00:00 app[web.1]:        level1long: 'Emilia-Romagna',
+2016-08-18T05:51:37.462206+00:00 app[web.1]:        level1short: 'Emilia-Romagna' },
+2016-08-18T05:51:37.462206+00:00 app[web.1]:     streetName: 'Via Ferrarine',
+2016-08-18T05:51:37.462207+00:00 app[web.1]:     country: 'Italy',
+2016-08-18T05:51:37.462207+00:00 app[web.1]:     countryCode: 'IT',
+2016-08-18T05:51:37.462208+00:00 app[web.1]:     zipcode: '29010',
+2016-08-18T05:51:37.462208+00:00 app[web.1]:     provider: 'google' } ]
+2016-08-18T05:51:37.462310+00:00 app[web.1]: passo 1F
+2016-08-18T05:52:34.454122+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=63d71c57-c046-4fd8-8db6-6311b7d0c7d2 fwd="95.233.59.235" dyno=web.1 connect=1ms service=20ms status=500 bytes=470
 Terminare il processo batch (S/N)? 

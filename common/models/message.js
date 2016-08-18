@@ -141,7 +141,8 @@ module.exports = function(Message)
      alt_convert = message.alt;
      console.log('passo 11111111111');
      address_new = null;
-     //usingItNow(myCallback);
+     wait_address = true;
+     usingItNow(myCallback);
 
      //getLocation('1060 W Addison St, Chicago, IL 60613');
 
@@ -166,7 +167,7 @@ module.exports = function(Message)
 
        sequence
       .then(function (next) {
-          wait_address = true;
+          /*wait_address = true;
           geocoder.reverse({lat:lat_convert, lon:lon_convert}).then(function(res)
           {
                console.log('passo 1D');
@@ -182,9 +183,11 @@ module.exports = function(Message)
                wait_address = false;
                console.log(res);
                console.log('passo 1F');
+               next();
                }
           ).catch(function(err) {console.log(err);});
-          //usingItNow(myCallback);
+          //usingItNow(myCallback);   */
+          setTimeout(function () {next(err, "Hi", "World!");}, 120);
           console.log('passo IIIIIIIIIIIIIIIIIIIII');
       })
       .then(function (next) {
@@ -230,14 +233,15 @@ module.exports = function(Message)
          client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + message.name + " - in " + address_last + " - lat:" +  +message.lat + ", lng:" +  message.lon +  ", alt:" +  alt_convert  + " - base:" + message.station + ", rssi:" + message.rssi + "dbm, snr:" + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
          client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address_last + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm, snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
          console.log('passo 00000000000000');
+         next();
       });
 
-      var i = 0;
+      /*var i = 0;
       while ((i < 10000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {
             sleep(1);
             i++;
-      }
+      }   */
       console.log('passo EEEEEEEEEEEEEEEEEEEEEEEE');
 
       /*evento =  message.alt & 0xFF00;
@@ -319,5 +323,6 @@ module.exports = function(Message)
 
       client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + message.name + " - in " + address_last + " - lat:" +  +message.lat + ", lng:" +  message.lon +  ", alt:" +  alt_convert  + " - base:" + message.station + ", rssi:" + message.rssi + "dbm, snr:" + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address_last + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm, snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);}); */
-      next(); });
+      //next(); 
+      });
 };

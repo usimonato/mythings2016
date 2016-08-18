@@ -1,54 +1,3 @@
-2016-08-18T06:12:18.546373+00:00 app[web.1]: event :0
-2016-08-18T06:12:18.546417+00:00 app[web.1]: passo 0
-2016-08-18T06:12:18.551256+00:00 app[web.1]: passo 2C
-2016-08-18T06:12:18.546476+00:00 app[web.1]: passo 11111111111
-2016-08-18T06:12:18.547036+00:00 app[web.1]: passo 2A
-2016-08-18T06:12:18.547110+00:00 app[web.1]: lat : 45
-2016-08-18T06:12:18.653006+00:00 app[web.1]: got data: null
-2016-08-18T06:12:18.547173+00:00 app[web.1]: lon : 10
-2016-08-18T06:12:18.653057+00:00 app[web.1]: passo IIIIIIIIIIIIIIIIIIIII
-2016-08-18T06:12:18.652904+00:00 app[web.1]: passo 2D
-2016-08-18T06:12:18.653183+00:00 app[web.1]: passo EEEEEEEEEEEEEEEEEEEEEEEE
-2016-08-18T06:12:18.823765+00:00 app[web.1]:        confidence: 0.7,
-2016-08-18T06:12:18.823756+00:00 app[web.1]: [ { formattedAddress: 'Via Ferrarine, 29010 PC, Italy',
-2016-08-18T06:12:18.798107+00:00 app[web.1]: passo 2B
-2016-08-18T06:12:18.798185+00:00 app[web.1]: address risolto : Via Ferrarine, 29010 PC, Italy
-2016-08-18T06:12:18.823760+00:00 app[web.1]:     longitude: 10.0061783,
-2016-08-18T06:12:18.823759+00:00 app[web.1]:     latitude: 44.9974327,
-2016-08-18T06:12:18.823764+00:00 app[web.1]:      { googlePlaceId: 'ChIJBSkt8p33gEcRpiEqPqZ5fFY',
-2016-08-18T06:12:18.823761+00:00 app[web.1]:     extra: 
-2016-08-18T06:12:18.823765+00:00 app[web.1]:        premise: null,
-2016-08-18T06:12:18.823766+00:00 app[web.1]:        subpremise: null,
-2016-08-18T06:12:18.823766+00:00 app[web.1]:        neighborhood: null,
-2016-08-18T06:12:18.823766+00:00 app[web.1]:        establishment: null },
-2016-08-18T06:12:18.823767+00:00 app[web.1]:     administrativeLevels: 
-2016-08-18T06:12:18.823768+00:00 app[web.1]:      { level2long: 'Provincia di Piacenza',
-2016-08-18T06:12:18.823768+00:00 app[web.1]:        level2short: 'PC',
-2016-08-18T06:12:18.823768+00:00 app[web.1]:        level1long: 'Emilia-Romagna',
-2016-08-18T06:12:18.823769+00:00 app[web.1]:        level1short: 'Emilia-Romagna' },
-2016-08-18T06:12:18.823770+00:00 app[web.1]:     country: 'Italy',
-2016-08-18T06:12:18.823769+00:00 app[web.1]:     streetName: 'Via Ferrarine',
-2016-08-18T06:12:18.823770+00:00 app[web.1]:     countryCode: 'IT',
-2016-08-18T06:12:18.823771+00:00 app[web.1]:     provider: 'google' } ]
-2016-08-18T06:12:18.823770+00:00 app[web.1]:     zipcode: '29010',
-2016-08-18T06:19:49.009486+00:00 heroku[slug-compiler]: Slug compilation started
-2016-08-18T06:19:49.009495+00:00 heroku[slug-compiler]: Slug compilation finished
-2016-08-18T06:19:48.823941+00:00 heroku[api]: Deploy 4691c39 by u.simonato@libero.it
-2016-08-18T06:19:48.824034+00:00 heroku[api]: Release v223 created by u.simonato@libero.it
-2016-08-18T06:19:49.168372+00:00 heroku[web.1]: State changed from up to starting
-2016-08-18T06:19:49.167652+00:00 heroku[web.1]: Restarting
-2016-08-18T06:19:51.309984+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2016-08-18T06:19:51.967590+00:00 heroku[web.1]: Process exited with status 143
-2016-08-18T06:19:52.564148+00:00 heroku[web.1]: Starting process with command `npm start`
-2016-08-18T06:19:54.584622+00:00 app[web.1]: 
-2016-08-18T06:19:54.584637+00:00 app[web.1]: > mythings2016@1.0.0 start /app
-2016-08-18T06:19:54.584638+00:00 app[web.1]: > node .
-2016-08-18T06:19:54.584638+00:00 app[web.1]: 
-2016-08-18T06:19:56.956811+00:00 app[web.1]: Web server listening at: http://0.0.0.0:15932
-2016-08-18T06:19:56.958075+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:15932/explorer
-2016-08-18T06:19:57.626404+00:00 heroku[web.1]: State changed from starting to up
-2016-08-18T06:20:05.925327+00:00 app[web.1]: > testing afterRemote function
-2016-08-18T06:20:05.925515+00:00 app[web.1]: device: string
 2016-08-18T06:20:05.925426+00:00 app[web.1]: time : 838
 2016-08-18T06:20:05.925567+00:00 app[web.1]: data : string
 2016-08-18T06:20:05.925612+00:00 app[web.1]: name: string
@@ -123,8 +72,8 @@
 2016-08-18T06:26:50.785382+00:00 app[web.1]: [ { formattedAddress: 'Via Ferrarine, 29010 PC, Italy',
 2016-08-18T06:26:50.785384+00:00 app[web.1]:     latitude: 44.9974327,
 2016-08-18T06:26:50.785385+00:00 app[web.1]:     longitude: 10.0061783,
-2016-08-18T06:26:50.785386+00:00 app[web.1]:     extra: 
 2016-08-18T06:26:50.785386+00:00 app[web.1]:      { googlePlaceId: 'ChIJBSkt8p33gEcRpiEqPqZ5fFY',
+2016-08-18T06:26:50.785386+00:00 app[web.1]:     extra: 
 2016-08-18T06:26:50.785387+00:00 app[web.1]:        confidence: 0.7,
 2016-08-18T06:26:50.785388+00:00 app[web.1]:        premise: null,
 2016-08-18T06:26:50.785388+00:00 app[web.1]:        subpremise: null,
@@ -141,4 +90,61 @@
 2016-08-18T06:26:50.785395+00:00 app[web.1]:     zipcode: '29010',
 2016-08-18T06:26:50.785396+00:00 app[web.1]:     provider: 'google' } ]
 2016-08-18T06:26:50.788153+00:00 app[web.1]: passo 1F
+2016-08-18T06:29:55.130932+00:00 heroku[api]: Deploy 9172e53 by u.simonato@libero.it
+2016-08-18T06:29:55.130932+00:00 heroku[api]: Release v225 created by u.simonato@libero.it
+2016-08-18T06:29:55.320600+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-18T06:29:55.320611+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-18T06:29:55.358722+00:00 heroku[web.1]: Restarting
+2016-08-18T06:29:55.359443+00:00 heroku[web.1]: State changed from up to starting
+2016-08-18T06:29:59.739460+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-18T06:30:01.090539+00:00 heroku[web.1]: Process exited with status 143
+2016-08-18T06:30:04.283966+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-18T06:30:06.510913+00:00 app[web.1]: 
+2016-08-18T06:30:06.510932+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-18T06:30:06.510933+00:00 app[web.1]: > node .
+2016-08-18T06:30:06.510934+00:00 app[web.1]: 
+2016-08-18T06:30:08.290389+00:00 app[web.1]: Web server listening at: http://0.0.0.0:41892
+2016-08-18T06:30:08.291223+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:41892/explorer
+2016-08-18T06:30:08.595672+00:00 heroku[web.1]: State changed from starting to up
+2016-08-18T06:30:09.830152+00:00 app[web.1]: > testing afterRemote function
+2016-08-18T06:30:09.830241+00:00 app[web.1]: time : 840
+2016-08-18T06:30:09.830321+00:00 app[web.1]: device: string
+2016-08-18T06:30:09.830377+00:00 app[web.1]: data : string
+2016-08-18T06:30:09.830457+00:00 app[web.1]: name: string
+2016-08-18T06:30:09.830533+00:00 app[web.1]: rssi : string
+2016-08-18T06:30:09.830610+00:00 app[web.1]: snr : string
+2016-08-18T06:30:09.830685+00:00 app[web.1]: station : string
+2016-08-18T06:30:09.830765+00:00 app[web.1]: lat : 45
+2016-08-18T06:30:09.830843+00:00 app[web.1]: lon : 10
+2016-08-18T06:30:09.830925+00:00 app[web.1]: alt : 0
+2016-08-18T06:30:09.831020+00:00 app[web.1]: event :0
+2016-08-18T06:30:09.831362+00:00 app[web.1]: passo 0
+2016-08-18T06:30:09.831431+00:00 app[web.1]: passo 11111111111
+2016-08-18T06:30:09.834845+00:00 app[web.1]: passo IIIIIIIIIIIIIIIIIIIII
+2016-08-18T06:30:23.380259+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=468dfe9b-50d6-45af-8e1f-a2ce0837de9f fwd="95.233.59.235" dyno=web.1 connect=1ms service=13614ms status=200 bytes=518
+2016-08-18T06:30:23.339392+00:00 app[web.1]: passo EEEEEEEEEEEEEEEEEEEEEEEE
+2016-08-18T06:30:23.485219+00:00 app[web.1]: passo 1D
+2016-08-18T06:30:23.522971+00:00 app[web.1]: [ { formattedAddress: 'Via Ferrarine, 29010 PC, Italy',
+2016-08-18T06:30:23.522975+00:00 app[web.1]:     latitude: 44.9974327,
+2016-08-18T06:30:23.522976+00:00 app[web.1]:     longitude: 10.0061783,
+2016-08-18T06:30:23.522977+00:00 app[web.1]:     extra: 
+2016-08-18T06:30:23.522977+00:00 app[web.1]:      { googlePlaceId: 'ChIJBSkt8p33gEcRpiEqPqZ5fFY',
+2016-08-18T06:30:23.522978+00:00 app[web.1]:        confidence: 0.7,
+2016-08-18T06:30:23.522979+00:00 app[web.1]:        premise: null,
+2016-08-18T06:30:23.522979+00:00 app[web.1]:        subpremise: null,
+2016-08-18T06:30:23.522980+00:00 app[web.1]:        neighborhood: null,
+2016-08-18T06:30:23.522980+00:00 app[web.1]:        establishment: null },
+2016-08-18T06:30:23.522981+00:00 app[web.1]:     administrativeLevels: 
+2016-08-18T06:30:23.522982+00:00 app[web.1]:      { level2long: 'Provincia di Piacenza',
+2016-08-18T06:30:23.522982+00:00 app[web.1]:        level2short: 'PC',
+2016-08-18T06:30:23.522983+00:00 app[web.1]:        level1long: 'Emilia-Romagna',
+2016-08-18T06:30:23.522984+00:00 app[web.1]:        level1short: 'Emilia-Romagna' },
+2016-08-18T06:30:23.522984+00:00 app[web.1]:     streetName: 'Via Ferrarine',
+2016-08-18T06:30:23.522985+00:00 app[web.1]:     country: 'Italy',
+2016-08-18T06:30:23.522986+00:00 app[web.1]:     countryCode: 'IT',
+2016-08-18T06:30:23.522986+00:00 app[web.1]:     zipcode: '29010',
+2016-08-18T06:30:23.522987+00:00 app[web.1]:     provider: 'google' } ]
+2016-08-18T06:30:23.523037+00:00 app[web.1]: passo 1F
 Terminare il processo batch (S/N)? 
+
+C:\FW\mythings2016>

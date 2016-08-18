@@ -167,7 +167,7 @@ module.exports = function(Message)
        sequence
       .then(function (next) {
           wait_address = true;
-          /*geocoder.reverse({lat:lat_convert, lon:lon_convert}).then(function(res)
+          geocoder.reverse({lat:lat_convert, lon:lon_convert}).then(function(res)
           {
                console.log('passo 1D');
                address_last = res[0].formattedAddress;
@@ -183,8 +183,8 @@ module.exports = function(Message)
                console.log(res);
                console.log('passo 1F');
                }
-          ).catch(function(err) {console.log(err);});*/
-          usingItNow(myCallback);
+          ).catch(function(err) {console.log(err);});
+          //usingItNow(myCallback);
           console.log('passo IIIIIIIIIIIIIIIIIIIII');
       })
       .then(function (next) {
@@ -231,15 +231,16 @@ module.exports = function(Message)
          client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address_last + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm, snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
          console.log('passo 00000000000000');
       });
-      console.log('passo EEEEEEEEEEEEEEEEEEEEEEEE');
 
-      /*var i = 0;
+      var i = 0;
       while ((i < 10000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
       {
             sleep(1);
             i++;
       }
-      evento =  message.alt & 0xFF00;
+      console.log('passo EEEEEEEEEEEEEEEEEEEEEEEE');
+
+      /*evento =  message.alt & 0xFF00;
       switch (evento)
       {
 		case 0x0100: {

@@ -77,7 +77,7 @@ var usingItNow = function(callback) {
          console.log('address risolto : '+address_new);
      }
 
-    console.log(res);});
+   console.log(res);});
    console.log('passo 2C')
    var j = 0;
    sleep(100);
@@ -185,11 +185,11 @@ module.exports = function(Message)
                }
           ).catch(function(err) {console.log(err);});*/
           usingItNow(myCallback);
-          console.log('address_risolto: '+address_last);
           console.log('passo IIIIIIIIIIIIIIIIIIIII');
       })
       .then(function (next) {
           console.log('passo ZZZZZZZZZZ');
+          console.log('address_last: '+address_last);
           evento =  alt_convert & 0xFF00;
           switch (evento)
           {
@@ -231,7 +231,7 @@ module.exports = function(Message)
          client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address_last + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm, snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
          console.log('passo 00000000000000');
       });
-
+      console.log('passo EEEEEEEEEEEEEEEEEEEEEEEE');
 
       /*var i = 0;
       while ((i < 10000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto

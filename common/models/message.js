@@ -19,6 +19,16 @@ var options = {
 
 var geocoder = NodeGeocoder(options);
 //var geocoder = require('geocoder');
+
+
+
+var time_convert;
+var device_convert;
+var data_convert;
+var name_convert;
+var rssi_convert;
+var snr_convert;
+var station_convert;
 var lat_convert;
 var lon_convert;
 var alt_convert;
@@ -75,12 +85,53 @@ var usingItNow = function(callback) {
          address_new = res[0].formattedAddress;
          address_last = address_new;
          console.log('address risolto : '+address_new);
+           console.log('passo ZZZZZZZZZZ');
+          console.log('address_last: '+address_last);
+          evento =  alt_convert & 0xFF00;
+          switch (evento)
+          {
+		case 0x0100: {
+                    evento = 'Tasto';
+		    break;
+		}
+		case 0x0200: {
+                    evento = 'Mosso';
+                    break;
+		}
+
+		case 0x0300: {
+                     evento = 'Periodico';
+                     break;
+		}
+                case 0x0400: {
+                     evento = 'Aperto';
+                     break;
+		}
+		case 0x0500: {
+                     evento = 'Chiuso';
+                     break;
+		}
+		default: {
+                  evento = 'Prova';
+		}
+          }
+          alt_convert =  alt_convert & 0x00FF;
+          console.log('passo TTTTTTTTTTTTTT');
+
+         if(address_last == null)
+           address_last = 'non risolto';
+
+         console.log('address_last: '+address_last);
+         var dataora = new Date();
+         console.log('dataora : '+dataora);
+         client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + name_convert + " - in " + address_last + " - lat:" +  +lat_convert + ", lng:" +  lon_convert +  ", alt:" +  alt_convert  + " - base:" + station_convert + ", rssi:" + rssi_convert + "dbm, snr:" + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
+         //client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address_last + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm, snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
+         console.log('passo 00000000000000');
      }
 
    console.log(res);});
    console.log('passo 2C')
    var j = 0;
-   sleep(100);
    callback(null,address_new);
   // callback(null, 'get it?'); // I dont want to throw an error, so I pass null for the error argument
 };
@@ -92,6 +143,7 @@ var usingItNow = function(callback) {
 module.exports = function(Message)
 { //Use the environment variables in production
 //Available methods : // client.get(path, params, callback); // client.post(ngath, params, callback); // client.stream(path, params, callback);
+
    var Sequence = exports.Sequence || require('sequence').Sequence, sequence = Sequence.create(), err;
    Message.afterRemote('create', function (ctx, message, next)
    {
@@ -111,38 +163,21 @@ module.exports = function(Message)
       wait_address = true;
 
 
-     // getLocationData(function(locationData) {console.log(locationData)});
 
+      device_convert  = message.device;
+      data_convert  = message.data;
+      name_convert  = message.name;
+      rssi_conver  = message.rssi;
+      snr_convert  = message.snr;
+      station_convert  = message.station;
+      lat_convert = message.lat;
+      lon_convert = message.lon;
+      alt_convert = message.alt;
 
-     // Using callback
-     /*geocoder.reverse({lat:message.lat, lon:message.lon}, function(err, res)
-     {
-           if(err)
-                  {console.log(err);}
-           else {
-                  console.log('passo 1A');
-                  address = res[0].formattedAddress;
-                  if(address == 'undefined')
-                  {
-                   if(res[1].formattedAddress != 'undefined')
-                   {
-                        address = res[1].formattedAddress;
-                        console.log('passo 1B');
-                   }
-                  }
-                  wait_address = false;
-                  console.log(res);
-                  console.log('passo 1C');
-           }
-
-     }); */
-     lat_convert = message.lat;
-     lon_convert = message.lon;
-     alt_convert = message.alt;
-     console.log('passo 11111111111');
-     address_new = null;
-     wait_address = true;
-     usingItNow(myCallback);
+      console.log('passo 11111111111');
+      address_new = null;
+      wait_address = true;
+      usingItNow(myCallback);
 
      //getLocation('1060 W Addison St, Chicago, IL 60613');
 
@@ -165,7 +200,7 @@ module.exports = function(Message)
          }
       ).catch(function(err) {console.log(err);}); */
 
-       sequence
+       /*sequence
       .then(function (next) {
           /*wait_address = true;
           geocoder.reverse({lat:lat_convert, lon:lon_convert}).then(function(res)
@@ -187,10 +222,10 @@ module.exports = function(Message)
                }
           ).catch(function(err) {console.log(err);});
           //usingItNow(myCallback);   */
-          setTimeout(function () {next(err, "Hi", "World!");}, 120);
-          console.log('passo IIIIIIIIIIIIIIIIIIIII');
+        /*  setTimeout(function () {next(err, "Hi", "World!");}, 120);
+          console.log('passo IIIIIIIIIIIIIIIIIIIII');*/
       })
-      .then(function (next) {
+      /*.then(function (next) {
           console.log('passo ZZZZZZZZZZ');
           console.log('address_last: '+address_last);
           evento =  alt_convert & 0xFF00;
@@ -234,7 +269,7 @@ module.exports = function(Message)
          client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address_last + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm, snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
          console.log('passo 00000000000000');
          next();
-      });
+      });  */
 
       /*var i = 0;
       while ((i < 10000) && (wait_address == true)) //attendo fino a quando no ho l'indirizzo risolto
@@ -323,6 +358,6 @@ module.exports = function(Message)
 
       client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + message.name + " - in " + address_last + " - lat:" +  +message.lat + ", lng:" +  message.lon +  ", alt:" +  alt_convert  + " - base:" + message.station + ", rssi:" + message.rssi + "dbm, snr:" + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);});
       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + message.name + ' - in ' + address_last + ' - lat:' +  +message.lat + ', lng:' +  message.lon +  ', alt:' +  alt_convert  + ' - base:' + message.station + ', rssi:' + message.rssi + 'dbm, snr:' + message.snr}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);}); */
-      //next(); 
+      next();
       });
 };

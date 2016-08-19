@@ -2138,4 +2138,1211 @@
 2016-08-18T18:44:33.171065+00:00 app[web.1]:   read: [Function],
 2016-08-18T18:44:33.171105+00:00 app[web.1]:   body: '{"id":766345050993336323,"id_str":"766345050993336323","text":"Evento:Tasto - codice: IOT_01 - in Via Don A. Battistella, 57, 36042 Breganze VI, Italy - lat:45.702858, lng:11.56491, alt:120 - base:2848, rssi:undefineddbm, snr:11.26","sender":{"id":762367617407545344,"id_str":"762367617407545344","name":"usthings2016","screen_name":"usthings2016","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1,"friends_count":1,"listed_count":0,"created_at":"Sun Aug 07 19:19:38 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":42,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"sender_id":762367617407545344,"sender_id_str":"762367617407545344","sender_screen_name":"usthings2016","recipient":{"id":757327116518191104,"id_str":"757327116518191104","name":"GRS Breganze","screen_name":"GRS_Breganze","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1,"friends_count":1,"listed_count":0,"created_at":"Sun Jul 24 21:30:29 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":4,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":true,"follow_request_sent":false,"notifications":false},"recipient_id":757327116518191104,"recipient_id_str":"757327116518191104","recipient_screen_name":"GRS_Breganze","created_at":"Thu Aug 18 18:44:32 +0000 2016","entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]}}' }
 2016-08-18T18:44:33.171106+00:00 app[web.1]: Messaggio Twitter
-Terminare il processo batch (S/N)? 
+Terminare il processo batch (S/N)? 2016-08-18T23:13:30.801897+00:00 app[web.1]: npm ERR!     node .
+2016-08-18T23:13:30.801784+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-18T23:13:30.802022+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-18T23:13:30.802155+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-18T23:13:30.802335+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-18T23:13:30.802435+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-18T23:13:30.805714+00:00 app[web.1]: 
+2016-08-18T23:13:30.805926+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-18T23:13:30.802250+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-18T23:13:30.806070+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-18T23:13:30.872529+00:00 heroku[web.1]: State changed from up to crashed
+2016-08-18T23:13:30.873606+00:00 heroku[web.1]: State changed from crashed to starting
+2016-08-18T23:13:30.872025+00:00 heroku[web.1]: Process exited with status 1
+2016-08-18T23:13:34.300789+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-18T23:13:36.336572+00:00 app[web.1]: 
+2016-08-18T23:13:36.336587+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-18T23:13:36.336588+00:00 app[web.1]: 
+2016-08-18T23:13:36.336588+00:00 app[web.1]: > node .
+2016-08-18T23:13:37.679952+00:00 app[web.1]: Web server listening at: http://0.0.0.0:18596
+2016-08-18T23:13:37.680613+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:18596/explorer
+2016-08-18T23:13:38.087379+00:00 heroku[web.1]: State changed from starting to up
+2016-08-18T23:13:39.751421+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=18b2de15-92ca-4bcb-a170-1d2fadab136b fwd="95.233.59.235" dyno=web.1 connect=1ms service=81ms status=200 bytes=517
+2016-08-18T23:13:39.741252+00:00 app[web.1]: time : 1000
+2016-08-18T23:13:39.741136+00:00 app[web.1]: > testing afterRemote function
+2016-08-18T23:13:39.741342+00:00 app[web.1]: device: string
+2016-08-18T23:13:39.741424+00:00 app[web.1]: data : string
+2016-08-18T23:13:39.741506+00:00 app[web.1]: name: string
+2016-08-18T23:13:39.741583+00:00 app[web.1]: rssi : string
+2016-08-18T23:13:39.741667+00:00 app[web.1]: snr : string
+2016-08-18T23:13:39.741743+00:00 app[web.1]: station : string
+2016-08-18T23:13:39.741827+00:00 app[web.1]: lat : 0
+2016-08-18T23:13:39.741903+00:00 app[web.1]: lon : 0
+2016-08-18T23:13:39.741973+00:00 app[web.1]: alt : 0
+2016-08-18T23:13:39.742048+00:00 app[web.1]: event :0
+2016-08-18T23:13:39.742120+00:00 app[web.1]: passo 0
+2016-08-18T23:13:39.742212+00:00 app[web.1]: passo 11111111111
+2016-08-18T23:13:39.742547+00:00 app[web.1]: passo 2A
+2016-08-18T23:13:39.742626+00:00 app[web.1]: lat : 0
+2016-08-18T23:13:39.746253+00:00 app[web.1]: passo 2D
+2016-08-18T23:13:39.742695+00:00 app[web.1]: lon : 0
+2016-08-18T23:13:39.746158+00:00 app[web.1]: passo 00000000000000
+2016-08-18T23:13:39.746306+00:00 app[web.1]: got data: null
+2016-08-18T23:13:39.836678+00:00 app[web.1]: passo 2B
+2016-08-18T23:13:39.841438+00:00 app[web.1]: /app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:49
+2016-08-18T23:13:39.841440+00:00 app[web.1]:         fn = function () { throw arg; };
+2016-08-18T23:13:39.841442+00:00 app[web.1]: TypeError: Cannot read property '0' of undefined
+2016-08-18T23:13:39.841441+00:00 app[web.1]: 
+2016-08-18T23:13:39.841440+00:00 app[web.1]:                            ^
+2016-08-18T23:13:39.841444+00:00 app[web.1]:     at Promise.errorAdapter (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/nodeify.js:35:34)
+2016-08-18T23:13:39.841442+00:00 app[web.1]:     at null.<anonymous> (/app/common/models/message.js:52:10)
+2016-08-18T23:13:39.841443+00:00 app[web.1]:     at tryCatcher (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/util.js:16:23)
+2016-08-18T23:13:39.841445+00:00 app[web.1]:     at Promise.<anonymous> (/app/node_modules/loopback/node_modules/continuation-local-storage/context.js:76:17)
+2016-08-18T23:13:39.841446+00:00 app[web.1]:     at Promise.runBound [as _rejectionHandler0] (domain.js:300:12)
+2016-08-18T23:13:39.841447+00:00 app[web.1]:     at Promise._settlePromise (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:557:21)
+2016-08-18T23:13:39.841447+00:00 app[web.1]:     at Promise._settlePromise0 (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:605:10)
+2016-08-18T23:13:39.841445+00:00 app[web.1]:     at bound (domain.js:287:14)
+2016-08-18T23:13:39.841448+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:680:18)
+2016-08-18T23:13:39.841448+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:126:16)
+2016-08-18T23:13:39.841448+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:136:10)
+2016-08-18T23:13:39.841449+00:00 app[web.1]:     at Immediate.Async.drainQueues (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:16:14)
+2016-08-18T23:13:39.841450+00:00 app[web.1]:     at Immediate._onImmediate (/app/node_modules/loopback/node_modules/continuation-local-storage/node_modules/async-listener/glue.js:188:31)
+2016-08-18T23:13:39.841450+00:00 app[web.1]:     at tryOnImmediate (timers.js:534:15)
+2016-08-18T23:13:39.841453+00:00 app[web.1]:     at processImmediate [as _immediateCallback] (timers.js:514:5)
+2016-08-18T23:13:39.853044+00:00 app[web.1]: 
+2016-08-18T23:13:39.860767+00:00 app[web.1]: npm ERR! Linux 3.13.0-91-generic
+2016-08-18T23:13:39.861091+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-18T23:13:39.861593+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-18T23:13:39.861256+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-18T23:13:39.861853+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-18T23:13:39.861964+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-08-18T23:13:39.862089+00:00 app[web.1]: npm ERR! Exit status 1
+2016-08-18T23:13:39.862217+00:00 app[web.1]: npm ERR! 
+2016-08-18T23:13:39.862331+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-08-18T23:13:39.862473+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-08-18T23:13:39.867431+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-18T23:13:39.863095+00:00 app[web.1]: npm ERR!     node .
+2016-08-18T23:13:39.862935+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-08-18T23:13:39.862784+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-18T23:13:39.863261+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-08-18T23:13:39.863415+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-08-18T23:13:39.863566+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-08-18T23:13:39.863722+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-08-18T23:13:39.863875+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-08-18T23:13:39.867085+00:00 app[web.1]: 
+2016-08-18T23:13:39.867291+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-08-18T23:13:39.862631+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-08-18T23:13:39.940653+00:00 heroku[web.1]: Process exited with status 1
+2016-08-18T23:13:39.946561+00:00 heroku[web.1]: State changed from up to crashed
+2016-08-18T23:19:55.550492+00:00 heroku[api]: Release v236 created by u.simonato@libero.it
+2016-08-18T23:19:55.550387+00:00 heroku[api]: Deploy ecdc7f4 by u.simonato@libero.it
+2016-08-18T23:19:55.751611+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-18T23:19:55.751617+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-18T23:19:55.872813+00:00 heroku[web.1]: State changed from crashed to starting
+2016-08-18T23:20:00.562225+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-08-18T23:20:03.054013+00:00 app[web.1]: 
+2016-08-18T23:20:03.054029+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-08-18T23:20:03.054030+00:00 app[web.1]: > node .
+2016-08-18T23:20:03.054031+00:00 app[web.1]: 
+2016-08-18T23:20:04.322062+00:00 app[web.1]: Web server listening at: http://0.0.0.0:9851
+2016-08-18T23:20:04.322736+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:9851/explorer
+2016-08-18T23:20:04.870543+00:00 heroku[web.1]: State changed from starting to up
+2016-08-18T23:20:48.669019+00:00 app[web.1]: > testing afterRemote function
+2016-08-18T23:20:48.669189+00:00 app[web.1]: time : 1001
+2016-08-18T23:20:48.669319+00:00 app[web.1]: device: string
+2016-08-18T23:20:48.669439+00:00 app[web.1]: data : string
+2016-08-18T23:20:48.669561+00:00 app[web.1]: name: string
+2016-08-18T23:20:48.669648+00:00 app[web.1]: rssi : string
+2016-08-18T23:20:48.669885+00:00 app[web.1]: snr : string
+2016-08-18T23:20:48.669975+00:00 app[web.1]: station : string
+2016-08-18T23:20:48.670089+00:00 app[web.1]: lat : 13
+2016-08-18T23:20:48.670156+00:00 app[web.1]: lon : 12
+2016-08-18T23:20:48.670249+00:00 app[web.1]: alt : 0
+2016-08-18T23:20:48.670313+00:00 app[web.1]: event :0
+2016-08-18T23:20:48.670359+00:00 app[web.1]: passo 0
+2016-08-18T23:20:48.670456+00:00 app[web.1]: passo 11111111111
+2016-08-18T23:20:48.670831+00:00 app[web.1]: passo 2A
+2016-08-18T23:20:48.670937+00:00 app[web.1]: lat : 13
+2016-08-18T23:20:48.671014+00:00 app[web.1]: lon : 12
+2016-08-18T23:20:48.676352+00:00 app[web.1]: passo 00000000000000
+2016-08-18T23:20:48.676534+00:00 app[web.1]: passo 2D
+2016-08-18T23:20:48.676613+00:00 app[web.1]: got data: null
+2016-08-18T23:20:48.842252+00:00 app[web.1]: passo 2B
+2016-08-18T23:20:48.842334+00:00 app[web.1]: address risolto : Nguru-Gashua-Damasak Road, Nigeria
+2016-08-18T23:20:48.860754+00:00 app[web.1]: [ { formattedAddress: 'Nguru-Gashua-Damasak Road, Nigeria',
+2016-08-18T23:20:48.860758+00:00 app[web.1]:     latitude: 13.0129508,
+2016-08-18T23:20:48.860758+00:00 app[web.1]:     longitude: 11.977856,
+2016-08-18T23:20:48.860759+00:00 app[web.1]:     extra: 
+2016-08-18T23:20:48.860760+00:00 app[web.1]:      { googlePlaceId: 'ChIJiSbBAcsOBhER-untUc2rz58',
+2016-08-18T23:20:48.860760+00:00 app[web.1]:        confidence: 0.7,
+2016-08-18T23:20:48.860761+00:00 app[web.1]:        premise: null,
+2016-08-18T23:20:48.860762+00:00 app[web.1]:        subpremise: null,
+2016-08-18T23:20:48.860762+00:00 app[web.1]:        neighborhood: null,
+2016-08-18T23:20:48.860763+00:00 app[web.1]:        establishment: null },
+2016-08-18T23:20:48.860763+00:00 app[web.1]:     administrativeLevels: { level1long: 'Yobe', level1short: 'Yobe' },
+2016-08-18T23:20:48.860764+00:00 app[web.1]:     streetName: 'Nguru-Gashua-Damasak Road',
+2016-08-18T23:20:48.860765+00:00 app[web.1]:     country: 'Nigeria',
+2016-08-18T23:20:48.860765+00:00 app[web.1]:     countryCode: 'NG',
+2016-08-18T23:20:48.860766+00:00 app[web.1]:     provider: 'google' } ]
+2016-08-18T23:20:48.860835+00:00 app[web.1]: passo TTTTTTTTTTTTTT
+2016-08-18T23:20:48.860998+00:00 app[web.1]: address_last: Nguru-Gashua-Damasak Road, Nigeria
+2016-08-18T23:20:48.861743+00:00 app[web.1]: dataora : Thu Aug 18 2016 23:20:48 GMT+0000 (UTC)
+2016-08-18T23:20:48.691006+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=cc24e60e-125a-456a-9c3a-2f7fca896180 fwd="95.233.59.235" dyno=web.1 connect=0ms service=147ms status=200 bytes=519
+2016-08-18T23:20:49.111346+00:00 app[web.1]:      'x-frame-options',
+2016-08-18T23:20:49.111358+00:00 app[web.1]:      'SAMEORIGIN',
+2016-08-18T23:20:49.111363+00:00 app[web.1]:      'x-response-time',
+2016-08-18T23:20:49.111364+00:00 app[web.1]:      '93',
+2016-08-18T23:20:49.111364+00:00 app[web.1]:      'x-transaction',
+2016-08-18T23:20:49.111365+00:00 app[web.1]:      '00abeccb00d0e8a4',
+2016-08-18T23:20:49.111365+00:00 app[web.1]:      'x-tsa-request-body-time',
+2016-08-18T23:20:49.111366+00:00 app[web.1]:      '1',
+2016-08-18T23:20:49.111366+00:00 app[web.1]:      'x-twitter-response-tags',
+2016-08-18T23:20:49.111367+00:00 app[web.1]:      'BouncerCompliant',
+2016-08-18T23:20:49.111367+00:00 app[web.1]:      'x-xss-protection',
+2016-08-18T23:20:49.111368+00:00 app[web.1]:      '1; mode=block' ],
+2016-08-18T23:20:49.111368+00:00 app[web.1]:   trailers: {},
+2016-08-18T23:20:49.111369+00:00 app[web.1]:   rawTrailers: [],
+2016-08-18T23:20:49.111369+00:00 app[web.1]:   upgrade: false,
+2016-08-18T23:20:49.111370+00:00 app[web.1]:   url: '',
+2016-08-18T23:20:49.111370+00:00 app[web.1]:   method: null,
+2016-08-18T23:20:49.111371+00:00 app[web.1]:   statusCode: 200,
+2016-08-18T23:20:49.111371+00:00 app[web.1]:   statusMessage: 'OK',
+2016-08-18T23:20:49.111372+00:00 app[web.1]:   client: 
+2016-08-18T23:20:49.111372+00:00 app[web.1]:    TLSSocket {
+2016-08-18T23:20:49.111373+00:00 app[web.1]:      _tlsOptions: 
+2016-08-18T23:20:49.111373+00:00 app[web.1]:       { pipe: null,
+2016-08-18T23:20:49.111374+00:00 app[web.1]:         secureContext: [Object],
+2016-08-18T23:20:49.111374+00:00 app[web.1]:         isServer: false,
+2016-08-18T23:20:49.111375+00:00 app[web.1]:         requestCert: true,
+2016-08-18T23:20:49.111375+00:00 app[web.1]:         rejectUnauthorized: true,
+2016-08-18T23:20:49.111376+00:00 app[web.1]:         session: undefined,
+2016-08-18T23:20:49.111376+00:00 app[web.1]:         NPNProtocols: undefined,
+2016-08-18T23:20:49.111377+00:00 app[web.1]:         ALPNProtocols: undefined,
+2016-08-18T23:20:49.111377+00:00 app[web.1]:         requestOCSP: undefined },
+2016-08-18T23:20:49.111378+00:00 app[web.1]:      _secureEstablished: true,
+2016-08-18T23:20:49.111378+00:00 app[web.1]:      _securePending: false,
+2016-08-18T23:20:49.111379+00:00 app[web.1]:      _newSessionPending: false,
+2016-08-18T23:20:49.111379+00:00 app[web.1]:      _controlReleased: true,
+2016-08-18T23:20:49.111380+00:00 app[web.1]:      _SNICallback: null,
+2016-08-18T23:20:49.111381+00:00 app[web.1]:      servername: null,
+2016-08-18T23:20:49.111381+00:00 app[web.1]:      npnProtocol: false,
+2016-08-18T23:20:49.111382+00:00 app[web.1]:      alpnProtocol: false,
+2016-08-18T23:20:49.111382+00:00 app[web.1]:      authorized: true,
+2016-08-18T23:20:49.111383+00:00 app[web.1]:      authorizationError: null,
+2016-08-18T23:20:49.111384+00:00 app[web.1]:      encrypted: true,
+2016-08-18T23:20:49.111384+00:00 app[web.1]:      _events: 
+2016-08-18T23:20:49.111385+00:00 app[web.1]:       { close: [Object],
+2016-08-18T23:20:49.111385+00:00 app[web.1]:         end: [Object],
+2016-08-18T23:20:49.111386+00:00 app[web.1]:         finish: [Function: onSocketFinish],
+2016-08-18T23:20:49.111386+00:00 app[web.1]:         _socketEnd: [Function: onSocketEnd],
+2016-08-18T23:20:49.111387+00:00 app[web.1]:         secure: [Function],
+2016-08-18T23:20:49.111387+00:00 app[web.1]:         free: [Function: onFree],
+2016-08-18T23:20:49.111388+00:00 app[web.1]:         agentRemove: [Function: onRemove],
+2016-08-18T23:20:49.111389+00:00 app[web.1]:         drain: [Function: ondrain],
+2016-08-18T23:20:49.111389+00:00 app[web.1]:         error: [Function: socketErrorListener] },
+2016-08-18T23:20:49.111390+00:00 app[web.1]:      _eventsCount: 9,
+2016-08-18T23:20:49.111390+00:00 app[web.1]:      _connecting: false,
+2016-08-18T23:20:49.111390+00:00 app[web.1]:      _hadError: false,
+2016-08-18T23:20:49.111391+00:00 app[web.1]:      _handle: null,
+2016-08-18T23:20:49.111391+00:00 app[web.1]:      _parent: null,
+2016-08-18T23:20:49.111392+00:00 app[web.1]:      _host: 'api.twitter.com',
+2016-08-18T23:20:49.111392+00:00 app[web.1]:      _readableState: 
+2016-08-18T23:20:49.111393+00:00 app[web.1]:       ReadableState {
+2016-08-18T23:20:49.111393+00:00 app[web.1]:         objectMode: false,
+2016-08-18T23:20:49.111394+00:00 app[web.1]:         highWaterMark: 16384,
+2016-08-18T23:20:49.111394+00:00 app[web.1]:         buffer: [],
+2016-08-18T23:20:49.111395+00:00 app[web.1]:         length: 0,
+2016-08-18T23:20:49.111395+00:00 app[web.1]:         pipes: null,
+2016-08-18T23:20:49.111396+00:00 app[web.1]:         pipesCount: 0,
+2016-08-18T23:20:49.111396+00:00 app[web.1]:         flowing: true,
+2016-08-18T23:20:49.111397+00:00 app[web.1]:         ended: false,
+2016-08-18T23:20:49.111397+00:00 app[web.1]:         endEmitted: false,
+2016-08-18T23:20:49.111397+00:00 app[web.1]:         reading: true,
+2016-08-18T23:20:49.111398+00:00 app[web.1]:         sync: false,
+2016-08-18T23:20:49.111398+00:00 app[web.1]:         needReadable: true,
+2016-08-18T23:20:49.111399+00:00 app[web.1]:         emittedReadable: false,
+2016-08-18T23:20:49.111399+00:00 app[web.1]:         readableListening: false,
+2016-08-18T23:20:49.111400+00:00 app[web.1]:         resumeScheduled: false,
+2016-08-18T23:20:49.111400+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-08-18T23:20:49.111401+00:00 app[web.1]:         ranOut: false,
+2016-08-18T23:20:49.111401+00:00 app[web.1]:         awaitDrain: 0,
+2016-08-18T23:20:49.111402+00:00 app[web.1]:         readingMore: true,
+2016-08-18T23:20:49.111402+00:00 app[web.1]:         decoder: null,
+2016-08-18T23:20:49.111403+00:00 app[web.1]:         encoding: null },
+2016-08-18T23:20:49.111403+00:00 app[web.1]:      readable: false,
+2016-08-18T23:20:49.111404+00:00 app[web.1]:      domain: 
+2016-08-18T23:20:49.061969+00:00 app[web.1]: { id: 766414576204349400,
+2016-08-18T23:20:49.061991+00:00 app[web.1]:   id_str: '766414576204349444',
+2016-08-18T23:20:49.061993+00:00 app[web.1]:   text: 'Evento:Prova - codice: string - in Nguru-Gashua-Damasak Road, Nigeria - lat:13, lng:12, alt:0 - base:string, rssi:undefineddbm, snr:string',
+2016-08-18T23:20:49.061993+00:00 app[web.1]:   sender: 
+2016-08-18T23:20:49.061994+00:00 app[web.1]:    { id: 762367617407545300,
+2016-08-18T23:20:49.061995+00:00 app[web.1]:      id_str: '762367617407545344',
+2016-08-18T23:20:49.061996+00:00 app[web.1]:      name: 'usthings2016',
+2016-08-18T23:20:49.111404+00:00 app[web.1]:       Domain {
+2016-08-18T23:20:49.111405+00:00 app[web.1]:         domain: null,
+2016-08-18T23:20:49.111405+00:00 app[web.1]:         _events: {},
+2016-08-18T23:20:49.111406+00:00 app[web.1]:         _eventsCount: 0,
+2016-08-18T23:20:49.111406+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111407+00:00 app[web.1]:         members: [Object],
+2016-08-18T23:20:49.111407+00:00 app[web.1]:         oldBind: [Function],
+2016-08-18T23:20:49.111408+00:00 app[web.1]:         bind: [Function] },
+2016-08-18T23:20:49.111409+00:00 app[web.1]:      _maxListeners: undefined,
+2016-08-18T23:20:49.111409+00:00 app[web.1]:      _writableState: 
+2016-08-18T23:20:49.111409+00:00 app[web.1]:       WritableState {
+2016-08-18T23:20:49.061997+00:00 app[web.1]:      screen_name: 'usthings2016',
+2016-08-18T23:20:49.061997+00:00 app[web.1]:      location: '',
+2016-08-18T23:20:49.061998+00:00 app[web.1]:      description: '',
+2016-08-18T23:20:49.061998+00:00 app[web.1]:      url: null,
+2016-08-18T23:20:49.061999+00:00 app[web.1]:      entities: { description: [Object] },
+2016-08-18T23:20:49.111410+00:00 app[web.1]:         objectMode: false,
+2016-08-18T23:20:49.111410+00:00 app[web.1]:         highWaterMark: 16384,
+2016-08-18T23:20:49.111411+00:00 app[web.1]:         needDrain: false,
+2016-08-18T23:20:49.111411+00:00 app[web.1]:         ending: true,
+2016-08-18T23:20:49.111412+00:00 app[web.1]:         ended: true,
+2016-08-18T23:20:49.111412+00:00 app[web.1]:         finished: true,
+2016-08-18T23:20:49.111413+00:00 app[web.1]:         decodeStrings: false,
+2016-08-18T23:20:49.111413+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-08-18T23:20:49.111414+00:00 app[web.1]:         length: 0,
+2016-08-18T23:20:49.111414+00:00 app[web.1]:         writing: false,
+2016-08-18T23:20:49.111415+00:00 app[web.1]:         corked: 0,
+2016-08-18T23:20:49.111415+00:00 app[web.1]:         sync: false,
+2016-08-18T23:20:49.061999+00:00 app[web.1]:      protected: false,
+2016-08-18T23:20:49.062000+00:00 app[web.1]:      followers_count: 1,
+2016-08-18T23:20:49.062001+00:00 app[web.1]:      friends_count: 1,
+2016-08-18T23:20:49.062001+00:00 app[web.1]:      listed_count: 0,
+2016-08-18T23:20:49.062002+00:00 app[web.1]:      created_at: 'Sun Aug 07 19:19:38 +0000 2016',
+2016-08-18T23:20:49.062003+00:00 app[web.1]:      favourites_count: 0,
+2016-08-18T23:20:49.062003+00:00 app[web.1]:      utc_offset: null,
+2016-08-18T23:20:49.062004+00:00 app[web.1]:      time_zone: null,
+2016-08-18T23:20:49.111416+00:00 app[web.1]:         bufferProcessing: false,
+2016-08-18T23:20:49.111416+00:00 app[web.1]:         onwrite: [Function],
+2016-08-18T23:20:49.111417+00:00 app[web.1]:         writecb: null,
+2016-08-18T23:20:49.111417+00:00 app[web.1]:         writelen: 0,
+2016-08-18T23:20:49.111418+00:00 app[web.1]:         bufferedRequest: null,
+2016-08-18T23:20:49.111418+00:00 app[web.1]:         lastBufferedRequest: null,
+2016-08-18T23:20:49.111419+00:00 app[web.1]:         pendingcb: 0,
+2016-08-18T23:20:49.062004+00:00 app[web.1]:      geo_enabled: false,
+2016-08-18T23:20:49.062005+00:00 app[web.1]:      verified: false,
+2016-08-18T23:20:49.111419+00:00 app[web.1]:         prefinished: true,
+2016-08-18T23:20:49.062005+00:00 app[web.1]:      statuses_count: 42,
+2016-08-18T23:20:49.062006+00:00 app[web.1]:      lang: 'it',
+2016-08-18T23:20:49.111419+00:00 app[web.1]:         errorEmitted: false,
+2016-08-18T23:20:49.111420+00:00 app[web.1]:         bufferedRequestCount: 0,
+2016-08-18T23:20:49.111421+00:00 app[web.1]:         corkedRequestsFree: [Object] },
+2016-08-18T23:20:49.111421+00:00 app[web.1]:      writable: false,
+2016-08-18T23:20:49.062006+00:00 app[web.1]:      contributors_enabled: false,
+2016-08-18T23:20:49.062007+00:00 app[web.1]:      is_translator: false,
+2016-08-18T23:20:49.062008+00:00 app[web.1]:      is_translation_enabled: false,
+2016-08-18T23:20:49.062008+00:00 app[web.1]:      profile_background_color: 'F5F8FA',
+2016-08-18T23:20:49.062009+00:00 app[web.1]:      profile_background_image_url: null,
+2016-08-18T23:20:49.062009+00:00 app[web.1]:      profile_background_image_url_https: null,
+2016-08-18T23:20:49.111421+00:00 app[web.1]:      allowHalfOpen: false,
+2016-08-18T23:20:49.111422+00:00 app[web.1]:      destroyed: true,
+2016-08-18T23:20:49.111422+00:00 app[web.1]:      _bytesDispatched: 749,
+2016-08-18T23:20:49.111423+00:00 app[web.1]:      _sockname: null,
+2016-08-18T23:20:49.111423+00:00 app[web.1]:      _pendingData: null,
+2016-08-18T23:20:49.111424+00:00 app[web.1]:      _pendingEncoding: '',
+2016-08-18T23:20:49.111424+00:00 app[web.1]:      server: undefined,
+2016-08-18T23:20:49.062010+00:00 app[web.1]:      profile_background_tile: false,
+2016-08-18T23:20:49.062011+00:00 app[web.1]:      profile_image_url: 'http://abs.twimg.com/sticky/default_profile_images/default_profile_6_normal.png',
+2016-08-18T23:20:49.062012+00:00 app[web.1]:      profile_image_url_https: 'https://abs.twimg.com/sticky/default_profile_images/default_profile_6_normal.png',
+2016-08-18T23:20:49.062013+00:00 app[web.1]:      profile_link_color: '2B7BB9',
+2016-08-18T23:20:49.062013+00:00 app[web.1]:      profile_sidebar_border_color: 'C0DEED',
+2016-08-18T23:20:49.062014+00:00 app[web.1]:      profile_sidebar_fill_color: 'DDEEF6',
+2016-08-18T23:20:49.062014+00:00 app[web.1]:      profile_text_color: '333333',
+2016-08-18T23:20:49.062015+00:00 app[web.1]:      profile_use_background_image: true,
+2016-08-18T23:20:49.062016+00:00 app[web.1]:      has_extended_profile: false,
+2016-08-18T23:20:49.062016+00:00 app[web.1]:      default_profile: true,
+2016-08-18T23:20:49.062017+00:00 app[web.1]:      default_profile_image: true,
+2016-08-18T23:20:49.111425+00:00 app[web.1]:      _server: null,
+2016-08-18T23:20:49.111425+00:00 app[web.1]:      ssl: null,
+2016-08-18T23:20:49.111426+00:00 app[web.1]:      _requestCert: true,
+2016-08-18T23:20:49.111426+00:00 app[web.1]:      _rejectUnauthorized: true,
+2016-08-18T23:20:49.062017+00:00 app[web.1]:      following: false,
+2016-08-18T23:20:49.062018+00:00 app[web.1]:      follow_request_sent: false,
+2016-08-18T23:20:49.062018+00:00 app[web.1]:      notifications: false },
+2016-08-18T23:20:49.062019+00:00 app[web.1]:   sender_id: 762367617407545300,
+2016-08-18T23:20:49.062019+00:00 app[web.1]:   sender_id_str: '762367617407545344',
+2016-08-18T23:20:49.062020+00:00 app[web.1]:   sender_screen_name: 'usthings2016',
+2016-08-18T23:20:49.062021+00:00 app[web.1]:   recipient: 
+2016-08-18T23:20:49.062021+00:00 app[web.1]:    { id: 757327116518191100,
+2016-08-18T23:20:49.062022+00:00 app[web.1]:      id_str: '757327116518191104',
+2016-08-18T23:20:49.062023+00:00 app[web.1]:      name: 'GRS Breganze',
+2016-08-18T23:20:49.062023+00:00 app[web.1]:      screen_name: 'GRS_Breganze',
+2016-08-18T23:20:49.062024+00:00 app[web.1]:      location: '',
+2016-08-18T23:20:49.062024+00:00 app[web.1]:      description: '',
+2016-08-18T23:20:49.062025+00:00 app[web.1]:      url: null,
+2016-08-18T23:20:49.062025+00:00 app[web.1]:      entities: { description: [Object] },
+2016-08-18T23:20:49.062026+00:00 app[web.1]:      protected: false,
+2016-08-18T23:20:49.111426+00:00 app[web.1]:      parser: null,
+2016-08-18T23:20:49.111427+00:00 app[web.1]:      _httpMessage: 
+2016-08-18T23:20:49.111427+00:00 app[web.1]:       ClientRequest {
+2016-08-18T23:20:49.111428+00:00 app[web.1]:         domain: [Object],
+2016-08-18T23:20:49.111428+00:00 app[web.1]:         _events: [Object],
+2016-08-18T23:20:49.111429+00:00 app[web.1]:         _eventsCount: 4,
+2016-08-18T23:20:49.111429+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111430+00:00 app[web.1]:         output: [],
+2016-08-18T23:20:49.111430+00:00 app[web.1]:         outputEncodings: [],
+2016-08-18T23:20:49.111431+00:00 app[web.1]:         outputCallbacks: [],
+2016-08-18T23:20:49.111431+00:00 app[web.1]:         outputSize: 0,
+2016-08-18T23:20:49.111431+00:00 app[web.1]:         writable: true,
+2016-08-18T23:20:49.111432+00:00 app[web.1]:         _last: true,
+2016-08-18T23:20:49.111432+00:00 app[web.1]:         chunkedEncoding: false,
+2016-08-18T23:20:49.111433+00:00 app[web.1]:         shouldKeepAlive: false,
+2016-08-18T23:20:49.111434+00:00 app[web.1]:         useChunkedEncodingByDefault: true,
+2016-08-18T23:20:49.111434+00:00 app[web.1]:         sendDate: false,
+2016-08-18T23:20:49.111435+00:00 app[web.1]:         _removedHeader: [Object],
+2016-08-18T23:20:49.062026+00:00 app[web.1]:      followers_count: 1,
+2016-08-18T23:20:49.062027+00:00 app[web.1]:      friends_count: 1,
+2016-08-18T23:20:49.062028+00:00 app[web.1]:      listed_count: 0,
+2016-08-18T23:20:49.062028+00:00 app[web.1]:      created_at: 'Sun Jul 24 21:30:29 +0000 2016',
+2016-08-18T23:20:49.062029+00:00 app[web.1]:      favourites_count: 0,
+2016-08-18T23:20:49.062029+00:00 app[web.1]:      utc_offset: null,
+2016-08-18T23:20:49.062030+00:00 app[web.1]:      time_zone: null,
+2016-08-18T23:20:49.111435+00:00 app[web.1]:         _contentLength: null,
+2016-08-18T23:20:49.062030+00:00 app[web.1]:      geo_enabled: false,
+2016-08-18T23:20:49.062031+00:00 app[web.1]:      verified: false,
+2016-08-18T23:20:49.062031+00:00 app[web.1]:      statuses_count: 4,
+2016-08-18T23:20:49.062032+00:00 app[web.1]:      lang: 'it',
+2016-08-18T23:20:49.062032+00:00 app[web.1]:      contributors_enabled: false,
+2016-08-18T23:20:49.062033+00:00 app[web.1]:      is_translator: false,
+2016-08-18T23:20:49.062034+00:00 app[web.1]:      is_translation_enabled: false,
+2016-08-18T23:20:49.062035+00:00 app[web.1]:      profile_background_color: 'F5F8FA',
+2016-08-18T23:20:49.062035+00:00 app[web.1]:      profile_background_image_url: null,
+2016-08-18T23:20:49.062036+00:00 app[web.1]:      profile_background_image_url_https: null,
+2016-08-18T23:20:49.111436+00:00 app[web.1]:         _hasBody: true,
+2016-08-18T23:20:49.111436+00:00 app[web.1]:         _trailer: '',
+2016-08-18T23:20:49.111437+00:00 app[web.1]:         finished: true,
+2016-08-18T23:20:49.111437+00:00 app[web.1]:         _headerSent: true,
+2016-08-18T23:20:49.111438+00:00 app[web.1]:         socket: [Circular],
+2016-08-18T23:20:49.111438+00:00 app[web.1]:         connection: [Circular],
+2016-08-18T23:20:49.111443+00:00 app[web.1]:         _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 229\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="e602521752864868ba8f7735d90765f2",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1471562448",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="BTbM6FRO%2BgDneu9bee40E1ZLQf4%3D"\r\n\r\n',
+2016-08-18T23:20:49.111444+00:00 app[web.1]:         _headers: [Object],
+2016-08-18T23:20:49.111445+00:00 app[web.1]:         _headerNames: [Object],
+2016-08-18T23:20:49.111445+00:00 app[web.1]:         _onPendingData: null,
+2016-08-18T23:20:49.111446+00:00 app[web.1]:         agent: [Object],
+2016-08-18T23:20:49.111446+00:00 app[web.1]:         socketPath: undefined,
+2016-08-18T23:20:49.062037+00:00 app[web.1]:      profile_background_tile: false,
+2016-08-18T23:20:49.062037+00:00 app[web.1]:      profile_image_url: 'http://abs.twimg.com/sticky/default_profile_images/default_profile_4_normal.png',
+2016-08-18T23:20:49.062038+00:00 app[web.1]:      profile_image_url_https: 'https://abs.twimg.com/sticky/default_profile_images/default_profile_4_normal.png',
+2016-08-18T23:20:49.111446+00:00 app[web.1]:         method: 'POST',
+2016-08-18T23:20:49.111447+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2016-08-18T23:20:49.111447+00:00 app[web.1]:         onSocket: [Function],
+2016-08-18T23:20:49.111448+00:00 app[web.1]:         parser: null,
+2016-08-18T23:20:49.111449+00:00 app[web.1]:         res: [Circular] },
+2016-08-18T23:20:49.111449+00:00 app[web.1]:      read: [Function],
+2016-08-18T23:20:49.111450+00:00 app[web.1]:      _consuming: true,
+2016-08-18T23:20:49.111450+00:00 app[web.1]:      _idleNext: null,
+2016-08-18T23:20:49.111450+00:00 app[web.1]:      _idlePrev: null,
+2016-08-18T23:20:49.111451+00:00 app[web.1]:      _idleTimeout: -1 },
+2016-08-18T23:20:49.111451+00:00 app[web.1]:   _consuming: true,
+2016-08-18T23:20:49.111452+00:00 app[web.1]:   _dumped: false,
+2016-08-18T23:20:49.062039+00:00 app[web.1]:      profile_link_color: '2B7BB9',
+2016-08-18T23:20:49.062039+00:00 app[web.1]:      profile_sidebar_border_color: 'C0DEED',
+2016-08-18T23:20:49.062040+00:00 app[web.1]:      profile_sidebar_fill_color: 'DDEEF6',
+2016-08-18T23:20:49.062040+00:00 app[web.1]:      profile_text_color: '333333',
+2016-08-18T23:20:49.062041+00:00 app[web.1]:      profile_use_background_image: true,
+2016-08-18T23:20:49.062041+00:00 app[web.1]:      has_extended_profile: false,
+2016-08-18T23:20:49.062042+00:00 app[web.1]:      default_profile: true,
+2016-08-18T23:20:49.062042+00:00 app[web.1]:      default_profile_image: true,
+2016-08-18T23:20:49.062043+00:00 app[web.1]:      following: true,
+2016-08-18T23:20:49.062044+00:00 app[web.1]:      follow_request_sent: false,
+2016-08-18T23:20:49.062044+00:00 app[web.1]:      notifications: false },
+2016-08-18T23:20:49.062045+00:00 app[web.1]:   recipient_id: 757327116518191100,
+2016-08-18T23:20:49.062045+00:00 app[web.1]:   recipient_id_str: '757327116518191104',
+2016-08-18T23:20:49.062046+00:00 app[web.1]:   recipient_screen_name: 'GRS_Breganze',
+2016-08-18T23:20:49.062047+00:00 app[web.1]:   created_at: 'Thu Aug 18 23:20:48 +0000 2016',
+2016-08-18T23:20:49.062047+00:00 app[web.1]:   entities: { hashtags: [], symbols: [], user_mentions: [], urls: [] } }
+2016-08-18T23:20:49.111452+00:00 app[web.1]:   req: 
+2016-08-18T23:20:49.111453+00:00 app[web.1]:    ClientRequest {
+2016-08-18T23:20:49.111453+00:00 app[web.1]:      domain: 
+2016-08-18T23:20:49.111454+00:00 app[web.1]:       Domain {
+2016-08-18T23:20:49.111454+00:00 app[web.1]:         domain: null,
+2016-08-18T23:20:49.111455+00:00 app[web.1]:         _events: {},
+2016-08-18T23:20:49.111455+00:00 app[web.1]:         _eventsCount: 0,
+2016-08-18T23:20:49.111456+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111456+00:00 app[web.1]:         members: [Object],
+2016-08-18T23:20:49.111456+00:00 app[web.1]:         oldBind: [Function],
+2016-08-18T23:20:49.111457+00:00 app[web.1]:         bind: [Function] },
+2016-08-18T23:20:49.111458+00:00 app[web.1]:      _events: 
+2016-08-18T23:20:49.111458+00:00 app[web.1]:       { socket: [Object],
+2016-08-18T23:20:49.111459+00:00 app[web.1]:         response: [Function: bound ],
+2016-08-18T23:20:49.111014+00:00 app[web.1]: IncomingMessage {
+2016-08-18T23:20:49.111017+00:00 app[web.1]:   _readableState: 
+2016-08-18T23:20:49.111017+00:00 app[web.1]:    ReadableState {
+2016-08-18T23:20:49.111018+00:00 app[web.1]:      objectMode: false,
+2016-08-18T23:20:49.111019+00:00 app[web.1]:      highWaterMark: 16384,
+2016-08-18T23:20:49.111019+00:00 app[web.1]:      buffer: [],
+2016-08-18T23:20:49.111020+00:00 app[web.1]:      length: 0,
+2016-08-18T23:20:49.111021+00:00 app[web.1]:      pipes: null,
+2016-08-18T23:20:49.111459+00:00 app[web.1]:         error: [Function: bound ],
+2016-08-18T23:20:49.111021+00:00 app[web.1]:      pipesCount: 0,
+2016-08-18T23:20:49.111022+00:00 app[web.1]:      flowing: true,
+2016-08-18T23:20:49.111023+00:00 app[web.1]:      ended: true,
+2016-08-18T23:20:49.111023+00:00 app[web.1]:      endEmitted: true,
+2016-08-18T23:20:49.111024+00:00 app[web.1]:      reading: false,
+2016-08-18T23:20:49.111024+00:00 app[web.1]:      sync: false,
+2016-08-18T23:20:49.111460+00:00 app[web.1]:         drain: [Function] },
+2016-08-18T23:20:49.111460+00:00 app[web.1]:      _eventsCount: 4,
+2016-08-18T23:20:49.111461+00:00 app[web.1]:      _maxListeners: undefined,
+2016-08-18T23:20:49.111461+00:00 app[web.1]:      output: [],
+2016-08-18T23:20:49.111462+00:00 app[web.1]:      outputEncodings: [],
+2016-08-18T23:20:49.111462+00:00 app[web.1]:      outputCallbacks: [],
+2016-08-18T23:20:49.111025+00:00 app[web.1]:      needReadable: false,
+2016-08-18T23:20:49.111026+00:00 app[web.1]:      emittedReadable: false,
+2016-08-18T23:20:49.111026+00:00 app[web.1]:      readableListening: false,
+2016-08-18T23:20:49.111027+00:00 app[web.1]:      resumeScheduled: false,
+2016-08-18T23:20:49.111027+00:00 app[web.1]:      defaultEncoding: 'utf8',
+2016-08-18T23:20:49.111028+00:00 app[web.1]:      ranOut: false,
+2016-08-18T23:20:49.111463+00:00 app[web.1]:      outputSize: 0,
+2016-08-18T23:20:49.111463+00:00 app[web.1]:      writable: true,
+2016-08-18T23:20:49.111464+00:00 app[web.1]:      _last: true,
+2016-08-18T23:20:49.111464+00:00 app[web.1]:      chunkedEncoding: false,
+2016-08-18T23:20:49.111464+00:00 app[web.1]:      shouldKeepAlive: false,
+2016-08-18T23:20:49.111465+00:00 app[web.1]:      useChunkedEncodingByDefault: true,
+2016-08-18T23:20:49.111465+00:00 app[web.1]:      sendDate: false,
+2016-08-18T23:20:49.111466+00:00 app[web.1]:      _removedHeader: { connection: false, 'content-length': false },
+2016-08-18T23:20:49.111467+00:00 app[web.1]:      _contentLength: null,
+2016-08-18T23:20:49.111467+00:00 app[web.1]:      _hasBody: true,
+2016-08-18T23:20:49.111467+00:00 app[web.1]:      _trailer: '',
+2016-08-18T23:20:49.111468+00:00 app[web.1]:      finished: true,
+2016-08-18T23:20:49.111469+00:00 app[web.1]:      _headerSent: true,
+2016-08-18T23:20:49.111469+00:00 app[web.1]:      socket: 
+2016-08-18T23:20:49.111469+00:00 app[web.1]:       TLSSocket {
+2016-08-18T23:20:49.111470+00:00 app[web.1]:         _tlsOptions: [Object],
+2016-08-18T23:20:49.111471+00:00 app[web.1]:         _secureEstablished: true,
+2016-08-18T23:20:49.111028+00:00 app[web.1]:      awaitDrain: 0,
+2016-08-18T23:20:49.111029+00:00 app[web.1]:      readingMore: false,
+2016-08-18T23:20:49.111030+00:00 app[web.1]:      decoder: null,
+2016-08-18T23:20:49.111030+00:00 app[web.1]:      encoding: null },
+2016-08-18T23:20:49.111031+00:00 app[web.1]:   readable: false,
+2016-08-18T23:20:49.111031+00:00 app[web.1]:   domain: 
+2016-08-18T23:20:49.111032+00:00 app[web.1]:    Domain {
+2016-08-18T23:20:49.111033+00:00 app[web.1]:      domain: null,
+2016-08-18T23:20:49.111033+00:00 app[web.1]:      _events: {},
+2016-08-18T23:20:49.111034+00:00 app[web.1]:      _eventsCount: 0,
+2016-08-18T23:20:49.111035+00:00 app[web.1]:      _maxListeners: undefined,
+2016-08-18T23:20:49.111035+00:00 app[web.1]:      members: [ [Object], [Object] ],
+2016-08-18T23:20:49.111036+00:00 app[web.1]:      oldBind: [Function],
+2016-08-18T23:20:49.111037+00:00 app[web.1]:      bind: [Function] },
+2016-08-18T23:20:49.111037+00:00 app[web.1]:   _events: 
+2016-08-18T23:20:49.111038+00:00 app[web.1]:    { end: [ [Function: responseOnEnd], [Function], [Function], [Function] ],
+2016-08-18T23:20:49.111471+00:00 app[web.1]:         _securePending: false,
+2016-08-18T23:20:49.111472+00:00 app[web.1]:         _newSessionPending: false,
+2016-08-18T23:20:49.111472+00:00 app[web.1]:         _controlReleased: true,
+2016-08-18T23:20:49.111473+00:00 app[web.1]:         _SNICallback: null,
+2016-08-18T23:20:49.111473+00:00 app[web.1]:         servername: null,
+2016-08-18T23:20:49.111474+00:00 app[web.1]:         npnProtocol: false,
+2016-08-18T23:20:49.111474+00:00 app[web.1]:         alpnProtocol: false,
+2016-08-18T23:20:49.111475+00:00 app[web.1]:         authorized: true,
+2016-08-18T23:20:49.111475+00:00 app[web.1]:         authorizationError: null,
+2016-08-18T23:20:49.111476+00:00 app[web.1]:         encrypted: true,
+2016-08-18T23:20:49.111476+00:00 app[web.1]:         _events: [Object],
+2016-08-18T23:20:49.111477+00:00 app[web.1]:         _eventsCount: 9,
+2016-08-18T23:20:49.111039+00:00 app[web.1]:      close: [ [Function], [Function] ],
+2016-08-18T23:20:49.111039+00:00 app[web.1]:      data: [Function],
+2016-08-18T23:20:49.111040+00:00 app[web.1]:      error: [Function] },
+2016-08-18T23:20:49.111041+00:00 app[web.1]:   _eventsCount: 4,
+2016-08-18T23:20:49.111041+00:00 app[web.1]:   _maxListeners: undefined,
+2016-08-18T23:20:49.111042+00:00 app[web.1]:   socket: 
+2016-08-18T23:20:49.111477+00:00 app[web.1]:         _connecting: false,
+2016-08-18T23:20:49.111478+00:00 app[web.1]:         _hadError: false,
+2016-08-18T23:20:49.111478+00:00 app[web.1]:         _handle: null,
+2016-08-18T23:20:49.111479+00:00 app[web.1]:         _parent: null,
+2016-08-18T23:20:49.111479+00:00 app[web.1]:         _host: 'api.twitter.com',
+2016-08-18T23:20:49.111480+00:00 app[web.1]:         _readableState: [Object],
+2016-08-18T23:20:49.111480+00:00 app[web.1]:         readable: false,
+2016-08-18T23:20:49.111481+00:00 app[web.1]:         domain: [Object],
+2016-08-18T23:20:49.111481+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111482+00:00 app[web.1]:         _writableState: [Object],
+2016-08-18T23:20:49.111482+00:00 app[web.1]:         writable: false,
+2016-08-18T23:20:49.111042+00:00 app[web.1]:    TLSSocket {
+2016-08-18T23:20:49.111043+00:00 app[web.1]:      _tlsOptions: 
+2016-08-18T23:20:49.111043+00:00 app[web.1]:       { pipe: null,
+2016-08-18T23:20:49.111044+00:00 app[web.1]:         secureContext: [Object],
+2016-08-18T23:20:49.111045+00:00 app[web.1]:         isServer: false,
+2016-08-18T23:20:49.111045+00:00 app[web.1]:         requestCert: true,
+2016-08-18T23:20:49.111046+00:00 app[web.1]:         rejectUnauthorized: true,
+2016-08-18T23:20:49.111046+00:00 app[web.1]:         session: undefined,
+2016-08-18T23:20:49.111047+00:00 app[web.1]:         NPNProtocols: undefined,
+2016-08-18T23:20:49.111048+00:00 app[web.1]:         ALPNProtocols: undefined,
+2016-08-18T23:20:49.111048+00:00 app[web.1]:         requestOCSP: undefined },
+2016-08-18T23:20:49.111049+00:00 app[web.1]:      _secureEstablished: true,
+2016-08-18T23:20:49.111049+00:00 app[web.1]:      _securePending: false,
+2016-08-18T23:20:49.111050+00:00 app[web.1]:      _newSessionPending: false,
+2016-08-18T23:20:49.111051+00:00 app[web.1]:      _controlReleased: true,
+2016-08-18T23:20:49.111483+00:00 app[web.1]:         allowHalfOpen: false,
+2016-08-18T23:20:49.111483+00:00 app[web.1]:         destroyed: true,
+2016-08-18T23:20:49.111484+00:00 app[web.1]:         _bytesDispatched: 749,
+2016-08-18T23:20:49.111484+00:00 app[web.1]:         _sockname: null,
+2016-08-18T23:20:49.111485+00:00 app[web.1]:         _pendingData: null,
+2016-08-18T23:20:49.111485+00:00 app[web.1]:         _pendingEncoding: '',
+2016-08-18T23:20:49.111486+00:00 app[web.1]:         server: undefined,
+2016-08-18T23:20:49.111486+00:00 app[web.1]:         _server: null,
+2016-08-18T23:20:49.111051+00:00 app[web.1]:      _SNICallback: null,
+2016-08-18T23:20:49.111487+00:00 app[web.1]:         ssl: null,
+2016-08-18T23:20:49.111487+00:00 app[web.1]:         _requestCert: true,
+2016-08-18T23:20:49.111488+00:00 app[web.1]:         _rejectUnauthorized: true,
+2016-08-18T23:20:49.111488+00:00 app[web.1]:         parser: null,
+2016-08-18T23:20:49.111489+00:00 app[web.1]:         _httpMessage: [Circular],
+2016-08-18T23:20:49.111489+00:00 app[web.1]:         read: [Function],
+2016-08-18T23:20:49.111490+00:00 app[web.1]:         _consuming: true,
+2016-08-18T23:20:49.111491+00:00 app[web.1]:         _idleNext: null,
+2016-08-18T23:20:49.111492+00:00 app[web.1]:         _idlePrev: null,
+2016-08-18T23:20:49.111492+00:00 app[web.1]:         _idleTimeout: -1 },
+2016-08-18T23:20:49.111492+00:00 app[web.1]:      connection: 
+2016-08-18T23:20:49.111493+00:00 app[web.1]:       TLSSocket {
+2016-08-18T23:20:49.111493+00:00 app[web.1]:         _tlsOptions: [Object],
+2016-08-18T23:20:49.111494+00:00 app[web.1]:         _secureEstablished: true,
+2016-08-18T23:20:49.111494+00:00 app[web.1]:         _securePending: false,
+2016-08-18T23:20:49.111495+00:00 app[web.1]:         _newSessionPending: false,
+2016-08-18T23:20:49.111495+00:00 app[web.1]:         _controlReleased: true,
+2016-08-18T23:20:49.111496+00:00 app[web.1]:         _SNICallback: null,
+2016-08-18T23:20:49.111496+00:00 app[web.1]:         servername: null,
+2016-08-18T23:20:49.111497+00:00 app[web.1]:         npnProtocol: false,
+2016-08-18T23:20:49.111497+00:00 app[web.1]:         alpnProtocol: false,
+2016-08-18T23:20:49.111498+00:00 app[web.1]:         authorized: true,
+2016-08-18T23:20:49.111498+00:00 app[web.1]:         authorizationError: null,
+2016-08-18T23:20:49.111499+00:00 app[web.1]:         encrypted: true,
+2016-08-18T23:20:49.111499+00:00 app[web.1]:         _events: [Object],
+2016-08-18T23:20:49.111052+00:00 app[web.1]:      servername: null,
+2016-08-18T23:20:49.111052+00:00 app[web.1]:      npnProtocol: false,
+2016-08-18T23:20:49.111053+00:00 app[web.1]:      alpnProtocol: false,
+2016-08-18T23:20:49.111053+00:00 app[web.1]:      authorized: true,
+2016-08-18T23:20:49.111054+00:00 app[web.1]:      authorizationError: null,
+2016-08-18T23:20:49.111055+00:00 app[web.1]:      encrypted: true,
+2016-08-18T23:20:49.111055+00:00 app[web.1]:      _events: 
+2016-08-18T23:20:49.111056+00:00 app[web.1]:       { close: [Object],
+2016-08-18T23:20:49.111056+00:00 app[web.1]:         end: [Object],
+2016-08-18T23:20:49.111057+00:00 app[web.1]:         finish: [Function: onSocketFinish],
+2016-08-18T23:20:49.111057+00:00 app[web.1]:         _socketEnd: [Function: onSocketEnd],
+2016-08-18T23:20:49.111058+00:00 app[web.1]:         secure: [Function],
+2016-08-18T23:20:49.111059+00:00 app[web.1]:         free: [Function: onFree],
+2016-08-18T23:20:49.111059+00:00 app[web.1]:         agentRemove: [Function: onRemove],
+2016-08-18T23:20:49.111060+00:00 app[web.1]:         drain: [Function: ondrain],
+2016-08-18T23:20:49.111061+00:00 app[web.1]:         error: [Function: socketErrorListener] },
+2016-08-18T23:20:49.111499+00:00 app[web.1]:         _eventsCount: 9,
+2016-08-18T23:20:49.111500+00:00 app[web.1]:         _connecting: false,
+2016-08-18T23:20:49.111500+00:00 app[web.1]:         _hadError: false,
+2016-08-18T23:20:49.111501+00:00 app[web.1]:         _handle: null,
+2016-08-18T23:20:49.111501+00:00 app[web.1]:         _parent: null,
+2016-08-18T23:20:49.111502+00:00 app[web.1]:         _host: 'api.twitter.com',
+2016-08-18T23:20:49.111061+00:00 app[web.1]:      _eventsCount: 9,
+2016-08-18T23:20:49.111062+00:00 app[web.1]:      _connecting: false,
+2016-08-18T23:20:49.111062+00:00 app[web.1]:      _hadError: false,
+2016-08-18T23:20:49.111063+00:00 app[web.1]:      _handle: null,
+2016-08-18T23:20:49.111063+00:00 app[web.1]:      _parent: null,
+2016-08-18T23:20:49.111064+00:00 app[web.1]:      _host: 'api.twitter.com',
+2016-08-18T23:20:49.111064+00:00 app[web.1]:      _readableState: 
+2016-08-18T23:20:49.111502+00:00 app[web.1]:         _readableState: [Object],
+2016-08-18T23:20:49.111503+00:00 app[web.1]:         readable: false,
+2016-08-18T23:20:49.111503+00:00 app[web.1]:         domain: [Object],
+2016-08-18T23:20:49.111504+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111504+00:00 app[web.1]:         _writableState: [Object],
+2016-08-18T23:20:49.111505+00:00 app[web.1]:         writable: false,
+2016-08-18T23:20:49.111505+00:00 app[web.1]:         allowHalfOpen: false,
+2016-08-18T23:20:49.111506+00:00 app[web.1]:         destroyed: true,
+2016-08-18T23:20:49.111065+00:00 app[web.1]:       ReadableState {
+2016-08-18T23:20:49.111066+00:00 app[web.1]:         objectMode: false,
+2016-08-18T23:20:49.111066+00:00 app[web.1]:         highWaterMark: 16384,
+2016-08-18T23:20:49.111067+00:00 app[web.1]:         buffer: [],
+2016-08-18T23:20:49.111067+00:00 app[web.1]:         length: 0,
+2016-08-18T23:20:49.111068+00:00 app[web.1]:         pipes: null,
+2016-08-18T23:20:49.111068+00:00 app[web.1]:         pipesCount: 0,
+2016-08-18T23:20:49.111069+00:00 app[web.1]:         flowing: true,
+2016-08-18T23:20:49.111070+00:00 app[web.1]:         ended: false,
+2016-08-18T23:20:49.111070+00:00 app[web.1]:         endEmitted: false,
+2016-08-18T23:20:49.111071+00:00 app[web.1]:         reading: true,
+2016-08-18T23:20:49.111506+00:00 app[web.1]:         _bytesDispatched: 749,
+2016-08-18T23:20:49.111507+00:00 app[web.1]:         _sockname: null,
+2016-08-18T23:20:49.111507+00:00 app[web.1]:         _pendingData: null,
+2016-08-18T23:20:49.111508+00:00 app[web.1]:         _pendingEncoding: '',
+2016-08-18T23:20:49.111508+00:00 app[web.1]:         server: undefined,
+2016-08-18T23:20:49.111071+00:00 app[web.1]:         sync: false,
+2016-08-18T23:20:49.111072+00:00 app[web.1]:         needReadable: true,
+2016-08-18T23:20:49.111072+00:00 app[web.1]:         emittedReadable: false,
+2016-08-18T23:20:49.111073+00:00 app[web.1]:         readableListening: false,
+2016-08-18T23:20:49.111509+00:00 app[web.1]:         _server: null,
+2016-08-18T23:20:49.111513+00:00 app[web.1]:         ssl: null,
+2016-08-18T23:20:49.111513+00:00 app[web.1]:         _requestCert: true,
+2016-08-18T23:20:49.111514+00:00 app[web.1]:         _rejectUnauthorized: true,
+2016-08-18T23:20:49.111514+00:00 app[web.1]:         parser: null,
+2016-08-18T23:20:49.111515+00:00 app[web.1]:         _httpMessage: [Circular],
+2016-08-18T23:20:49.111515+00:00 app[web.1]:         read: [Function],
+2016-08-18T23:20:49.111516+00:00 app[web.1]:         _consuming: true,
+2016-08-18T23:20:49.111516+00:00 app[web.1]:         _idleNext: null,
+2016-08-18T23:20:49.111517+00:00 app[web.1]:         _idlePrev: null,
+2016-08-18T23:20:49.111517+00:00 app[web.1]:         _idleTimeout: -1 },
+2016-08-18T23:20:49.111518+00:00 app[web.1]:      _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 229\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="e602521752864868ba8f7735d90765f2",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1471562448",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="BTbM6FRO%2BgDneu9bee40E1ZLQf4%3D"\r\n\r\n',
+2016-08-18T23:20:49.111518+00:00 app[web.1]:      _headers: 
+2016-08-18T23:20:49.111519+00:00 app[web.1]:       { accept: '*/*',
+2016-08-18T23:20:49.111519+00:00 app[web.1]:         connection: 'close',
+2016-08-18T23:20:49.111520+00:00 app[web.1]:         'user-agent': 'node-twitter/1.4.0',
+2016-08-18T23:20:49.111520+00:00 app[web.1]:         host: 'api.twitter.com',
+2016-08-18T23:20:49.111521+00:00 app[web.1]:         'content-type': 'application/x-www-form-urlencoded',
+2016-08-18T23:20:49.111521+00:00 app[web.1]:         'content-length': 229,
+2016-08-18T23:20:49.111522+00:00 app[web.1]:         authorization: 'OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="e602521752864868ba8f7735d90765f2",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1471562448",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="BTbM6FRO%2BgDneu9bee40E1ZLQf4%3D"' },
+2016-08-18T23:20:49.111073+00:00 app[web.1]:         resumeScheduled: false,
+2016-08-18T23:20:49.111074+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-08-18T23:20:49.111074+00:00 app[web.1]:         ranOut: false,
+2016-08-18T23:20:49.111075+00:00 app[web.1]:         awaitDrain: 0,
+2016-08-18T23:20:49.111075+00:00 app[web.1]:         readingMore: true,
+2016-08-18T23:20:49.111076+00:00 app[web.1]:         decoder: null,
+2016-08-18T23:20:49.111076+00:00 app[web.1]:         encoding: null },
+2016-08-18T23:20:49.111077+00:00 app[web.1]:      readable: false,
+2016-08-18T23:20:49.111077+00:00 app[web.1]:      domain: 
+2016-08-18T23:20:49.111078+00:00 app[web.1]:       Domain {
+2016-08-18T23:20:49.111078+00:00 app[web.1]:         domain: null,
+2016-08-18T23:20:49.111079+00:00 app[web.1]:         _events: {},
+2016-08-18T23:20:49.111079+00:00 app[web.1]:         _eventsCount: 0,
+2016-08-18T23:20:49.111080+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111081+00:00 app[web.1]:         members: [Object],
+2016-08-18T23:20:49.111081+00:00 app[web.1]:         oldBind: [Function],
+2016-08-18T23:20:49.111082+00:00 app[web.1]:         bind: [Function] },
+2016-08-18T23:20:49.111082+00:00 app[web.1]:      _maxListeners: undefined,
+2016-08-18T23:20:49.111083+00:00 app[web.1]:      _writableState: 
+2016-08-18T23:20:49.111086+00:00 app[web.1]:       WritableState {
+2016-08-18T23:20:49.111087+00:00 app[web.1]:         objectMode: false,
+2016-08-18T23:20:49.111087+00:00 app[web.1]:         highWaterMark: 16384,
+2016-08-18T23:20:49.111088+00:00 app[web.1]:         needDrain: false,
+2016-08-18T23:20:49.111523+00:00 app[web.1]:      _headerNames: 
+2016-08-18T23:20:49.111523+00:00 app[web.1]:       { accept: 'Accept',
+2016-08-18T23:20:49.111524+00:00 app[web.1]:         connection: 'Connection',
+2016-08-18T23:20:49.111524+00:00 app[web.1]:         'user-agent': 'User-Agent',
+2016-08-18T23:20:49.111525+00:00 app[web.1]:         host: 'host',
+2016-08-18T23:20:49.111525+00:00 app[web.1]:         'content-type': 'content-type',
+2016-08-18T23:20:49.111088+00:00 app[web.1]:         ending: true,
+2016-08-18T23:20:49.111089+00:00 app[web.1]:         ended: true,
+2016-08-18T23:20:49.111089+00:00 app[web.1]:         finished: true,
+2016-08-18T23:20:49.111090+00:00 app[web.1]:         decodeStrings: false,
+2016-08-18T23:20:49.111090+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-08-18T23:20:49.111091+00:00 app[web.1]:         length: 0,
+2016-08-18T23:20:49.111526+00:00 app[web.1]:         'content-length': 'content-length',
+2016-08-18T23:20:49.111526+00:00 app[web.1]:         authorization: 'Authorization' },
+2016-08-18T23:20:49.111092+00:00 app[web.1]:         writing: false,
+2016-08-18T23:20:49.111527+00:00 app[web.1]:      _onPendingData: null,
+2016-08-18T23:20:49.111527+00:00 app[web.1]:      agent: 
+2016-08-18T23:20:49.111092+00:00 app[web.1]:         corked: 0,
+2016-08-18T23:20:49.111093+00:00 app[web.1]:         sync: false,
+2016-08-18T23:20:49.111527+00:00 app[web.1]:       Agent {
+2016-08-18T23:20:49.111528+00:00 app[web.1]:         domain: null,
+2016-08-18T23:20:49.111529+00:00 app[web.1]:         _events: [Object],
+2016-08-18T23:20:49.111529+00:00 app[web.1]:         _eventsCount: 1,
+2016-08-18T23:20:49.111529+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111530+00:00 app[web.1]:         defaultPort: 443,
+2016-08-18T23:20:49.111530+00:00 app[web.1]:         protocol: 'https:',
+2016-08-18T23:20:49.111531+00:00 app[web.1]:         options: [Object],
+2016-08-18T23:20:49.111531+00:00 app[web.1]:         requests: {},
+2016-08-18T23:20:49.111531+00:00 app[web.1]:         sockets: [Object],
+2016-08-18T23:20:49.111532+00:00 app[web.1]:         freeSockets: {},
+2016-08-18T23:20:49.111093+00:00 app[web.1]:         bufferProcessing: false,
+2016-08-18T23:20:49.111094+00:00 app[web.1]:         onwrite: [Function],
+2016-08-18T23:20:49.111094+00:00 app[web.1]:         writecb: null,
+2016-08-18T23:20:49.111095+00:00 app[web.1]:         writelen: 0,
+2016-08-18T23:20:49.111095+00:00 app[web.1]:         bufferedRequest: null,
+2016-08-18T23:20:49.111096+00:00 app[web.1]:         lastBufferedRequest: null,
+2016-08-18T23:20:49.111097+00:00 app[web.1]:         pendingcb: 0,
+2016-08-18T23:20:49.111097+00:00 app[web.1]:         prefinished: true,
+2016-08-18T23:20:49.111097+00:00 app[web.1]:         errorEmitted: false,
+2016-08-18T23:20:49.111098+00:00 app[web.1]:         bufferedRequestCount: 0,
+2016-08-18T23:20:49.111099+00:00 app[web.1]:         corkedRequestsFree: [Object] },
+2016-08-18T23:20:49.111532+00:00 app[web.1]:         keepAliveMsecs: 1000,
+2016-08-18T23:20:49.111099+00:00 app[web.1]:      writable: false,
+2016-08-18T23:20:49.111533+00:00 app[web.1]:         keepAlive: false,
+2016-08-18T23:20:49.111533+00:00 app[web.1]:         maxSockets: Infinity,
+2016-08-18T23:20:49.111534+00:00 app[web.1]:         maxFreeSockets: 256,
+2016-08-18T23:20:49.111534+00:00 app[web.1]:         maxCachedSessions: 100,
+2016-08-18T23:20:49.111534+00:00 app[web.1]:         _sessionCache: [Object] },
+2016-08-18T23:20:49.111535+00:00 app[web.1]:      socketPath: undefined,
+2016-08-18T23:20:49.111535+00:00 app[web.1]:      method: 'POST',
+2016-08-18T23:20:49.111536+00:00 app[web.1]:      path: '/1.1/direct_messages/new.json',
+2016-08-18T23:20:49.111536+00:00 app[web.1]:      onSocket: [Function],
+2016-08-18T23:20:49.111537+00:00 app[web.1]:      parser: null,
+2016-08-18T23:20:49.111100+00:00 app[web.1]:      allowHalfOpen: false,
+2016-08-18T23:20:49.111100+00:00 app[web.1]:      destroyed: true,
+2016-08-18T23:20:49.111101+00:00 app[web.1]:      _bytesDispatched: 749,
+2016-08-18T23:20:49.111101+00:00 app[web.1]:      _sockname: null,
+2016-08-18T23:20:49.111102+00:00 app[web.1]:      _pendingData: null,
+2016-08-18T23:20:49.111102+00:00 app[web.1]:      _pendingEncoding: '',
+2016-08-18T23:20:49.111103+00:00 app[web.1]:      server: undefined,
+2016-08-18T23:20:49.111103+00:00 app[web.1]:      _server: null,
+2016-08-18T23:20:49.111537+00:00 app[web.1]:      res: [Circular] },
+2016-08-18T23:20:49.111104+00:00 app[web.1]:      ssl: null,
+2016-08-18T23:20:49.111105+00:00 app[web.1]:      _requestCert: true,
+2016-08-18T23:20:49.111105+00:00 app[web.1]:      _rejectUnauthorized: true,
+2016-08-18T23:20:49.111537+00:00 app[web.1]:   request: 
+2016-08-18T23:20:49.111538+00:00 app[web.1]:    Request {
+2016-08-18T23:20:49.111538+00:00 app[web.1]:      domain: 
+2016-08-18T23:20:49.111539+00:00 app[web.1]:       Domain {
+2016-08-18T23:20:49.111106+00:00 app[web.1]:      parser: null,
+2016-08-18T23:20:49.111106+00:00 app[web.1]:      _httpMessage: 
+2016-08-18T23:20:49.111539+00:00 app[web.1]:         domain: null,
+2016-08-18T23:20:49.111107+00:00 app[web.1]:       ClientRequest {
+2016-08-18T23:20:49.111540+00:00 app[web.1]:         _events: {},
+2016-08-18T23:20:49.111540+00:00 app[web.1]:         _eventsCount: 0,
+2016-08-18T23:20:49.111541+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111107+00:00 app[web.1]:         domain: [Object],
+2016-08-18T23:20:49.111108+00:00 app[web.1]:         _events: [Object],
+2016-08-18T23:20:49.111108+00:00 app[web.1]:         _eventsCount: 4,
+2016-08-18T23:20:49.111541+00:00 app[web.1]:         members: [Object],
+2016-08-18T23:20:49.111541+00:00 app[web.1]:         oldBind: [Function],
+2016-08-18T23:20:49.111542+00:00 app[web.1]:         bind: [Function] },
+2016-08-18T23:20:49.111109+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111542+00:00 app[web.1]:      _events: 
+2016-08-18T23:20:49.111109+00:00 app[web.1]:         output: [],
+2016-08-18T23:20:49.111109+00:00 app[web.1]:         outputEncodings: [],
+2016-08-18T23:20:49.111114+00:00 app[web.1]:         outputCallbacks: [],
+2016-08-18T23:20:49.111115+00:00 app[web.1]:         outputSize: 0,
+2016-08-18T23:20:49.111543+00:00 app[web.1]:       { error: [Function: bound ],
+2016-08-18T23:20:49.111543+00:00 app[web.1]:         complete: [Function: bound ],
+2016-08-18T23:20:49.111544+00:00 app[web.1]:         pipe: [Function],
+2016-08-18T23:20:49.111545+00:00 app[web.1]:         data: [Function],
+2016-08-18T23:20:49.111546+00:00 app[web.1]:         end: [Function] },
+2016-08-18T23:20:49.111571+00:00 app[web.1]:      _eventsCount: 5,
+2016-08-18T23:20:49.111572+00:00 app[web.1]:      _maxListeners: undefined,
+2016-08-18T23:20:49.111116+00:00 app[web.1]:         writable: true,
+2016-08-18T23:20:49.111116+00:00 app[web.1]:         _last: true,
+2016-08-18T23:20:49.111117+00:00 app[web.1]:         chunkedEncoding: false,
+2016-08-18T23:20:49.111117+00:00 app[web.1]:         shouldKeepAlive: false,
+2016-08-18T23:20:49.111118+00:00 app[web.1]:         useChunkedEncodingByDefault: true,
+2016-08-18T23:20:49.111118+00:00 app[web.1]:         sendDate: false,
+2016-08-18T23:20:49.111119+00:00 app[web.1]:         _removedHeader: [Object],
+2016-08-18T23:20:49.111120+00:00 app[web.1]:         _contentLength: null,
+2016-08-18T23:20:49.111120+00:00 app[web.1]:         _hasBody: true,
+2016-08-18T23:20:49.111121+00:00 app[web.1]:         _trailer: '',
+2016-08-18T23:20:49.111121+00:00 app[web.1]:         finished: true,
+2016-08-18T23:20:49.111572+00:00 app[web.1]:      headers: 
+2016-08-18T23:20:49.111573+00:00 app[web.1]:       { Accept: '*/*',
+2016-08-18T23:20:49.111573+00:00 app[web.1]:         Connection: 'close',
+2016-08-18T23:20:49.111574+00:00 app[web.1]:         'User-Agent': 'node-twitter/1.4.0',
+2016-08-18T23:20:49.111574+00:00 app[web.1]:         'content-type': 'application/x-www-form-urlencoded',
+2016-08-18T23:20:49.111575+00:00 app[web.1]:         'content-length': 229,
+2016-08-18T23:20:49.111576+00:00 app[web.1]:         Authorization: 'OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="e602521752864868ba8f7735d90765f2",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1471562448",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="BTbM6FRO%2BgDneu9bee40E1ZLQf4%3D"' },
+2016-08-18T23:20:49.111576+00:00 app[web.1]:      method: 'post',
+2016-08-18T23:20:49.111577+00:00 app[web.1]:      callback: [Function],
+2016-08-18T23:20:49.111577+00:00 app[web.1]:      readable: true,
+2016-08-18T23:20:49.111578+00:00 app[web.1]:      writable: true,
+2016-08-18T23:20:49.111122+00:00 app[web.1]:         _headerSent: true,
+2016-08-18T23:20:49.111578+00:00 app[web.1]:      explicitMethod: true,
+2016-08-18T23:20:49.111122+00:00 app[web.1]:         socket: [Circular],
+2016-08-18T23:20:49.111123+00:00 app[web.1]:         connection: [Circular],
+2016-08-18T23:20:49.111131+00:00 app[web.1]:         _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 229\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="e602521752864868ba8f7735d90765f2",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1471562448",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="BTbM6FRO%2BgDneu9bee40E1ZLQf4%3D"\r\n\r\n',
+2016-08-18T23:20:49.111675+00:00 app[web.1]:         onSocket: [Function],
+2016-08-18T23:20:49.111676+00:00 app[web.1]:         parser: null,
+2016-08-18T23:20:49.111677+00:00 app[web.1]:         res: [Circular] },
+2016-08-18T23:20:49.111677+00:00 app[web.1]:      ntick: true,
+2016-08-18T23:20:49.111678+00:00 app[web.1]:      response: [Circular],
+2016-08-18T23:20:49.111679+00:00 app[web.1]:      originalHost: 'api.twitter.com',
+2016-08-18T23:20:49.111679+00:00 app[web.1]:      originalHostHeaderName: 'host',
+2016-08-18T23:20:49.111679+00:00 app[web.1]:      responseContent: [Circular],
+2016-08-18T23:20:49.111680+00:00 app[web.1]:      _destdata: true,
+2016-08-18T23:20:49.111680+00:00 app[web.1]:      _ended: true,
+2016-08-18T23:20:49.111681+00:00 app[web.1]:      _callbackCalled: true },
+2016-08-18T23:20:49.111681+00:00 app[web.1]:   toJSON: [Function: responseToJSON],
+2016-08-18T23:20:49.111579+00:00 app[web.1]:      _qs: 
+2016-08-18T23:20:49.111579+00:00 app[web.1]:       Querystring {
+2016-08-18T23:20:49.111580+00:00 app[web.1]:         request: [Circular],
+2016-08-18T23:20:49.111580+00:00 app[web.1]:         lib: [Object],
+2016-08-18T23:20:49.111581+00:00 app[web.1]:         useQuerystring: undefined,
+2016-08-18T23:20:49.111132+00:00 app[web.1]:         _headers: [Object],
+2016-08-18T23:20:49.111132+00:00 app[web.1]:         _headerNames: [Object],
+2016-08-18T23:20:49.111133+00:00 app[web.1]:         _onPendingData: null,
+2016-08-18T23:20:49.111133+00:00 app[web.1]:         agent: [Object],
+2016-08-18T23:20:49.111581+00:00 app[web.1]:         parseOptions: {},
+2016-08-18T23:20:49.111582+00:00 app[web.1]:         stringifyOptions: {} },
+2016-08-18T23:20:49.111134+00:00 app[web.1]:         socketPath: undefined,
+2016-08-18T23:20:49.111582+00:00 app[web.1]:      _auth: 
+2016-08-18T23:20:49.111583+00:00 app[web.1]:       Auth {
+2016-08-18T23:20:49.111583+00:00 app[web.1]:         request: [Circular],
+2016-08-18T23:20:49.111584+00:00 app[web.1]:         hasAuth: false,
+2016-08-18T23:20:49.111584+00:00 app[web.1]:         sentAuth: false,
+2016-08-18T23:20:49.111585+00:00 app[web.1]:         bearerToken: null,
+2016-08-18T23:20:49.111585+00:00 app[web.1]:         user: null,
+2016-08-18T23:20:49.111586+00:00 app[web.1]:         pass: null },
+2016-08-18T23:20:49.111587+00:00 app[web.1]:      _oauth: OAuth { request: [Circular], params: [Object] },
+2016-08-18T23:20:49.111682+00:00 app[web.1]:   caseless: 
+2016-08-18T23:20:49.111682+00:00 app[web.1]:    Caseless {
+2016-08-18T23:20:49.111683+00:00 app[web.1]:      dict: 
+2016-08-18T23:20:49.111688+00:00 app[web.1]:       { 'cache-control': 'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
+2016-08-18T23:20:49.111689+00:00 app[web.1]:         connection: 'close',
+2016-08-18T23:20:49.111690+00:00 app[web.1]:         'content-disposition': 'attachment; filename=json.json',
+2016-08-18T23:20:49.111690+00:00 app[web.1]:         'content-length': '2962',
+2016-08-18T23:20:49.111691+00:00 app[web.1]:         'content-type': 'application/json;charset=utf-8',
+2016-08-18T23:20:49.111691+00:00 app[web.1]:         date: 'Thu, 18 Aug 2016 23:20:48 GMT',
+2016-08-18T23:20:49.111691+00:00 app[web.1]:         expires: 'Tue, 31 Mar 1981 05:00:00 GMT',
+2016-08-18T23:20:49.111587+00:00 app[web.1]:      _multipart: 
+2016-08-18T23:20:49.111587+00:00 app[web.1]:       Multipart {
+2016-08-18T23:20:49.111134+00:00 app[web.1]:         method: 'POST',
+2016-08-18T23:20:49.111135+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2016-08-18T23:20:49.111135+00:00 app[web.1]:         onSocket: [Function],
+2016-08-18T23:20:49.111136+00:00 app[web.1]:         parser: null,
+2016-08-18T23:20:49.111136+00:00 app[web.1]:         res: [Circular] },
+2016-08-18T23:20:49.111137+00:00 app[web.1]:      read: [Function],
+2016-08-18T23:20:49.111137+00:00 app[web.1]:      _consuming: true,
+2016-08-18T23:20:49.111138+00:00 app[web.1]:      _idleNext: null,
+2016-08-18T23:20:49.111138+00:00 app[web.1]:      _idlePrev: null,
+2016-08-18T23:20:49.111588+00:00 app[web.1]:         request: [Circular],
+2016-08-18T23:20:49.111589+00:00 app[web.1]:         boundary: '4895c34f-80b6-42b7-8d9f-76e20a728671',
+2016-08-18T23:20:49.111589+00:00 app[web.1]:         chunked: false,
+2016-08-18T23:20:49.111692+00:00 app[web.1]:         'last-modified': 'Thu, 18 Aug 2016 23:20:48 GMT',
+2016-08-18T23:20:49.111692+00:00 app[web.1]:         pragma: 'no-cache',
+2016-08-18T23:20:49.111693+00:00 app[web.1]:         server: 'tsa_b',
+2016-08-18T23:20:49.111693+00:00 app[web.1]:         'set-cookie': [Object],
+2016-08-18T23:20:49.111694+00:00 app[web.1]:         status: '200 OK',
+2016-08-18T23:20:49.111694+00:00 app[web.1]:         'strict-transport-security': 'max-age=631138519',
+2016-08-18T23:20:49.111695+00:00 app[web.1]:         'x-access-level': 'read-write-directmessages',
+2016-08-18T23:20:49.111695+00:00 app[web.1]:         'x-connection-hash': '085e9d04df71199be0b13e06f729ae63',
+2016-08-18T23:20:49.111139+00:00 app[web.1]:      _idleTimeout: -1 },
+2016-08-18T23:20:49.111139+00:00 app[web.1]:   connection: 
+2016-08-18T23:20:49.111140+00:00 app[web.1]:    TLSSocket {
+2016-08-18T23:20:49.111590+00:00 app[web.1]:         body: null },
+2016-08-18T23:20:49.111590+00:00 app[web.1]:      _redirect: 
+2016-08-18T23:20:49.111696+00:00 app[web.1]:         'x-content-type-options': 'nosniff',
+2016-08-18T23:20:49.111696+00:00 app[web.1]:         'x-frame-options': 'SAMEORIGIN',
+2016-08-18T23:20:49.111697+00:00 app[web.1]:         'x-response-time': '93',
+2016-08-18T23:20:49.111698+00:00 app[web.1]:         'x-transaction': '00abeccb00d0e8a4',
+2016-08-18T23:20:49.111140+00:00 app[web.1]:      _tlsOptions: 
+2016-08-18T23:20:49.111141+00:00 app[web.1]:       { pipe: null,
+2016-08-18T23:20:49.111141+00:00 app[web.1]:         secureContext: [Object],
+2016-08-18T23:20:49.111590+00:00 app[web.1]:       Redirect {
+2016-08-18T23:20:49.111591+00:00 app[web.1]:         request: [Circular],
+2016-08-18T23:20:49.111591+00:00 app[web.1]:         followRedirect: true,
+2016-08-18T23:20:49.111698+00:00 app[web.1]:         'x-tsa-request-body-time': '1',
+2016-08-18T23:20:49.111699+00:00 app[web.1]:         'x-twitter-response-tags': 'BouncerCompliant',
+2016-08-18T23:20:49.111597+00:00 app[web.1]:         followRedirects: true,
+2016-08-18T23:20:49.111597+00:00 app[web.1]:         followAllRedirects: false,
+2016-08-18T23:20:49.111699+00:00 app[web.1]:         'x-xss-protection': '1; mode=block' } },
+2016-08-18T23:20:49.111598+00:00 app[web.1]:         allowRedirect: [Function],
+2016-08-18T23:20:49.111598+00:00 app[web.1]:         maxRedirects: 10,
+2016-08-18T23:20:49.111599+00:00 app[web.1]:         redirects: [],
+2016-08-18T23:20:49.111599+00:00 app[web.1]:         redirectsFollowed: 0,
+2016-08-18T23:20:49.111700+00:00 app[web.1]:   read: [Function],
+2016-08-18T23:20:49.111705+00:00 app[web.1]:   body: '{"id":766414576204349444,"id_str":"766414576204349444","text":"Evento:Prova - codice: string - in Nguru-Gashua-Damasak Road, Nigeria - lat:13, lng:12, alt:0 - base:string, rssi:undefineddbm, snr:string","sender":{"id":762367617407545344,"id_str":"762367617407545344","name":"usthings2016","screen_name":"usthings2016","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1,"friends_count":1,"listed_count":0,"created_at":"Sun Aug 07 19:19:38 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":42,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"sender_id":762367617407545344,"sender_id_str":"762367617407545344","sender_screen_name":"usthings2016","recipient":{"id":757327116518191104,"id_str":"757327116518191104","name":"GRS Breganze","screen_name":"GRS_Breganze","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1,"friends_count":1,"listed_count":0,"created_at":"Sun Jul 24 21:30:29 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":4,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":true,"follow_request_sent":false,"notifications":false},"recipient_id":757327116518191104,"recipient_id_str":"757327116518191104","recipient_screen_name":"GRS_Breganze","created_at":"Thu Aug 18 23:20:48 +0000 2016","entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]}}' }
+2016-08-18T23:20:49.111706+00:00 app[web.1]: Messaggio Twitter
+2016-08-18T23:20:49.111600+00:00 app[web.1]:         removeRefererHeader: false },
+2016-08-18T23:20:49.111600+00:00 app[web.1]:      _tunnel: 
+2016-08-18T23:20:49.111601+00:00 app[web.1]:       Tunnel {
+2016-08-18T23:20:49.111142+00:00 app[web.1]:         isServer: false,
+2016-08-18T23:20:49.111142+00:00 app[web.1]:         requestCert: true,
+2016-08-18T23:20:49.111143+00:00 app[web.1]:         rejectUnauthorized: true,
+2016-08-18T23:20:49.111144+00:00 app[web.1]:         session: undefined,
+2016-08-18T23:20:49.111144+00:00 app[web.1]:         NPNProtocols: undefined,
+2016-08-18T23:20:49.111145+00:00 app[web.1]:         ALPNProtocols: undefined,
+2016-08-18T23:20:49.111145+00:00 app[web.1]:         requestOCSP: undefined },
+2016-08-18T23:20:49.111146+00:00 app[web.1]:      _secureEstablished: true,
+2016-08-18T23:20:49.111146+00:00 app[web.1]:      _securePending: false,
+2016-08-18T23:20:49.111147+00:00 app[web.1]:      _newSessionPending: false,
+2016-08-18T23:20:49.111147+00:00 app[web.1]:      _controlReleased: true,
+2016-08-18T23:20:49.111148+00:00 app[web.1]:      _SNICallback: null,
+2016-08-18T23:20:49.111148+00:00 app[web.1]:      servername: null,
+2016-08-18T23:20:49.111149+00:00 app[web.1]:      npnProtocol: false,
+2016-08-18T23:20:49.111149+00:00 app[web.1]:      alpnProtocol: false,
+2016-08-18T23:20:49.111601+00:00 app[web.1]:         request: [Circular],
+2016-08-18T23:20:49.111602+00:00 app[web.1]:         proxyHeaderWhiteList: [Object],
+2016-08-18T23:20:49.111602+00:00 app[web.1]:         proxyHeaderExclusiveList: [] },
+2016-08-18T23:20:49.111150+00:00 app[web.1]:      authorized: true,
+2016-08-18T23:20:49.111150+00:00 app[web.1]:      authorizationError: null,
+2016-08-18T23:20:49.111151+00:00 app[web.1]:      encrypted: true,
+2016-08-18T23:20:49.111152+00:00 app[web.1]:      _events: 
+2016-08-18T23:20:49.111152+00:00 app[web.1]:       { close: [Object],
+2016-08-18T23:20:49.111153+00:00 app[web.1]:         end: [Object],
+2016-08-18T23:20:49.111153+00:00 app[web.1]:         finish: [Function: onSocketFinish],
+2016-08-18T23:20:49.111603+00:00 app[web.1]:      setHeader: [Function],
+2016-08-18T23:20:49.111603+00:00 app[web.1]:      hasHeader: [Function],
+2016-08-18T23:20:49.111604+00:00 app[web.1]:      getHeader: [Function],
+2016-08-18T23:20:49.111604+00:00 app[web.1]:      removeHeader: [Function],
+2016-08-18T23:20:49.111605+00:00 app[web.1]:      localAddress: undefined,
+2016-08-18T23:20:49.111605+00:00 app[web.1]:      pool: {},
+2016-08-18T23:20:49.111606+00:00 app[web.1]:      dests: [],
+2016-08-18T23:20:49.111606+00:00 app[web.1]:      __isRequestRequest: true,
+2016-08-18T23:20:49.111607+00:00 app[web.1]:      _callback: [Function],
+2016-08-18T23:20:49.111154+00:00 app[web.1]:         _socketEnd: [Function: onSocketEnd],
+2016-08-18T23:20:49.111154+00:00 app[web.1]:         secure: [Function],
+2016-08-18T23:20:49.111155+00:00 app[web.1]:         free: [Function: onFree],
+2016-08-18T23:20:49.111156+00:00 app[web.1]:         agentRemove: [Function: onRemove],
+2016-08-18T23:20:49.111156+00:00 app[web.1]:         drain: [Function: ondrain],
+2016-08-18T23:20:49.111607+00:00 app[web.1]:      uri: 
+2016-08-18T23:20:49.111608+00:00 app[web.1]:       Url {
+2016-08-18T23:20:49.111608+00:00 app[web.1]:         protocol: 'https:',
+2016-08-18T23:20:49.111157+00:00 app[web.1]:         error: [Function: socketErrorListener] },
+2016-08-18T23:20:49.111157+00:00 app[web.1]:      _eventsCount: 9,
+2016-08-18T23:20:49.111609+00:00 app[web.1]:         slashes: true,
+2016-08-18T23:20:49.111609+00:00 app[web.1]:         auth: null,
+2016-08-18T23:20:49.111610+00:00 app[web.1]:         host: 'api.twitter.com',
+2016-08-18T23:20:49.111610+00:00 app[web.1]:         port: 443,
+2016-08-18T23:20:49.111611+00:00 app[web.1]:         hostname: 'api.twitter.com',
+2016-08-18T23:20:49.111611+00:00 app[web.1]:         hash: null,
+2016-08-18T23:20:49.111612+00:00 app[web.1]:         search: null,
+2016-08-18T23:20:49.111612+00:00 app[web.1]:         query: null,
+2016-08-18T23:20:49.111613+00:00 app[web.1]:         pathname: '/1.1/direct_messages/new.json',
+2016-08-18T23:20:49.111613+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2016-08-18T23:20:49.111614+00:00 app[web.1]:         href: 'https://api.twitter.com/1.1/direct_messages/new.json' },
+2016-08-18T23:20:49.111614+00:00 app[web.1]:      proxy: null,
+2016-08-18T23:20:49.111615+00:00 app[web.1]:      tunnel: true,
+2016-08-18T23:20:49.111615+00:00 app[web.1]:      setHost: true,
+2016-08-18T23:20:49.111158+00:00 app[web.1]:      _connecting: false,
+2016-08-18T23:20:49.111615+00:00 app[web.1]:      originalCookieHeader: undefined,
+2016-08-18T23:20:49.111159+00:00 app[web.1]:      _hadError: false,
+2016-08-18T23:20:49.111159+00:00 app[web.1]:      _handle: null,
+2016-08-18T23:20:49.111160+00:00 app[web.1]:      _parent: null,
+2016-08-18T23:20:49.111160+00:00 app[web.1]:      _host: 'api.twitter.com',
+2016-08-18T23:20:49.111161+00:00 app[web.1]:      _readableState: 
+2016-08-18T23:20:49.111161+00:00 app[web.1]:       ReadableState {
+2016-08-18T23:20:49.111162+00:00 app[web.1]:         objectMode: false,
+2016-08-18T23:20:49.111616+00:00 app[web.1]:      _disableCookies: true,
+2016-08-18T23:20:49.111616+00:00 app[web.1]:      _jar: undefined,
+2016-08-18T23:20:49.111617+00:00 app[web.1]:      port: 443,
+2016-08-18T23:20:49.111617+00:00 app[web.1]:      host: 'api.twitter.com',
+2016-08-18T23:20:49.111622+00:00 app[web.1]:      body: 'screen_name=GRS_BREGANZE&text=%20Evento%3AProva%20-%20codice%3A%20string%20-%20in%20Nguru-Gashua-Damasak%20Road%2C%20Nigeria%20-%20lat%3A13%2C%20lng%3A12%2C%20alt%3A0%20-%20base%3Astring%2C%20rssi%3Aundefineddbm%2C%20snr%3Astring',
+2016-08-18T23:20:49.111623+00:00 app[web.1]:      path: '/1.1/direct_messages/new.json',
+2016-08-18T23:20:49.111624+00:00 app[web.1]:      httpModule: 
+2016-08-18T23:20:49.111624+00:00 app[web.1]:       { Server: [Object],
+2016-08-18T23:20:49.111162+00:00 app[web.1]:         highWaterMark: 16384,
+2016-08-18T23:20:49.111163+00:00 app[web.1]:         buffer: [],
+2016-08-18T23:20:49.111163+00:00 app[web.1]:         length: 0,
+2016-08-18T23:20:49.111164+00:00 app[web.1]:         pipes: null,
+2016-08-18T23:20:49.111164+00:00 app[web.1]:         pipesCount: 0,
+2016-08-18T23:20:49.111165+00:00 app[web.1]:         flowing: true,
+2016-08-18T23:20:49.111165+00:00 app[web.1]:         ended: false,
+2016-08-18T23:20:49.111166+00:00 app[web.1]:         endEmitted: false,
+2016-08-18T23:20:49.111166+00:00 app[web.1]:         reading: true,
+2016-08-18T23:20:49.111625+00:00 app[web.1]:         createServer: [Function],
+2016-08-18T23:20:49.111625+00:00 app[web.1]:         globalAgent: [Object],
+2016-08-18T23:20:49.111626+00:00 app[web.1]:         Agent: [Object],
+2016-08-18T23:20:49.111626+00:00 app[web.1]:         request: [Function],
+2016-08-18T23:20:49.111627+00:00 app[web.1]:         get: [Function] },
+2016-08-18T23:20:49.111627+00:00 app[web.1]:      agentClass: { [Function: Agent] super_: [Object] },
+2016-08-18T23:20:49.111628+00:00 app[web.1]:      agent: 
+2016-08-18T23:20:49.111628+00:00 app[web.1]:       Agent {
+2016-08-18T23:20:49.111629+00:00 app[web.1]:         domain: null,
+2016-08-18T23:20:49.111629+00:00 app[web.1]:         _events: [Object],
+2016-08-18T23:20:49.111630+00:00 app[web.1]:         _eventsCount: 1,
+2016-08-18T23:20:49.111630+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111630+00:00 app[web.1]:         defaultPort: 443,
+2016-08-18T23:20:49.111631+00:00 app[web.1]:         protocol: 'https:',
+2016-08-18T23:20:49.111167+00:00 app[web.1]:         sync: false,
+2016-08-18T23:20:49.111167+00:00 app[web.1]:         needReadable: true,
+2016-08-18T23:20:49.111168+00:00 app[web.1]:         emittedReadable: false,
+2016-08-18T23:20:49.111168+00:00 app[web.1]:         readableListening: false,
+2016-08-18T23:20:49.111169+00:00 app[web.1]:         resumeScheduled: false,
+2016-08-18T23:20:49.111169+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-08-18T23:20:49.111170+00:00 app[web.1]:         ranOut: false,
+2016-08-18T23:20:49.111170+00:00 app[web.1]:         awaitDrain: 0,
+2016-08-18T23:20:49.111171+00:00 app[web.1]:         readingMore: true,
+2016-08-18T23:20:49.111631+00:00 app[web.1]:         options: [Object],
+2016-08-18T23:20:49.111632+00:00 app[web.1]:         requests: {},
+2016-08-18T23:20:49.111632+00:00 app[web.1]:         sockets: [Object],
+2016-08-18T23:20:49.111171+00:00 app[web.1]:         decoder: null,
+2016-08-18T23:20:49.111172+00:00 app[web.1]:         encoding: null },
+2016-08-18T23:20:49.111172+00:00 app[web.1]:      readable: false,
+2016-08-18T23:20:49.111633+00:00 app[web.1]:         freeSockets: {},
+2016-08-18T23:20:49.111633+00:00 app[web.1]:         keepAliveMsecs: 1000,
+2016-08-18T23:20:49.111634+00:00 app[web.1]:         keepAlive: false,
+2016-08-18T23:20:49.111634+00:00 app[web.1]:         maxSockets: Infinity,
+2016-08-18T23:20:49.111635+00:00 app[web.1]:         maxFreeSockets: 256,
+2016-08-18T23:20:49.111635+00:00 app[web.1]:         maxCachedSessions: 100,
+2016-08-18T23:20:49.111636+00:00 app[web.1]:         _sessionCache: [Object] },
+2016-08-18T23:20:49.111173+00:00 app[web.1]:      domain: 
+2016-08-18T23:20:49.111173+00:00 app[web.1]:       Domain {
+2016-08-18T23:20:49.111174+00:00 app[web.1]:         domain: null,
+2016-08-18T23:20:49.111174+00:00 app[web.1]:         _events: {},
+2016-08-18T23:20:49.111175+00:00 app[web.1]:         _eventsCount: 0,
+2016-08-18T23:20:49.111175+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111176+00:00 app[web.1]:         members: [Object],
+2016-08-18T23:20:49.111636+00:00 app[web.1]:      _started: true,
+2016-08-18T23:20:49.111637+00:00 app[web.1]:      href: 'https://api.twitter.com/1.1/direct_messages/new.json',
+2016-08-18T23:20:49.111637+00:00 app[web.1]:      req: 
+2016-08-18T23:20:49.111637+00:00 app[web.1]:       ClientRequest {
+2016-08-18T23:20:49.111176+00:00 app[web.1]:         oldBind: [Function],
+2016-08-18T23:20:49.111177+00:00 app[web.1]:         bind: [Function] },
+2016-08-18T23:20:49.111638+00:00 app[web.1]:         domain: [Object],
+2016-08-18T23:20:49.111638+00:00 app[web.1]:         _events: [Object],
+2016-08-18T23:20:49.111639+00:00 app[web.1]:         _eventsCount: 4,
+2016-08-18T23:20:49.111177+00:00 app[web.1]:      _maxListeners: undefined,
+2016-08-18T23:20:49.111639+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111640+00:00 app[web.1]:         output: [],
+2016-08-18T23:20:49.111178+00:00 app[web.1]:      _writableState: 
+2016-08-18T23:20:49.111640+00:00 app[web.1]:         outputEncodings: [],
+2016-08-18T23:20:49.111178+00:00 app[web.1]:       WritableState {
+2016-08-18T23:20:49.111641+00:00 app[web.1]:         outputCallbacks: [],
+2016-08-18T23:20:49.111179+00:00 app[web.1]:         objectMode: false,
+2016-08-18T23:20:49.111179+00:00 app[web.1]:         highWaterMark: 16384,
+2016-08-18T23:20:49.111180+00:00 app[web.1]:         needDrain: false,
+2016-08-18T23:20:49.111181+00:00 app[web.1]:         ending: true,
+2016-08-18T23:20:49.111181+00:00 app[web.1]:         ended: true,
+2016-08-18T23:20:49.111182+00:00 app[web.1]:         finished: true,
+2016-08-18T23:20:49.111182+00:00 app[web.1]:         decodeStrings: false,
+2016-08-18T23:20:49.111641+00:00 app[web.1]:         outputSize: 0,
+2016-08-18T23:20:49.111642+00:00 app[web.1]:         writable: true,
+2016-08-18T23:20:49.111642+00:00 app[web.1]:         _last: true,
+2016-08-18T23:20:49.111643+00:00 app[web.1]:         chunkedEncoding: false,
+2016-08-18T23:20:49.111643+00:00 app[web.1]:         shouldKeepAlive: false,
+2016-08-18T23:20:49.111183+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-08-18T23:20:49.111644+00:00 app[web.1]:         useChunkedEncodingByDefault: true,
+2016-08-18T23:20:49.111644+00:00 app[web.1]:         sendDate: false,
+2016-08-18T23:20:49.111183+00:00 app[web.1]:         length: 0,
+2016-08-18T23:20:49.111184+00:00 app[web.1]:         writing: false,
+2016-08-18T23:20:49.111184+00:00 app[web.1]:         corked: 0,
+2016-08-18T23:20:49.111185+00:00 app[web.1]:         sync: false,
+2016-08-18T23:20:49.111185+00:00 app[web.1]:         bufferProcessing: false,
+2016-08-18T23:20:49.111186+00:00 app[web.1]:         onwrite: [Function],
+2016-08-18T23:20:49.111186+00:00 app[web.1]:         writecb: null,
+2016-08-18T23:20:49.111187+00:00 app[web.1]:         writelen: 0,
+2016-08-18T23:20:49.111187+00:00 app[web.1]:         bufferedRequest: null,
+2016-08-18T23:20:49.111645+00:00 app[web.1]:         _removedHeader: [Object],
+2016-08-18T23:20:49.111645+00:00 app[web.1]:         _contentLength: null,
+2016-08-18T23:20:49.111646+00:00 app[web.1]:         _hasBody: true,
+2016-08-18T23:20:49.111646+00:00 app[web.1]:         _trailer: '',
+2016-08-18T23:20:49.111646+00:00 app[web.1]:         finished: true,
+2016-08-18T23:20:49.111647+00:00 app[web.1]:         _headerSent: true,
+2016-08-18T23:20:49.111647+00:00 app[web.1]:         socket: [Object],
+2016-08-18T23:20:49.111648+00:00 app[web.1]:         connection: [Object],
+2016-08-18T23:20:49.111188+00:00 app[web.1]:         lastBufferedRequest: null,
+2016-08-18T23:20:49.111189+00:00 app[web.1]:         pendingcb: 0,
+2016-08-18T23:20:49.111648+00:00 app[web.1]:         _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 229\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="e602521752864868ba8f7735d90765f2",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1471562448",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="BTbM6FRO%2BgDneu9bee40E1ZLQf4%3D"\r\n\r\n',
+2016-08-18T23:20:49.111649+00:00 app[web.1]:         _headers: [Object],
+2016-08-18T23:20:49.111649+00:00 app[web.1]:         _headerNames: [Object],
+2016-08-18T23:20:49.111189+00:00 app[web.1]:         prefinished: true,
+2016-08-18T23:20:49.111190+00:00 app[web.1]:         errorEmitted: false,
+2016-08-18T23:20:49.111190+00:00 app[web.1]:         bufferedRequestCount: 0,
+2016-08-18T23:20:49.111191+00:00 app[web.1]:         corkedRequestsFree: [Object] },
+2016-08-18T23:20:49.111192+00:00 app[web.1]:      writable: false,
+2016-08-18T23:20:49.111192+00:00 app[web.1]:      allowHalfOpen: false,
+2016-08-18T23:20:49.111197+00:00 app[web.1]:      destroyed: true,
+2016-08-18T23:20:49.111198+00:00 app[web.1]:      _bytesDispatched: 749,
+2016-08-18T23:20:49.111198+00:00 app[web.1]:      _sockname: null,
+2016-08-18T23:20:49.111198+00:00 app[web.1]:      _pendingData: null,
+2016-08-18T23:20:49.111199+00:00 app[web.1]:      _pendingEncoding: '',
+2016-08-18T23:20:49.111200+00:00 app[web.1]:      server: undefined,
+2016-08-18T23:20:49.111200+00:00 app[web.1]:      _server: null,
+2016-08-18T23:20:49.111201+00:00 app[web.1]:      ssl: null,
+2016-08-18T23:20:49.111201+00:00 app[web.1]:      _requestCert: true,
+2016-08-18T23:20:49.111202+00:00 app[web.1]:      _rejectUnauthorized: true,
+2016-08-18T23:20:49.111202+00:00 app[web.1]:      parser: null,
+2016-08-18T23:20:49.111203+00:00 app[web.1]:      _httpMessage: 
+2016-08-18T23:20:49.111650+00:00 app[web.1]:         _onPendingData: null,
+2016-08-18T23:20:49.111650+00:00 app[web.1]:         agent: [Object],
+2016-08-18T23:20:49.111651+00:00 app[web.1]:         socketPath: undefined,
+2016-08-18T23:20:49.111651+00:00 app[web.1]:         method: 'POST',
+2016-08-18T23:20:49.111652+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2016-08-18T23:20:49.111203+00:00 app[web.1]:       ClientRequest {
+2016-08-18T23:20:49.111204+00:00 app[web.1]:         domain: [Object],
+2016-08-18T23:20:49.111204+00:00 app[web.1]:         _events: [Object],
+2016-08-18T23:20:49.111205+00:00 app[web.1]:         _eventsCount: 4,
+2016-08-18T23:20:49.111206+00:00 app[web.1]:         _maxListeners: undefined,
+2016-08-18T23:20:49.111206+00:00 app[web.1]:         output: [],
+2016-08-18T23:20:49.111207+00:00 app[web.1]:         outputEncodings: [],
+2016-08-18T23:20:49.111207+00:00 app[web.1]:         outputCallbacks: [],
+2016-08-18T23:20:49.111208+00:00 app[web.1]:         outputSize: 0,
+2016-08-18T23:20:49.111208+00:00 app[web.1]:         writable: true,
+2016-08-18T23:20:49.111209+00:00 app[web.1]:         _last: true,
+2016-08-18T23:20:49.111209+00:00 app[web.1]:         chunkedEncoding: false,
+2016-08-18T23:20:49.111210+00:00 app[web.1]:         shouldKeepAlive: false,
+2016-08-18T23:20:49.111210+00:00 app[web.1]:         useChunkedEncodingByDefault: true,
+2016-08-18T23:20:49.111211+00:00 app[web.1]:         sendDate: false,
+2016-08-18T23:20:49.111212+00:00 app[web.1]:         _removedHeader: [Object],
+2016-08-18T23:20:49.111212+00:00 app[web.1]:         _contentLength: null,
+2016-08-18T23:20:49.111213+00:00 app[web.1]:         _hasBody: true,
+2016-08-18T23:20:49.111213+00:00 app[web.1]:         _trailer: '',
+2016-08-18T23:20:49.111214+00:00 app[web.1]:         finished: true,
+2016-08-18T23:20:49.111214+00:00 app[web.1]:         _headerSent: true,
+2016-08-18T23:20:49.111215+00:00 app[web.1]:         socket: [Circular],
+2016-08-18T23:20:49.111215+00:00 app[web.1]:         connection: [Circular],
+2016-08-18T23:20:49.111216+00:00 app[web.1]:         _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 229\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="e602521752864868ba8f7735d90765f2",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1471562448",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="BTbM6FRO%2BgDneu9bee40E1ZLQf4%3D"\r\n\r\n',
+2016-08-18T23:20:49.111217+00:00 app[web.1]:         _headers: [Object],
+2016-08-18T23:20:49.111217+00:00 app[web.1]:         _headerNames: [Object],
+2016-08-18T23:20:49.111218+00:00 app[web.1]:         _onPendingData: null,
+2016-08-18T23:20:49.111218+00:00 app[web.1]:         agent: [Object],
+2016-08-18T23:20:49.111219+00:00 app[web.1]:         socketPath: undefined,
+2016-08-18T23:20:49.111219+00:00 app[web.1]:         method: 'POST',
+2016-08-18T23:20:49.111220+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2016-08-18T23:20:49.111220+00:00 app[web.1]:         onSocket: [Function],
+2016-08-18T23:20:49.111221+00:00 app[web.1]:         parser: null,
+2016-08-18T23:20:49.111222+00:00 app[web.1]:         res: [Circular] },
+2016-08-18T23:20:49.111222+00:00 app[web.1]:      read: [Function],
+2016-08-18T23:20:49.111223+00:00 app[web.1]:      _consuming: true,
+2016-08-18T23:20:49.111223+00:00 app[web.1]:      _idleNext: null,
+2016-08-18T23:20:49.111224+00:00 app[web.1]:      _idlePrev: null,
+2016-08-18T23:20:49.111224+00:00 app[web.1]:      _idleTimeout: -1 },
+2016-08-18T23:20:49.111225+00:00 app[web.1]:   httpVersionMajor: 1,
+2016-08-18T23:20:49.111225+00:00 app[web.1]:   httpVersionMinor: 1,
+2016-08-18T23:20:49.111226+00:00 app[web.1]:   httpVersion: '1.1',
+2016-08-18T23:20:49.111226+00:00 app[web.1]:   complete: true,
+2016-08-18T23:20:49.111227+00:00 app[web.1]:   headers: 
+2016-08-18T23:20:49.111228+00:00 app[web.1]:    { 'cache-control': 'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
+2016-08-18T23:20:49.111228+00:00 app[web.1]:      connection: 'close',
+2016-08-18T23:20:49.111229+00:00 app[web.1]:      'content-disposition': 'attachment; filename=json.json',
+2016-08-18T23:20:49.111230+00:00 app[web.1]:      'content-length': '2962',
+2016-08-18T23:20:49.111230+00:00 app[web.1]:      'content-type': 'application/json;charset=utf-8',
+2016-08-18T23:20:49.111231+00:00 app[web.1]:      date: 'Thu, 18 Aug 2016 23:20:48 GMT',
+2016-08-18T23:20:49.111231+00:00 app[web.1]:      expires: 'Tue, 31 Mar 1981 05:00:00 GMT',
+2016-08-18T23:20:49.111232+00:00 app[web.1]:      'last-modified': 'Thu, 18 Aug 2016 23:20:48 GMT',
+2016-08-18T23:20:49.111233+00:00 app[web.1]:      pragma: 'no-cache',
+2016-08-18T23:20:49.111233+00:00 app[web.1]:      server: 'tsa_b',
+2016-08-18T23:20:49.111234+00:00 app[web.1]:      'set-cookie': 
+2016-08-18T23:20:49.111234+00:00 app[web.1]:       [ 'lang=it; Path=/',
+2016-08-18T23:20:49.111235+00:00 app[web.1]:         'guest_id=v1%3A147156244891140789; Domain=.twitter.com; Path=/; Expires=Sat, 18-Aug-2018 23:20:48 UTC' ],
+2016-08-18T23:20:49.111236+00:00 app[web.1]:      status: '200 OK',
+2016-08-18T23:20:49.111237+00:00 app[web.1]:      'strict-transport-security': 'max-age=631138519',
+2016-08-18T23:20:49.111237+00:00 app[web.1]:      'x-access-level': 'read-write-directmessages',
+2016-08-18T23:20:49.111238+00:00 app[web.1]:      'x-connection-hash': '085e9d04df71199be0b13e06f729ae63',
+2016-08-18T23:20:49.111238+00:00 app[web.1]:      'x-content-type-options': 'nosniff',
+2016-08-18T23:20:49.111239+00:00 app[web.1]:      'x-frame-options': 'SAMEORIGIN',
+2016-08-18T23:20:49.111239+00:00 app[web.1]:      'x-response-time': '93',
+2016-08-18T23:20:49.111240+00:00 app[web.1]:      'x-transaction': '00abeccb00d0e8a4',
+2016-08-18T23:20:49.111241+00:00 app[web.1]:      'x-tsa-request-body-time': '1',
+2016-08-18T23:20:49.111241+00:00 app[web.1]:      'x-twitter-response-tags': 'BouncerCompliant',
+2016-08-18T23:20:49.111242+00:00 app[web.1]:      'x-xss-protection': '1; mode=block' },
+2016-08-18T23:20:49.111242+00:00 app[web.1]:   rawHeaders: 
+2016-08-18T23:20:49.111243+00:00 app[web.1]:    [ 'cache-control',
+2016-08-18T23:20:49.111243+00:00 app[web.1]:      'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
+2016-08-18T23:20:49.111244+00:00 app[web.1]:      'connection',
+2016-08-18T23:20:49.111244+00:00 app[web.1]:      'close',
+2016-08-18T23:20:49.111245+00:00 app[web.1]:      'content-disposition',
+2016-08-18T23:20:49.111246+00:00 app[web.1]:      'attachment; filename=json.json',
+2016-08-18T23:20:49.111246+00:00 app[web.1]:      'content-length',
+2016-08-18T23:20:49.111246+00:00 app[web.1]:      '2962',
+2016-08-18T23:20:49.111247+00:00 app[web.1]:      'content-type',
+2016-08-18T23:20:49.111248+00:00 app[web.1]:      'application/json;charset=utf-8',
+2016-08-18T23:20:49.111248+00:00 app[web.1]:      'date',
+2016-08-18T23:20:49.111249+00:00 app[web.1]:      'Thu, 18 Aug 2016 23:20:48 GMT',
+2016-08-18T23:20:49.111249+00:00 app[web.1]:      'expires',
+2016-08-18T23:20:49.111250+00:00 app[web.1]:      'Tue, 31 Mar 1981 05:00:00 GMT',
+2016-08-18T23:20:49.111250+00:00 app[web.1]:      'last-modified',
+2016-08-18T23:20:49.111251+00:00 app[web.1]:      'Thu, 18 Aug 2016 23:20:48 GMT',
+2016-08-18T23:20:49.111252+00:00 app[web.1]:      'pragma',
+2016-08-18T23:20:49.111253+00:00 app[web.1]:      'no-cache',
+2016-08-18T23:20:49.111254+00:00 app[web.1]:      'server',
+2016-08-18T23:20:49.111254+00:00 app[web.1]:      'tsa_b',
+2016-08-18T23:20:49.111255+00:00 app[web.1]:      'set-cookie',
+2016-08-18T23:20:49.111256+00:00 app[web.1]:      'lang=it; Path=/',
+2016-08-18T23:20:49.111256+00:00 app[web.1]:      'set-cookie',
+2016-08-18T23:20:49.111257+00:00 app[web.1]:      'guest_id=v1%3A147156244891140789; Domain=.twitter.com; Path=/; Expires=Sat, 18-Aug-2018 23:20:48 UTC',
+2016-08-18T23:20:49.111258+00:00 app[web.1]:      'status',
+2016-08-18T23:20:49.111258+00:00 app[web.1]:      '200 OK',
+2016-08-18T23:20:49.111259+00:00 app[web.1]:      'strict-transport-security',
+2016-08-18T23:20:49.111259+00:00 app[web.1]:      'max-age=631138519',
+2016-08-18T23:20:49.111260+00:00 app[web.1]:      'x-access-level',
+2016-08-18T23:20:49.111261+00:00 app[web.1]:      'read-write-directmessages',
+2016-08-18T23:20:49.111262+00:00 app[web.1]:      'x-connection-hash',
+2016-08-18T23:20:49.111262+00:00 app[web.1]:      '085e9d04df71199be0b13e06f729ae63',
+2016-08-18T23:20:49.111263+00:00 app[web.1]:      'x-content-type-options',
+2016-08-18T23:20:49.111264+00:00 app[web.1]:      'nosniff',
+2016-08-18T23:21:31.898800+00:00 heroku[router]: at=info method=GET path="/explorer/" host=vast-depths-86252.herokuapp.com request_id=ff2c73ad-93f8-4573-b02e-62fb40e936e5 fwd="95.233.59.235" dyno=web.1 connect=0ms service=28ms status=200 bytes=1198
+2016-08-18T23:21:32.935243+00:00 heroku[router]: at=info method=GET path="/explorer/css/typography.css" host=vast-depths-86252.herokuapp.com request_id=42b3ffbe-0fff-4755-b61b-50915edb54fb fwd="95.233.59.235" dyno=web.1 connect=1ms service=12ms status=200 bytes=857
+2016-08-18T23:21:33.090442+00:00 heroku[router]: at=info method=GET path="/explorer/css/reset.css" host=vast-depths-86252.herokuapp.com request_id=6c5f6b33-93c6-4508-bc50-2c11eae37f70 fwd="95.233.59.235" dyno=web.1 connect=1ms service=8ms status=200 bytes=1083
+2016-08-18T23:21:33.307536+00:00 heroku[router]: at=info method=GET path="/explorer/css/loopbackStyles.css" host=vast-depths-86252.herokuapp.com request_id=00d8a7ce-857d-4dcc-bf12-d705a373da9c fwd="95.233.59.235" dyno=web.1 connect=0ms service=41ms status=200 bytes=2081
+2016-08-18T23:21:33.325869+00:00 heroku[router]: at=info method=GET path="/explorer/lib/jquery.slideto.min.js" host=vast-depths-86252.herokuapp.com request_id=8a5c2267-ac87-402c-8d55-0c48e4d077e7 fwd="95.233.59.235" dyno=web.1 connect=0ms service=22ms status=200 bytes=820
+2016-08-18T23:21:33.301349+00:00 heroku[router]: at=info method=GET path="/explorer/css/screen.css" host=vast-depths-86252.herokuapp.com request_id=01082dd6-f261-4bf1-a953-091abd25032b fwd="95.233.59.235" dyno=web.1 connect=0ms service=45ms status=200 bytes=5777
+2016-08-18T23:21:33.341315+00:00 heroku[router]: at=info method=GET path="/explorer/lib/jquery-1.8.0.min.js" host=vast-depths-86252.herokuapp.com request_id=6f487bc3-f7fe-4303-b7e6-31cdee6a8a52 fwd="95.233.59.235" dyno=web.1 connect=0ms service=38ms status=200 bytes=33622
+2016-08-18T23:21:33.297436+00:00 heroku[router]: at=info method=GET path="/explorer/css/print.css" host=vast-depths-86252.herokuapp.com request_id=bb371c92-6bc4-4e58-8da7-fb4aa3518ed1 fwd="95.233.59.235" dyno=web.1 connect=0ms service=42ms status=200 bytes=5363
+2016-08-18T23:21:33.283056+00:00 heroku[router]: at=info method=GET path="/explorer/lib/jquery.wiggle.min.js" host=vast-depths-86252.herokuapp.com request_id=176753fa-ee6b-4416-904b-b16520db28c6 fwd="95.233.59.235" dyno=web.1 connect=0ms service=39ms status=200 bytes=1213
+2016-08-18T23:21:33.475664+00:00 heroku[router]: at=info method=GET path="/explorer/lib/jquery.ba-bbq.min.js" host=vast-depths-86252.herokuapp.com request_id=a5b64490-2c1f-46b7-b371-7265f16ace7e fwd="95.233.59.235" dyno=web.1 connect=0ms service=16ms status=200 bytes=2575
+2016-08-18T23:21:33.493236+00:00 heroku[router]: at=info method=GET path="/explorer/lib/underscore-min.js" host=vast-depths-86252.herokuapp.com request_id=7a3fdb13-96c3-4869-9317-ff021067b076 fwd="95.233.59.235" dyno=web.1 connect=1ms service=23ms status=200 bytes=5801
+2016-08-18T23:21:33.489504+00:00 heroku[router]: at=info method=GET path="/explorer/lib/backbone-min.js" host=vast-depths-86252.herokuapp.com request_id=7d64ed15-31cb-4a45-b9de-3f96462d9b67 fwd="95.233.59.235" dyno=web.1 connect=0ms service=29ms status=200 bytes=7339
+2016-08-18T23:21:33.469938+00:00 heroku[router]: at=info method=GET path="/explorer/lib/handlebars-2.0.0.js" host=vast-depths-86252.herokuapp.com request_id=7e8ed095-4dc7-43c7-9063-3f1f8fdfd82b fwd="95.233.59.235" dyno=web.1 connect=0ms service=23ms status=200 bytes=16181
+2016-08-18T23:21:33.670556+00:00 heroku[router]: at=info method=GET path="/explorer/lib/marked.js" host=vast-depths-86252.herokuapp.com request_id=f6761e34-9f1a-47da-acef-aef709acca46 fwd="95.233.59.235" dyno=web.1 connect=0ms service=13ms status=200 bytes=7559
+2016-08-18T23:21:33.676175+00:00 heroku[router]: at=info method=GET path="/explorer/lib/loadSwaggerUI.js" host=vast-depths-86252.herokuapp.com request_id=c1088fbf-f9ab-4c1d-99af-7c36324dd2d5 fwd="95.233.59.235" dyno=web.1 connect=0ms service=24ms status=200 bytes=1860
+2016-08-18T23:21:33.642813+00:00 heroku[router]: at=info method=GET path="/explorer/lib/highlight.7.3.pack.js" host=vast-depths-86252.herokuapp.com request_id=f6f11c7c-caf8-42b7-a3d7-2370557add2f fwd="95.233.59.235" dyno=web.1 connect=0ms service=16ms status=200 bytes=3710
+2016-08-18T23:21:33.814799+00:00 heroku[router]: at=info method=GET path="/explorer/swagger-ui.js" host=vast-depths-86252.herokuapp.com request_id=eb5d1933-f776-4a6d-a62e-790ed998e869 fwd="95.233.59.235" dyno=web.1 connect=1ms service=313ms status=200 bytes=582927
+2016-08-18T23:21:33.693067+00:00 heroku[router]: at=info method=GET path="/explorer/lib/swagger-oauth.js" host=vast-depths-86252.herokuapp.com request_id=833f5148-404a-4d16-a607-268892a31a77 fwd="95.233.59.235" dyno=web.1 connect=0ms service=32ms status=200 bytes=3358
+2016-08-18T23:21:35.640774+00:00 heroku[router]: at=info method=GET path="/explorer/config.json" host=vast-depths-86252.herokuapp.com request_id=b6d5efed-ce7c-4244-9b90-3d2a60f70abc fwd="95.233.59.235" dyno=web.1 connect=0ms service=5ms status=200 bytes=399
+2016-08-18T23:21:35.628725+00:00 heroku[router]: at=info method=GET path="/explorer/images/logo_small.png" host=vast-depths-86252.herokuapp.com request_id=f6cabe07-fc6e-488d-9dce-3164a8987806 fwd="95.233.59.235" dyno=web.1 connect=1ms service=4ms status=200 bytes=3103
+2016-08-18T23:21:36.021182+00:00 heroku[router]: at=info method=GET path="/explorer/swagger.json" host=vast-depths-86252.herokuapp.com request_id=8543374e-8b4a-4a40-b2b5-ec40eddf9b9e fwd="95.233.59.235" dyno=web.1 connect=0ms service=5ms status=200 bytes=2503
+2016-08-18T23:21:38.820737+00:00 heroku[router]: at=info method=GET path="/explorer/fonts/droid-sans-v6-latin-regular.woff2" host=vast-depths-86252.herokuapp.com request_id=bf2db291-6c41-49e0-9acf-e9d5fb187dff fwd="95.233.59.235" dyno=web.1 connect=0ms service=3ms status=200 bytes=11741
+2016-08-18T23:58:55.190731+00:00 heroku[web.1]: Idling
+2016-08-18T23:58:55.191337+00:00 heroku[web.1]: State changed from up to down
+2016-08-18T23:58:59.079245+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-18T23:59:00.168491+00:00 heroku[web.1]: Process exited with status 143

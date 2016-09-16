@@ -5,7 +5,6 @@ var stdout = require('stdout-stream');
 var sleep = require('thread-sleep');
 ///var wait=require('wait.for');
 //var moment = require('moment-timezone');
-
 require('date-utils');
 var NodeGeocoder = require('node-geocoder');
 
@@ -13,7 +12,7 @@ var options = {
   provider: 'google',
   // Optional depending on the providers
   httpAdapter: 'https', // Default
-  apiKey: 'AIzaSyDMYtkCOaCIUcES2QDNDYIMUOjfldouwtc', // YOUR_API_KEY for Geocoding Google Premier
+  apiKey: 'AIzaSyDMYtkCOaCIUcES2QDNDYIMUOjfldouwtc', /// YOUR_API_KEY for Geocoding Google Premier
   formatter: null         // 'gpx', 'string', ...
 };
 
@@ -33,6 +32,7 @@ var address_new;
 var address_last;
 var evento;
 var wait_address;
+var owner_things;
 var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consumer_secret: process.env.TWITTER_CONSUMER_SECRET, access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY, access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET, });
 
 var myCallback = function(err, data) {
@@ -98,7 +98,12 @@ var usingItNow = function(callback) {
        console.log('address_last: '+address_last);
        var dataora = new Date();
        console.log('dataora : '+dataora);
-       client.post('/direct_messages/new.json', {screen_name: 'GRS_BREGANZE', 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ' - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);console.log('Messaggio Twitter');});
+
+       if(name_convert == 'IOT_02')
+          owner_things = 'poli_dan';
+       if(name_convert == 'IOT_01')
+          owner_things = 'GRS_BREGANZE';
+       client.post('/direct_messages/new.json', {screen_name: owner_things, 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ' - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);console.log('Messaggio Twitter');});
        //client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + name_convert + " - in " + address_last + " - lat:" +  +lat_convert + ", lng:" +  lon_convert +  ", alt:" +  alt_convert  + " - base:" + station_convert + ", rssi:" + rssi_convert + "dbm, snr:" + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response); console.log('Stato Twitter');});
     });
 

@@ -99,10 +99,14 @@ var usingItNow = function(callback) {
        var dataora = new Date();
        console.log('dataora : '+dataora);
 
-       if(name_convert == 'IOT_02')
-          owner_things = 'poli_dan';
+       owner_things = 'GRS_BREGANZE'
        if(name_convert == 'IOT_01')
           owner_things = 'GRS_BREGANZE';
+       if(name_convert == 'IOT_02')
+          owner_things = 'poli_dan';
+       if(name_convert == 'IOT_03')
+          owner_things = 'GRS_BREGANZE';
+          
        client.post('/direct_messages/new.json', {screen_name: owner_things, 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ' - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);console.log('Messaggio Twitter');});
        //client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + name_convert + " - in " + address_last + " - lat:" +  +lat_convert + ", lng:" +  lon_convert +  ", alt:" +  alt_convert  + " - base:" + station_convert + ", rssi:" + rssi_convert + "dbm, snr:" + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response); console.log('Stato Twitter');});
     });

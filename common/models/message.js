@@ -32,6 +32,7 @@ var evt_convert;
 var address_new;
 var address_last;
 var evento;
+var temperature;
 var wait_address;
 var owner_things;
 var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consumer_secret: process.env.TWITTER_CONSUMER_SECRET, access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY, access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET, });
@@ -62,7 +63,7 @@ var usingItNow = function(callback) {
        console.log('address risolto : '+address_new);
     }
     console.log(res);
-    evento =  alt_convert & 0xFF00;
+    evento =  evt_convert & 0xFF00;
     switch (evento)
     {
 		case 0x0100: {
@@ -90,7 +91,8 @@ var usingItNow = function(callback) {
                   evento = 'Prova';
 		}
        }
-       alt_convert =  alt_convert & 0x00FF;
+       temperature =   evt_convert & 0x00FF;
+       //alt_convert =  alt_convert & 0x00FF;
        console.log('passo TTTTTTTTTTTTTT');
 
        if(address_last == null)
@@ -108,7 +110,7 @@ var usingItNow = function(callback) {
        if(name_convert == 'IOT_03')
           owner_things = 'GRS_BREGANZE';
 
-       client.post('/direct_messages/new.json', {screen_name: owner_things, 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ', temp:' +  alt_convert + '°C - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);console.log('Messaggio Twitter');});
+       client.post('/direct_messages/new.json', {screen_name: owner_things, 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ', temp:' +  temperature + 'C - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);console.log('Messaggio Twitter');});
        //client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + name_convert + " - in " + address_last + " - lat:" +  +lat_convert + ", lng:" +  lon_convert +  ", alt:" +  alt_convert  + " - base:" + station_convert + ", rssi:" + rssi_convert + "dbm, snr:" + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response); console.log('Stato Twitter');});
     });
 
@@ -149,6 +151,7 @@ module.exports = function(Message)
       lat_convert = message.lat;
       lon_convert = message.lon;
       alt_convert = message.alt;
+      evt_convert = message.event;
       console.log('passo 11111111111');
       address_new = null;
       wait_address = true;

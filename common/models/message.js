@@ -28,6 +28,7 @@ var station_convert;
 var lat_convert;
 var lon_convert;
 var alt_convert;
+var evt_convert;
 var address_new;
 var address_last;
 var evento;
@@ -106,8 +107,8 @@ var usingItNow = function(callback) {
           owner_things = 'poli_dan';
        if(name_convert == 'IOT_03')
           owner_things = 'GRS_BREGANZE';
-          
-       client.post('/direct_messages/new.json', {screen_name: owner_things, 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ' - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);console.log('Messaggio Twitter');});
+
+       client.post('/direct_messages/new.json', {screen_name: owner_things, 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ', temp:' +  alt_convert + '°C - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);console.log('Messaggio Twitter');});
        //client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + name_convert + " - in " + address_last + " - lat:" +  +lat_convert + ", lng:" +  lon_convert +  ", alt:" +  alt_convert  + " - base:" + station_convert + ", rssi:" + rssi_convert + "dbm, snr:" + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response); console.log('Stato Twitter');});
     });
 

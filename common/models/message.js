@@ -106,7 +106,7 @@ var usingItNow = function(callback) {
        if(name_convert == 'IOT_01')
           owner_things = 'GRS_BREGANZE';
        if(name_convert == 'IOT_02')
-          owner_things = 'poli_dan';
+          owner_things = 'GRS_BREGANZE';
        if(name_convert == 'IOT_03')
           owner_things = 'GRS_BREGANZE';
 

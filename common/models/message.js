@@ -152,7 +152,7 @@ module.exports = function(Message)
       lon_convert = message.lon;
       alt_convert = message.alt;
       evt_convert = message.event;
-      console.log('passo 11111111111');
+      console.log('passo 222222222222');
       address_new = null;
       wait_address = true;
       usingItNow(myCallback)

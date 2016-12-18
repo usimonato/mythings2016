@@ -2279,3 +2279,105 @@
 2016-09-18T14:39:56.859264+00:00 app[web.1]:   read: [Function],
 2016-09-18T14:39:56.859269+00:00 app[web.1]:   body: '{"id":777517514934878212,"id_str":"777517514934878212","text":"Evento:Prova - codice: IOT_03 - in Via Don A. Battistella, 57, 36042 Breganze VI, Italy - lat:45.702824, lng:11.564852, alt:0, temp:24C - base:23DA, rssi:-140.00dbm, snr:10.74","sender":{"id":762367617407545344,"id_str":"762367617407545344","name":"usthings2016","screen_name":"usthings2016","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":2,"friends_count":2,"listed_count":0,"created_at":"Sun Aug 07 19:19:38 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":42,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"sender_id":762367617407545344,"sender_id_str":"762367617407545344","sender_screen_name":"usthings2016","recipient":{"id":757327116518191104,"id_str":"757327116518191104","name":"GRS Breganze","screen_name":"GRS_Breganze","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1,"friends_count":1,"listed_count":0,"created_at":"Sun Jul 24 21:30:29 +0000 2016","favourites_count":1,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":7,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":true,"follow_request_sent":false,"notifications":false},"recipient_id":757327116518191104,"recipient_id_str":"757327116518191104","recipient_screen_name":"GRS_Breganze","created_at":"Sun Sep 18 14:39:55 +0000 2016","entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]}}' }
 2016-09-18T14:39:56.859270+00:00 app[web.1]: Messaggio Twitter
+2016-12-18T15:44:57.344098+00:00 app[web.1]:         shouldKeepAlive: false,
+2016-12-18T15:44:57.344098+00:00 app[web.1]:         useChunkedEncodingByDefault: true,
+2016-12-18T15:44:57.344099+00:00 app[web.1]:         sendDate: false,
+2016-12-18T15:44:57.344099+00:00 app[web.1]:         _removedHeader: [Object],
+2016-12-18T15:44:57.344100+00:00 app[web.1]:         _contentLength: null,
+2016-12-18T15:44:57.344100+00:00 app[web.1]:         _hasBody: true,
+2016-12-18T15:44:57.344101+00:00 app[web.1]:         _trailer: '',
+2016-12-18T15:44:57.344101+00:00 app[web.1]:         finished: true,
+2016-12-18T15:44:57.344102+00:00 app[web.1]:         _headerSent: true,
+2016-12-18T15:44:57.344102+00:00 app[web.1]:         socket: [Object],
+2016-12-18T15:44:57.344103+00:00 app[web.1]:         connection: [Object],
+2016-12-18T15:44:57.344104+00:00 app[web.1]:         _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 284\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="24dcd127930b4b1ea0384e9cdf603e30",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1482075897",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="KJoWa6GFVBJ73hAzHAQ%2BMeIlabo%3D"\r\n\r\n',
+2016-12-18T15:44:57.344104+00:00 app[web.1]:         _headers: [Object],
+2016-12-18T15:44:57.344105+00:00 app[web.1]:         _headerNames: [Object],
+2016-12-18T15:44:57.344105+00:00 app[web.1]:         _onPendingData: null,
+2016-12-18T15:44:57.344105+00:00 app[web.1]:         agent: [Object],
+2016-12-18T15:44:57.344143+00:00 app[web.1]:         socketPath: undefined,
+2016-12-18T15:44:57.344145+00:00 app[web.1]:         method: 'POST',
+2016-12-18T15:44:57.344146+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2016-12-18T15:44:57.344150+00:00 app[web.1]:         onSocket: [Function],
+2016-12-18T15:44:57.344151+00:00 app[web.1]:         parser: null,
+2016-12-18T15:44:57.344151+00:00 app[web.1]:         res: [Circular] },
+2016-12-18T15:44:57.344152+00:00 app[web.1]:      ntick: true,
+2016-12-18T15:44:57.344152+00:00 app[web.1]:      response: [Circular],
+2016-12-18T15:44:57.344153+00:00 app[web.1]:      originalHost: 'api.twitter.com',
+2016-12-18T15:44:57.344153+00:00 app[web.1]:      originalHostHeaderName: 'host',
+2016-12-18T15:44:57.344154+00:00 app[web.1]:      responseContent: [Circular],
+2016-12-18T15:44:57.344154+00:00 app[web.1]:      _destdata: true,
+2016-12-18T15:44:57.344155+00:00 app[web.1]:      _ended: true,
+2016-12-18T15:44:57.344156+00:00 app[web.1]:   toJSON: [Function: responseToJSON],
+2016-12-18T15:44:57.344155+00:00 app[web.1]:      _callbackCalled: true },
+2016-12-18T15:44:57.344156+00:00 app[web.1]:   caseless: 
+2016-12-18T15:44:57.344157+00:00 app[web.1]:    Caseless {
+2016-12-18T15:44:57.344157+00:00 app[web.1]:      dict: 
+2016-12-18T15:44:57.344158+00:00 app[web.1]:       { 'cache-control': 'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
+2016-12-18T15:44:57.344158+00:00 app[web.1]:         connection: 'close',
+2016-12-18T15:44:57.344159+00:00 app[web.1]:         'content-disposition': 'attachment; filename=json.json',
+2016-12-18T15:44:57.344159+00:00 app[web.1]:         'content-length': '3184',
+2016-12-18T15:44:57.344160+00:00 app[web.1]:         'content-type': 'application/json;charset=utf-8',
+2016-12-18T15:44:57.344160+00:00 app[web.1]:         date: 'Sun, 18 Dec 2016 15:44:57 GMT',
+2016-12-18T15:44:57.344161+00:00 app[web.1]:         expires: 'Tue, 31 Mar 1981 05:00:00 GMT',
+2016-12-18T15:44:57.344161+00:00 app[web.1]:         pragma: 'no-cache',
+2016-12-18T15:44:57.344162+00:00 app[web.1]:         server: 'tsa_b',
+2016-12-18T15:44:57.344162+00:00 app[web.1]:         'set-cookie': [Object],
+2016-12-18T15:44:57.344161+00:00 app[web.1]:         'last-modified': 'Sun, 18 Dec 2016 15:44:57 GMT',
+2016-12-18T15:44:57.344163+00:00 app[web.1]:         status: '200 OK',
+2016-12-18T15:44:57.344163+00:00 app[web.1]:         'strict-transport-security': 'max-age=631138519',
+2016-12-18T15:44:57.344165+00:00 app[web.1]:         'x-content-type-options': 'nosniff',
+2016-12-18T15:44:57.344164+00:00 app[web.1]:         'x-access-level': 'read-write-directmessages',
+2016-12-18T15:44:57.344166+00:00 app[web.1]:         'x-response-time': '123',
+2016-12-18T15:44:57.344164+00:00 app[web.1]:         'x-connection-hash': 'a7a891b322f2fc4ca953418265413105',
+2016-12-18T15:44:57.344165+00:00 app[web.1]:         'x-frame-options': 'SAMEORIGIN',
+2016-12-18T15:44:57.344166+00:00 app[web.1]:         'x-transaction': '0014a45900ab627f',
+2016-12-18T15:44:57.344167+00:00 app[web.1]:         'x-tsa-request-body-time': '1',
+2016-12-18T15:44:57.344167+00:00 app[web.1]:         'x-twitter-response-tags': 'BouncerCompliant',
+2016-12-18T15:44:57.344168+00:00 app[web.1]:         'x-xss-protection': '1; mode=block' } },
+2016-12-18T15:44:57.344168+00:00 app[web.1]:   read: [Function],
+2016-12-18T15:44:57.344173+00:00 app[web.1]:   body: '{"id":810511174232051715,"id_str":"810511174232051715","text":"Evento:Prova - codice: IOT_02 - in Via Don A. Battistella, 68, 36042 Breganze VI, Italy - lat:45.702896, lng:11.564733, alt:630, temp:0C - base:284E, rssi:-133.00dbm, snr:8.74","sender":{"id":762367617407545344,"id_str":"762367617407545344","name":"usthings2016","screen_name":"usthings2016","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":2,"friends_count":1,"listed_count":0,"created_at":"Sun Aug 07 19:19:38 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":42,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"sender_id":762367617407545344,"sender_id_str":"762367617407545344","sender_screen_name":"usthings2016","recipient":{"id":11325942,"id_str":"11325942","name":"Daniele","screen_name":"poli_dan","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":true,"followers_count":31,"friends_count":17,"listed_count":0,"created_at":"Wed Dec 19 06:41:11 +0000 2007","favourites_count":0,"utc_offset":3600,"time_zone":"Rome","geo_enabled":false,"verified":false,"statuses_count":9,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\\/\\/abs.twimg.com\\/images\\/themes\\/theme5\\/bg.gif","profile_background_image_url_https":"https:\\/\\/abs.twimg.com\\/images\\/themes\\/theme5\\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\\/\\/pbs.twimg.com\\/profile_images\\/776883174026674176\\/ccbshcO-_normal.jpg","profile_image_url_https":"https:\\/\\/pbs.twimg.com\\/profile_images\\/776883174026674176\\/ccbshcO-_normal.jpg","profile_banner_url":"https:\\/\\/pbs.twimg.com\\/profile_banners\\/11325942\\/1474058482","profile_link_color":"FAB81E","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"recipient_id":11325942,"recipient_id_str":"11325942","recipient_screen_name":"poli_dan","created_at":"Sun Dec 18 15:44:57 +0000 2016","entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]}}' }
+2016-12-18T15:44:57.344174+00:00 app[web.1]: Messaggio Twitter
+2016-12-18T16:07:34.569823+00:00 heroku[slug-compiler]: Slug compilation started
+2016-12-18T16:07:34.569833+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-12-18T16:07:34.400532+00:00 app[api]: Deploy 8df502c by user u.simonato@libero.it
+2016-12-18T16:07:34.400532+00:00 app[api]: Release v243 created by user u.simonato@libero.it
+2016-12-18T16:07:35.011151+00:00 heroku[web.1]: Restarting
+2016-12-18T16:07:35.012161+00:00 heroku[web.1]: State changed from up to starting
+2016-12-18T16:07:35.767751+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-12-18T16:07:35.901829+00:00 heroku[web.1]: Process exited with status 143
+2016-12-18T16:07:38.590910+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-12-18T16:07:41.380727+00:00 app[web.1]: 
+2016-12-18T16:07:41.380748+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-12-18T16:07:41.380749+00:00 app[web.1]: > node .
+2016-12-18T16:07:41.380750+00:00 app[web.1]: 
+2016-12-18T16:07:43.397564+00:00 app[web.1]: Web server listening at: http://0.0.0.0:41659
+2016-12-18T16:07:43.398343+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:41659/explorer
+2016-12-18T16:07:43.964823+00:00 heroku[web.1]: State changed from starting to up
+2016-12-18T16:11:37.398833+00:00 heroku[router]: at=info method=GET path="/%20deployed%20to%20Heroku" host=vast-depths-86252.herokuapp.com request_id=80b4c5f7-17fa-4e79-8fff-500ea2b17687 fwd="87.14.175.135" dyno=web.1 connect=0ms service=41ms status=404 bytes=449
+2016-12-18T16:11:37.395124+00:00 app[web.1]: Unhandled error for request GET /%20deployed%20to%20Heroku: Error: Cannot GET /%20deployed%20to%20Heroku
+2016-12-18T16:11:37.395154+00:00 app[web.1]:     at raiseUrlNotFoundError (/app/node_modules/loopback/server/middleware/url-not-found.js:20:17)
+2016-12-18T16:11:37.395155+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/loopback/node_modules/express/lib/router/layer.js:95:5)
+2016-12-18T16:11:37.395159+00:00 app[web.1]:     at Function.process_params (/app/node_modules/loopback/node_modules/express/lib/router/index.js:330:12)
+2016-12-18T16:11:37.395157+00:00 app[web.1]:     at trim_prefix (/app/node_modules/loopback/node_modules/express/lib/router/index.js:312:13)
+2016-12-18T16:11:37.395158+00:00 app[web.1]:     at /app/node_modules/loopback/node_modules/express/lib/router/index.js:280:7
+2016-12-18T16:11:37.395161+00:00 app[web.1]:     at Function.handle (/app/node_modules/loopback/node_modules/express/lib/router/index.js:176:3)
+2016-12-18T16:11:37.395159+00:00 app[web.1]:     at next (/app/node_modules/loopback/node_modules/express/lib/router/index.js:271:10)
+2016-12-18T16:11:37.395160+00:00 app[web.1]:     at /app/node_modules/loopback/node_modules/express/lib/router/index.js:618:15
+2016-12-18T16:11:37.395161+00:00 app[web.1]:     at next (/app/node_modules/loopback/node_modules/express/lib/router/index.js:256:14)
+2016-12-18T16:11:37.395162+00:00 app[web.1]:     at router (/app/node_modules/loopback/node_modules/express/lib/router/index.js:46:12)
+2016-12-18T16:11:37.395163+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/loopback/node_modules/express/lib/router/layer.js:95:5)
+2016-12-18T16:11:37.395163+00:00 app[web.1]:     at trim_prefix (/app/node_modules/loopback/node_modules/express/lib/router/index.js:312:13)
+2016-12-18T16:11:37.395164+00:00 app[web.1]:     at /app/node_modules/loopback/node_modules/express/lib/router/index.js:280:7
+2016-12-18T16:11:37.395165+00:00 app[web.1]:     at Function.process_params (/app/node_modules/loopback/node_modules/express/lib/router/index.js:330:12)
+2016-12-18T16:11:37.395166+00:00 app[web.1]:     at nosniff (/app/node_modules/helmet/node_modules/dont-sniff-mimetype/index.js:4:5)
+2016-12-18T16:11:37.395166+00:00 app[web.1]:     at next (/app/node_modules/loopback/node_modules/express/lib/router/index.js:271:10)
+2016-12-18T16:11:38.548841+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=vast-depths-86252.herokuapp.com request_id=338ff1d7-2167-4eec-bde0-63a8bd6f87ce fwd="87.14.175.135" dyno=web.1 connect=4ms service=8ms status=200 bytes=1118
+2016-12-18T16:11:52.354199+00:00 heroku[router]: at=info method=GET path="/" host=vast-depths-86252.herokuapp.com request_id=85a08edd-87aa-406e-9870-308986e878d4 fwd="87.14.175.135" dyno=web.1 connect=0ms service=67ms status=200 bytes=422
+2016-12-18T16:19:59.309857+00:00 heroku[router]: at=info method=GET path="/" host=vast-depths-86252.herokuapp.com request_id=0fe80e52-c55f-4965-8db6-0a920e04f0e7 fwd="87.14.175.135" dyno=web.1 connect=0ms service=4ms status=200 bytes=421
+2016-12-18T16:23:39.627227+00:00 heroku[router]: at=info method=GET path="/" host=vast-depths-86252.herokuapp.com request_id=b38e506f-1971-4091-86b8-0d8aaefe195b fwd="87.14.175.135" dyno=web.1 connect=0ms service=3ms status=200 bytes=421
+2016-12-18T16:23:44.895019+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=vast-depths-86252.herokuapp.com request_id=e7f8ab72-7505-4961-b00a-43a86f9d4540 fwd="87.14.175.135" dyno=web.1 connect=1ms service=4ms status=200 bytes=1118
+2016-12-18T16:29:45.705629+00:00 heroku[router]: at=info method=GET path="/" host=vast-depths-86252.herokuapp.com request_id=711f6d01-064b-41f4-9943-8ef394c32965 fwd="87.14.175.135" dyno=web.1 connect=1ms service=4ms status=200 bytes=423
+2016-12-18T16:36:09.673570+00:00 heroku[router]: at=info method=GET path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=7c5edf39-2abd-4fd3-8f7f-20cf4ae8e766 fwd="87.14.175.135" dyno=web.1 connect=0ms service=62ms status=200 bytes=558
+2016-12-18T16:40:20.597098+00:00 heroku[router]: at=info method=GET path="/" host=vast-depths-86252.herokuapp.com request_id=26150876-b7dd-4579-97cc-b34c93e036cb fwd="87.14.175.135" dyno=web.1 connect=0ms service=2ms status=200 bytes=423
+Terminare il processo batch (S/N)? 

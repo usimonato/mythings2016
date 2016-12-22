@@ -32,6 +32,7 @@ var evt_convert;
 var address_new;
 var address_last;
 var evento;
+var evento2;
 var temperature;
 var wait_address;
 var owner_things;
@@ -88,11 +89,36 @@ var usingItNow = function(callback) {
                      break;
 		}
 		default: {
-                  evento = 'Prova';
+                  evento2 = evt_convert & 0x000F;
+                     switch (evento2)
+                     {
+		            case 0x1: {
+                                 evento = 'Tasto';
+                                 break;
+                            }
+		            case 0x2: {
+                                 evento = 'Mosso';
+                                 break;
+		            }
+
+		            case 0x3: {
+                                 evento = 'Periodico';
+                                 break;
+                           }
+                           case 0x4: {
+                                evento = 'Presenza';
+                                break;
+                           }
+		           case 0x5: {
+                                evento = 'Chiuso';
+                           break;
+		           }
+                           evento = 'Prova';
 		}
        }
-       temperature =   evt_convert & 0x00FF;
-       //alt_convert =  alt_convert & 0x00FF;
+       //temperature =   evt_convert & 0x00FF;
+       temperature =   0;
+       alt_convert =  alt_convert;
        console.log('passo TTTTTTTTTTTTTT');
 
        if(address_last == null)
@@ -105,10 +131,18 @@ var usingItNow = function(callback) {
        owner_things = 'GRS_BREGANZE'
        if(name_convert == 'IOT_01')
           owner_things = 'GRS_BREGANZE';
+
        if(name_convert == 'IOT_02')
+       {
           owner_things = 'GRS_BREGANZE';
+          name_convert == 'BEATO'
+       }   
+
        if(name_convert == 'IOT_03')
+       {
           owner_things = 'GRS_BREGANZE';
+          temperature =   evt_convert & 0x00FF;
+       }
 
        client.post('/direct_messages/new.json', {screen_name: owner_things, 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ', temp:' +  temperature + 'C - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);console.log('Messaggio Twitter');});
        //client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + name_convert + " - in " + address_last + " - lat:" +  +lat_convert + ", lng:" +  lon_convert +  ", alt:" +  alt_convert  + " - base:" + station_convert + ", rssi:" + rssi_convert + "dbm, snr:" + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response); console.log('Stato Twitter');});

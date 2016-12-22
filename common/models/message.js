@@ -64,6 +64,7 @@ var usingItNow = function(callback) {
        console.log('address risolto : '+address_new);
     }
     console.log(res);
+    console.log('evt_convert : '+evt_convert);
     evento =  evt_convert & 0xFF00;
     switch (evento)
     {

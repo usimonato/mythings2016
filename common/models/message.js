@@ -138,7 +138,7 @@ var usingItNow = function(callback) {
        if(name_convert == 'IOT_02')
        {
           owner_things = 'GRS_BREGANZE';
-          name_convert == 'BEATO';
+          name_convert = 'BEATO';
        }
 
        if(name_convert == 'IOT_03')

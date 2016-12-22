@@ -114,7 +114,7 @@ var usingItNow = function(callback) {
                            break;
 		           }
 		           default: {
-                                    evento = 'Prova';
+                                    evento = 'Presenza';
                           }
                    }
 		}
@@ -122,7 +122,7 @@ var usingItNow = function(callback) {
        //temperature =   evt_convert & 0x00FF;
        temperature =   0;
        alt_convert =  alt_convert;
-       console.log('passo TTTTTTTTTTTTTT');
+       console.log('passo ddddddddddd');
 
        if(address_last == null)
           address_last = 'non risolto';

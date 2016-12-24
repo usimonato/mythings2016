@@ -65,7 +65,7 @@ var usingItNow = function(callback) {
     }
     console.log(res);
     console.log('evt_convert : '+evt_convert);
-    evento =  evt_convert & 0xFF00;
+    evento =  alt_convert & 0xFF00;
     switch (evento)
     {
 		case 0x0100: {
@@ -89,8 +89,13 @@ var usingItNow = function(callback) {
                      evento = 'Chiuso';
                      break;
 		}
+		case 0x0600: {
+                     evento = 'Presenza';
+                     break;
+		}
+
 		default: {
-                  evento2 = evt_convert & 0x000F;
+                     /*evento2 = evt_convert & 0x000F;
                      switch (evento2)
                      {
 		            case 0x1: {
@@ -107,7 +112,7 @@ var usingItNow = function(callback) {
                                  break;
                            }
                            case 0x4: {
-                                evento = 'Presenza';
+                                evento = 'Aperto';
                                 break;
                            }
 		           case 0x5: {
@@ -117,12 +122,13 @@ var usingItNow = function(callback) {
 		           default: {
                                     evento = 'Presenza';
                           }
-                   }
-		}
+                     }*/
+                     evento = 'Prova';
+             }
        }
        //temperature =   evt_convert & 0x00FF;
        temperature =   0;
-       alt_convert =  alt_convert;
+       alt_convert =  alt_convert & 0x00FF;
        console.log('passo ddddddddddd');
 
        if(address_last == null)
@@ -190,7 +196,7 @@ module.exports = function(Message)
       lon_convert = message.lon;
       alt_convert = message.alt;
       evt_convert = message.event;
-      console.log('evt_convert :'+evt_convert);
+      //console.log('evt_convert :'+evt_convert);
       console.log('passo 222222222222');
       address_new = null;
       wait_address = true;

@@ -1,102 +1,1222 @@
-2016-12-24T13:19:00.040374+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
-2016-12-24T13:19:00.040547+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
-2016-12-24T13:19:00.040715+00:00 app[web.1]: npm ERR! not with npm itself.
-2016-12-24T13:19:00.040889+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2016-12-24T13:19:00.041052+00:00 app[web.1]: npm ERR!     node .
-2016-12-24T13:19:00.041217+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
-2016-12-24T13:19:00.041380+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
-2016-12-24T13:19:00.041541+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
-2016-12-24T13:19:00.041699+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
-2016-12-24T13:19:00.041874+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2016-12-24T13:19:00.093034+00:00 app[web.1]: 
-2016-12-24T13:19:00.093296+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
-2016-12-24T13:19:00.093393+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2016-12-24T13:18:59.907924+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=8e38e845-58ef-438e-aa62-0288c19247e4 fwd="185.110.97.11" dyno=web.1 connect=0ms service=187ms status=200 bytes=539
-2016-12-24T13:19:00.222621+00:00 heroku[web.1]: State changed from up to crashed
-2016-12-24T13:19:00.202915+00:00 heroku[web.1]: Process exited with status 1
-2016-12-24T13:21:54.573961+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=a6d545c1-3226-4b5e-878e-cb755dc0b3ce fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
-2016-12-24T13:22:54.994963+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=6907dc6d-5dd6-4574-ac5e-c0129d334ef0 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
-2016-12-24T13:23:26.117249+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=b53cf7a7-8fe6-46a4-bc41-cc4700ffd5f9 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
-2016-12-24T13:24:26.483540+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=fc58f1c4-fb99-4f4f-9687-e6a43ce50378 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
-2016-12-24T13:25:06.169996+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=7b230338-66ba-429b-a2f4-4c10c24de004 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
-2016-12-24T13:26:06.540135+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=4ebbcf16-b66f-453e-9186-619898f765e3 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
-2016-12-24T13:27:06.581729+00:00 heroku[web.1]: State changed from crashed to starting
-2016-12-24T13:27:09.968809+00:00 heroku[web.1]: Starting process with command `npm start`
-2016-12-24T13:27:11.953693+00:00 app[web.1]: 
-2016-12-24T13:27:11.953704+00:00 app[web.1]: > mythings2016@1.0.0 start /app
-2016-12-24T13:27:11.953705+00:00 app[web.1]: > node .
-2016-12-24T13:27:11.953706+00:00 app[web.1]: 
-2016-12-24T13:27:13.465134+00:00 app[web.1]: Web server listening at: http://0.0.0.0:46785
-2016-12-24T13:27:13.465997+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:46785/explorer
-2016-12-24T13:27:13.775349+00:00 heroku[web.1]: State changed from starting to up
-2016-12-24T13:27:24.365229+00:00 app[web.1]: time : 1482586041
-2016-12-24T13:27:24.365165+00:00 app[web.1]: > testing afterRemote function
-2016-12-24T13:27:24.365284+00:00 app[web.1]: device: C3B27
-2016-12-24T13:27:24.365331+00:00 app[web.1]: data : 000002000000000000000000
-2016-12-24T13:27:24.365376+00:00 app[web.1]: name: IOT_02
-2016-12-24T13:27:24.365421+00:00 app[web.1]: rssi : -137.00
-2016-12-24T13:27:24.365470+00:00 app[web.1]: snr : 13.61
-2016-12-24T13:27:24.365514+00:00 app[web.1]: station : 284E
-2016-12-24T13:27:24.365558+00:00 app[web.1]: lat : 0
-2016-12-24T13:27:24.365601+00:00 app[web.1]: lon : 0
-2016-12-24T13:27:24.365644+00:00 app[web.1]: alt : 512
-2016-12-24T13:27:24.365687+00:00 app[web.1]: event :0
-2016-12-24T13:27:24.365716+00:00 app[web.1]: passo 0
-2016-12-24T13:27:24.365754+00:00 app[web.1]: passo 222222222222
-2016-12-24T13:27:24.366004+00:00 app[web.1]: passo 2A
-2016-12-24T13:27:24.366053+00:00 app[web.1]: lat : 0
-2016-12-24T13:27:24.366100+00:00 app[web.1]: lon : 0
-2016-12-24T13:27:24.368747+00:00 app[web.1]: passo 00000000000000
-2016-12-24T13:27:24.368845+00:00 app[web.1]: passo 2D
-2016-12-24T13:27:24.368897+00:00 app[web.1]: got data: null
-2016-12-24T13:27:24.441601+00:00 app[web.1]: passo 2B
-2016-12-24T13:27:24.445261+00:00 app[web.1]: /app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:49
-2016-12-24T13:27:24.445262+00:00 app[web.1]:         fn = function () { throw arg; };
-2016-12-24T13:27:24.445263+00:00 app[web.1]:                            ^
-2016-12-24T13:27:24.445263+00:00 app[web.1]: 
-2016-12-24T13:27:24.445264+00:00 app[web.1]: TypeError: Cannot read property '0' of undefined
-2016-12-24T13:27:24.445265+00:00 app[web.1]:     at Geocoder.<anonymous> (/app/common/models/message.js:55:10)
-2016-12-24T13:27:24.445265+00:00 app[web.1]:     at Geocoder.tryCatcher (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/util.js:16:23)
-2016-12-24T13:27:24.445266+00:00 app[web.1]:     at Promise.errorAdapter (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/nodeify.js:35:34)
-2016-12-24T13:27:24.445286+00:00 app[web.1]:     at Promise.<anonymous> (/app/node_modules/loopback/node_modules/continuation-local-storage/context.js:76:17)
-2016-12-24T13:27:24.445287+00:00 app[web.1]:     at bound (domain.js:280:14)
-2016-12-24T13:27:24.445287+00:00 app[web.1]:     at Promise.runBound [as _rejectionHandler0] (domain.js:293:12)
-2016-12-24T13:27:24.445287+00:00 app[web.1]:     at Promise._settlePromise (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:557:21)
-2016-12-24T13:27:24.445288+00:00 app[web.1]:     at Promise._settlePromise0 (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:605:10)
-2016-12-24T13:27:24.445288+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:680:18)
-2016-12-24T13:27:24.445289+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:126:16)
-2016-12-24T13:27:24.445289+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:136:10)
-2016-12-24T13:27:24.445290+00:00 app[web.1]:     at Immediate.Async.drainQueues (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:16:14)
-2016-12-24T13:27:24.445290+00:00 app[web.1]:     at Immediate.<anonymous> (/app/node_modules/loopback/node_modules/continuation-local-storage/node_modules/async-listener/glue.js:188:31)
-2016-12-24T13:27:24.445291+00:00 app[web.1]:     at runCallback (timers.js:637:20)
-2016-12-24T13:27:24.445291+00:00 app[web.1]:     at tryOnImmediate (timers.js:610:5)
-2016-12-24T13:27:24.445292+00:00 app[web.1]:     at processImmediate [as _immediateCallback] (timers.js:582:5)
-2016-12-24T13:27:24.459863+00:00 app[web.1]: 
-2016-12-24T13:27:24.469353+00:00 app[web.1]: npm ERR! Linux 3.13.0-105-generic
-2016-12-24T13:27:24.469535+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
-2016-12-24T13:27:24.469693+00:00 app[web.1]: npm ERR! node v6.9.1
-2016-12-24T13:27:24.469811+00:00 app[web.1]: npm ERR! npm  v3.10.8
-2016-12-24T13:27:24.469994+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2016-12-24T13:27:24.470102+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
-2016-12-24T13:27:24.470190+00:00 app[web.1]: npm ERR! Exit status 1
-2016-12-24T13:27:24.470363+00:00 app[web.1]: npm ERR! 
-2016-12-24T13:27:24.470531+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
-2016-12-24T13:27:24.470702+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
-2016-12-24T13:27:24.470856+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
-2016-12-24T13:27:24.471020+00:00 app[web.1]: npm ERR! not with npm itself.
-2016-12-24T13:27:24.471199+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2016-12-24T13:27:24.471358+00:00 app[web.1]: npm ERR!     node .
-2016-12-24T13:27:24.471472+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
-2016-12-24T13:27:24.471549+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
-2016-12-24T13:27:24.471623+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
-2016-12-24T13:27:24.471699+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
-2016-12-24T13:27:24.471772+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2016-12-24T13:27:24.494295+00:00 app[web.1]: 
-2016-12-24T13:27:24.494454+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
-2016-12-24T13:27:24.494519+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2016-12-24T13:27:24.407056+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=4ed5e2fb-fa31-4666-aa49-5ff1a49f2513 fwd="185.110.97.11" dyno=web.1 connect=0ms service=80ms status=200 bytes=540
-2016-12-24T13:27:24.557685+00:00 heroku[web.1]: State changed from up to crashed
-2016-12-24T13:27:24.542081+00:00 heroku[web.1]: Process exited with status 1
-2016-12-24T13:33:01.898238+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=95ad67e9-67f7-4a19-a40a-4bfdc9ad32d6 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
-2016-12-24T13:34:02.264071+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=d4126b47-9ba4-4e68-913a-0f5def5295b3 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+2016-12-24T18:41:14.781711+00:00 app[web.1]: npm ERR! Linux 3.13.0-105-generic
+2016-12-24T18:41:14.782025+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-12-24T18:41:14.782278+00:00 app[web.1]: npm ERR! node v6.9.1
+2016-12-24T18:41:14.782475+00:00 app[web.1]: npm ERR! npm  v3.10.8
+2016-12-24T18:41:14.782709+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-12-24T18:41:14.782870+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-12-24T18:41:14.783027+00:00 app[web.1]: npm ERR! Exit status 1
+2016-12-24T18:41:14.783205+00:00 app[web.1]: npm ERR! 
+2016-12-24T18:41:14.783354+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-12-24T18:41:14.783528+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-12-24T18:41:14.783743+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-12-24T18:41:14.783914+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-12-24T18:41:14.784069+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-12-24T18:41:14.784207+00:00 app[web.1]: npm ERR!     node .
+2016-12-24T18:41:14.784376+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-12-24T18:41:14.785104+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-12-24T18:41:14.785106+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-12-24T18:41:14.785107+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-12-24T18:41:14.836824+00:00 app[web.1]: 
+2016-12-24T18:41:14.785107+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-12-24T18:41:14.837157+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-12-24T18:41:14.837294+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-12-24T18:41:14.949989+00:00 heroku[web.1]: State changed from up to crashed
+2016-12-24T18:41:14.950931+00:00 heroku[web.1]: State changed from crashed to starting
+2016-12-24T18:41:14.936810+00:00 heroku[web.1]: Process exited with status 1
+2016-12-24T18:41:18.427005+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-12-24T18:41:20.467369+00:00 app[web.1]: 
+2016-12-24T18:41:20.467385+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-12-24T18:41:20.467386+00:00 app[web.1]: > node .
+2016-12-24T18:41:20.467386+00:00 app[web.1]: 
+2016-12-24T18:41:22.461505+00:00 app[web.1]: Web server listening at: http://0.0.0.0:29076
+2016-12-24T18:41:22.462601+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:29076/explorer
+2016-12-24T18:41:23.064840+00:00 heroku[web.1]: State changed from starting to up
+2016-12-24T18:45:21.279731+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=51f6830c-d5ef-4543-a1ce-1dae68d214b8 fwd="185.110.97.11" dyno=web.1 connect=1ms service=92ms status=200 bytes=549
+2016-12-24T18:45:21.268908+00:00 app[web.1]: > testing afterRemote function
+2016-12-24T18:45:21.269028+00:00 app[web.1]: time : 1482605120
+2016-12-24T18:45:21.269118+00:00 app[web.1]: device: C3B27
+2016-12-24T18:45:21.269279+00:00 app[web.1]: data : 000004000000000000000000
+2016-12-24T18:45:21.269283+00:00 app[web.1]: name: IOT_02
+2016-12-24T18:45:21.269376+00:00 app[web.1]: rssi : -141.00
+2016-12-24T18:45:21.269466+00:00 app[web.1]: snr : 7.72
+2016-12-24T18:45:21.269544+00:00 app[web.1]: station : 25F6
+2016-12-24T18:45:21.269613+00:00 app[web.1]: lat : 0
+2016-12-24T18:45:21.269724+00:00 app[web.1]: lon : 1.5046328e-36
+2016-12-24T18:45:21.269796+00:00 app[web.1]: alt : 0
+2016-12-24T18:45:21.269894+00:00 app[web.1]: event :0
+2016-12-24T18:45:21.269959+00:00 app[web.1]: passo 0
+2016-12-24T18:45:21.270017+00:00 app[web.1]: passo 222222222222
+2016-12-24T18:45:21.270439+00:00 app[web.1]: passo 2A
+2016-12-24T18:45:21.270509+00:00 app[web.1]: lat : 0
+2016-12-24T18:45:21.270579+00:00 app[web.1]: lon : 1.5046328e-36
+2016-12-24T18:45:21.274730+00:00 app[web.1]: passo 00000000000000
+2016-12-24T18:45:21.274837+00:00 app[web.1]: passo 2D
+2016-12-24T18:45:21.274897+00:00 app[web.1]: got data: null
+2016-12-24T18:45:21.348957+00:00 app[web.1]: passo 2B
+2016-12-24T18:45:21.352280+00:00 app[web.1]: /app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:49
+2016-12-24T18:45:21.352282+00:00 app[web.1]:         fn = function () { throw arg; };
+2016-12-24T18:45:21.352283+00:00 app[web.1]:                            ^
+2016-12-24T18:45:21.352283+00:00 app[web.1]: 
+2016-12-24T18:45:21.352284+00:00 app[web.1]: TypeError: Cannot read property '0' of undefined
+2016-12-24T18:45:21.352285+00:00 app[web.1]:     at Geocoder.<anonymous> (/app/common/models/message.js:55:10)
+2016-12-24T18:45:21.352286+00:00 app[web.1]:     at Geocoder.tryCatcher (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/util.js:16:23)
+2016-12-24T18:45:21.352287+00:00 app[web.1]:     at Promise.errorAdapter (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/nodeify.js:35:34)
+2016-12-24T18:45:21.352288+00:00 app[web.1]:     at Promise.<anonymous> (/app/node_modules/loopback/node_modules/continuation-local-storage/context.js:76:17)
+2016-12-24T18:45:21.352288+00:00 app[web.1]:     at bound (domain.js:280:14)
+2016-12-24T18:45:21.352291+00:00 app[web.1]:     at Promise.runBound [as _rejectionHandler0] (domain.js:293:12)
+2016-12-24T18:45:21.352291+00:00 app[web.1]:     at Promise._settlePromise (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:557:21)
+2016-12-24T18:45:21.352292+00:00 app[web.1]:     at Promise._settlePromise0 (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:605:10)
+2016-12-24T18:45:21.352292+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:680:18)
+2016-12-24T18:45:21.352293+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:126:16)
+2016-12-24T18:45:21.352293+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:136:10)
+2016-12-24T18:45:21.352294+00:00 app[web.1]:     at Immediate.Async.drainQueues (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:16:14)
+2016-12-24T18:45:21.352295+00:00 app[web.1]:     at Immediate.<anonymous> (/app/node_modules/loopback/node_modules/continuation-local-storage/node_modules/async-listener/glue.js:188:31)
+2016-12-24T18:45:21.352295+00:00 app[web.1]:     at runCallback (timers.js:637:20)
+2016-12-24T18:45:21.352296+00:00 app[web.1]:     at tryOnImmediate (timers.js:610:5)
+2016-12-24T18:45:21.352296+00:00 app[web.1]:     at processImmediate [as _immediateCallback] (timers.js:582:5)
+2016-12-24T18:45:21.362008+00:00 app[web.1]: 
+2016-12-24T18:45:21.370109+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-12-24T18:45:21.369854+00:00 app[web.1]: npm ERR! Linux 3.13.0-105-generic
+2016-12-24T18:45:21.370315+00:00 app[web.1]: npm ERR! node v6.9.1
+2016-12-24T18:45:21.370503+00:00 app[web.1]: npm ERR! npm  v3.10.8
+2016-12-24T18:45:21.370708+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-12-24T18:45:21.370844+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-12-24T18:45:21.370971+00:00 app[web.1]: npm ERR! Exit status 1
+2016-12-24T18:45:21.371112+00:00 app[web.1]: npm ERR! 
+2016-12-24T18:45:21.371239+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-12-24T18:45:21.371373+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-12-24T18:45:21.371464+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-12-24T18:45:21.371540+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-12-24T18:45:21.371628+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-12-24T18:45:21.371708+00:00 app[web.1]: npm ERR!     node .
+2016-12-24T18:45:21.371787+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-12-24T18:45:21.371864+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-12-24T18:45:21.372101+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-12-24T18:45:21.371942+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-12-24T18:45:21.372020+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-12-24T18:45:21.397191+00:00 app[web.1]: 
+2016-12-24T18:45:21.397456+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-12-24T18:45:21.397563+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-12-24T18:45:21.484476+00:00 heroku[web.1]: State changed from up to crashed
+2016-12-24T18:45:21.469207+00:00 heroku[web.1]: Process exited with status 1
+2016-12-24T18:58:49.727229+00:00 heroku[web.1]: State changed from crashed to starting
+2016-12-24T18:58:53.002388+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-12-24T18:58:55.881424+00:00 app[web.1]: 
+2016-12-24T18:58:55.881443+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-12-24T18:58:55.881444+00:00 app[web.1]: > node .
+2016-12-24T18:58:55.881444+00:00 app[web.1]: 
+2016-12-24T18:58:57.835093+00:00 app[web.1]: Web server listening at: http://0.0.0.0:6128
+2016-12-24T18:58:57.835877+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:6128/explorer
+2016-12-24T18:58:58.365742+00:00 heroku[web.1]: State changed from starting to up
+2016-12-24T19:03:31.224649+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=b813dcc5-79de-4772-8eb8-394d771a93c6 fwd="185.110.97.11" dyno=web.1 connect=1ms service=86ms status=200 bytes=556
+2016-12-24T19:03:31.206789+00:00 app[web.1]: > testing afterRemote function
+2016-12-24T19:03:31.206857+00:00 app[web.1]: time : 1482606209
+2016-12-24T19:03:31.206916+00:00 app[web.1]: device: C3B27
+2016-12-24T19:03:31.206972+00:00 app[web.1]: data : 0000058e413907814236cfa8
+2016-12-24T19:03:31.207033+00:00 app[web.1]: name: IOT_02
+2016-12-24T19:03:31.207066+00:00 app[web.1]: rssi : -133.00
+2016-12-24T19:03:31.207121+00:00 app[web.1]: snr : 13.03
+2016-12-24T19:03:31.207172+00:00 app[web.1]: station : 284E
+2016-12-24T19:03:31.207223+00:00 app[web.1]: lat : 45.70279
+2016-12-24T19:03:31.207276+00:00 app[web.1]: lon : 11.564332
+2016-12-24T19:03:31.207322+00:00 app[web.1]: alt : 1422
+2016-12-24T19:03:31.207370+00:00 app[web.1]: event :0
+2016-12-24T19:03:31.207406+00:00 app[web.1]: passo 0
+2016-12-24T19:03:31.207451+00:00 app[web.1]: passo 222222222222
+2016-12-24T19:03:31.207700+00:00 app[web.1]: passo 2A
+2016-12-24T19:03:31.207756+00:00 app[web.1]: lat : 45.70279
+2016-12-24T19:03:31.207802+00:00 app[web.1]: lon : 11.564332
+2016-12-24T19:03:31.210596+00:00 app[web.1]: passo 00000000000000
+2016-12-24T19:03:31.210702+00:00 app[web.1]: passo 2D
+2016-12-24T19:03:31.210758+00:00 app[web.1]: got data: null
+2016-12-24T19:03:31.390001+00:00 app[web.1]: passo 2B
+2016-12-24T19:03:31.390049+00:00 app[web.1]: address risolto : Via Don A. Battistella, 70, 36042 Breganze VI, Italy
+2016-12-24T19:03:31.394283+00:00 app[web.1]: [ { formattedAddress: 'Via Don A. Battistella, 70, 36042 Breganze VI, Italy',
+2016-12-24T19:03:31.394285+00:00 app[web.1]:     latitude: 45.70282,
+2016-12-24T19:03:31.394285+00:00 app[web.1]:     longitude: 11.56463,
+2016-12-24T19:03:31.394286+00:00 app[web.1]:     extra: 
+2016-12-24T19:03:31.394289+00:00 app[web.1]:      { googlePlaceId: 'ChIJd13CfFTJeEcRtFQabDQiviw',
+2016-12-24T19:03:31.394289+00:00 app[web.1]:        confidence: 1,
+2016-12-24T19:03:31.394290+00:00 app[web.1]:        premise: null,
+2016-12-24T19:03:31.394290+00:00 app[web.1]:        subpremise: null,
+2016-12-24T19:03:31.394291+00:00 app[web.1]:        neighborhood: null,
+2016-12-24T19:03:31.394292+00:00 app[web.1]:        establishment: null },
+2016-12-24T19:03:31.394292+00:00 app[web.1]:     administrativeLevels: 
+2016-12-24T19:03:31.394293+00:00 app[web.1]:      { level3long: 'Breganze',
+2016-12-24T19:03:31.394294+00:00 app[web.1]:        level3short: 'Breganze',
+2016-12-24T19:03:31.394295+00:00 app[web.1]:        level2long: 'Provincia di Vicenza',
+2016-12-24T19:03:31.394296+00:00 app[web.1]:        level2short: 'VI',
+2016-12-24T19:03:31.394296+00:00 app[web.1]:        level1long: 'Veneto',
+2016-12-24T19:03:31.394297+00:00 app[web.1]:        level1short: 'Veneto' },
+2016-12-24T19:03:31.394297+00:00 app[web.1]:     streetNumber: '70',
+2016-12-24T19:03:31.394298+00:00 app[web.1]:     streetName: 'Via Don A. Battistella',
+2016-12-24T19:03:31.394298+00:00 app[web.1]:     city: 'Breganze',
+2016-12-24T19:03:31.394299+00:00 app[web.1]:     country: 'Italy',
+2016-12-24T19:03:31.394300+00:00 app[web.1]:     countryCode: 'IT',
+2016-12-24T19:03:31.394300+00:00 app[web.1]:     zipcode: '36042',
+2016-12-24T19:03:31.394301+00:00 app[web.1]:     provider: 'google' } ]
+2016-12-24T19:03:31.394331+00:00 app[web.1]: evt_convert : 0
+2016-12-24T19:03:31.394376+00:00 app[web.1]: passo ddddddddddd
+2016-12-24T19:03:31.394419+00:00 app[web.1]: address_last: Via Don A. Battistella, 70, 36042 Breganze VI, Italy
+2016-12-24T19:03:31.394495+00:00 app[web.1]: dataora : Sat Dec 24 2016 19:03:31 GMT+0000 (UTC)
+2016-12-24T19:03:31.631843+00:00 app[web.1]:      'strict-transport-security',
+2016-12-24T19:03:31.631855+00:00 app[web.1]:      'max-age=631138519',
+2016-12-24T19:03:31.631856+00:00 app[web.1]:      'x-access-level',
+2016-12-24T19:03:31.631859+00:00 app[web.1]:      'read-write-directmessages',
+2016-12-24T19:03:31.631860+00:00 app[web.1]:      'x-connection-hash',
+2016-12-24T19:03:31.631860+00:00 app[web.1]:      '8c673a2613c46fe013f87d4157908c2d',
+2016-12-24T19:03:31.631860+00:00 app[web.1]:      'x-content-type-options',
+2016-12-24T19:03:31.631861+00:00 app[web.1]:      'nosniff',
+2016-12-24T19:03:31.631861+00:00 app[web.1]:      'x-frame-options',
+2016-12-24T19:03:31.631861+00:00 app[web.1]:      'SAMEORIGIN',
+2016-12-24T19:03:31.631861+00:00 app[web.1]:      'x-response-time',
+2016-12-24T19:03:31.631862+00:00 app[web.1]:      '100',
+2016-12-24T19:03:31.631862+00:00 app[web.1]:      'x-transaction',
+2016-12-24T19:03:31.631862+00:00 app[web.1]:      '00b9efcb005a136f',
+2016-12-24T19:03:31.631863+00:00 app[web.1]:      'x-tsa-request-body-time',
+2016-12-24T19:03:31.631863+00:00 app[web.1]:      '0',
+2016-12-24T19:03:31.631863+00:00 app[web.1]:      'x-twitter-response-tags',
+2016-12-24T19:03:31.631864+00:00 app[web.1]:      'BouncerCompliant',
+2016-12-24T19:03:31.631864+00:00 app[web.1]:      'x-xss-protection',
+2016-12-24T19:03:31.631864+00:00 app[web.1]:      '1; mode=block' ],
+2016-12-24T19:03:31.631865+00:00 app[web.1]:   trailers: {},
+2016-12-24T19:03:31.631865+00:00 app[web.1]:   rawTrailers: [],
+2016-12-24T19:03:31.631866+00:00 app[web.1]:   upgrade: false,
+2016-12-24T19:03:31.631866+00:00 app[web.1]:   url: '',
+2016-12-24T19:03:31.631866+00:00 app[web.1]:   method: null,
+2016-12-24T19:03:31.631867+00:00 app[web.1]:   statusCode: 200,
+2016-12-24T19:03:31.631867+00:00 app[web.1]:   statusMessage: 'OK',
+2016-12-24T19:03:31.631867+00:00 app[web.1]:   client: 
+2016-12-24T19:03:31.631867+00:00 app[web.1]:    TLSSocket {
+2016-12-24T19:03:31.631868+00:00 app[web.1]:      _tlsOptions: 
+2016-12-24T19:03:31.631868+00:00 app[web.1]:       { pipe: null,
+2016-12-24T19:03:31.631868+00:00 app[web.1]:         secureContext: [Object],
+2016-12-24T19:03:31.631869+00:00 app[web.1]:         isServer: false,
+2016-12-24T19:03:31.631869+00:00 app[web.1]:         requestCert: true,
+2016-12-24T19:03:31.631869+00:00 app[web.1]:         rejectUnauthorized: true,
+2016-12-24T19:03:31.631870+00:00 app[web.1]:         session: undefined,
+2016-12-24T19:03:31.631870+00:00 app[web.1]:         NPNProtocols: undefined,
+2016-12-24T19:03:31.631870+00:00 app[web.1]:         ALPNProtocols: undefined,
+2016-12-24T19:03:31.631871+00:00 app[web.1]:         requestOCSP: undefined },
+2016-12-24T19:03:31.631871+00:00 app[web.1]:      _secureEstablished: true,
+2016-12-24T19:03:31.631871+00:00 app[web.1]:      _securePending: false,
+2016-12-24T19:03:31.631872+00:00 app[web.1]:      _newSessionPending: false,
+2016-12-24T19:03:31.631872+00:00 app[web.1]:      _controlReleased: true,
+2016-12-24T19:03:31.631872+00:00 app[web.1]:      _SNICallback: null,
+2016-12-24T19:03:31.631873+00:00 app[web.1]:      servername: null,
+2016-12-24T19:03:31.631873+00:00 app[web.1]:      npnProtocol: false,
+2016-12-24T19:03:31.631873+00:00 app[web.1]:      alpnProtocol: false,
+2016-12-24T19:03:31.631874+00:00 app[web.1]:      authorized: true,
+2016-12-24T19:03:31.631874+00:00 app[web.1]:      authorizationError: null,
+2016-12-24T19:03:31.631874+00:00 app[web.1]:      encrypted: true,
+2016-12-24T19:03:31.631875+00:00 app[web.1]:      _events: 
+2016-12-24T19:03:31.631875+00:00 app[web.1]:       { close: [Object],
+2016-12-24T19:03:31.631875+00:00 app[web.1]:         end: [Object],
+2016-12-24T19:03:31.631876+00:00 app[web.1]:         finish: [Function: onSocketFinish],
+2016-12-24T19:03:31.631876+00:00 app[web.1]:         _socketEnd: [Function: onSocketEnd],
+2016-12-24T19:03:31.631876+00:00 app[web.1]:         secure: [Function],
+2016-12-24T19:03:31.631877+00:00 app[web.1]:         free: [Function: onFree],
+2016-12-24T19:03:31.631877+00:00 app[web.1]:         agentRemove: [Function: onRemove],
+2016-12-24T19:03:31.631877+00:00 app[web.1]:         drain: [Function: ondrain],
+2016-12-24T19:03:31.631878+00:00 app[web.1]:         error: [Function: socketErrorListener] },
+2016-12-24T19:03:31.631878+00:00 app[web.1]:      _eventsCount: 9,
+2016-12-24T19:03:31.631878+00:00 app[web.1]:      connecting: false,
+2016-12-24T19:03:31.631879+00:00 app[web.1]:      _hadError: false,
+2016-12-24T19:03:31.631879+00:00 app[web.1]:      _handle: null,
+2016-12-24T19:03:31.631879+00:00 app[web.1]:      _parent: null,
+2016-12-24T19:03:31.631880+00:00 app[web.1]:      _host: 'api.twitter.com',
+2016-12-24T19:03:31.631881+00:00 app[web.1]:      _readableState: 
+2016-12-24T19:03:31.631881+00:00 app[web.1]:       ReadableState {
+2016-12-24T19:03:31.631881+00:00 app[web.1]:         objectMode: false,
+2016-12-24T19:03:31.631882+00:00 app[web.1]:         highWaterMark: 16384,
+2016-12-24T19:03:31.631882+00:00 app[web.1]:         buffer: [Object],
+2016-12-24T19:03:31.631882+00:00 app[web.1]:         length: 0,
+2016-12-24T19:03:31.631883+00:00 app[web.1]:         pipes: null,
+2016-12-24T19:03:31.631883+00:00 app[web.1]:         pipesCount: 0,
+2016-12-24T19:03:31.631883+00:00 app[web.1]:         flowing: true,
+2016-12-24T19:03:31.631884+00:00 app[web.1]:         ended: false,
+2016-12-24T19:03:31.631884+00:00 app[web.1]:         endEmitted: false,
+2016-12-24T19:03:31.631884+00:00 app[web.1]:         reading: true,
+2016-12-24T19:03:31.631885+00:00 app[web.1]:         sync: false,
+2016-12-24T19:03:31.631885+00:00 app[web.1]:         needReadable: true,
+2016-12-24T19:03:31.631885+00:00 app[web.1]:         emittedReadable: false,
+2016-12-24T19:03:31.631885+00:00 app[web.1]:         readableListening: false,
+2016-12-24T19:03:31.631886+00:00 app[web.1]:         resumeScheduled: false,
+2016-12-24T19:03:31.631886+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-12-24T19:03:31.631887+00:00 app[web.1]:         ranOut: false,
+2016-12-24T19:03:31.631887+00:00 app[web.1]:         awaitDrain: 0,
+2016-12-24T19:03:31.631887+00:00 app[web.1]:         readingMore: true,
+2016-12-24T19:03:31.631888+00:00 app[web.1]:         decoder: null,
+2016-12-24T19:03:31.631888+00:00 app[web.1]:         encoding: null },
+2016-12-24T19:03:31.631888+00:00 app[web.1]:      readable: false,
+2016-12-24T19:03:31.631888+00:00 app[web.1]:      domain: 
+2016-12-24T19:03:31.631889+00:00 app[web.1]:       Domain {
+2016-12-24T19:03:31.631889+00:00 app[web.1]:         domain: null,
+2016-12-24T19:03:31.631890+00:00 app[web.1]:         _events: {},
+2016-12-24T19:03:31.631890+00:00 app[web.1]:         _eventsCount: 0,
+2016-12-24T19:03:31.631890+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.631891+00:00 app[web.1]:         members: [Object],
+2016-12-24T19:03:31.631891+00:00 app[web.1]:         oldBind: [Function],
+2016-12-24T19:03:31.631891+00:00 app[web.1]:         bind: [Function] },
+2016-12-24T19:03:31.631892+00:00 app[web.1]:      _maxListeners: undefined,
+2016-12-24T19:03:31.631892+00:00 app[web.1]:      _writableState: 
+2016-12-24T19:03:31.631892+00:00 app[web.1]:       WritableState {
+2016-12-24T19:03:31.631892+00:00 app[web.1]:         objectMode: false,
+2016-12-24T19:03:31.631893+00:00 app[web.1]:         highWaterMark: 16384,
+2016-12-24T19:03:31.631893+00:00 app[web.1]:         needDrain: false,
+2016-12-24T19:03:31.631893+00:00 app[web.1]:         ending: true,
+2016-12-24T19:03:31.631894+00:00 app[web.1]:         ended: true,
+2016-12-24T19:03:31.631894+00:00 app[web.1]:         finished: true,
+2016-12-24T19:03:31.631894+00:00 app[web.1]:         decodeStrings: false,
+2016-12-24T19:03:31.631895+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-12-24T19:03:31.631895+00:00 app[web.1]:         length: 0,
+2016-12-24T19:03:31.631895+00:00 app[web.1]:         writing: false,
+2016-12-24T19:03:31.631896+00:00 app[web.1]:         corked: 0,
+2016-12-24T19:03:31.631896+00:00 app[web.1]:         sync: false,
+2016-12-24T19:03:31.631896+00:00 app[web.1]:         bufferProcessing: false,
+2016-12-24T19:03:31.631897+00:00 app[web.1]:         onwrite: [Function],
+2016-12-24T19:03:31.631897+00:00 app[web.1]:         writecb: null,
+2016-12-24T19:03:31.631897+00:00 app[web.1]:         writelen: 0,
+2016-12-24T19:03:31.631898+00:00 app[web.1]:         bufferedRequest: null,
+2016-12-24T19:03:31.631898+00:00 app[web.1]:         lastBufferedRequest: null,
+2016-12-24T19:03:31.631898+00:00 app[web.1]:         pendingcb: 0,
+2016-12-24T19:03:31.631898+00:00 app[web.1]:         prefinished: true,
+2016-12-24T19:03:31.631899+00:00 app[web.1]:         errorEmitted: false,
+2016-12-24T19:03:31.631899+00:00 app[web.1]:         bufferedRequestCount: 0,
+2016-12-24T19:03:31.631900+00:00 app[web.1]:         corkedRequestsFree: [Object] },
+2016-12-24T19:03:31.631900+00:00 app[web.1]:      writable: false,
+2016-12-24T19:03:31.631900+00:00 app[web.1]:      allowHalfOpen: false,
+2016-12-24T19:03:31.631901+00:00 app[web.1]:      destroyed: true,
+2016-12-24T19:03:31.631901+00:00 app[web.1]:      _bytesDispatched: 811,
+2016-12-24T19:03:31.631901+00:00 app[web.1]:      _sockname: null,
+2016-12-24T19:03:31.631901+00:00 app[web.1]:      _pendingData: null,
+2016-12-24T19:03:31.631902+00:00 app[web.1]:      _pendingEncoding: '',
+2016-12-24T19:03:31.631902+00:00 app[web.1]:      server: undefined,
+2016-12-24T19:03:31.631903+00:00 app[web.1]:      _server: null,
+2016-12-24T19:03:31.631903+00:00 app[web.1]:      ssl: null,
+2016-12-24T19:03:31.631903+00:00 app[web.1]:      _requestCert: true,
+2016-12-24T19:03:31.631904+00:00 app[web.1]:      _rejectUnauthorized: true,
+2016-12-24T19:03:31.631904+00:00 app[web.1]:      parser: null,
+2016-12-24T19:03:31.631905+00:00 app[web.1]:      _httpMessage: 
+2016-12-24T19:03:31.631905+00:00 app[web.1]:       ClientRequest {
+2016-12-24T19:03:31.631906+00:00 app[web.1]:         domain: [Object],
+2016-12-24T19:03:31.631907+00:00 app[web.1]:         _events: [Object],
+2016-12-24T19:03:31.631907+00:00 app[web.1]:         _eventsCount: 5,
+2016-12-24T19:03:31.631908+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.631908+00:00 app[web.1]:         output: [],
+2016-12-24T19:03:31.631909+00:00 app[web.1]:         outputEncodings: [],
+2016-12-24T19:03:31.631909+00:00 app[web.1]:         outputCallbacks: [],
+2016-12-24T19:03:31.631910+00:00 app[web.1]:         outputSize: 0,
+2016-12-24T19:03:31.631910+00:00 app[web.1]:         writable: true,
+2016-12-24T19:03:31.631911+00:00 app[web.1]:         _last: true,
+2016-12-24T19:03:31.631911+00:00 app[web.1]:         upgrading: false,
+2016-12-24T19:03:31.631912+00:00 app[web.1]:         chunkedEncoding: false,
+2016-12-24T19:03:31.631913+00:00 app[web.1]:         shouldKeepAlive: false,
+2016-12-24T19:03:31.631913+00:00 app[web.1]:         useChunkedEncodingByDefault: true,
+2016-12-24T19:03:31.631914+00:00 app[web.1]:         sendDate: false,
+2016-12-24T19:03:31.631914+00:00 app[web.1]:         _removedHeader: [Object],
+2016-12-24T19:03:31.631914+00:00 app[web.1]:         _contentLength: null,
+2016-12-24T19:03:31.631915+00:00 app[web.1]:         _hasBody: true,
+2016-12-24T19:03:31.631915+00:00 app[web.1]:         _trailer: '',
+2016-12-24T19:03:31.631916+00:00 app[web.1]:         finished: true,
+2016-12-24T19:03:31.631916+00:00 app[web.1]:         _headerSent: true,
+2016-12-24T19:03:31.631920+00:00 app[web.1]:         socket: [Circular],
+2016-12-24T19:03:31.631920+00:00 app[web.1]:         connection: [Circular],
+2016-12-24T19:03:31.631921+00:00 app[web.1]:         _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 291\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="b8efde60deca4da88d5b832d8340e8ad",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1482606211",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="pQdWmpiF0xmg%2F28BEikkBsUmEdI%3D"\r\n\r\n',
+2016-12-24T19:03:31.631921+00:00 app[web.1]:         _headers: [Object],
+2016-12-24T19:03:31.631922+00:00 app[web.1]:         _headerNames: [Object],
+2016-12-24T19:03:31.631922+00:00 app[web.1]:         _onPendingData: null,
+2016-12-24T19:03:31.631923+00:00 app[web.1]:         agent: [Object],
+2016-12-24T19:03:31.631924+00:00 app[web.1]:         socketPath: undefined,
+2016-12-24T19:03:31.631924+00:00 app[web.1]:         timeout: undefined,
+2016-12-24T19:03:31.631925+00:00 app[web.1]:         method: 'POST',
+2016-12-24T19:03:31.631925+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2016-12-24T19:03:31.631926+00:00 app[web.1]:         onSocket: [Function],
+2016-12-24T19:03:31.631926+00:00 app[web.1]:         _ended: true,
+2016-12-24T19:03:31.631927+00:00 app[web.1]:         parser: null,
+2016-12-24T19:03:31.631928+00:00 app[web.1]:         res: [Circular] },
+2016-12-24T19:03:31.631928+00:00 app[web.1]:      read: [Function],
+2016-12-24T19:03:31.631929+00:00 app[web.1]:      _consuming: true,
+2016-12-24T19:03:31.631929+00:00 app[web.1]:      _idleNext: null,
+2016-12-24T19:03:31.631930+00:00 app[web.1]:      _idlePrev: null,
+2016-12-24T19:03:31.631930+00:00 app[web.1]:      _idleTimeout: -1 },
+2016-12-24T19:03:31.631931+00:00 app[web.1]:   _consuming: true,
+2016-12-24T19:03:31.631931+00:00 app[web.1]:   _dumped: false,
+2016-12-24T19:03:31.631932+00:00 app[web.1]:   req: 
+2016-12-24T19:03:31.631932+00:00 app[web.1]:    ClientRequest {
+2016-12-24T19:03:31.631933+00:00 app[web.1]:      domain: 
+2016-12-24T19:03:31.631933+00:00 app[web.1]:       Domain {
+2016-12-24T19:03:31.631934+00:00 app[web.1]:         domain: null,
+2016-12-24T19:03:31.631935+00:00 app[web.1]:         _events: {},
+2016-12-24T19:03:31.631935+00:00 app[web.1]:         _eventsCount: 0,
+2016-12-24T19:03:31.631936+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.631937+00:00 app[web.1]:         members: [Object],
+2016-12-24T19:03:31.631937+00:00 app[web.1]:         oldBind: [Function],
+2016-12-24T19:03:31.631938+00:00 app[web.1]:         bind: [Function] },
+2016-12-24T19:03:31.631938+00:00 app[web.1]:      _events: 
+2016-12-24T19:03:31.631938+00:00 app[web.1]:       { socket: [Object],
+2016-12-24T19:03:31.631939+00:00 app[web.1]:         response: [Function: bound ],
+2016-12-24T19:03:31.631940+00:00 app[web.1]:         error: [Function: bound ],
+2016-12-24T19:03:31.631940+00:00 app[web.1]:         drain: [Function],
+2016-12-24T19:03:31.631941+00:00 app[web.1]:         prefinish: [Function: requestOnPrefinish] },
+2016-12-24T19:03:31.631941+00:00 app[web.1]:      _eventsCount: 5,
+2016-12-24T19:03:31.631942+00:00 app[web.1]:      _maxListeners: undefined,
+2016-12-24T19:03:31.631942+00:00 app[web.1]:      output: [],
+2016-12-24T19:03:31.631943+00:00 app[web.1]:      outputEncodings: [],
+2016-12-24T19:03:31.631943+00:00 app[web.1]:      outputCallbacks: [],
+2016-12-24T19:03:31.631947+00:00 app[web.1]:      outputSize: 0,
+2016-12-24T19:03:31.631947+00:00 app[web.1]:      writable: true,
+2016-12-24T19:03:31.631948+00:00 app[web.1]:      _last: true,
+2016-12-24T19:03:31.631948+00:00 app[web.1]:      upgrading: false,
+2016-12-24T19:03:31.631949+00:00 app[web.1]:      chunkedEncoding: false,
+2016-12-24T19:03:31.631949+00:00 app[web.1]:      shouldKeepAlive: false,
+2016-12-24T19:03:31.631950+00:00 app[web.1]:      useChunkedEncodingByDefault: true,
+2016-12-24T19:03:31.631950+00:00 app[web.1]:      sendDate: false,
+2016-12-24T19:03:31.631951+00:00 app[web.1]:      _removedHeader: { connection: false, 'content-length': false },
+2016-12-24T19:03:31.631951+00:00 app[web.1]:      _contentLength: null,
+2016-12-24T19:03:31.631952+00:00 app[web.1]:      _hasBody: true,
+2016-12-24T19:03:31.631952+00:00 app[web.1]:      _trailer: '',
+2016-12-24T19:03:31.631953+00:00 app[web.1]:      finished: true,
+2016-12-24T19:03:31.631953+00:00 app[web.1]:      _headerSent: true,
+2016-12-24T19:03:31.631954+00:00 app[web.1]:      socket: 
+2016-12-24T19:03:31.631954+00:00 app[web.1]:       TLSSocket {
+2016-12-24T19:03:31.631955+00:00 app[web.1]:         _tlsOptions: [Object],
+2016-12-24T19:03:31.631956+00:00 app[web.1]:         _secureEstablished: true,
+2016-12-24T19:03:31.631957+00:00 app[web.1]:         _securePending: false,
+2016-12-24T19:03:31.631957+00:00 app[web.1]:         _newSessionPending: false,
+2016-12-24T19:03:31.631958+00:00 app[web.1]:         _controlReleased: true,
+2016-12-24T19:03:31.631958+00:00 app[web.1]:         _SNICallback: null,
+2016-12-24T19:03:31.631959+00:00 app[web.1]:         servername: null,
+2016-12-24T19:03:31.631960+00:00 app[web.1]:         npnProtocol: false,
+2016-12-24T19:03:31.631960+00:00 app[web.1]:         alpnProtocol: false,
+2016-12-24T19:03:31.631961+00:00 app[web.1]:         authorized: true,
+2016-12-24T19:03:31.631961+00:00 app[web.1]:         authorizationError: null,
+2016-12-24T19:03:31.631962+00:00 app[web.1]:         encrypted: true,
+2016-12-24T19:03:31.631962+00:00 app[web.1]:         _events: [Object],
+2016-12-24T19:03:31.631963+00:00 app[web.1]:         _eventsCount: 9,
+2016-12-24T19:03:31.631964+00:00 app[web.1]:         connecting: false,
+2016-12-24T19:03:31.631964+00:00 app[web.1]:         _hadError: false,
+2016-12-24T19:03:31.631965+00:00 app[web.1]:         _handle: null,
+2016-12-24T19:03:31.631965+00:00 app[web.1]:         _parent: null,
+2016-12-24T19:03:31.631966+00:00 app[web.1]:         _host: 'api.twitter.com',
+2016-12-24T19:03:31.631966+00:00 app[web.1]:         _readableState: [Object],
+2016-12-24T19:03:31.631967+00:00 app[web.1]:         readable: false,
+2016-12-24T19:03:31.631967+00:00 app[web.1]:         domain: [Object],
+2016-12-24T19:03:31.631968+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.631969+00:00 app[web.1]:         _writableState: [Object],
+2016-12-24T19:03:31.631969+00:00 app[web.1]:         writable: false,
+2016-12-24T19:03:31.631970+00:00 app[web.1]:         allowHalfOpen: false,
+2016-12-24T19:03:31.631970+00:00 app[web.1]:         destroyed: true,
+2016-12-24T19:03:31.631970+00:00 app[web.1]:         _bytesDispatched: 811,
+2016-12-24T19:03:31.631971+00:00 app[web.1]:         _sockname: null,
+2016-12-24T19:03:31.631972+00:00 app[web.1]:         _pendingData: null,
+2016-12-24T19:03:31.631972+00:00 app[web.1]:         _pendingEncoding: '',
+2016-12-24T19:03:31.631973+00:00 app[web.1]:         server: undefined,
+2016-12-24T19:03:31.631973+00:00 app[web.1]:         _server: null,
+2016-12-24T19:03:31.631974+00:00 app[web.1]:         ssl: null,
+2016-12-24T19:03:31.631975+00:00 app[web.1]:         _requestCert: true,
+2016-12-24T19:03:31.631975+00:00 app[web.1]:         _rejectUnauthorized: true,
+2016-12-24T19:03:31.631975+00:00 app[web.1]:         parser: null,
+2016-12-24T19:03:31.631976+00:00 app[web.1]:         _httpMessage: [Circular],
+2016-12-24T19:03:31.631976+00:00 app[web.1]:         read: [Function],
+2016-12-24T19:03:31.631976+00:00 app[web.1]:         _consuming: true,
+2016-12-24T19:03:31.631977+00:00 app[web.1]:         _idleNext: null,
+2016-12-24T19:03:31.631977+00:00 app[web.1]:         _idlePrev: null,
+2016-12-24T19:03:31.631977+00:00 app[web.1]:         _idleTimeout: -1 },
+2016-12-24T19:03:31.631978+00:00 app[web.1]:      connection: 
+2016-12-24T19:03:31.631978+00:00 app[web.1]:       TLSSocket {
+2016-12-24T19:03:31.631978+00:00 app[web.1]:         _tlsOptions: [Object],
+2016-12-24T19:03:31.631979+00:00 app[web.1]:         _secureEstablished: true,
+2016-12-24T19:03:31.631979+00:00 app[web.1]:         _securePending: false,
+2016-12-24T19:03:31.631979+00:00 app[web.1]:         _newSessionPending: false,
+2016-12-24T19:03:31.631980+00:00 app[web.1]:         _controlReleased: true,
+2016-12-24T19:03:31.631980+00:00 app[web.1]:         _SNICallback: null,
+2016-12-24T19:03:31.631980+00:00 app[web.1]:         servername: null,
+2016-12-24T19:03:31.631981+00:00 app[web.1]:         npnProtocol: false,
+2016-12-24T19:03:31.631981+00:00 app[web.1]:         alpnProtocol: false,
+2016-12-24T19:03:31.631981+00:00 app[web.1]:         authorized: true,
+2016-12-24T19:03:31.631982+00:00 app[web.1]:         authorizationError: null,
+2016-12-24T19:03:31.631982+00:00 app[web.1]:         encrypted: true,
+2016-12-24T19:03:31.631982+00:00 app[web.1]:         _events: [Object],
+2016-12-24T19:03:31.631982+00:00 app[web.1]:         _eventsCount: 9,
+2016-12-24T19:03:31.631983+00:00 app[web.1]:         connecting: false,
+2016-12-24T19:03:31.631983+00:00 app[web.1]:         _hadError: false,
+2016-12-24T19:03:31.631983+00:00 app[web.1]:         _handle: null,
+2016-12-24T19:03:31.631984+00:00 app[web.1]:         _parent: null,
+2016-12-24T19:03:31.631984+00:00 app[web.1]:         _host: 'api.twitter.com',
+2016-12-24T19:03:31.631984+00:00 app[web.1]:         _readableState: [Object],
+2016-12-24T19:03:31.631985+00:00 app[web.1]:         readable: false,
+2016-12-24T19:03:31.631985+00:00 app[web.1]:         domain: [Object],
+2016-12-24T19:03:31.631985+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.631986+00:00 app[web.1]:         _writableState: [Object],
+2016-12-24T19:03:31.631986+00:00 app[web.1]:         writable: false,
+2016-12-24T19:03:31.631986+00:00 app[web.1]:         allowHalfOpen: false,
+2016-12-24T19:03:31.631989+00:00 app[web.1]:         destroyed: true,
+2016-12-24T19:03:31.631990+00:00 app[web.1]:         _bytesDispatched: 811,
+2016-12-24T19:03:31.631990+00:00 app[web.1]:         _sockname: null,
+2016-12-24T19:03:31.631990+00:00 app[web.1]:         _pendingData: null,
+2016-12-24T19:03:31.631991+00:00 app[web.1]:         _pendingEncoding: '',
+2016-12-24T19:03:31.631991+00:00 app[web.1]:         server: undefined,
+2016-12-24T19:03:31.631991+00:00 app[web.1]:         _server: null,
+2016-12-24T19:03:31.631992+00:00 app[web.1]:         ssl: null,
+2016-12-24T19:03:31.631992+00:00 app[web.1]:         _requestCert: true,
+2016-12-24T19:03:31.631992+00:00 app[web.1]:         _rejectUnauthorized: true,
+2016-12-24T19:03:31.631993+00:00 app[web.1]:         parser: null,
+2016-12-24T19:03:31.631993+00:00 app[web.1]:         _httpMessage: [Circular],
+2016-12-24T19:03:31.631993+00:00 app[web.1]:         read: [Function],
+2016-12-24T19:03:31.631994+00:00 app[web.1]:         _consuming: true,
+2016-12-24T19:03:31.631994+00:00 app[web.1]:         _idleNext: null,
+2016-12-24T19:03:31.631994+00:00 app[web.1]:         _idlePrev: null,
+2016-12-24T19:03:31.631994+00:00 app[web.1]:         _idleTimeout: -1 },
+2016-12-24T19:03:31.631995+00:00 app[web.1]:      _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 291\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="b8efde60deca4da88d5b832d8340e8ad",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1482606211",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="pQdWmpiF0xmg%2F28BEikkBsUmEdI%3D"\r\n\r\n',
+2016-12-24T19:03:31.631995+00:00 app[web.1]:      _headers: 
+2016-12-24T19:03:31.631996+00:00 app[web.1]:       { accept: '*/*',
+2016-12-24T19:03:31.631996+00:00 app[web.1]:         connection: 'close',
+2016-12-24T19:03:31.631996+00:00 app[web.1]:         'user-agent': 'node-twitter/1.4.0',
+2016-12-24T19:03:31.631997+00:00 app[web.1]:         host: 'api.twitter.com',
+2016-12-24T19:03:31.631997+00:00 app[web.1]:         'content-type': 'application/x-www-form-urlencoded',
+2016-12-24T19:03:31.631997+00:00 app[web.1]:         'content-length': 291,
+2016-12-24T19:03:31.631998+00:00 app[web.1]:         authorization: 'OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="b8efde60deca4da88d5b832d8340e8ad",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1482606211",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="pQdWmpiF0xmg%2F28BEikkBsUmEdI%3D"' },
+2016-12-24T19:03:31.631998+00:00 app[web.1]:      _headerNames: 
+2016-12-24T19:03:31.631999+00:00 app[web.1]:       { accept: 'Accept',
+2016-12-24T19:03:31.632000+00:00 app[web.1]:         connection: 'Connection',
+2016-12-24T19:03:31.632000+00:00 app[web.1]:         'user-agent': 'User-Agent',
+2016-12-24T19:03:31.632001+00:00 app[web.1]:         host: 'host',
+2016-12-24T19:03:31.632001+00:00 app[web.1]:         'content-type': 'content-type',
+2016-12-24T19:03:31.632001+00:00 app[web.1]:         'content-length': 'content-length',
+2016-12-24T19:03:31.632002+00:00 app[web.1]:         authorization: 'Authorization' },
+2016-12-24T19:03:31.632002+00:00 app[web.1]:      _onPendingData: null,
+2016-12-24T19:03:31.632003+00:00 app[web.1]:      agent: 
+2016-12-24T19:03:31.632003+00:00 app[web.1]:       Agent {
+2016-12-24T19:03:31.632003+00:00 app[web.1]:         domain: null,
+2016-12-24T19:03:31.632004+00:00 app[web.1]:         _events: [Object],
+2016-12-24T19:03:31.632004+00:00 app[web.1]:         _eventsCount: 1,
+2016-12-24T19:03:31.632005+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.632005+00:00 app[web.1]:         defaultPort: 443,
+2016-12-24T19:03:31.632005+00:00 app[web.1]:         protocol: 'https:',
+2016-12-24T19:03:31.632005+00:00 app[web.1]:         options: [Object],
+2016-12-24T19:03:31.632006+00:00 app[web.1]:         requests: {},
+2016-12-24T19:03:31.632006+00:00 app[web.1]:         sockets: [Object],
+2016-12-24T19:03:31.632006+00:00 app[web.1]:         freeSockets: {},
+2016-12-24T19:03:31.632007+00:00 app[web.1]:         keepAliveMsecs: 1000,
+2016-12-24T19:03:31.632007+00:00 app[web.1]:         keepAlive: false,
+2016-12-24T19:03:31.632007+00:00 app[web.1]:         maxSockets: Infinity,
+2016-12-24T19:03:31.632008+00:00 app[web.1]:         maxFreeSockets: 256,
+2016-12-24T19:03:31.632008+00:00 app[web.1]:         maxCachedSessions: 100,
+2016-12-24T19:03:31.632008+00:00 app[web.1]:         _sessionCache: [Object] },
+2016-12-24T19:03:31.632009+00:00 app[web.1]:      socketPath: undefined,
+2016-12-24T19:03:31.632009+00:00 app[web.1]:      timeout: undefined,
+2016-12-24T19:03:31.632009+00:00 app[web.1]:      method: 'POST',
+2016-12-24T19:03:31.632010+00:00 app[web.1]:      path: '/1.1/direct_messages/new.json',
+2016-12-24T19:03:31.632010+00:00 app[web.1]:      onSocket: [Function],
+2016-12-24T19:03:31.632010+00:00 app[web.1]:      _ended: true,
+2016-12-24T19:03:31.632011+00:00 app[web.1]:      parser: null,
+2016-12-24T19:03:31.632011+00:00 app[web.1]:      res: [Circular] },
+2016-12-24T19:03:31.632011+00:00 app[web.1]:   request: 
+2016-12-24T19:03:31.632012+00:00 app[web.1]:    Request {
+2016-12-24T19:03:31.632012+00:00 app[web.1]:      domain: 
+2016-12-24T19:03:31.632012+00:00 app[web.1]:       Domain {
+2016-12-24T19:03:31.632013+00:00 app[web.1]:         domain: null,
+2016-12-24T19:03:31.632013+00:00 app[web.1]:         _events: {},
+2016-12-24T19:03:31.632013+00:00 app[web.1]:         _eventsCount: 0,
+2016-12-24T19:03:31.632014+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.632014+00:00 app[web.1]:         members: [Object],
+2016-12-24T19:03:31.632015+00:00 app[web.1]:         oldBind: [Function],
+2016-12-24T19:03:31.632015+00:00 app[web.1]:         bind: [Function] },
+2016-12-24T19:03:31.632015+00:00 app[web.1]:      _events: 
+2016-12-24T19:03:31.632016+00:00 app[web.1]:       { error: [Function: bound ],
+2016-12-24T19:03:31.632016+00:00 app[web.1]:         complete: [Function: bound ],
+2016-12-24T19:03:31.632016+00:00 app[web.1]:         pipe: [Function],
+2016-12-24T19:03:31.632017+00:00 app[web.1]:         data: [Function],
+2016-12-24T19:03:31.632017+00:00 app[web.1]:         end: [Function] },
+2016-12-24T19:03:31.632017+00:00 app[web.1]:      _eventsCount: 5,
+2016-12-24T19:03:31.632018+00:00 app[web.1]:      _maxListeners: undefined,
+2016-12-24T19:03:31.632018+00:00 app[web.1]:      headers: 
+2016-12-24T19:03:31.632018+00:00 app[web.1]:       { Accept: '*/*',
+2016-12-24T19:03:31.632019+00:00 app[web.1]:         Connection: 'close',
+2016-12-24T19:03:31.632019+00:00 app[web.1]:         'User-Agent': 'node-twitter/1.4.0',
+2016-12-24T19:03:31.632019+00:00 app[web.1]:         'content-type': 'application/x-www-form-urlencoded',
+2016-12-24T19:03:31.632020+00:00 app[web.1]:         'content-length': 291,
+2016-12-24T19:03:31.632020+00:00 app[web.1]:         Authorization: 'OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="b8efde60deca4da88d5b832d8340e8ad",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1482606211",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="pQdWmpiF0xmg%2F28BEikkBsUmEdI%3D"' },
+2016-12-24T19:03:31.632021+00:00 app[web.1]:      method: 'post',
+2016-12-24T19:03:31.632021+00:00 app[web.1]:      callback: [Function],
+2016-12-24T19:03:31.632021+00:00 app[web.1]:      readable: true,
+2016-12-24T19:03:31.632021+00:00 app[web.1]:      writable: true,
+2016-12-24T19:03:31.632022+00:00 app[web.1]:      explicitMethod: true,
+2016-12-24T19:03:31.632022+00:00 app[web.1]:      _qs: 
+2016-12-24T19:03:31.632022+00:00 app[web.1]:       Querystring {
+2016-12-24T19:03:31.632023+00:00 app[web.1]:         request: [Circular],
+2016-12-24T19:03:31.632023+00:00 app[web.1]:         lib: [Object],
+2016-12-24T19:03:31.632023+00:00 app[web.1]:         useQuerystring: undefined,
+2016-12-24T19:03:31.632024+00:00 app[web.1]:         parseOptions: {},
+2016-12-24T19:03:31.632024+00:00 app[web.1]:         stringifyOptions: {} },
+2016-12-24T19:03:31.632024+00:00 app[web.1]:      _auth: 
+2016-12-24T19:03:31.632025+00:00 app[web.1]:       Auth {
+2016-12-24T19:03:31.632025+00:00 app[web.1]:         request: [Circular],
+2016-12-24T19:03:31.632025+00:00 app[web.1]:         hasAuth: false,
+2016-12-24T19:03:31.632026+00:00 app[web.1]:         sentAuth: false,
+2016-12-24T19:03:31.632026+00:00 app[web.1]:         bearerToken: null,
+2016-12-24T19:03:31.632026+00:00 app[web.1]:         user: null,
+2016-12-24T19:03:31.632027+00:00 app[web.1]:         pass: null },
+2016-12-24T19:03:31.632027+00:00 app[web.1]:      _oauth: OAuth { request: [Circular], params: [Object] },
+2016-12-24T19:03:31.632027+00:00 app[web.1]:      _multipart: 
+2016-12-24T19:03:31.632029+00:00 app[web.1]:       Multipart {
+2016-12-24T19:03:31.632029+00:00 app[web.1]:         request: [Circular],
+2016-12-24T19:03:31.632029+00:00 app[web.1]:         boundary: '6bdfdaee-9412-4d77-a1fb-8ade0e5b67c7',
+2016-12-24T19:03:31.632030+00:00 app[web.1]:         chunked: false,
+2016-12-24T19:03:31.632030+00:00 app[web.1]:         body: null },
+2016-12-24T19:03:31.632030+00:00 app[web.1]:      _redirect: 
+2016-12-24T19:03:31.632031+00:00 app[web.1]:       Redirect {
+2016-12-24T19:03:31.632031+00:00 app[web.1]:         request: [Circular],
+2016-12-24T19:03:31.632031+00:00 app[web.1]:         followRedirect: true,
+2016-12-24T19:03:31.632032+00:00 app[web.1]:         followRedirects: true,
+2016-12-24T19:03:31.632032+00:00 app[web.1]:         followAllRedirects: false,
+2016-12-24T19:03:31.632032+00:00 app[web.1]:         allowRedirect: [Function],
+2016-12-24T19:03:31.632033+00:00 app[web.1]:         maxRedirects: 10,
+2016-12-24T19:03:31.632033+00:00 app[web.1]:         redirects: [],
+2016-12-24T19:03:31.632034+00:00 app[web.1]:         redirectsFollowed: 0,
+2016-12-24T19:03:31.632034+00:00 app[web.1]:         removeRefererHeader: false },
+2016-12-24T19:03:31.632034+00:00 app[web.1]:      _tunnel: 
+2016-12-24T19:03:31.632035+00:00 app[web.1]:       Tunnel {
+2016-12-24T19:03:31.632035+00:00 app[web.1]:         request: [Circular],
+2016-12-24T19:03:31.632035+00:00 app[web.1]:         proxyHeaderWhiteList: [Object],
+2016-12-24T19:03:31.632036+00:00 app[web.1]:         proxyHeaderExclusiveList: [] },
+2016-12-24T19:03:31.632036+00:00 app[web.1]:      setHeader: [Function],
+2016-12-24T19:03:31.632036+00:00 app[web.1]:      hasHeader: [Function],
+2016-12-24T19:03:31.632037+00:00 app[web.1]:      getHeader: [Function],
+2016-12-24T19:03:31.632037+00:00 app[web.1]:      removeHeader: [Function],
+2016-12-24T19:03:31.632037+00:00 app[web.1]:      localAddress: undefined,
+2016-12-24T19:03:31.632038+00:00 app[web.1]:      pool: {},
+2016-12-24T19:03:31.632038+00:00 app[web.1]:      dests: [],
+2016-12-24T19:03:31.632038+00:00 app[web.1]:      __isRequestRequest: true,
+2016-12-24T19:03:31.632038+00:00 app[web.1]:      _callback: [Function],
+2016-12-24T19:03:31.632039+00:00 app[web.1]:      uri: 
+2016-12-24T19:03:31.632039+00:00 app[web.1]:       Url {
+2016-12-24T19:03:31.632039+00:00 app[web.1]:         protocol: 'https:',
+2016-12-24T19:03:31.632040+00:00 app[web.1]:         slashes: true,
+2016-12-24T19:03:31.632040+00:00 app[web.1]:         auth: null,
+2016-12-24T19:03:31.632040+00:00 app[web.1]:         host: 'api.twitter.com',
+2016-12-24T19:03:31.632041+00:00 app[web.1]:         port: 443,
+2016-12-24T19:03:31.632041+00:00 app[web.1]:         hostname: 'api.twitter.com',
+2016-12-24T19:03:31.632041+00:00 app[web.1]:         hash: null,
+2016-12-24T19:03:31.632042+00:00 app[web.1]:         search: null,
+2016-12-24T19:03:31.632042+00:00 app[web.1]:         query: null,
+2016-12-24T19:03:31.632042+00:00 app[web.1]:         pathname: '/1.1/direct_messages/new.json',
+2016-12-24T19:03:31.632043+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2016-12-24T19:03:31.632043+00:00 app[web.1]:         href: 'https://api.twitter.com/1.1/direct_messages/new.json' },
+2016-12-24T19:03:31.632043+00:00 app[web.1]:      proxy: null,
+2016-12-24T19:03:31.632044+00:00 app[web.1]:      tunnel: true,
+2016-12-24T19:03:31.632044+00:00 app[web.1]:      setHost: true,
+2016-12-24T19:03:31.632044+00:00 app[web.1]:      originalCookieHeader: undefined,
+2016-12-24T19:03:31.632045+00:00 app[web.1]:      _disableCookies: true,
+2016-12-24T19:03:31.632045+00:00 app[web.1]:      _jar: undefined,
+2016-12-24T19:03:31.632045+00:00 app[web.1]:      port: 443,
+2016-12-24T19:03:31.632046+00:00 app[web.1]:      host: 'api.twitter.com',
+2016-12-24T19:03:31.632046+00:00 app[web.1]:      body: 'screen_name=GRS_BREGANZE&text=%20Evento%3APresenza%20-%20codice%3A%20BEATO%20-%20in%20Via%20Don%20A.%20Battistella%2C%2070%2C%2036042%20Breganze%20VI%2C%20Italy%20-%20lat%3A45.70279%2C%20lng%3A11.564332%2C%20alt%3A1422%2C%20temp%3A0C%20-%20base%3A284E%2C%20rssi%3A-133.00dbm%2C%20snr%3A13.03',
+2016-12-24T19:03:31.632047+00:00 app[web.1]:      path: '/1.1/direct_messages/new.json',
+2016-12-24T19:03:31.632047+00:00 app[web.1]:      httpModule: 
+2016-12-24T19:03:31.632047+00:00 app[web.1]:       { Server: [Object],
+2016-12-24T19:03:31.632048+00:00 app[web.1]:         createServer: [Function],
+2016-12-24T19:03:31.632048+00:00 app[web.1]:         globalAgent: [Object],
+2016-12-24T19:03:31.632048+00:00 app[web.1]:         Agent: [Object],
+2016-12-24T19:03:31.632049+00:00 app[web.1]:         request: [Function],
+2016-12-24T19:03:31.632049+00:00 app[web.1]:         get: [Function] },
+2016-12-24T19:03:31.632049+00:00 app[web.1]:      agentClass: { [Function: Agent] super_: [Object] },
+2016-12-24T19:03:31.632050+00:00 app[web.1]:      agent: 
+2016-12-24T19:03:31.632050+00:00 app[web.1]:       Agent {
+2016-12-24T19:03:31.632050+00:00 app[web.1]:         domain: null,
+2016-12-24T19:03:31.632051+00:00 app[web.1]:         _events: [Object],
+2016-12-24T19:03:31.632051+00:00 app[web.1]:         _eventsCount: 1,
+2016-12-24T19:03:31.632051+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.632051+00:00 app[web.1]:         defaultPort: 443,
+2016-12-24T19:03:31.632052+00:00 app[web.1]:         protocol: 'https:',
+2016-12-24T19:03:31.632052+00:00 app[web.1]:         options: [Object],
+2016-12-24T19:03:31.632052+00:00 app[web.1]:         requests: {},
+2016-12-24T19:03:31.632053+00:00 app[web.1]:         sockets: [Object],
+2016-12-24T19:03:31.632053+00:00 app[web.1]:         freeSockets: {},
+2016-12-24T19:03:31.632053+00:00 app[web.1]:         keepAliveMsecs: 1000,
+2016-12-24T19:03:31.632054+00:00 app[web.1]:         keepAlive: false,
+2016-12-24T19:03:31.632054+00:00 app[web.1]:         maxSockets: Infinity,
+2016-12-24T19:03:31.632054+00:00 app[web.1]:         maxFreeSockets: 256,
+2016-12-24T19:03:31.632055+00:00 app[web.1]:         maxCachedSessions: 100,
+2016-12-24T19:03:31.632055+00:00 app[web.1]:         _sessionCache: [Object] },
+2016-12-24T19:03:31.632055+00:00 app[web.1]:      _started: true,
+2016-12-24T19:03:31.632056+00:00 app[web.1]:      href: 'https://api.twitter.com/1.1/direct_messages/new.json',
+2016-12-24T19:03:31.632056+00:00 app[web.1]:      req: 
+2016-12-24T19:03:31.632056+00:00 app[web.1]:       ClientRequest {
+2016-12-24T19:03:31.632057+00:00 app[web.1]:         domain: [Object],
+2016-12-24T19:03:31.632057+00:00 app[web.1]:         _events: [Object],
+2016-12-24T19:03:31.632057+00:00 app[web.1]:         _eventsCount: 5,
+2016-12-24T19:03:31.632058+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.632058+00:00 app[web.1]:         output: [],
+2016-12-24T19:03:31.632058+00:00 app[web.1]:         outputEncodings: [],
+2016-12-24T19:03:31.632058+00:00 app[web.1]:         outputCallbacks: [],
+2016-12-24T19:03:31.632059+00:00 app[web.1]:         outputSize: 0,
+2016-12-24T19:03:31.632059+00:00 app[web.1]:         writable: true,
+2016-12-24T19:03:31.632059+00:00 app[web.1]:         _last: true,
+2016-12-24T19:03:31.632060+00:00 app[web.1]:         upgrading: false,
+2016-12-24T19:03:31.632060+00:00 app[web.1]:         chunkedEncoding: false,
+2016-12-24T19:03:31.632060+00:00 app[web.1]:         shouldKeepAlive: false,
+2016-12-24T19:03:31.632061+00:00 app[web.1]:         useChunkedEncodingByDefault: true,
+2016-12-24T19:03:31.632061+00:00 app[web.1]:         sendDate: false,
+2016-12-24T19:03:31.632088+00:00 app[web.1]:         _removedHeader: [Object],
+2016-12-24T19:03:31.632096+00:00 app[web.1]:         _contentLength: null,
+2016-12-24T19:03:31.632097+00:00 app[web.1]:         _hasBody: true,
+2016-12-24T19:03:31.632097+00:00 app[web.1]:         _trailer: '',
+2016-12-24T19:03:31.632097+00:00 app[web.1]:         finished: true,
+2016-12-24T19:03:31.632098+00:00 app[web.1]:         _headerSent: true,
+2016-12-24T19:03:31.632098+00:00 app[web.1]:         socket: [Object],
+2016-12-24T19:03:31.632098+00:00 app[web.1]:         connection: [Object],
+2016-12-24T19:03:31.632099+00:00 app[web.1]:         _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 291\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="b8efde60deca4da88d5b832d8340e8ad",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1482606211",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="pQdWmpiF0xmg%2F28BEikkBsUmEdI%3D"\r\n\r\n',
+2016-12-24T19:03:31.632099+00:00 app[web.1]:         _headers: [Object],
+2016-12-24T19:03:31.632099+00:00 app[web.1]:         _headerNames: [Object],
+2016-12-24T19:03:31.632100+00:00 app[web.1]:         _onPendingData: null,
+2016-12-24T19:03:31.632100+00:00 app[web.1]:         agent: [Object],
+2016-12-24T19:03:31.632100+00:00 app[web.1]:         socketPath: undefined,
+2016-12-24T19:03:31.632101+00:00 app[web.1]:         timeout: undefined,
+2016-12-24T19:03:31.632101+00:00 app[web.1]:         method: 'POST',
+2016-12-24T19:03:31.632101+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2016-12-24T19:03:31.632104+00:00 app[web.1]:         onSocket: [Function],
+2016-12-24T19:03:31.632104+00:00 app[web.1]:         _ended: true,
+2016-12-24T19:03:31.632105+00:00 app[web.1]:         parser: null,
+2016-12-24T19:03:31.632105+00:00 app[web.1]:         res: [Circular] },
+2016-12-24T19:03:31.632105+00:00 app[web.1]:      ntick: true,
+2016-12-24T19:03:31.632106+00:00 app[web.1]:      response: [Circular],
+2016-12-24T19:03:31.632106+00:00 app[web.1]:      originalHost: 'api.twitter.com',
+2016-12-24T19:03:31.632106+00:00 app[web.1]:      originalHostHeaderName: 'host',
+2016-12-24T19:03:31.632107+00:00 app[web.1]:      responseContent: [Circular],
+2016-12-24T19:03:31.632107+00:00 app[web.1]:      _destdata: true,
+2016-12-24T19:03:31.632107+00:00 app[web.1]:      _ended: true,
+2016-12-24T19:03:31.632108+00:00 app[web.1]:      _callbackCalled: true },
+2016-12-24T19:03:31.632108+00:00 app[web.1]:   toJSON: [Function: responseToJSON],
+2016-12-24T19:03:31.632108+00:00 app[web.1]:   caseless: 
+2016-12-24T19:03:31.632109+00:00 app[web.1]:    Caseless {
+2016-12-24T19:03:31.632109+00:00 app[web.1]:      dict: 
+2016-12-24T19:03:31.632110+00:00 app[web.1]:       { 'cache-control': 'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
+2016-12-24T19:03:31.632110+00:00 app[web.1]:         connection: 'close',
+2016-12-24T19:03:31.632110+00:00 app[web.1]:         'content-disposition': 'attachment; filename=json.json',
+2016-12-24T19:03:31.632111+00:00 app[web.1]:         'content-length': '3052',
+2016-12-24T19:03:31.632111+00:00 app[web.1]:         'content-type': 'application/json;charset=utf-8',
+2016-12-24T19:03:31.632111+00:00 app[web.1]:         date: 'Sat, 24 Dec 2016 19:03:31 GMT',
+2016-12-24T19:03:31.632112+00:00 app[web.1]:         expires: 'Tue, 31 Mar 1981 05:00:00 GMT',
+2016-12-24T19:03:31.632112+00:00 app[web.1]:         'last-modified': 'Sat, 24 Dec 2016 19:03:31 GMT',
+2016-12-24T19:03:31.632112+00:00 app[web.1]:         pragma: 'no-cache',
+2016-12-24T19:03:31.632113+00:00 app[web.1]:         server: 'tsa_b',
+2016-12-24T19:03:31.632113+00:00 app[web.1]:         'set-cookie': [Object],
+2016-12-24T19:03:31.632113+00:00 app[web.1]:         status: '200 OK',
+2016-12-24T19:03:31.632114+00:00 app[web.1]:         'strict-transport-security': 'max-age=631138519',
+2016-12-24T19:03:31.632114+00:00 app[web.1]:         'x-access-level': 'read-write-directmessages',
+2016-12-24T19:03:31.632114+00:00 app[web.1]:         'x-connection-hash': '8c673a2613c46fe013f87d4157908c2d',
+2016-12-24T19:03:31.632115+00:00 app[web.1]:         'x-content-type-options': 'nosniff',
+2016-12-24T19:03:31.632115+00:00 app[web.1]:         'x-frame-options': 'SAMEORIGIN',
+2016-12-24T19:03:31.632115+00:00 app[web.1]:         'x-response-time': '100',
+2016-12-24T19:03:31.632116+00:00 app[web.1]:         'x-transaction': '00b9efcb005a136f',
+2016-12-24T19:03:31.632116+00:00 app[web.1]:         'x-tsa-request-body-time': '0',
+2016-12-24T19:03:31.632116+00:00 app[web.1]:         'x-twitter-response-tags': 'BouncerCompliant',
+2016-12-24T19:03:31.632117+00:00 app[web.1]:         'x-xss-protection': '1; mode=block' } },
+2016-12-24T19:03:31.632117+00:00 app[web.1]:   read: [Function],
+2016-12-24T19:03:31.632121+00:00 app[web.1]:   body: '{"id":812735473777016835,"id_str":"812735473777016835","text":"Evento:Presenza - codice: BEATO - in Via Don A. Battistella, 70, 36042 Breganze VI, Italy - lat:45.70279, lng:11.564332, alt:1422, temp:0C - base:284E, rssi:-133.00dbm, snr:13.03","sender":{"id":762367617407545344,"id_str":"762367617407545344","name":"usthings2016","screen_name":"usthings2016","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":2,"friends_count":1,"listed_count":0,"created_at":"Sun Aug 07 19:19:38 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":42,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_6_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"sender_id":762367617407545344,"sender_id_str":"762367617407545344","sender_screen_name":"usthings2016","recipient":{"id":757327116518191104,"id_str":"757327116518191104","name":"GRS Breganze","screen_name":"GRS_Breganze","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1,"friends_count":2,"listed_count":0,"created_at":"Sun Jul 24 21:30:29 +0000 2016","favourites_count":1,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":7,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png","profile_image_url_https":"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":true,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"recipient_id":757327116518191104,"recipient_id_str":"757327116518191104","recipient_screen_name":"GRS_Breganze","created_at":"Sat Dec 24 19:03:31 +0000 2016","entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]}}' }
+2016-12-24T19:03:31.632121+00:00 app[web.1]: Messaggio Twitter
+2016-12-24T19:03:31.599182+00:00 app[web.1]: { id: 812735473777016800,
+2016-12-24T19:03:31.599197+00:00 app[web.1]:   id_str: '812735473777016835',
+2016-12-24T19:03:31.599198+00:00 app[web.1]:   text: 'Evento:Presenza - codice: BEATO - in Via Don A. Battistella, 70, 36042 Breganze VI, Italy - lat:45.70279, lng:11.564332, alt:1422, temp:0C - base:284E, rssi:-133.00dbm, snr:13.03',
+2016-12-24T19:03:31.599199+00:00 app[web.1]:   sender: 
+2016-12-24T19:03:31.599200+00:00 app[web.1]:    { id: 762367617407545300,
+2016-12-24T19:03:31.599200+00:00 app[web.1]:      id_str: '762367617407545344',
+2016-12-24T19:03:31.599201+00:00 app[web.1]:      name: 'usthings2016',
+2016-12-24T19:03:31.599201+00:00 app[web.1]:      screen_name: 'usthings2016',
+2016-12-24T19:03:31.599202+00:00 app[web.1]:      location: '',
+2016-12-24T19:03:31.599202+00:00 app[web.1]:      description: '',
+2016-12-24T19:03:31.599202+00:00 app[web.1]:      url: null,
+2016-12-24T19:03:31.599203+00:00 app[web.1]:      entities: { description: [Object] },
+2016-12-24T19:03:31.599203+00:00 app[web.1]:      protected: false,
+2016-12-24T19:03:31.599204+00:00 app[web.1]:      followers_count: 2,
+2016-12-24T19:03:31.599204+00:00 app[web.1]:      friends_count: 1,
+2016-12-24T19:03:31.599205+00:00 app[web.1]:      listed_count: 0,
+2016-12-24T19:03:31.599205+00:00 app[web.1]:      created_at: 'Sun Aug 07 19:19:38 +0000 2016',
+2016-12-24T19:03:31.599206+00:00 app[web.1]:      favourites_count: 0,
+2016-12-24T19:03:31.599206+00:00 app[web.1]:      utc_offset: null,
+2016-12-24T19:03:31.599206+00:00 app[web.1]:      time_zone: null,
+2016-12-24T19:03:31.599207+00:00 app[web.1]:      geo_enabled: false,
+2016-12-24T19:03:31.599207+00:00 app[web.1]:      verified: false,
+2016-12-24T19:03:31.599207+00:00 app[web.1]:      statuses_count: 42,
+2016-12-24T19:03:31.599207+00:00 app[web.1]:      lang: 'it',
+2016-12-24T19:03:31.599208+00:00 app[web.1]:      contributors_enabled: false,
+2016-12-24T19:03:31.599208+00:00 app[web.1]:      is_translator: false,
+2016-12-24T19:03:31.599209+00:00 app[web.1]:      is_translation_enabled: false,
+2016-12-24T19:03:31.599209+00:00 app[web.1]:      profile_background_color: 'F5F8FA',
+2016-12-24T19:03:31.599209+00:00 app[web.1]:      profile_background_image_url: null,
+2016-12-24T19:03:31.599210+00:00 app[web.1]:      profile_background_image_url_https: null,
+2016-12-24T19:03:31.599210+00:00 app[web.1]:      profile_background_tile: false,
+2016-12-24T19:03:31.599211+00:00 app[web.1]:      profile_image_url: 'http://abs.twimg.com/sticky/default_profile_images/default_profile_6_normal.png',
+2016-12-24T19:03:31.599212+00:00 app[web.1]:      profile_image_url_https: 'https://abs.twimg.com/sticky/default_profile_images/default_profile_6_normal.png',
+2016-12-24T19:03:31.599212+00:00 app[web.1]:      profile_link_color: '1DA1F2',
+2016-12-24T19:03:31.599212+00:00 app[web.1]:      profile_sidebar_border_color: 'C0DEED',
+2016-12-24T19:03:31.599213+00:00 app[web.1]:      profile_sidebar_fill_color: 'DDEEF6',
+2016-12-24T19:03:31.599213+00:00 app[web.1]:      profile_text_color: '333333',
+2016-12-24T19:03:31.599217+00:00 app[web.1]:      profile_use_background_image: true,
+2016-12-24T19:03:31.599217+00:00 app[web.1]:      has_extended_profile: false,
+2016-12-24T19:03:31.599217+00:00 app[web.1]:      default_profile: true,
+2016-12-24T19:03:31.599218+00:00 app[web.1]:      default_profile_image: true,
+2016-12-24T19:03:31.599218+00:00 app[web.1]:      following: false,
+2016-12-24T19:03:31.599218+00:00 app[web.1]:      follow_request_sent: false,
+2016-12-24T19:03:31.599219+00:00 app[web.1]:      notifications: false,
+2016-12-24T19:03:31.599219+00:00 app[web.1]:      translator_type: 'none' },
+2016-12-24T19:03:31.599219+00:00 app[web.1]:   sender_id: 762367617407545300,
+2016-12-24T19:03:31.599220+00:00 app[web.1]:   sender_id_str: '762367617407545344',
+2016-12-24T19:03:31.599220+00:00 app[web.1]:   sender_screen_name: 'usthings2016',
+2016-12-24T19:03:31.599220+00:00 app[web.1]:   recipient: 
+2016-12-24T19:03:31.599221+00:00 app[web.1]:    { id: 757327116518191100,
+2016-12-24T19:03:31.599221+00:00 app[web.1]:      id_str: '757327116518191104',
+2016-12-24T19:03:31.599221+00:00 app[web.1]:      name: 'GRS Breganze',
+2016-12-24T19:03:31.599222+00:00 app[web.1]:      screen_name: 'GRS_Breganze',
+2016-12-24T19:03:31.599222+00:00 app[web.1]:      location: '',
+2016-12-24T19:03:31.599222+00:00 app[web.1]:      description: '',
+2016-12-24T19:03:31.599223+00:00 app[web.1]:      url: null,
+2016-12-24T19:03:31.599223+00:00 app[web.1]:      entities: { description: [Object] },
+2016-12-24T19:03:31.599223+00:00 app[web.1]:      protected: false,
+2016-12-24T19:03:31.599224+00:00 app[web.1]:      followers_count: 1,
+2016-12-24T19:03:31.599224+00:00 app[web.1]:      friends_count: 2,
+2016-12-24T19:03:31.599224+00:00 app[web.1]:      listed_count: 0,
+2016-12-24T19:03:31.599224+00:00 app[web.1]:      created_at: 'Sun Jul 24 21:30:29 +0000 2016',
+2016-12-24T19:03:31.599225+00:00 app[web.1]:      favourites_count: 1,
+2016-12-24T19:03:31.599225+00:00 app[web.1]:      utc_offset: null,
+2016-12-24T19:03:31.599226+00:00 app[web.1]:      time_zone: null,
+2016-12-24T19:03:31.599226+00:00 app[web.1]:      geo_enabled: false,
+2016-12-24T19:03:31.599226+00:00 app[web.1]:      verified: false,
+2016-12-24T19:03:31.599227+00:00 app[web.1]:      statuses_count: 7,
+2016-12-24T19:03:31.599227+00:00 app[web.1]:      lang: 'it',
+2016-12-24T19:03:31.599227+00:00 app[web.1]:      contributors_enabled: false,
+2016-12-24T19:03:31.599228+00:00 app[web.1]:      is_translator: false,
+2016-12-24T19:03:31.599228+00:00 app[web.1]:      is_translation_enabled: false,
+2016-12-24T19:03:31.599228+00:00 app[web.1]:      profile_background_color: 'F5F8FA',
+2016-12-24T19:03:31.599229+00:00 app[web.1]:      profile_background_image_url: null,
+2016-12-24T19:03:31.599229+00:00 app[web.1]:      profile_background_image_url_https: null,
+2016-12-24T19:03:31.599229+00:00 app[web.1]:      profile_background_tile: false,
+2016-12-24T19:03:31.599230+00:00 app[web.1]:      profile_image_url: 'http://abs.twimg.com/sticky/default_profile_images/default_profile_4_normal.png',
+2016-12-24T19:03:31.599230+00:00 app[web.1]:      profile_image_url_https: 'https://abs.twimg.com/sticky/default_profile_images/default_profile_4_normal.png',
+2016-12-24T19:03:31.599230+00:00 app[web.1]:      profile_link_color: '1DA1F2',
+2016-12-24T19:03:31.599231+00:00 app[web.1]:      profile_sidebar_border_color: 'C0DEED',
+2016-12-24T19:03:31.599231+00:00 app[web.1]:      profile_sidebar_fill_color: 'DDEEF6',
+2016-12-24T19:03:31.599231+00:00 app[web.1]:      profile_text_color: '333333',
+2016-12-24T19:03:31.599232+00:00 app[web.1]:      profile_use_background_image: true,
+2016-12-24T19:03:31.599232+00:00 app[web.1]:      has_extended_profile: false,
+2016-12-24T19:03:31.599232+00:00 app[web.1]:      default_profile: true,
+2016-12-24T19:03:31.599233+00:00 app[web.1]:      default_profile_image: true,
+2016-12-24T19:03:31.599233+00:00 app[web.1]:      following: true,
+2016-12-24T19:03:31.599233+00:00 app[web.1]:      follow_request_sent: false,
+2016-12-24T19:03:31.599234+00:00 app[web.1]:      notifications: false,
+2016-12-24T19:03:31.599234+00:00 app[web.1]:      translator_type: 'none' },
+2016-12-24T19:03:31.599234+00:00 app[web.1]:   recipient_id: 757327116518191100,
+2016-12-24T19:03:31.599235+00:00 app[web.1]:   recipient_id_str: '757327116518191104',
+2016-12-24T19:03:31.599235+00:00 app[web.1]:   recipient_screen_name: 'GRS_Breganze',
+2016-12-24T19:03:31.599235+00:00 app[web.1]:   created_at: 'Sat Dec 24 19:03:31 +0000 2016',
+2016-12-24T19:03:31.599236+00:00 app[web.1]:   entities: { hashtags: [], symbols: [], user_mentions: [], urls: [] } }
+2016-12-24T19:03:31.631599+00:00 app[web.1]: IncomingMessage {
+2016-12-24T19:03:31.631602+00:00 app[web.1]:   _readableState: 
+2016-12-24T19:03:31.631603+00:00 app[web.1]:    ReadableState {
+2016-12-24T19:03:31.631604+00:00 app[web.1]:      objectMode: false,
+2016-12-24T19:03:31.631604+00:00 app[web.1]:      highWaterMark: 16384,
+2016-12-24T19:03:31.631605+00:00 app[web.1]:      buffer: BufferList { head: null, tail: null, length: 0 },
+2016-12-24T19:03:31.631605+00:00 app[web.1]:      length: 0,
+2016-12-24T19:03:31.631606+00:00 app[web.1]:      pipes: null,
+2016-12-24T19:03:31.631606+00:00 app[web.1]:      pipesCount: 0,
+2016-12-24T19:03:31.631606+00:00 app[web.1]:      flowing: true,
+2016-12-24T19:03:31.631607+00:00 app[web.1]:      ended: true,
+2016-12-24T19:03:31.631607+00:00 app[web.1]:      endEmitted: true,
+2016-12-24T19:03:31.631608+00:00 app[web.1]:      reading: false,
+2016-12-24T19:03:31.631608+00:00 app[web.1]:      sync: false,
+2016-12-24T19:03:31.631608+00:00 app[web.1]:      needReadable: false,
+2016-12-24T19:03:31.631609+00:00 app[web.1]:      emittedReadable: false,
+2016-12-24T19:03:31.631609+00:00 app[web.1]:      readableListening: false,
+2016-12-24T19:03:31.631609+00:00 app[web.1]:      resumeScheduled: false,
+2016-12-24T19:03:31.631610+00:00 app[web.1]:      defaultEncoding: 'utf8',
+2016-12-24T19:03:31.631610+00:00 app[web.1]:      ranOut: false,
+2016-12-24T19:03:31.631611+00:00 app[web.1]:      awaitDrain: 0,
+2016-12-24T19:03:31.631611+00:00 app[web.1]:      readingMore: false,
+2016-12-24T19:03:31.631611+00:00 app[web.1]:      decoder: null,
+2016-12-24T19:03:31.631611+00:00 app[web.1]:      encoding: null },
+2016-12-24T19:03:31.631612+00:00 app[web.1]:   readable: false,
+2016-12-24T19:03:31.631612+00:00 app[web.1]:   domain: 
+2016-12-24T19:03:31.631613+00:00 app[web.1]:    Domain {
+2016-12-24T19:03:31.631613+00:00 app[web.1]:      domain: null,
+2016-12-24T19:03:31.631613+00:00 app[web.1]:      _events: {},
+2016-12-24T19:03:31.631614+00:00 app[web.1]:      _eventsCount: 0,
+2016-12-24T19:03:31.631614+00:00 app[web.1]:      _maxListeners: undefined,
+2016-12-24T19:03:31.631615+00:00 app[web.1]:      members: [ [Object], [Object] ],
+2016-12-24T19:03:31.631615+00:00 app[web.1]:      oldBind: [Function],
+2016-12-24T19:03:31.631615+00:00 app[web.1]:      bind: [Function] },
+2016-12-24T19:03:31.631616+00:00 app[web.1]:   _events: 
+2016-12-24T19:03:31.631616+00:00 app[web.1]:    { end: [ [Function: responseOnEnd], [Function], [Function], [Function] ],
+2016-12-24T19:03:31.631617+00:00 app[web.1]:      close: [ [Function], [Function] ],
+2016-12-24T19:03:31.631617+00:00 app[web.1]:      data: [Function],
+2016-12-24T19:03:31.631617+00:00 app[web.1]:      error: [Function] },
+2016-12-24T19:03:31.631618+00:00 app[web.1]:   _eventsCount: 4,
+2016-12-24T19:03:31.631618+00:00 app[web.1]:   _maxListeners: undefined,
+2016-12-24T19:03:31.631618+00:00 app[web.1]:   socket: 
+2016-12-24T19:03:31.631619+00:00 app[web.1]:    TLSSocket {
+2016-12-24T19:03:31.631619+00:00 app[web.1]:      _tlsOptions: 
+2016-12-24T19:03:31.631619+00:00 app[web.1]:       { pipe: null,
+2016-12-24T19:03:31.631620+00:00 app[web.1]:         secureContext: [Object],
+2016-12-24T19:03:31.631620+00:00 app[web.1]:         isServer: false,
+2016-12-24T19:03:31.631620+00:00 app[web.1]:         requestCert: true,
+2016-12-24T19:03:31.631621+00:00 app[web.1]:         rejectUnauthorized: true,
+2016-12-24T19:03:31.631621+00:00 app[web.1]:         session: undefined,
+2016-12-24T19:03:31.631621+00:00 app[web.1]:         NPNProtocols: undefined,
+2016-12-24T19:03:31.631622+00:00 app[web.1]:         ALPNProtocols: undefined,
+2016-12-24T19:03:31.631622+00:00 app[web.1]:         requestOCSP: undefined },
+2016-12-24T19:03:31.631622+00:00 app[web.1]:      _secureEstablished: true,
+2016-12-24T19:03:31.631623+00:00 app[web.1]:      _securePending: false,
+2016-12-24T19:03:31.631623+00:00 app[web.1]:      _newSessionPending: false,
+2016-12-24T19:03:31.631623+00:00 app[web.1]:      _controlReleased: true,
+2016-12-24T19:03:31.631624+00:00 app[web.1]:      _SNICallback: null,
+2016-12-24T19:03:31.631624+00:00 app[web.1]:      servername: null,
+2016-12-24T19:03:31.631624+00:00 app[web.1]:      npnProtocol: false,
+2016-12-24T19:03:31.631625+00:00 app[web.1]:      alpnProtocol: false,
+2016-12-24T19:03:31.631625+00:00 app[web.1]:      authorized: true,
+2016-12-24T19:03:31.631625+00:00 app[web.1]:      authorizationError: null,
+2016-12-24T19:03:31.631626+00:00 app[web.1]:      encrypted: true,
+2016-12-24T19:03:31.631626+00:00 app[web.1]:      _events: 
+2016-12-24T19:03:31.631626+00:00 app[web.1]:       { close: [Object],
+2016-12-24T19:03:31.631626+00:00 app[web.1]:         end: [Object],
+2016-12-24T19:03:31.631627+00:00 app[web.1]:         finish: [Function: onSocketFinish],
+2016-12-24T19:03:31.631627+00:00 app[web.1]:         _socketEnd: [Function: onSocketEnd],
+2016-12-24T19:03:31.631628+00:00 app[web.1]:         secure: [Function],
+2016-12-24T19:03:31.631628+00:00 app[web.1]:         free: [Function: onFree],
+2016-12-24T19:03:31.631628+00:00 app[web.1]:         agentRemove: [Function: onRemove],
+2016-12-24T19:03:31.631629+00:00 app[web.1]:         drain: [Function: ondrain],
+2016-12-24T19:03:31.631629+00:00 app[web.1]:         error: [Function: socketErrorListener] },
+2016-12-24T19:03:31.631629+00:00 app[web.1]:      _eventsCount: 9,
+2016-12-24T19:03:31.631630+00:00 app[web.1]:      connecting: false,
+2016-12-24T19:03:31.631630+00:00 app[web.1]:      _hadError: false,
+2016-12-24T19:03:31.631630+00:00 app[web.1]:      _handle: null,
+2016-12-24T19:03:31.631631+00:00 app[web.1]:      _parent: null,
+2016-12-24T19:03:31.631631+00:00 app[web.1]:      _host: 'api.twitter.com',
+2016-12-24T19:03:31.631632+00:00 app[web.1]:      _readableState: 
+2016-12-24T19:03:31.631632+00:00 app[web.1]:       ReadableState {
+2016-12-24T19:03:31.631632+00:00 app[web.1]:         objectMode: false,
+2016-12-24T19:03:31.631633+00:00 app[web.1]:         highWaterMark: 16384,
+2016-12-24T19:03:31.631633+00:00 app[web.1]:         buffer: [Object],
+2016-12-24T19:03:31.631633+00:00 app[web.1]:         length: 0,
+2016-12-24T19:03:31.631634+00:00 app[web.1]:         pipes: null,
+2016-12-24T19:03:31.631634+00:00 app[web.1]:         pipesCount: 0,
+2016-12-24T19:03:31.631635+00:00 app[web.1]:         flowing: true,
+2016-12-24T19:03:31.631635+00:00 app[web.1]:         ended: false,
+2016-12-24T19:03:31.631635+00:00 app[web.1]:         endEmitted: false,
+2016-12-24T19:03:31.631636+00:00 app[web.1]:         reading: true,
+2016-12-24T19:03:31.631636+00:00 app[web.1]:         sync: false,
+2016-12-24T19:03:31.631636+00:00 app[web.1]:         needReadable: true,
+2016-12-24T19:03:31.631636+00:00 app[web.1]:         emittedReadable: false,
+2016-12-24T19:03:31.631637+00:00 app[web.1]:         readableListening: false,
+2016-12-24T19:03:31.631637+00:00 app[web.1]:         resumeScheduled: false,
+2016-12-24T19:03:31.631637+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-12-24T19:03:31.631638+00:00 app[web.1]:         ranOut: false,
+2016-12-24T19:03:31.631638+00:00 app[web.1]:         awaitDrain: 0,
+2016-12-24T19:03:31.631638+00:00 app[web.1]:         readingMore: true,
+2016-12-24T19:03:31.631639+00:00 app[web.1]:         decoder: null,
+2016-12-24T19:03:31.631639+00:00 app[web.1]:         encoding: null },
+2016-12-24T19:03:31.631639+00:00 app[web.1]:      readable: false,
+2016-12-24T19:03:31.631640+00:00 app[web.1]:      domain: 
+2016-12-24T19:03:31.631640+00:00 app[web.1]:       Domain {
+2016-12-24T19:03:31.631640+00:00 app[web.1]:         domain: null,
+2016-12-24T19:03:31.631641+00:00 app[web.1]:         _events: {},
+2016-12-24T19:03:31.631641+00:00 app[web.1]:         _eventsCount: 0,
+2016-12-24T19:03:31.631641+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.631641+00:00 app[web.1]:         members: [Object],
+2016-12-24T19:03:31.631642+00:00 app[web.1]:         oldBind: [Function],
+2016-12-24T19:03:31.631642+00:00 app[web.1]:         bind: [Function] },
+2016-12-24T19:03:31.631642+00:00 app[web.1]:      _maxListeners: undefined,
+2016-12-24T19:03:31.631643+00:00 app[web.1]:      _writableState: 
+2016-12-24T19:03:31.631643+00:00 app[web.1]:       WritableState {
+2016-12-24T19:03:31.631643+00:00 app[web.1]:         objectMode: false,
+2016-12-24T19:03:31.631644+00:00 app[web.1]:         highWaterMark: 16384,
+2016-12-24T19:03:31.631644+00:00 app[web.1]:         needDrain: false,
+2016-12-24T19:03:31.631644+00:00 app[web.1]:         ending: true,
+2016-12-24T19:03:31.631645+00:00 app[web.1]:         ended: true,
+2016-12-24T19:03:31.631645+00:00 app[web.1]:         finished: true,
+2016-12-24T19:03:31.631645+00:00 app[web.1]:         decodeStrings: false,
+2016-12-24T19:03:31.631645+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-12-24T19:03:31.631646+00:00 app[web.1]:         length: 0,
+2016-12-24T19:03:31.631646+00:00 app[web.1]:         writing: false,
+2016-12-24T19:03:31.631646+00:00 app[web.1]:         corked: 0,
+2016-12-24T19:03:31.631647+00:00 app[web.1]:         sync: false,
+2016-12-24T19:03:31.631647+00:00 app[web.1]:         bufferProcessing: false,
+2016-12-24T19:03:31.631647+00:00 app[web.1]:         onwrite: [Function],
+2016-12-24T19:03:31.631648+00:00 app[web.1]:         writecb: null,
+2016-12-24T19:03:31.631648+00:00 app[web.1]:         writelen: 0,
+2016-12-24T19:03:31.631648+00:00 app[web.1]:         bufferedRequest: null,
+2016-12-24T19:03:31.631649+00:00 app[web.1]:         lastBufferedRequest: null,
+2016-12-24T19:03:31.631649+00:00 app[web.1]:         pendingcb: 0,
+2016-12-24T19:03:31.631649+00:00 app[web.1]:         prefinished: true,
+2016-12-24T19:03:31.631650+00:00 app[web.1]:         errorEmitted: false,
+2016-12-24T19:03:31.631650+00:00 app[web.1]:         bufferedRequestCount: 0,
+2016-12-24T19:03:31.631650+00:00 app[web.1]:         corkedRequestsFree: [Object] },
+2016-12-24T19:03:31.631650+00:00 app[web.1]:      writable: false,
+2016-12-24T19:03:31.631651+00:00 app[web.1]:      allowHalfOpen: false,
+2016-12-24T19:03:31.631651+00:00 app[web.1]:      destroyed: true,
+2016-12-24T19:03:31.631651+00:00 app[web.1]:      _bytesDispatched: 811,
+2016-12-24T19:03:31.631652+00:00 app[web.1]:      _sockname: null,
+2016-12-24T19:03:31.631652+00:00 app[web.1]:      _pendingData: null,
+2016-12-24T19:03:31.631652+00:00 app[web.1]:      _pendingEncoding: '',
+2016-12-24T19:03:31.631653+00:00 app[web.1]:      server: undefined,
+2016-12-24T19:03:31.631653+00:00 app[web.1]:      _server: null,
+2016-12-24T19:03:31.631653+00:00 app[web.1]:      ssl: null,
+2016-12-24T19:03:31.631654+00:00 app[web.1]:      _requestCert: true,
+2016-12-24T19:03:31.631654+00:00 app[web.1]:      _rejectUnauthorized: true,
+2016-12-24T19:03:31.631654+00:00 app[web.1]:      parser: null,
+2016-12-24T19:03:31.631655+00:00 app[web.1]:      _httpMessage: 
+2016-12-24T19:03:31.631655+00:00 app[web.1]:       ClientRequest {
+2016-12-24T19:03:31.631655+00:00 app[web.1]:         domain: [Object],
+2016-12-24T19:03:31.631656+00:00 app[web.1]:         _events: [Object],
+2016-12-24T19:03:31.631656+00:00 app[web.1]:         _eventsCount: 5,
+2016-12-24T19:03:31.631656+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.631661+00:00 app[web.1]:         output: [],
+2016-12-24T19:03:31.631661+00:00 app[web.1]:         outputEncodings: [],
+2016-12-24T19:03:31.631662+00:00 app[web.1]:         outputCallbacks: [],
+2016-12-24T19:03:31.631662+00:00 app[web.1]:         outputSize: 0,
+2016-12-24T19:03:31.631662+00:00 app[web.1]:         writable: true,
+2016-12-24T19:03:31.631663+00:00 app[web.1]:         _last: true,
+2016-12-24T19:03:31.631663+00:00 app[web.1]:         upgrading: false,
+2016-12-24T19:03:31.631663+00:00 app[web.1]:         chunkedEncoding: false,
+2016-12-24T19:03:31.631664+00:00 app[web.1]:         shouldKeepAlive: false,
+2016-12-24T19:03:31.631664+00:00 app[web.1]:         useChunkedEncodingByDefault: true,
+2016-12-24T19:03:31.631665+00:00 app[web.1]:         sendDate: false,
+2016-12-24T19:03:31.631665+00:00 app[web.1]:         _removedHeader: [Object],
+2016-12-24T19:03:31.631665+00:00 app[web.1]:         _contentLength: null,
+2016-12-24T19:03:31.631666+00:00 app[web.1]:         _hasBody: true,
+2016-12-24T19:03:31.631666+00:00 app[web.1]:         _trailer: '',
+2016-12-24T19:03:31.631666+00:00 app[web.1]:         finished: true,
+2016-12-24T19:03:31.631667+00:00 app[web.1]:         _headerSent: true,
+2016-12-24T19:03:31.631667+00:00 app[web.1]:         socket: [Circular],
+2016-12-24T19:03:31.631667+00:00 app[web.1]:         connection: [Circular],
+2016-12-24T19:03:31.631675+00:00 app[web.1]:         _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 291\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="b8efde60deca4da88d5b832d8340e8ad",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1482606211",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="pQdWmpiF0xmg%2F28BEikkBsUmEdI%3D"\r\n\r\n',
+2016-12-24T19:03:31.631675+00:00 app[web.1]:         _headers: [Object],
+2016-12-24T19:03:31.631676+00:00 app[web.1]:         _headerNames: [Object],
+2016-12-24T19:03:31.631677+00:00 app[web.1]:         _onPendingData: null,
+2016-12-24T19:03:31.631677+00:00 app[web.1]:         agent: [Object],
+2016-12-24T19:03:31.631677+00:00 app[web.1]:         socketPath: undefined,
+2016-12-24T19:03:31.631678+00:00 app[web.1]:         timeout: undefined,
+2016-12-24T19:03:31.631678+00:00 app[web.1]:         method: 'POST',
+2016-12-24T19:03:31.631678+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2016-12-24T19:03:31.631679+00:00 app[web.1]:         onSocket: [Function],
+2016-12-24T19:03:31.631679+00:00 app[web.1]:         _ended: true,
+2016-12-24T19:03:31.631680+00:00 app[web.1]:         parser: null,
+2016-12-24T19:03:31.631680+00:00 app[web.1]:         res: [Circular] },
+2016-12-24T19:03:31.631681+00:00 app[web.1]:      read: [Function],
+2016-12-24T19:03:31.631681+00:00 app[web.1]:      _consuming: true,
+2016-12-24T19:03:31.631681+00:00 app[web.1]:      _idleNext: null,
+2016-12-24T19:03:31.631682+00:00 app[web.1]:      _idlePrev: null,
+2016-12-24T19:03:31.631682+00:00 app[web.1]:      _idleTimeout: -1 },
+2016-12-24T19:03:31.631683+00:00 app[web.1]:   connection: 
+2016-12-24T19:03:31.631683+00:00 app[web.1]:    TLSSocket {
+2016-12-24T19:03:31.631683+00:00 app[web.1]:      _tlsOptions: 
+2016-12-24T19:03:31.631683+00:00 app[web.1]:       { pipe: null,
+2016-12-24T19:03:31.631684+00:00 app[web.1]:         secureContext: [Object],
+2016-12-24T19:03:31.631684+00:00 app[web.1]:         isServer: false,
+2016-12-24T19:03:31.631684+00:00 app[web.1]:         requestCert: true,
+2016-12-24T19:03:31.631685+00:00 app[web.1]:         rejectUnauthorized: true,
+2016-12-24T19:03:31.631685+00:00 app[web.1]:         session: undefined,
+2016-12-24T19:03:31.631685+00:00 app[web.1]:         NPNProtocols: undefined,
+2016-12-24T19:03:31.631686+00:00 app[web.1]:         ALPNProtocols: undefined,
+2016-12-24T19:03:31.631686+00:00 app[web.1]:         requestOCSP: undefined },
+2016-12-24T19:03:31.631686+00:00 app[web.1]:      _secureEstablished: true,
+2016-12-24T19:03:31.631687+00:00 app[web.1]:      _securePending: false,
+2016-12-24T19:03:31.631687+00:00 app[web.1]:      _newSessionPending: false,
+2016-12-24T19:03:31.631687+00:00 app[web.1]:      _controlReleased: true,
+2016-12-24T19:03:31.631688+00:00 app[web.1]:      _SNICallback: null,
+2016-12-24T19:03:31.631688+00:00 app[web.1]:      servername: null,
+2016-12-24T19:03:31.631688+00:00 app[web.1]:      npnProtocol: false,
+2016-12-24T19:03:31.631688+00:00 app[web.1]:      alpnProtocol: false,
+2016-12-24T19:03:31.631689+00:00 app[web.1]:      authorized: true,
+2016-12-24T19:03:31.631689+00:00 app[web.1]:      authorizationError: null,
+2016-12-24T19:03:31.631689+00:00 app[web.1]:      encrypted: true,
+2016-12-24T19:03:31.631690+00:00 app[web.1]:      _events: 
+2016-12-24T19:03:31.631690+00:00 app[web.1]:       { close: [Object],
+2016-12-24T19:03:31.631690+00:00 app[web.1]:         end: [Object],
+2016-12-24T19:03:31.631691+00:00 app[web.1]:         finish: [Function: onSocketFinish],
+2016-12-24T19:03:31.631691+00:00 app[web.1]:         _socketEnd: [Function: onSocketEnd],
+2016-12-24T19:03:31.631692+00:00 app[web.1]:         secure: [Function],
+2016-12-24T19:03:31.631692+00:00 app[web.1]:         free: [Function: onFree],
+2016-12-24T19:03:31.631692+00:00 app[web.1]:         agentRemove: [Function: onRemove],
+2016-12-24T19:03:31.631693+00:00 app[web.1]:         drain: [Function: ondrain],
+2016-12-24T19:03:31.631693+00:00 app[web.1]:         error: [Function: socketErrorListener] },
+2016-12-24T19:03:31.631693+00:00 app[web.1]:      _eventsCount: 9,
+2016-12-24T19:03:31.631694+00:00 app[web.1]:      connecting: false,
+2016-12-24T19:03:31.631694+00:00 app[web.1]:      _hadError: false,
+2016-12-24T19:03:31.631694+00:00 app[web.1]:      _handle: null,
+2016-12-24T19:03:31.631694+00:00 app[web.1]:      _parent: null,
+2016-12-24T19:03:31.631695+00:00 app[web.1]:      _host: 'api.twitter.com',
+2016-12-24T19:03:31.631695+00:00 app[web.1]:      _readableState: 
+2016-12-24T19:03:31.631695+00:00 app[web.1]:       ReadableState {
+2016-12-24T19:03:31.631696+00:00 app[web.1]:         objectMode: false,
+2016-12-24T19:03:31.631696+00:00 app[web.1]:         highWaterMark: 16384,
+2016-12-24T19:03:31.631696+00:00 app[web.1]:         buffer: [Object],
+2016-12-24T19:03:31.631697+00:00 app[web.1]:         length: 0,
+2016-12-24T19:03:31.631697+00:00 app[web.1]:         pipes: null,
+2016-12-24T19:03:31.631697+00:00 app[web.1]:         pipesCount: 0,
+2016-12-24T19:03:31.631698+00:00 app[web.1]:         flowing: true,
+2016-12-24T19:03:31.631698+00:00 app[web.1]:         ended: false,
+2016-12-24T19:03:31.631698+00:00 app[web.1]:         endEmitted: false,
+2016-12-24T19:03:31.631699+00:00 app[web.1]:         reading: true,
+2016-12-24T19:03:31.631699+00:00 app[web.1]:         sync: false,
+2016-12-24T19:03:31.631699+00:00 app[web.1]:         needReadable: true,
+2016-12-24T19:03:31.631700+00:00 app[web.1]:         emittedReadable: false,
+2016-12-24T19:03:31.631700+00:00 app[web.1]:         readableListening: false,
+2016-12-24T19:03:31.631700+00:00 app[web.1]:         resumeScheduled: false,
+2016-12-24T19:03:31.631701+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-12-24T19:03:31.631701+00:00 app[web.1]:         ranOut: false,
+2016-12-24T19:03:31.631702+00:00 app[web.1]:         awaitDrain: 0,
+2016-12-24T19:03:31.631702+00:00 app[web.1]:         readingMore: true,
+2016-12-24T19:03:31.631703+00:00 app[web.1]:         decoder: null,
+2016-12-24T19:03:31.631703+00:00 app[web.1]:         encoding: null },
+2016-12-24T19:03:31.631703+00:00 app[web.1]:      readable: false,
+2016-12-24T19:03:31.631704+00:00 app[web.1]:      domain: 
+2016-12-24T19:03:31.631704+00:00 app[web.1]:       Domain {
+2016-12-24T19:03:31.631704+00:00 app[web.1]:         domain: null,
+2016-12-24T19:03:31.631705+00:00 app[web.1]:         _events: {},
+2016-12-24T19:03:31.631705+00:00 app[web.1]:         _eventsCount: 0,
+2016-12-24T19:03:31.631705+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.631706+00:00 app[web.1]:         members: [Object],
+2016-12-24T19:03:31.631706+00:00 app[web.1]:         oldBind: [Function],
+2016-12-24T19:03:31.631706+00:00 app[web.1]:         bind: [Function] },
+2016-12-24T19:03:31.631707+00:00 app[web.1]:      _maxListeners: undefined,
+2016-12-24T19:03:31.631707+00:00 app[web.1]:      _writableState: 
+2016-12-24T19:03:31.631707+00:00 app[web.1]:       WritableState {
+2016-12-24T19:03:31.631708+00:00 app[web.1]:         objectMode: false,
+2016-12-24T19:03:31.631708+00:00 app[web.1]:         highWaterMark: 16384,
+2016-12-24T19:03:31.631708+00:00 app[web.1]:         needDrain: false,
+2016-12-24T19:03:31.631708+00:00 app[web.1]:         ending: true,
+2016-12-24T19:03:31.631709+00:00 app[web.1]:         ended: true,
+2016-12-24T19:03:31.631709+00:00 app[web.1]:         finished: true,
+2016-12-24T19:03:31.631709+00:00 app[web.1]:         decodeStrings: false,
+2016-12-24T19:03:31.631710+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2016-12-24T19:03:31.631710+00:00 app[web.1]:         length: 0,
+2016-12-24T19:03:31.631710+00:00 app[web.1]:         writing: false,
+2016-12-24T19:03:31.631711+00:00 app[web.1]:         corked: 0,
+2016-12-24T19:03:31.631711+00:00 app[web.1]:         sync: false,
+2016-12-24T19:03:31.631711+00:00 app[web.1]:         bufferProcessing: false,
+2016-12-24T19:03:31.631712+00:00 app[web.1]:         onwrite: [Function],
+2016-12-24T19:03:31.631712+00:00 app[web.1]:         writecb: null,
+2016-12-24T19:03:31.631712+00:00 app[web.1]:         writelen: 0,
+2016-12-24T19:03:31.631713+00:00 app[web.1]:         bufferedRequest: null,
+2016-12-24T19:03:31.631713+00:00 app[web.1]:         lastBufferedRequest: null,
+2016-12-24T19:03:31.631713+00:00 app[web.1]:         pendingcb: 0,
+2016-12-24T19:03:31.631714+00:00 app[web.1]:         prefinished: true,
+2016-12-24T19:03:31.631714+00:00 app[web.1]:         errorEmitted: false,
+2016-12-24T19:03:31.631716+00:00 app[web.1]:         bufferedRequestCount: 0,
+2016-12-24T19:03:31.631717+00:00 app[web.1]:         corkedRequestsFree: [Object] },
+2016-12-24T19:03:31.631717+00:00 app[web.1]:      writable: false,
+2016-12-24T19:03:31.631717+00:00 app[web.1]:      allowHalfOpen: false,
+2016-12-24T19:03:31.631718+00:00 app[web.1]:      destroyed: true,
+2016-12-24T19:03:31.631718+00:00 app[web.1]:      _bytesDispatched: 811,
+2016-12-24T19:03:31.631718+00:00 app[web.1]:      _sockname: null,
+2016-12-24T19:03:31.631719+00:00 app[web.1]:      _pendingData: null,
+2016-12-24T19:03:31.631719+00:00 app[web.1]:      _pendingEncoding: '',
+2016-12-24T19:03:31.631719+00:00 app[web.1]:      server: undefined,
+2016-12-24T19:03:31.631719+00:00 app[web.1]:      _server: null,
+2016-12-24T19:03:31.631720+00:00 app[web.1]:      ssl: null,
+2016-12-24T19:03:31.631720+00:00 app[web.1]:      _requestCert: true,
+2016-12-24T19:03:31.631720+00:00 app[web.1]:      _rejectUnauthorized: true,
+2016-12-24T19:03:31.631721+00:00 app[web.1]:      parser: null,
+2016-12-24T19:03:31.631721+00:00 app[web.1]:      _httpMessage: 
+2016-12-24T19:03:31.631721+00:00 app[web.1]:       ClientRequest {
+2016-12-24T19:03:31.631722+00:00 app[web.1]:         domain: [Object],
+2016-12-24T19:03:31.631722+00:00 app[web.1]:         _events: [Object],
+2016-12-24T19:03:31.631722+00:00 app[web.1]:         _eventsCount: 5,
+2016-12-24T19:03:31.631723+00:00 app[web.1]:         _maxListeners: undefined,
+2016-12-24T19:03:31.631723+00:00 app[web.1]:         output: [],
+2016-12-24T19:03:31.631723+00:00 app[web.1]:         outputEncodings: [],
+2016-12-24T19:03:31.631724+00:00 app[web.1]:         outputCallbacks: [],
+2016-12-24T19:03:31.631724+00:00 app[web.1]:         outputSize: 0,
+2016-12-24T19:03:31.631724+00:00 app[web.1]:         writable: true,
+2016-12-24T19:03:31.631724+00:00 app[web.1]:         _last: true,
+2016-12-24T19:03:31.631725+00:00 app[web.1]:         upgrading: false,
+2016-12-24T19:03:31.631725+00:00 app[web.1]:         chunkedEncoding: false,
+2016-12-24T19:03:31.631725+00:00 app[web.1]:         shouldKeepAlive: false,
+2016-12-24T19:03:31.631726+00:00 app[web.1]:         useChunkedEncodingByDefault: true,
+2016-12-24T19:03:31.631726+00:00 app[web.1]:         sendDate: false,
+2016-12-24T19:03:31.631727+00:00 app[web.1]:         _removedHeader: [Object],
+2016-12-24T19:03:31.631727+00:00 app[web.1]:         _contentLength: null,
+2016-12-24T19:03:31.631727+00:00 app[web.1]:         _hasBody: true,
+2016-12-24T19:03:31.631728+00:00 app[web.1]:         _trailer: '',
+2016-12-24T19:03:31.631728+00:00 app[web.1]:         finished: true,
+2016-12-24T19:03:31.631728+00:00 app[web.1]:         _headerSent: true,
+2016-12-24T19:03:31.631729+00:00 app[web.1]:         socket: [Circular],
+2016-12-24T19:03:31.631729+00:00 app[web.1]:         connection: [Circular],
+2016-12-24T19:03:31.631730+00:00 app[web.1]:         _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 291\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="b8efde60deca4da88d5b832d8340e8ad",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1482606211",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="pQdWmpiF0xmg%2F28BEikkBsUmEdI%3D"\r\n\r\n',
+2016-12-24T19:03:31.631730+00:00 app[web.1]:         _headers: [Object],
+2016-12-24T19:03:31.631730+00:00 app[web.1]:         _headerNames: [Object],
+2016-12-24T19:03:31.631731+00:00 app[web.1]:         _onPendingData: null,
+2016-12-24T19:03:31.631731+00:00 app[web.1]:         agent: [Object],
+2016-12-24T19:03:31.631732+00:00 app[web.1]:         socketPath: undefined,
+2016-12-24T19:03:31.631732+00:00 app[web.1]:         timeout: undefined,
+2016-12-24T19:03:31.631732+00:00 app[web.1]:         method: 'POST',
+2016-12-24T19:03:31.631733+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2016-12-24T19:03:31.631733+00:00 app[web.1]:         onSocket: [Function],
+2016-12-24T19:03:31.631734+00:00 app[web.1]:         _ended: true,
+2016-12-24T19:03:31.631734+00:00 app[web.1]:         parser: null,
+2016-12-24T19:03:31.631734+00:00 app[web.1]:         res: [Circular] },
+2016-12-24T19:03:31.631735+00:00 app[web.1]:      read: [Function],
+2016-12-24T19:03:31.631735+00:00 app[web.1]:      _consuming: true,
+2016-12-24T19:03:31.631735+00:00 app[web.1]:      _idleNext: null,
+2016-12-24T19:03:31.631736+00:00 app[web.1]:      _idlePrev: null,
+2016-12-24T19:03:31.631736+00:00 app[web.1]:      _idleTimeout: -1 },
+2016-12-24T19:03:31.631736+00:00 app[web.1]:   httpVersionMajor: 1,
+2016-12-24T19:03:31.631737+00:00 app[web.1]:   httpVersionMinor: 1,
+2016-12-24T19:03:31.631737+00:00 app[web.1]:   httpVersion: '1.1',
+2016-12-24T19:03:31.631737+00:00 app[web.1]:   complete: true,
+2016-12-24T19:03:31.631738+00:00 app[web.1]:   headers: 
+2016-12-24T19:03:31.631738+00:00 app[web.1]:    { 'cache-control': 'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
+2016-12-24T19:03:31.631738+00:00 app[web.1]:      connection: 'close',
+2016-12-24T19:03:31.631739+00:00 app[web.1]:      'content-disposition': 'attachment; filename=json.json',
+2016-12-24T19:03:31.631739+00:00 app[web.1]:      'content-length': '3052',
+2016-12-24T19:03:31.631739+00:00 app[web.1]:      'content-type': 'application/json;charset=utf-8',
+2016-12-24T19:03:31.631740+00:00 app[web.1]:      date: 'Sat, 24 Dec 2016 19:03:31 GMT',
+2016-12-24T19:03:31.631740+00:00 app[web.1]:      expires: 'Tue, 31 Mar 1981 05:00:00 GMT',
+2016-12-24T19:03:31.631740+00:00 app[web.1]:      'last-modified': 'Sat, 24 Dec 2016 19:03:31 GMT',
+2016-12-24T19:03:31.631741+00:00 app[web.1]:      pragma: 'no-cache',
+2016-12-24T19:03:31.631741+00:00 app[web.1]:      server: 'tsa_b',
+2016-12-24T19:03:31.631741+00:00 app[web.1]:      'set-cookie': 
+2016-12-24T19:03:31.631742+00:00 app[web.1]:       [ 'lang=it; Path=/',
+2016-12-24T19:03:31.631742+00:00 app[web.1]:         'guest_id=v1%3A148260621149084699; Domain=.twitter.com; Path=/; Expires=Mon, 24-Dec-2018 19:03:31 UTC' ],
+2016-12-24T19:03:31.631743+00:00 app[web.1]:      status: '200 OK',
+2016-12-24T19:03:31.631743+00:00 app[web.1]:      'strict-transport-security': 'max-age=631138519',
+2016-12-24T19:03:31.631743+00:00 app[web.1]:      'x-access-level': 'read-write-directmessages',
+2016-12-24T19:03:31.631744+00:00 app[web.1]:      'x-connection-hash': '8c673a2613c46fe013f87d4157908c2d',
+2016-12-24T19:03:31.631744+00:00 app[web.1]:      'x-content-type-options': 'nosniff',
+2016-12-24T19:03:31.631745+00:00 app[web.1]:      'x-frame-options': 'SAMEORIGIN',
+2016-12-24T19:03:31.631745+00:00 app[web.1]:      'x-response-time': '100',
+2016-12-24T19:03:31.631745+00:00 app[web.1]:      'x-transaction': '00b9efcb005a136f',
+2016-12-24T19:03:31.631745+00:00 app[web.1]:      'x-tsa-request-body-time': '0',
+2016-12-24T19:03:31.631746+00:00 app[web.1]:      'x-twitter-response-tags': 'BouncerCompliant',
+2016-12-24T19:03:31.631746+00:00 app[web.1]:      'x-xss-protection': '1; mode=block' },
+2016-12-24T19:03:31.631747+00:00 app[web.1]:   rawHeaders: 
+2016-12-24T19:03:31.631747+00:00 app[web.1]:    [ 'cache-control',
+2016-12-24T19:03:31.631747+00:00 app[web.1]:      'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
+2016-12-24T19:03:31.631748+00:00 app[web.1]:      'connection',
+2016-12-24T19:03:31.631748+00:00 app[web.1]:      'close',
+2016-12-24T19:03:31.631748+00:00 app[web.1]:      'content-disposition',
+2016-12-24T19:03:31.631749+00:00 app[web.1]:      'attachment; filename=json.json',
+2016-12-24T19:03:31.631749+00:00 app[web.1]:      'content-length',
+2016-12-24T19:03:31.631749+00:00 app[web.1]:      '3052',
+2016-12-24T19:03:31.631749+00:00 app[web.1]:      'content-type',
+2016-12-24T19:03:31.631750+00:00 app[web.1]:      'application/json;charset=utf-8',
+2016-12-24T19:03:31.631750+00:00 app[web.1]:      'date',
+2016-12-24T19:03:31.631750+00:00 app[web.1]:      'Sat, 24 Dec 2016 19:03:31 GMT',
+2016-12-24T19:03:31.631751+00:00 app[web.1]:      'expires',
+2016-12-24T19:03:31.631751+00:00 app[web.1]:      'Tue, 31 Mar 1981 05:00:00 GMT',
+2016-12-24T19:03:31.631751+00:00 app[web.1]:      'last-modified',
+2016-12-24T19:03:31.631752+00:00 app[web.1]:      'Sat, 24 Dec 2016 19:03:31 GMT',
+2016-12-24T19:03:31.631752+00:00 app[web.1]:      'pragma',
+2016-12-24T19:03:31.631752+00:00 app[web.1]:      'no-cache',
+2016-12-24T19:03:31.631753+00:00 app[web.1]:      'server',
+2016-12-24T19:03:31.631753+00:00 app[web.1]:      'tsa_b',
+2016-12-24T19:03:31.631753+00:00 app[web.1]:      'set-cookie',
+2016-12-24T19:03:31.631754+00:00 app[web.1]:      'lang=it; Path=/',
+2016-12-24T19:03:31.631754+00:00 app[web.1]:      'set-cookie',
+2016-12-24T19:03:31.631755+00:00 app[web.1]:      'guest_id=v1%3A148260621149084699; Domain=.twitter.com; Path=/; Expires=Mon, 24-Dec-2018 19:03:31 UTC',
+2016-12-24T19:03:31.631755+00:00 app[web.1]:      'status',
+2016-12-24T19:03:31.631755+00:00 app[web.1]:      '200 OK',
 Terminare il processo batch (S/N)? 
+
+C:\FW\mythings2016>

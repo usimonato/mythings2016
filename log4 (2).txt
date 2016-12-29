@@ -1,0 +1,102 @@
+2016-12-24T20:46:56.022703+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-12-24T20:46:56.022805+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-12-24T20:46:56.022895+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-12-24T20:46:56.023002+00:00 app[web.1]: npm ERR!     node .
+2016-12-24T20:46:56.023084+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-12-24T20:46:56.023185+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-12-24T20:46:56.023313+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-12-24T20:46:56.023507+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-12-24T20:46:56.023399+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-12-24T20:46:56.048006+00:00 app[web.1]: 
+2016-12-24T20:46:56.048199+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-12-24T20:46:56.048273+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-12-24T20:46:56.117753+00:00 heroku[web.1]: Process exited with status 1
+2016-12-24T20:46:56.124503+00:00 heroku[web.1]: State changed from up to crashed
+2016-12-24T20:49:35.407126+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=8d02bbfe-1514-4487-890a-145ffa0c88d9 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+2016-12-24T20:50:00.762570+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=5be526e8-1030-4829-9b91-60cb43cedb5b fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+2016-12-24T20:50:35.754317+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=2cc593b0-aa91-4f96-845b-5b26d862db0a fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+2016-12-24T20:51:01.120378+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=d0818a45-4706-4020-8afb-ced3f8fb7744 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+2016-12-24T20:59:29.396195+00:00 heroku[web.1]: State changed from crashed to starting
+2016-12-24T20:59:33.263550+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-12-24T20:59:35.391194+00:00 app[web.1]: 
+2016-12-24T20:59:35.391215+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2016-12-24T20:59:35.391215+00:00 app[web.1]: > node .
+2016-12-24T20:59:35.391216+00:00 app[web.1]: 
+2016-12-24T20:59:36.795840+00:00 app[web.1]: Web server listening at: http://0.0.0.0:42290
+2016-12-24T20:59:36.796545+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:42290/explorer
+2016-12-24T20:59:37.267104+00:00 heroku[web.1]: State changed from starting to up
+2016-12-24T20:59:43.913077+00:00 app[web.1]: > testing afterRemote function
+2016-12-24T20:59:43.913149+00:00 app[web.1]: time : 1482613183
+2016-12-24T20:59:43.913203+00:00 app[web.1]: device: C3B27
+2016-12-24T20:59:43.913252+00:00 app[web.1]: data : 000005000000000000000000
+2016-12-24T20:59:43.913299+00:00 app[web.1]: name: IOT_02
+2016-12-24T20:59:43.913344+00:00 app[web.1]: rssi : -141.00
+2016-12-24T20:59:43.913394+00:00 app[web.1]: snr : 9.63
+2016-12-24T20:59:43.913441+00:00 app[web.1]: station : 25F6
+2016-12-24T20:59:43.913491+00:00 app[web.1]: lat : 0
+2016-12-24T20:59:43.913536+00:00 app[web.1]: lon : 0
+2016-12-24T20:59:43.913586+00:00 app[web.1]: alt : 1280
+2016-12-24T20:59:43.913631+00:00 app[web.1]: event :0
+2016-12-24T20:59:43.913662+00:00 app[web.1]: passo 0
+2016-12-24T20:59:43.913703+00:00 app[web.1]: passo 222222222222
+2016-12-24T20:59:43.913952+00:00 app[web.1]: passo 2A
+2016-12-24T20:59:43.916678+00:00 app[web.1]: passo 00000000000000
+2016-12-24T20:59:43.916780+00:00 app[web.1]: passo 2D
+2016-12-24T20:59:43.987121+00:00 app[web.1]: passo 2B
+2016-12-24T20:59:43.914042+00:00 app[web.1]: lon : 0
+2016-12-24T20:59:43.991749+00:00 app[web.1]:         fn = function () { throw arg; };
+2016-12-24T20:59:43.916834+00:00 app[web.1]: got data: null
+2016-12-24T20:59:43.914001+00:00 app[web.1]: lat : 0
+2016-12-24T20:59:43.991747+00:00 app[web.1]: /app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:49
+2016-12-24T20:59:43.991749+00:00 app[web.1]:                            ^
+2016-12-24T20:59:43.991750+00:00 app[web.1]: 
+2016-12-24T20:59:43.991751+00:00 app[web.1]: TypeError: Cannot read property '0' of undefined
+2016-12-24T20:59:43.991751+00:00 app[web.1]:     at Geocoder.<anonymous> (/app/common/models/message.js:55:10)
+2016-12-24T20:59:43.991752+00:00 app[web.1]:     at Geocoder.tryCatcher (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/util.js:16:23)
+2016-12-24T20:59:43.991752+00:00 app[web.1]:     at Promise.errorAdapter (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/nodeify.js:35:34)
+2016-12-24T20:59:43.991753+00:00 app[web.1]:     at Promise.<anonymous> (/app/node_modules/loopback/node_modules/continuation-local-storage/context.js:76:17)
+2016-12-24T20:59:43.991754+00:00 app[web.1]:     at bound (domain.js:280:14)
+2016-12-24T20:59:43.991754+00:00 app[web.1]:     at Promise.runBound [as _rejectionHandler0] (domain.js:293:12)
+2016-12-24T20:59:43.991755+00:00 app[web.1]:     at Promise._settlePromise (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:557:21)
+2016-12-24T20:59:43.991755+00:00 app[web.1]:     at Promise._settlePromise0 (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:605:10)
+2016-12-24T20:59:43.991755+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/promise.js:680:18)
+2016-12-24T20:59:43.991756+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:126:16)
+2016-12-24T20:59:43.991756+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:136:10)
+2016-12-24T20:59:43.991757+00:00 app[web.1]:     at Immediate.Async.drainQueues (/app/node_modules/node-geocoder/node_modules/bluebird/js/release/async.js:16:14)
+2016-12-24T20:59:43.991757+00:00 app[web.1]:     at Immediate.<anonymous> (/app/node_modules/loopback/node_modules/continuation-local-storage/node_modules/async-listener/glue.js:188:31)
+2016-12-24T20:59:43.991758+00:00 app[web.1]:     at runCallback (timers.js:637:20)
+2016-12-24T20:59:43.991758+00:00 app[web.1]:     at tryOnImmediate (timers.js:610:5)
+2016-12-24T20:59:43.991759+00:00 app[web.1]:     at processImmediate [as _immediateCallback] (timers.js:582:5)
+2016-12-24T20:59:44.003862+00:00 app[web.1]: 
+2016-12-24T20:59:44.012325+00:00 app[web.1]: npm ERR! Linux 3.13.0-105-generic
+2016-12-24T20:59:44.012517+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-12-24T20:59:44.012688+00:00 app[web.1]: npm ERR! node v6.9.1
+2016-12-24T20:59:44.012811+00:00 app[web.1]: npm ERR! npm  v3.10.8
+2016-12-24T20:59:44.012964+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-12-24T20:59:44.013075+00:00 app[web.1]: npm ERR! mythings2016@1.0.0 start: `node .`
+2016-12-24T20:59:44.013164+00:00 app[web.1]: npm ERR! Exit status 1
+2016-12-24T20:59:44.013259+00:00 app[web.1]: npm ERR! 
+2016-12-24T20:59:44.013367+00:00 app[web.1]: npm ERR! Failed at the mythings2016@1.0.0 start script 'node .'.
+2016-12-24T20:59:44.013458+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-12-24T20:59:44.013548+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the mythings2016 package,
+2016-12-24T20:59:44.013628+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-12-24T20:59:44.013720+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-12-24T20:59:44.013828+00:00 app[web.1]: npm ERR!     node .
+2016-12-24T20:59:44.013921+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-12-24T20:59:44.013998+00:00 app[web.1]: npm ERR!     npm bugs mythings2016
+2016-12-24T20:59:44.014082+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-12-24T20:59:44.014348+00:00 app[web.1]: npm ERR!     npm owner ls mythings2016
+2016-12-24T20:59:44.014429+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-12-24T20:59:44.036187+00:00 app[web.1]: 
+2016-12-24T20:59:44.036468+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-12-24T20:59:44.036366+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-12-24T20:59:44.097600+00:00 heroku[web.1]: State changed from up to crashed
+2016-12-24T20:59:43.918592+00:00 heroku[router]: at=info method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=adf95bdb-49fc-40dd-8fe0-8360bb274986 fwd="185.110.97.11" dyno=web.1 connect=1ms service=78ms status=200 bytes=540
+2016-12-24T20:59:44.094104+00:00 heroku[web.1]: Process exited with status 1
+2016-12-24T20:59:52.024931+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=a8f54d0c-23e1-4d32-8661-230a700120f0 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+2016-12-24T21:00:52.369780+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=1c76aed4-153b-4a4b-8852-6da757665dbc fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+2016-12-24T21:01:09.189491+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=6cc8d39f-4564-4050-8cf3-e288c52df83b fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+2016-12-24T21:02:09.517414+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=540f7b92-2c71-4130-a985-19331bd06d9f fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+2016-12-24T21:09:38.526759+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=6247579f-5aba-4b6a-a005-8e97b0fd66c3 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+2016-12-24T21:10:38.872675+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/api/Messages" host=vast-depths-86252.herokuapp.com request_id=cc9333b9-fcd1-4af6-85a2-a01d7093b213 fwd="185.110.97.11" dyno= connect= service= status=503 bytes=
+Terminare il processo batch (S/N)? Terminare il processo batch (S/N)? Terminare il processo batch (S/N)? 

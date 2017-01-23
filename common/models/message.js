@@ -36,6 +36,12 @@ var evento2;
 var temperature;
 var wait_address;
 var owner_things;
+var last_data_IOT1 = new Date();
+var last_data_IOT2 = new Date();
+var last_data_IOT3 = new Date();
+var send;
+var delta;
+
 var client = new Twitter({ consumer_key: process.env.TWITTER_CONSUMER_KEY, consumer_secret: process.env.TWITTER_CONSUMER_SECRET, access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY, access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET, });
 
 var myCallback = function(err, data) {
@@ -137,14 +143,21 @@ var usingItNow = function(callback) {
        console.log('address_last: '+address_last);
        var dataora = new Date();
        console.log('dataora : '+dataora);
-
+       send = true;
        owner_things = 'GRS_BREGANZE'
        if(name_convert == 'IOT_01')
           owner_things = 'GRS_BREGANZE';
 
        if(name_convert == 'IOT_02')
        {
-          owner_things = 'alpinoluca2';
+          //owner_things = 'alpinoluca2';
+          delta = new Date() -  last_data_IOT2;
+          last_data_IOT2 = new Date();
+          if(delta  < 2)
+          {
+             send = false;
+          }
+          owner_things = 'GRS_BREGANZE';
           name_convert = 'BEATO';
        }
 
@@ -153,9 +166,11 @@ var usingItNow = function(callback) {
           owner_things = 'GRS_BREGANZE';
           temperature =   evt_convert & 0x00FF;
        }
-
-       client.post('/direct_messages/new.json', {screen_name: owner_things, 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ', temp:' +  temperature + 'C - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);console.log('Messaggio Twitter');});
+       if(send == true)
+       {
+               client.post('/direct_messages/new.json', {screen_name: owner_things, 'text': ' Evento:' + evento + ' - codice: ' + name_convert + ' - in ' + address_last + ' - lat:' +  +lat_convert+ ', lng:' +  lon_convert +  ', alt:' +  alt_convert  + ', temp:' +  temperature + 'C - base:' + station_convert + ', rssi:' + rssi_convert + 'dbm, snr:' + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response);console.log('Messaggio Twitter');});
        //client.post('statuses/update', {status: " Evento:" + evento + "- codice: " + name_convert + " - in " + address_last + " - lat:" +  +lat_convert + ", lng:" +  lon_convert +  ", alt:" +  alt_convert  + " - base:" + station_convert + ", rssi:" + rssi_convert + "dbm, snr:" + snr_convert}, function(error, tweet, response){ if(error) console.log(error); console.log(tweet); console.log(response); console.log('Stato Twitter');});
+       }
     });
 
     console.log('passo 00000000000000');

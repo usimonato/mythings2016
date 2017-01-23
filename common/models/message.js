@@ -146,7 +146,9 @@ var usingItNow = function(callback) {
        send = true;
        owner_things = 'GRS_BREGANZE'
        if(name_convert == 'IOT_01')
+       {
           owner_things = 'GRS_BREGANZE';
+       }   
 
        if(name_convert == 'IOT_02')
        {

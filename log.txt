@@ -1,0 +1,101 @@
+2017-01-23T15:24:10.955490+00:00 app[web.1]:         globalAgent: [Object],
+2017-01-23T15:24:10.955492+00:00 app[web.1]:         request: [Function],
+2017-01-23T15:24:10.955500+00:00 app[web.1]:         keepAlive: false,
+2017-01-23T15:24:10.955504+00:00 app[web.1]:      href: 'https://api.twitter.com/1.1/direct_messages/new.json',
+2017-01-23T15:24:10.955508+00:00 app[web.1]:         outputCallbacks: [],
+2017-01-23T15:24:10.955498+00:00 app[web.1]:         sockets: [Object],
+2017-01-23T15:24:10.955505+00:00 app[web.1]:         domain: [Object],
+2017-01-23T15:24:10.955505+00:00 app[web.1]:         _events: [Object],
+2017-01-23T15:24:10.955506+00:00 app[web.1]:         _maxListeners: undefined,
+2017-01-23T15:24:10.955507+00:00 app[web.1]:         output: [],
+2017-01-23T15:24:10.955531+00:00 app[web.1]:         _removedHeader: [Object],
+2017-01-23T15:24:10.955539+00:00 app[web.1]:         _contentLength: null,
+2017-01-23T15:24:10.955539+00:00 app[web.1]:         _hasBody: true,
+2017-01-23T15:24:10.955540+00:00 app[web.1]:         _trailer: '',
+2017-01-23T15:24:10.955540+00:00 app[web.1]:         finished: true,
+2017-01-23T15:24:10.955540+00:00 app[web.1]:         _headerSent: true,
+2017-01-23T15:24:10.955541+00:00 app[web.1]:         socket: [Object],
+2017-01-23T15:24:10.955541+00:00 app[web.1]:         connection: [Object],
+2017-01-23T15:24:10.955544+00:00 app[web.1]:         _header: 'POST /1.1/direct_messages/new.json HTTP/1.1\r\nAccept: */*\r\nConnection: close\r\nUser-Agent: node-twitter/1.4.0\r\nhost: api.twitter.com\r\ncontent-type: application/x-www-form-urlencoded\r\ncontent-length: 283\r\nAuthorization: OAuth oauth_consumer_key="bsx4tgBYfslT5TzmjqJqxifk4",oauth_nonce="c3cb3803d449410da2b321ca94420576",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1485185050",oauth_token="762367617407545344-a3yWE1oE04LB0rpJqC6i8E12HzIqP4x",oauth_version="1.0",oauth_signature="Mw6rfLFtYyM12QtrhGWx5dinNr0%3D"\r\n\r\n',
+2017-01-23T15:24:10.955545+00:00 app[web.1]:         _headers: [Object],
+2017-01-23T15:24:10.955545+00:00 app[web.1]:         _headerNames: [Object],
+2017-01-23T15:24:10.955545+00:00 app[web.1]:         _onPendingData: null,
+2017-01-23T15:24:10.955546+00:00 app[web.1]:         socketPath: undefined,
+2017-01-23T15:24:10.955546+00:00 app[web.1]:         agent: [Object],
+2017-01-23T15:24:10.955546+00:00 app[web.1]:         timeout: undefined,
+2017-01-23T15:24:10.955546+00:00 app[web.1]:         method: 'POST',
+2017-01-23T15:24:10.955547+00:00 app[web.1]:         path: '/1.1/direct_messages/new.json',
+2017-01-23T15:24:10.955547+00:00 app[web.1]:         _ended: true,
+2017-01-23T15:24:10.955547+00:00 app[web.1]:         onSocket: [Function],
+2017-01-23T15:24:10.955548+00:00 app[web.1]:         parser: null,
+2017-01-23T15:24:10.955548+00:00 app[web.1]:         res: [Circular] },
+2017-01-23T15:24:10.955548+00:00 app[web.1]:      ntick: true,
+2017-01-23T15:24:10.955549+00:00 app[web.1]:      response: [Circular],
+2017-01-23T15:24:10.955549+00:00 app[web.1]:      originalHost: 'api.twitter.com',
+2017-01-23T15:24:10.955549+00:00 app[web.1]:      originalHostHeaderName: 'host',
+2017-01-23T15:24:10.955550+00:00 app[web.1]:      responseContent: [Circular],
+2017-01-23T15:24:10.955551+00:00 app[web.1]:      _ended: true,
+2017-01-23T15:24:10.955550+00:00 app[web.1]:      _destdata: true,
+2017-01-23T15:24:10.955551+00:00 app[web.1]:      _callbackCalled: true },
+2017-01-23T15:24:10.955551+00:00 app[web.1]:   toJSON: [Function: responseToJSON],
+2017-01-23T15:24:10.955552+00:00 app[web.1]:   caseless: 
+2017-01-23T15:24:10.955552+00:00 app[web.1]:    Caseless {
+2017-01-23T15:24:10.955552+00:00 app[web.1]:      dict: 
+2017-01-23T15:24:10.955553+00:00 app[web.1]:       { 'cache-control': 'no-cache, no-store, must-revalidate, pre-check=0, post-check=0',
+2017-01-23T15:24:10.955553+00:00 app[web.1]:         connection: 'close',
+2017-01-23T15:24:10.955554+00:00 app[web.1]:         'content-disposition': 'attachment; filename=json.json',
+2017-01-23T15:24:10.955554+00:00 app[web.1]:         'content-length': '3135',
+2017-01-23T15:24:10.955554+00:00 app[web.1]:         'content-type': 'application/json;charset=utf-8',
+2017-01-23T15:24:10.955555+00:00 app[web.1]:         date: 'Mon, 23 Jan 2017 15:24:10 GMT',
+2017-01-23T15:24:10.955555+00:00 app[web.1]:         expires: 'Tue, 31 Mar 1981 05:00:00 GMT',
+2017-01-23T15:24:10.955555+00:00 app[web.1]:         'last-modified': 'Mon, 23 Jan 2017 15:24:10 GMT',
+2017-01-23T15:24:10.955556+00:00 app[web.1]:         pragma: 'no-cache',
+2017-01-23T15:24:10.955556+00:00 app[web.1]:         server: 'tsa_b',
+2017-01-23T15:24:10.955556+00:00 app[web.1]:         'set-cookie': [Object],
+2017-01-23T15:24:10.955557+00:00 app[web.1]:         'strict-transport-security': 'max-age=631138519',
+2017-01-23T15:24:10.955556+00:00 app[web.1]:         status: '200 OK',
+2017-01-23T15:24:10.955557+00:00 app[web.1]:         'x-access-level': 'read-write-directmessages',
+2017-01-23T15:24:10.955559+00:00 app[web.1]:         'x-response-time': '113',
+2017-01-23T15:24:10.955558+00:00 app[web.1]:         'x-connection-hash': 'cd8c3e6320cb0a2ad538dd657db1286d',
+2017-01-23T15:24:10.955558+00:00 app[web.1]:         'x-content-type-options': 'nosniff',
+2017-01-23T15:24:10.955559+00:00 app[web.1]:         'x-transaction': '0051c2a100dcd506',
+2017-01-23T15:24:10.955559+00:00 app[web.1]:         'x-frame-options': 'SAMEORIGIN',
+2017-01-23T15:24:10.955559+00:00 app[web.1]:         'x-tsa-request-body-time': '1',
+2017-01-23T15:24:10.955560+00:00 app[web.1]:         'x-twitter-response-tags': 'BouncerCompliant',
+2017-01-23T15:24:10.955560+00:00 app[web.1]:         'x-xss-protection': '1; mode=block' } },
+2017-01-23T15:24:10.955560+00:00 app[web.1]:   read: [Function],
+2017-01-23T15:24:10.955564+00:00 app[web.1]: Messaggio Twitter
+2017-01-23T15:24:10.955564+00:00 app[web.1]:   body: '{"id":823551909810339844,"id_str":"823551909810339844","text":"Evento:Presenza - codice: BEATO - in scalette di Santa Lucia, 36042 Breganze VI, Italy - lat:45.714943, lng:11.565768, alt:203, temp:0C - base:1347, rssi:-134.00dbm, snr:11.11","sender":{"id":762367617407545344,"id_str":"762367617407545344","name":"usthings2016","screen_name":"usthings2016","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":3,"friends_count":1,"listed_count":0,"created_at":"Sun Aug 07 19:19:38 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":42,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\\/\\/pbs.twimg.com\\/profile_images\\/814474243010424832\\/jtUR23wE_normal.jpg","profile_image_url_https":"https:\\/\\/pbs.twimg.com\\/profile_images\\/814474243010424832\\/jtUR23wE_normal.jpg","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"sender_id":762367617407545344,"sender_id_str":"762367617407545344","sender_screen_name":"usthings2016","recipient":{"id":814448649514188800,"id_str":"814448649514188800","name":"alpinoluca","screen_name":"alpinoluca2","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1,"friends_count":1,"listed_count":0,"created_at":"Thu Dec 29 12:31:04 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":2,"lang":"it","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\\/\\/abs.twimg.com\\/images\\/themes\\/theme1\\/bg.png","profile_background_image_url_https":"https:\\/\\/abs.twimg.com\\/images\\/themes\\/theme1\\/bg.png","profile_background_tile":false,"profile_image_url":"http:\\/\\/pbs.twimg.com\\/profile_images\\/814507686230429696\\/H26BPYlC_normal.jpg","profile_image_url_https":"https:\\/\\/pbs.twimg.com\\/profile_images\\/814507686230429696\\/H26BPYlC_normal.jpg","profile_link_color":"19CF86","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"recipient_id":814448649514188800,"recipient_id_str":"814448649514188800","recipient_screen_name":"alpinoluca2","created_at":"Mon Jan 23 15:24:10 +0000 2017","entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]}}' }
+2017-01-23T15:56:00.177712+00:00 heroku[web.1]: Idling
+2017-01-23T15:56:00.178499+00:00 heroku[web.1]: State changed from up to down
+2017-01-23T15:56:01.198106+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-01-23T15:56:01.436254+00:00 heroku[web.1]: Process exited with status 143
+2017-01-23T21:32:06.566744+00:00 heroku[slug-compiler]: Slug compilation started
+2017-01-23T21:32:06.566753+00:00 heroku[slug-compiler]: Slug compilation finished
+2017-01-23T21:32:06.461480+00:00 app[api]: Release v249 created by user u.simonato@libero.it
+2017-01-23T21:32:06.461480+00:00 app[api]: Deploy 7d5d26f by user u.simonato@libero.it
+2017-01-23T21:32:06.631121+00:00 heroku[web.1]: State changed from down to starting
+2017-01-23T21:32:10.223869+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-01-23T21:32:13.113768+00:00 app[web.1]: 
+2017-01-23T21:32:13.113780+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2017-01-23T21:32:13.113781+00:00 app[web.1]: 
+2017-01-23T21:32:13.113780+00:00 app[web.1]: > node .
+2017-01-23T21:32:15.224552+00:00 app[web.1]: Web server listening at: http://0.0.0.0:24304
+2017-01-23T21:32:15.225662+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:24304/explorer
+2017-01-23T21:32:15.577932+00:00 heroku[web.1]: State changed from starting to up
+2017-01-23T21:40:07.164193+00:00 app[api]: Deploy b2b4e3e by user u.simonato@libero.it
+2017-01-23T21:40:07.164193+00:00 app[api]: Release v250 created by user u.simonato@libero.it
+2017-01-23T21:40:07.325727+00:00 heroku[slug-compiler]: Slug compilation started
+2017-01-23T21:40:07.325737+00:00 heroku[slug-compiler]: Slug compilation finished
+2017-01-23T21:40:07.375931+00:00 heroku[web.1]: Restarting
+2017-01-23T21:40:07.376455+00:00 heroku[web.1]: State changed from up to starting
+2017-01-23T21:40:07.990531+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-01-23T21:40:08.107311+00:00 heroku[web.1]: Process exited with status 143
+2017-01-23T21:40:10.484440+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-01-23T21:40:11.956237+00:00 app[web.1]: 
+2017-01-23T21:40:11.956255+00:00 app[web.1]: > node .
+2017-01-23T21:40:11.956254+00:00 app[web.1]: > mythings2016@1.0.0 start /app
+2017-01-23T21:40:11.956255+00:00 app[web.1]: 
+2017-01-23T21:40:13.288174+00:00 app[web.1]: Web server listening at: http://0.0.0.0:40556
+2017-01-23T21:40:13.288915+00:00 app[web.1]: Browse your REST API at http://0.0.0.0:40556/explorer
+2017-01-23T21:40:13.706227+00:00 heroku[web.1]: State changed from starting to up

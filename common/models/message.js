@@ -36,6 +36,7 @@ var evento2;
 var temperature;
 var wait_address;
 var owner_things;
+var data_attuale  =  new Date();
 var last_data_IOT1 = new Date();
 var last_data_IOT2 = new Date();
 var last_data_IOT3 = new Date();
@@ -153,8 +154,10 @@ var usingItNow = function(callback) {
        if(name_convert == 'IOT_02')
        {
           //owner_things = 'alpinoluca2';
-          delta = new Date() -  last_data_IOT2;
-          last_data_IOT2 = new Date();
+          data_attuale  =  new Date();
+          delta = (data_attuale.getTime() -  last_data_IOT2.getTime())/60/1000;     //in minutes
+          console.log('delta: '+delta); // Otherwise proceed as usual.
+          last_data_IOT2 =  data_attuale;
           if(delta  < 2)
           {
              send = false;

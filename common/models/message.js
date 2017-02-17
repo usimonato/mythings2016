@@ -157,15 +157,16 @@ var usingItNow = function(callback) {
             
           if(evento == 'Presenza')
           {
-              data_attuale  =  new Date();
-              delta = (data_attuale.getTime() -  last_data_IOT2.getTime())/60/1000;     //in minutes
-              console.log('delta: '+delta); // Otherwise proceed as usual.
-              last_data_IOT2 =  data_attuale;
-              send = false;
-              if(delta < 5)
-              {
-                 send = true;
-              }
+              //data_attuale  =  new Date();
+              //delta = (data_attuale.getTime() -  last_data_IOT2.getTime())/60/1000;     //in minutes
+              //console.log('delta: '+delta); // Otherwise proceed as usual.
+              //last_data_IOT2 =  data_attuale;
+              //send = false;
+              //if(delta < 5)
+              //{
+              //   send = true;
+              //}
+	      send = true;
           }
           owner_things = 'GRS_BREGANZE';
           name_convert = 'BEATO';
